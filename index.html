@@ -308,6 +308,58 @@
   }
   .map-help em{color:var(--acid);font-style:normal}
 
+  /* ---------- VISITED / ATLAS / RECEIPT ---------- */
+  .node.linked.visited{box-shadow:inset 3px 0 0 var(--acid)}
+  .ticker.live{cursor:pointer;color:var(--ink-dim)}
+  .ticker.live b{color:var(--acid);font-weight:500}
+  .ticker.live:hover{color:var(--ink)}
+  #atlasBtn{
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    background:transparent;color:var(--ink-dim);border:none;
+    border-left:1px solid var(--line);padding:0 18px;cursor:pointer;
+    text-transform:uppercase;white-space:nowrap;
+  }
+  #atlasBtn:hover{color:var(--acid)}
+  .anode{
+    position:absolute;transform:translate(-50%,-50%);
+    width:150px;background:var(--bg-2);
+    border:1px solid var(--line);padding:9px 11px 10px;
+    cursor:pointer;transition:border-color .15s;
+  }
+  .anode:hover{border-color:var(--acid)}
+  .anode.dim{opacity:.55}
+  .anode.visited{border-color:color-mix(in srgb, var(--acid) 55%, var(--line))}
+  .anode .kchip{
+    font-size:8px;letter-spacing:.18em;color:var(--ink-faint);
+    text-transform:uppercase;margin-bottom:5px;
+  }
+  .anode.visited .kchip{color:var(--acid)}
+  .anode h4{
+    font-family:var(--disp);font-weight:600;font-size:11.5px;
+    line-height:1.2;text-transform:uppercase;color:var(--ink);
+  }
+  .anode.reveal{animation:pop .45s cubic-bezier(.16,1,.3,1) both}
+  #trail .crumb.export{
+    color:var(--pink);border:1px solid var(--pink);
+    padding:3px 9px;margin-left:18px;
+  }
+  #trail .crumb.export:hover{background:var(--pink);color:var(--bg)}
+  #receiptOverlay{
+    position:fixed;inset:0;z-index:80;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+    background:color-mix(in srgb, var(--bg) 74%, transparent);
+    backdrop-filter:blur(8px);
+  }
+  #receiptOverlay.hidden{display:none}
+  #receiptCanvas{max-width:min(420px,92vw);height:auto;border:1px solid var(--line);box-shadow:0 24px 80px #000a}
+  .receipt-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .receipt-actions button{
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    background:var(--bg-2);color:var(--ink);border:1px solid var(--line);
+    padding:9px 16px;cursor:pointer;text-transform:uppercase;
+  }
+  .receipt-actions button:hover{border-color:var(--acid);color:var(--acid)}
+
   /* ---------- FOOTER ---------- */
   footer{
     position:fixed;bottom:0;left:0;right:0;height:34px;z-index:50;
@@ -347,6 +399,7 @@
 <header>
   <div class="brand"><div class="dot"></div>DIG<span>.ARCHIVE</span></div>
   <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE — PULL A RECORD, OPEN ITS CONSTELLATION, FALL IN</div></div>
+  <button id="atlasBtn">⊞ Atlas</button>
   <div class="rec-count" id="recCount">REC <b>—/—</b></div>
   <button id="pullBtn">⟳ Pull</button>
 </header>
@@ -391,6 +444,15 @@
 
 </div>
 
+<div id="receiptOverlay" class="hidden">
+  <canvas id="receiptCanvas"></canvas>
+  <div class="receipt-actions">
+    <button id="dlReceipt">⇩ Download PNG</button>
+    <button id="copyReceipt">Copy text</button>
+    <button id="closeReceipt">Close</button>
+  </div>
+</div>
+
 <footer>
   <div class="stat" id="footStat">SYS <b>ONLINE</b></div>
   <div>UTIL–CYB v0.2 · RABBIT-HOLE BUILD</div>
@@ -403,9 +465,23 @@ let TYPES = {}, RECORDS = {}, IDS = [];
 /* ================= STATE ================= */
 let currentId = 'kiss';
 let trail = ['kiss'];
+let mapMode = 'record';   // 'record' | 'atlas'
 
 const $ = id => document.getElementById(id);
 const recNum = id => String(IDS.indexOf(id)+1).padStart(3,'0');
+
+/* visited records persist across sessions */
+const visited = new Set(JSON.parse(localStorage.getItem('dig.visited')||'[]'));
+function markVisited(id){
+  if(visited.has(id)) return;
+  visited.add(id);
+  localStorage.setItem('dig.visited', JSON.stringify([...visited]));
+}
+
+/* hash = the permalink: #/id, #/id/map, #/atlas */
+function syncHash(h){
+  if(location.hash !== h) history.pushState(null,'',h);
+}
 
 /* ================= TRAIL ================= */
 function renderTrail(){
@@ -417,15 +493,20 @@ function renderTrail(){
     t.insertAdjacentHTML('beforeend',
       `<span class="crumb ${here?'here':''}" data-i="${i}">${RECORDS[id].title}</span>`);
   });
+  if(trail.length>=3) t.insertAdjacentHTML('beforeend','<span class="crumb export" id="exportBtn">⇩ Log</span>');
   t.insertAdjacentHTML('beforeend', `<span class="depth">DEPTH <b>${String(trail.length-1).padStart(2,'0')}</b></span>`);
-  t.querySelectorAll('.crumb:not(.here)').forEach(el=>{
+  t.querySelectorAll('.crumb:not(.here):not(.export)').forEach(el=>{
     el.addEventListener('click', ()=>{
       const i = +el.dataset.i;
       trail = trail.slice(0, i+1);
       currentId = trail[trail.length-1];
       renderCard(currentId); showView('card'); renderTrail();
+      syncHash('#/'+currentId);
     });
   });
+  const ex = document.getElementById('exportBtn');
+  if(ex) ex.addEventListener('click', openReceipt);
+  sessionStorage.setItem('dig.trail', JSON.stringify(trail));
   t.scrollLeft = t.scrollWidth;
 }
 
@@ -481,11 +562,12 @@ function renderCard(id){
       `<div class="spec-row"><span class="k">${k.replace(/_/g,' ')}</span><span class="leader"></span><span class="v">${v}</span></div>`);
   }
   $('dossier').classList.remove('reveal'); void $('dossier').offsetWidth; $('dossier').classList.add('reveal');
-  $('footStat').innerHTML = `SYS <b>ONLINE</b> · ${IDS.length} RECORDS ON FILE · IMG: WIKIMEDIA COMMONS · PD/CC`;
+  markVisited(id);
+  $('footStat').innerHTML = `SYS <b>ONLINE</b> · EXPLORED <b>${visited.size}/${IDS.length}</b> · IMG: WIKIMEDIA COMMONS · PD/CC`;
 }
 
 /* ================= NAVIGATION ================= */
-function openRecord(id, {resetTrail=false, view='card'}={}){
+function openRecord(id, {resetTrail=false, view='card', silent=false}={}){
   if(resetTrail){ trail = [id]; }
   else if(trail[trail.length-1] !== id){ trail.push(id); }
   currentId = id;
@@ -493,12 +575,33 @@ function openRecord(id, {resetTrail=false, view='card'}={}){
   renderTrail();
   if(view==='map'){ renderMap(id); showView('map'); }
   else showView('card');
+  if(!silent) syncHash(view==='map' ? `#/${id}/map` : `#/${id}`);
 }
+
+/* ================= ROUTER ================= */
+function route(){
+  const h = location.hash.replace(/^#\/?/, '');
+  if(!h){ showView('card'); return; }
+  if(h==='atlas'){ openAtlas(true); return; }
+  const [id, sub] = h.split('/');
+  if(!RECORDS[id]) return;
+  const wantMap = sub==='map';
+  if(id !== currentId){
+    openRecord(id, {view: wantMap?'map':'card', silent:true});
+  } else if(wantMap){
+    renderMap(id); showView('map');
+  } else {
+    showView('card');
+  }
+}
+window.addEventListener('hashchange', route);
 
 /* ================= PULL (slot shuffle) ================= */
 let lastPull = -1;
 function pull(){
-  const pool = IDS.filter(id=>RECORDS[id].pullable);
+  // prefer records you haven't opened yet
+  let pool = IDS.filter(id=>RECORDS[id].pullable && !visited.has(id));
+  if(!pool.length) pool = IDS.filter(id=>RECORDS[id].pullable);
   const btn = $('pullBtn');
   btn.disabled = true;
   let next;
@@ -541,6 +644,7 @@ function nodePositions(n){
 }
 
 function renderMap(id){
+  mapMode = 'record';
   const h = RECORDS[id];
   $('mapTitle').textContent = h.title.toUpperCase();
   const nodes = $('nodes'), edges = $('edges');
@@ -574,7 +678,7 @@ function renderMap(id){
       : `<div class="stub-cue">// Archive stub — not yet digitized</div>`;
 
     nodes.insertAdjacentHTML('beforeend', `
-      <div class="node reveal ${isLink?'linked':'stub'}" ${isLink?`data-ref="${c.ref}"`:''}
+      <div class="node reveal ${isLink?'linked':'stub'}${isLink && visited.has(c.ref)?' visited':''}" ${isLink?`data-ref="${c.ref}"`:''}
            style="left:${nx}px;top:${ny}px;animation-delay:${idx*60}ms">
         <span class="type-tag" style="background:${tt.hex}">${c.type}</span>
         <h3>${displayTitle}</h3>
@@ -582,7 +686,128 @@ function renderMap(id){
         ${cue}
       </div>`);
   });
+}
 
+/* ================= ATLAS — the whole archive as one constellation ================= */
+function atlasPositions(){
+  const byKind = {};
+  IDS.forEach(id=>{ (byKind[RECORDS[id].kind] = byKind[RECORDS[id].kind]||[]).push(id); });
+  const kinds = Object.keys(byKind);
+  const pos = {};
+  kinds.forEach((k, ki)=>{
+    const a = -Math.PI/2 + ki*2*Math.PI/kinds.length;
+    const cx = Math.cos(a)*700, cy = Math.sin(a)*430;
+    const ids = byKind[k];
+    ids.forEach((id, i)=>{
+      if(ids.length===1){ pos[id]=[Math.round(cx),Math.round(cy)]; return; }
+      const aa = ki*1.7 + i*2*Math.PI/ids.length;
+      const rr = (ids.length>4 ? 200 : 120) + ((i*37)%40);
+      pos[id]=[Math.round(cx+Math.cos(aa)*rr*1.15), Math.round(cy+Math.sin(aa)*rr*0.75)];
+    });
+  });
+  return pos;
+}
+
+function openAtlas(silent=false){
+  mapMode = 'atlas';
+  $('mapTitle').textContent = `FULL ARCHIVE · ${IDS.length} RECORDS · ${visited.size} EXPLORED`;
+  const nodes = $('nodes'), edges = $('edges');
+  nodes.innerHTML = ''; edges.innerHTML = '';
+  pan = {x:0,y:0}; zoom = 0.55; applyTransform();
+
+  const pos = atlasPositions();
+  const drawn = new Set();
+  IDS.forEach(id=>RECORDS[id].connections.forEach(c=>{
+    if(!c.ref || !pos[c.ref]) return;
+    const key = [id, c.ref].sort().join('|');
+    if(drawn.has(key)) return; drawn.add(key);
+    const [x1,y1]=pos[id], [x2,y2]=pos[c.ref];
+    edges.insertAdjacentHTML('beforeend',
+      `<line x1="${2000+x1}" y1="${2000+y1}" x2="${2000+x2}" y2="${2000+y2}"
+        stroke="${TYPES[c.type].hex}" stroke-width="1" stroke-dasharray="${TYPES[c.type].dash}" opacity="0.38"/>`);
+  }));
+  IDS.forEach((id, i)=>{
+    const r = RECORDS[id], [x,y] = pos[id];
+    nodes.insertAdjacentHTML('beforeend', `
+      <div class="anode reveal ${visited.has(id)?'visited':'dim'}" data-ref="${id}"
+           style="left:${x}px;top:${y}px;animation-delay:${Math.min(i*25,500)}ms">
+        <div class="kchip">${r.kind}${visited.has(id)?' · SEEN':''}</div>
+        <h4>${r.title}</h4>
+      </div>`);
+  });
+  showView('map');
+  if(!silent) syncHash('#/atlas');
+}
+
+/* ================= RECEIPT — export your descent ================= */
+function receiptText(){
+  const lines = trail.map((id,i)=>`${i===0?'  ':'▸ '}${String(i+1).padStart(2,'0')} ${RECORDS[id].title.toUpperCase()}`);
+  return [
+    'DIG.ARCHIVE // DESCENT LOG',
+    ...lines,
+    `DEPTH ${String(trail.length-1).padStart(2,'0')} · EXPLORED ${visited.size}/${IDS.length}`,
+    `https://dig-archive.vercel.app/#/${trail[trail.length-1]}`,
+  ].join('\n');
+}
+
+function openReceipt(){
+  const c = $('receiptCanvas');
+  const W = 420, PAD = 28, LH = 30;
+  const H = 118 + trail.length*LH + 128;
+  const s = 2;
+  c.width = W*s; c.height = H*s; c.style.width = W+'px';
+  const x = c.getContext('2d');
+  x.scale(s, s);
+
+  x.fillStyle = '#0d0e0a'; x.fillRect(0, 0, W, H);
+  x.strokeStyle = '#2a2c20'; x.lineWidth = 1; x.strokeRect(8.5, 8.5, W-17, H-17);
+  x.strokeStyle = '#d4ff3f'; x.strokeRect(12.5, 12.5, W-25, H-25);
+
+  x.fillStyle = '#d4ff3f'; x.font = '700 17px "Chakra Petch", monospace';
+  x.fillText('DIG.ARCHIVE', PAD, 50);
+  x.fillStyle = '#8d8f7e'; x.font = '10px "IBM Plex Mono", monospace';
+  x.fillText('// DESCENT LOG', PAD + 128, 50);
+  const now = new Date();
+  x.fillText(now.toISOString().slice(0,10), W - PAD - 70, 50);
+
+  x.strokeStyle = '#565848'; x.setLineDash([4,4]);
+  x.beginPath(); x.moveTo(PAD, 68); x.lineTo(W-PAD, 68); x.stroke();
+  x.setLineDash([]);
+
+  let y = 98;
+  trail.forEach((id, i)=>{
+    x.fillStyle = '#565848'; x.font = '10px "IBM Plex Mono", monospace';
+    x.fillText((i===0?'  ':'▸ ') + String(i+1).padStart(2,'0'), PAD, y);
+    x.fillStyle = i===trail.length-1 ? '#d4ff3f' : '#e8e9dd';
+    x.font = '600 14px "Chakra Petch", monospace';
+    let t = RECORDS[id].title.toUpperCase();
+    if(t.length > 30) t = t.slice(0,29) + '…';
+    x.fillText(t, PAD + 40, y);
+    y += LH;
+  });
+
+  x.strokeStyle = '#565848'; x.setLineDash([4,4]);
+  x.beginPath(); x.moveTo(PAD, y); x.lineTo(W-PAD, y); x.stroke();
+  x.setLineDash([]);
+  y += 26;
+  x.fillStyle = '#ff5ca8'; x.font = '11px "IBM Plex Mono", monospace';
+  x.fillText(`DEPTH ${String(trail.length-1).padStart(2,'0')}`, PAD, y);
+  x.fillStyle = '#8d8f7e';
+  x.fillText(`EXPLORED ${visited.size}/${IDS.length}`, PAD + 92, y);
+  y += 24;
+  x.fillStyle = '#d4ff3f'; x.font = '10px "IBM Plex Mono", monospace';
+  x.fillText('DIG-ARCHIVE.VERCEL.APP', PAD, y);
+
+  // deterministic barcode from the trail
+  const seedStr = trail.join('|');
+  let bx = PAD; y += 16;
+  for(let i=0; bx < W-PAD-4; i++){
+    const w = (seedStr.charCodeAt(i % seedStr.length) % 4) + 1;
+    if(i % 2 === 0){ x.fillStyle = '#c9cbb8'; x.fillRect(bx, y, w, 18); }
+    bx += w + 2;
+  }
+
+  $('receiptOverlay').classList.remove('hidden');
 }
 
 function buildLegend(){
@@ -653,7 +878,7 @@ function buildLegend(){
       if(wasSingleTap){
         // plain tap — hit-test under the pointer (capture retargets e.target)
         const el = document.elementFromPoint(e.clientX, e.clientY);
-        const node = el && el.closest('.node.linked');
+        const node = el && el.closest('.node.linked, .anode');
         if(node) openRecord(node.dataset.ref);
       }
       moved=false;
@@ -682,12 +907,32 @@ function showView(v){
   $('mapView').classList.toggle('hidden', v!=='map');
 }
 
-$('openMap').addEventListener('click', ()=>{ renderMap(currentId); showView('map'); });
-$('backBtn').addEventListener('click', ()=> showView('card'));
+$('openMap').addEventListener('click', ()=>{ renderMap(currentId); showView('map'); syncHash(`#/${currentId}/map`); });
+$('backBtn').addEventListener('click', ()=>{ showView('card'); syncHash(`#/${currentId}`); });
 $('pullBtn').addEventListener('click', pull);
+$('atlasBtn').addEventListener('click', ()=> openAtlas());
+$('closeReceipt').addEventListener('click', ()=> $('receiptOverlay').classList.add('hidden'));
+$('receiptOverlay').addEventListener('click', e=>{ if(e.target.id==='receiptOverlay') e.currentTarget.classList.add('hidden'); });
+$('dlReceipt').addEventListener('click', ()=>{
+  const a = document.createElement('a');
+  a.href = $('receiptCanvas').toDataURL('image/png');
+  a.download = 'dig-archive-descent.png';
+  a.click();
+});
+$('copyReceipt').addEventListener('click', e=>{
+  navigator.clipboard.writeText(receiptText()).then(()=>{
+    e.target.textContent = 'Copied ✓';
+    setTimeout(()=>e.target.textContent='Copy text', 1500);
+  });
+});
 document.addEventListener('keydown', e=>{
+  if(!$('receiptOverlay').classList.contains('hidden')){
+    if(e.key==='Escape') $('receiptOverlay').classList.add('hidden');
+    return;
+  }
   if(e.key==='r'||e.key==='R') pull();
-  if(e.key==='Escape') showView('card');
+  if(e.key==='a'||e.key==='A') openAtlas();
+  if(e.key==='Escape'){ showView('card'); syncHash(`#/${currentId}`); }
 });
 
 /* ================= INIT ================= */
@@ -695,7 +940,30 @@ fetch('records.json')
   .then(r=>r.json())
   .then(data=>{
     TYPES = data.types; RECORDS = data.records; IDS = Object.keys(RECORDS);
+
+    // record of the day — deterministic from the date
+    const pool = IDS.filter(i=>RECORDS[i].pullable);
+    const daily = pool[Math.floor(Date.now()/86400000) % pool.length];
+    const tk = $('ticker');
+    tk.innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
+    tk.classList.add('live');
+    tk.onclick = ()=> openRecord(daily, {resetTrail:true});
+
+    // restore: permalink first, then this session's trail
+    const h = location.hash.replace(/^#\/?/, '');
+    const [hid, sub] = h.split('/');
+    const saved = JSON.parse(sessionStorage.getItem('dig.trail')||'null');
+    const savedValid = Array.isArray(saved) && saved.length && saved.every(x=>RECORDS[x]);
+    if(RECORDS[hid]){
+      trail = (savedValid && saved[saved.length-1]===hid) ? saved : [hid];
+      currentId = hid;
+    } else if(savedValid){
+      trail = saved; currentId = saved[saved.length-1];
+    }
+
     buildLegend(); renderCard(currentId); renderTrail();
+    if(h==='atlas') openAtlas(true);
+    else if(sub==='map'){ renderMap(currentId); showView('map'); }
   })
   .catch(()=>{ document.getElementById('ticker').textContent = 'RECORDS.JSON FAILED TO LOAD — SERVE OVER HTTP (npx serve .) OR CHECK DEPLOY'; });
 </script>
