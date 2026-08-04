@@ -111,10 +111,18 @@
 
   .art-pane{
     position:relative;border-right:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
     padding:clamp(24px,4vw,56px);
     background:radial-gradient(ellipse at 50% 40%, #16170f 0%, var(--bg) 70%);
   }
+  .thumb-strip{display:flex;gap:8px;margin-top:46px;flex-wrap:wrap;justify-content:center}
+  .thumb{
+    width:54px;height:54px;object-fit:cover;cursor:pointer;
+    border:1px solid var(--line);opacity:.55;
+    transition:opacity .12s,border-color .12s;
+  }
+  .thumb.active{border-color:var(--acid);opacity:1}
+  .thumb:hover{opacity:.9}
   .art-frame{position:relative;max-width:100%;max-height:100%}
   .art-frame img{
     display:block;max-width:100%;max-height:calc(100vh - 250px);
@@ -517,12 +525,25 @@ function renderCard(id){
   // art pane: image or placard
   const pane = $('artPane');
   if(h.img){
+    const imgs = [{src:h.img, cap:h.capRight||''}, ...(h.gallery||[])];
     pane.innerHTML = `
       <div class="art-frame reveal" id="artFrame">
         <div class="reg tl"></div><div class="reg tr"></div><div class="reg bl"></div><div class="reg br"></div>
         <img id="artImg" src="${h.img}" alt="${h.title}">
-        <div class="art-caption"><span>${h.byline.name.toUpperCase()}</span><span>${h.capRight||''}</span></div>
-      </div>`;
+        <div class="art-caption"><span>${h.byline.name.toUpperCase()}</span><span id="capRight">${h.capRight||''}</span></div>
+      </div>` +
+      (imgs.length>1 ? `<div class="thumb-strip">${imgs.map((g,i)=>
+        `<img class="thumb${i===0?' active':''}" src="${g.src}" data-i="${i}" alt="">`).join('')}</div>` : '');
+    if(imgs.length>1){
+      pane.querySelectorAll('.thumb').forEach(t=>{
+        t.addEventListener('click', ()=>{
+          const g = imgs[+t.dataset.i];
+          pane.querySelector('#artImg').src = g.src;
+          pane.querySelector('#capRight').textContent = g.cap || h.capRight || '';
+          pane.querySelectorAll('.thumb').forEach(x=>x.classList.toggle('active', x===t));
+        });
+      });
+    }
   } else {
     pane.innerHTML = `
       <div class="art-frame reveal" id="artFrame">

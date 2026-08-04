@@ -132,6 +132,12 @@
       "more": [
         "Hokusai changed his artist name more than 30 times and moved house 93 times. The name he kept longest translates roughly to 'Old Man Crazy About Painting.'",
         "On his deathbed at 89: 'If heaven gives me just ten more years… I shall become a true artist.'"
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/843,/0/default.jpg",
+          "cap": "AIC IMPRESSION"
+        }
       ]
     },
     "starry": {
@@ -646,6 +652,11 @@
           "type": "HISTORY",
           "title": "Hiroshige’s Tōkaidō",
           "note": "The other giant: 53 stations of the highway to Kyoto — Edo Japan’s greatest road-trip series."
+        },
+        {
+          "type": "TECHNIQUE",
+          "ref": "gutenberg",
+          "note": "The other print revolution — Europe’s, 380 years earlier, aimed at scripture instead of pop."
         }
       ],
       "more": [
@@ -825,8 +836,8 @@
         },
         {
           "type": "HISTORY",
-          "title": "Tambora, 1815",
-          "note": "The other art-making volcano: its ‘year without a summer’ trapped Mary Shelley indoors — Frankenstein is volcanic weather."
+          "note": "Tambora’s ‘year without a summer’ trapped Mary Shelley indoors — Frankenstein is volcanic weather, on paper.",
+          "ref": "frankenstein"
         },
         {
           "type": "ECHO",
@@ -934,6 +945,12 @@
           "type": "ECHO",
           "title": "The icon template",
           "note": "The most-visited paid monument on Earth, and the template for every city’s ‘we need a tower’ ambition since."
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis-Emile%20Durandelle%2C%20The%20Eiffel%20Tower%20-%20State%20of%20the%20Construction%2C%201888.jpg?width=900",
+          "cap": "CONSTRUCTION, 1888"
         }
       ]
     },
@@ -1118,6 +1135,16 @@
           "type": "HISTORY",
           "title": "Coco’s war",
           "note": "Agent F-7124. The industry’s most uncomfortable file, open since the 2010s."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "schiaparelli",
+          "note": "The archrival: surrealist spectacle against Chanel’s subtraction. Paris took sides."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "dior",
+          "note": "The New Look re-corseted her woman — Chanel un-retired at 71 to answer it."
         }
       ]
     },
@@ -1162,6 +1189,11 @@
           "type": "ECHO",
           "title": "StockX & the sneaker exchange",
           "note": "Bid/ask spreads for shoes. The Jordan 1 is the blue chip."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "westwood",
+          "note": "Before the drop model there was the King’s Road shop: subculture retail as provocation."
         }
       ]
     },
@@ -1361,6 +1393,685 @@
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Exposition%20universelle%20de%201889%20Vue%20g%C3%A9n%C3%A9rale%20du%20jardin%20central%2C%20le%20palais%20du%20Trocad%C3%A9ro%20dans%20le%20fond%2C%207%C3%A8me%20et%2016%C3%A8me%20arro%2C%20PH76776.jpg?width=900",
       "imgCaption": "PARIS, 1889"
+    },
+    "schiaparelli": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Elsa Schiaparelli",
+      "byline": {
+        "name": "Elsa Schiaparelli",
+        "sub": "1890–1973"
+      },
+      "cat": "FASHION / SURREALISM YOU COULD WEAR",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Portrait%20d'Elsa%20Schiaparelli%22%20de%20J.%20Dunand%20(mus%C3%A9e%20des%20arts%20d%C3%A9coratifs%2C%20Paris).jpg?width=900",
+      "capRight": "PARIS, 1930s",
+      "spec": {
+        "BREAKOUT": "Trompe-l’oeil bow sweater, 1927",
+        "COLLABORATORS": "Dalí, Cocteau, Man Ray",
+        "INVENTION": "Shocking Pink, 1937",
+        "HOUSE": "Revived 2012 — couture again"
+      },
+      "fact": "Her 1937 Lobster Dress — painted with Salvador Dalí — was worn by Wallis Simpson in her pre-wedding Vogue shoot, weeks before marrying the ex-king. A surrealist joke about appetite, photographed on the most scandalous woman in the world.",
+      "more": [
+        "The Chanel rivalry was open war: Chanel only ever called her 'that Italian artist who makes clothes,' and at a 1939 ball steered her — allegedly by accident — into the candelabra, setting her costume on fire.",
+        "Her 1938 Skeleton Dress used padded quilting to raise bones on black crepe — couture anatomy, made with Dalí. Museums treat it as the first true art-fashion collaboration.",
+        "Hubert de Givenchy started as her assistant — the house that later hired Alexander McQueen traces straight back to her salon."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "chanel-lbd",
+          "note": "The rivalry that defined 1930s Paris: Chanel’s subtraction vs Schiaparelli’s spectacle. Both were right."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Dalí & the Surrealists",
+          "note": "Lobster phone, lobster dress — same year, same lobster. She put the movement on a body."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Shocking Pink",
+          "note": "She named and marketed a color in 1937. Every hot-pink drop since — including Barbiecore — runs her playbook."
+        },
+        {
+          "type": "ECHO",
+          "title": "The 2012 revival",
+          "note": "The house reopened and became red-carpet surrealism again — gilded lungs, eye brooches, Bella Hadid discourse."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Trompe-l’oeil knitwear",
+          "note": "Her 1927 sweater with a knitted-in fake bow was the breakout: an optical illusion you could buy."
+        }
+      ]
+    },
+    "westwood": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Vivienne Westwood",
+      "byline": {
+        "name": "Vivienne Westwood",
+        "sub": "1941–2022"
+      },
+      "cat": "FASHION / PUNK AS RETAIL, THEN AS ARMOR",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Vivienne%20Westwood%20by%20Mattia%20Passeri.jpg?width=900",
+      "capRight": "430 KING’S RD",
+      "spec": {
+        "THE_SHOP": "SEX, 430 King’s Road (w/ Malcolm McLaren)",
+        "DRESSED": "The Sex Pistols",
+        "SIGNATURE": "The orb — tradition + future",
+        "LATER": "Climate activism, ‘buy less’"
+      },
+      "fact": "Punk's look existed as merchandise before the music charted: Westwood and McLaren's King's Road shop dressed the Sex Pistols — a band McLaren managed — so the uniform, the boutique, and the scandal were one vertically integrated operation.",
+      "more": [
+        "In 1989 Tatler put her on the cover dressed as Margaret Thatcher — in a suit Thatcher had ordered but not yet collected — with the line 'this woman was once a punk.' She called it her favorite image of herself.",
+        "Her late-career message was 'buy less, choose well, make it last' — the founder of punk fashion telling the industry to stop selling. She meant both, and lived long enough to be right twice."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "jordan1",
+          "note": "The playbook — subculture uniform becomes scarce commodity becomes market — runs from King’s Road straight through sneaker drops."
+        },
+        {
+          "type": "ECHO",
+          "title": "God Save the Queen",
+          "note": "The safety-pinned Queen artwork and the shop’s clothes are one visual system: Jamie Reid’s collage wore Westwood."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The Thatcher cover",
+          "note": "Tatler, 1989. The establishment and its saboteur, same silhouette."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Corsets & crinolines, weaponized",
+          "note": "She mined fashion history — 18th-c. cuts, tartan, the mini-crini — and made the archive subversive."
+        },
+        {
+          "type": "ECHO",
+          "title": "The orb on resale apps",
+          "note": "Her jewelry became Gen-Z’s entry drug to vintage — the punk brand as heirloom."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "mcqueen",
+          "note": "Her heir in weaponized Britishness: tartan as accusation, tailoring as theater."
+        }
+      ]
+    },
+    "frankenstein": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "Frankenstein",
+      "byline": {
+        "name": "Mary Shelley",
+        "sub": "1797–1851 · published 1818"
+      },
+      "cat": "BOOK / SCIENCE FICTION, ISSUE ZERO",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Frontispiece%20to%20Frankenstein%201831.jpg?width=900",
+      "capRight": "1818",
+      "spec": {
+        "WRITTEN": "Villa Diodati ghost-story contest, 1816",
+        "AUTHOR_AGE": "18 when she started",
+        "PUBLISHED": "Anonymously — many credited Percy",
+        "CLAIM": "Widely called the first sci-fi novel"
+      },
+      "fact": "It was written because the weather was apocalyptic: Tambora's 1815 eruption made 1816 'the year without a summer,' trapping the Shelley party indoors at Lake Geneva, where Byron proposed a ghost-story contest. An 18-year-old won it with the founding document of science fiction.",
+      "more": [
+        "The monster is never named Frankenstein — that's the doctor. The creature reads Paradise Lost, argues ethics, and asks for a companion; the flat-head-and-bolts image belongs to the 1931 film, not the book.",
+        "She published it anonymously at 20, and for years critics assumed her husband wrote it. The 1831 edition finally carried her name and her account of the waking dream that started it."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "krakatoa",
+          "note": "The other art-making volcano: Tambora wrote this book’s weather the way Krakatoa may have painted The Scream’s sky."
+        },
+        {
+          "type": "ECHO",
+          "ref": "expressionism",
+          "note": "The 1931 film’s look — shadows, angles, the laboratory — is German Expressionism exported to Hollywood."
+        },
+        {
+          "type": "ECHO",
+          "title": "Karloff’s flat head",
+          "note": "Jack Pierce’s 1931 makeup replaced the book’s articulate creature with the icon everyone draws. The adaptation ate the source."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "‘Playing Frankenstein’",
+          "note": "Every gene-editing, AI, and cloning debate reaches for this novel. It supplied the ethics vocabulary in advance."
+        }
+      ]
+    },
+    "gutenberg": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "The Gutenberg Bible",
+      "byline": {
+        "name": "Johannes Gutenberg",
+        "sub": "Mainz, c. 1455"
+      },
+      "cat": "BOOK / MASS MEDIA, VERSION 1.0",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg%20Bible%2C%20Lenox%20Copy%2C%20New%20York%20Public%20Library%2C%202009.%20Pic%2001.jpg?width=900",
+      "capRight": "c. 1455",
+      "spec": {
+        "PRINTED": "~180 copies (49 survive)",
+        "TYPE": "Movable metal type, blackletter",
+        "LAWSUIT": "Lost everything to his investor, 1455",
+        "PRECEDENT": "Korea’s Jikji, 1377 — 78 years earlier"
+      },
+      "fact": "Right as the Bible was finished, Gutenberg's investor Johann Fust sued him, won, and took the workshop, the type, and the finished Bibles. The inventor of European printing walked away from his own revolution nearly broke — the founder-gets-forced-out story is 570 years old.",
+      "more": [
+        "Movable metal type wasn't first: Korea's Jikji was printed with it in 1377, 78 years earlier. Europe's version won on distribution, not invention.",
+        "The typeface deliberately imitated scribal handwriting so the books could be sold like manuscripts — skeuomorphism, version 1.0: new technology dressed as the old one to feel trustworthy."
+      ],
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "The two great print cultures: Europe printed scripture, Edo printed pop. Same insight — carve once, sell many."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "penguin",
+          "note": "The 500-year lineage from this workshop to the sixpence paperback: printing keeps re-democratizing itself."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Fust v. Gutenberg",
+          "note": "The 1455 lawsuit that transferred the whole operation to his investor — run by Gutenberg’s own ex-apprentice."
+        },
+        {
+          "type": "ECHO",
+          "title": "The auction ceiling",
+          "note": "No complete copy has traded since 1978. Single leaves sell for the price of a car."
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg%20Bible%2C%20New%20York%20Public%20Library%2C%20USA.%20Pic%2002.jpg?width=900",
+          "cap": "LENOX COPY, DETAIL"
+        }
+      ]
+    },
+    "penguin": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "Penguin Paperbacks",
+      "byline": {
+        "name": "Allen Lane + Edward Young",
+        "sub": "London, 1935"
+      },
+      "cat": "BOOK / DESIGN DEMOCRATIZES READING",
+      "capRight": "1935",
+      "spec": {
+        "ORIGIN": "A bookless railway platform, Exeter, 1934",
+        "PRICE": "Sixpence — a pack of cigarettes",
+        "GRID": "Horizontal tripartite bands",
+        "CODE": "Orange fiction · green crime · blue biography"
+      },
+      "fact": "Allen Lane, stuck at Exeter station with nothing worth reading, decided serious books should cost what cigarettes cost. The design system — three horizontal bands, color-coded by genre — was drawn by Edward Young, a 21-year-old office junior, who also sketched the penguin at the London Zoo.",
+      "more": [
+        "In 1947 Jan Tschichold arrived and wrote the Penguin Composition Rules — four pages that standardized every spine, margin, and title page. Mass-market books got a design constitution.",
+        "The color code did the marketing with zero copy: you could spot your genre across a shop. Orange-equals-fiction became so strong the color itself is now the brand — on mugs, totes, and knockoffs everywhere."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "bauhaus",
+          "note": "Tschichold carried modernist typographic discipline into the mass market — the school’s ideals at sixpence."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "gutenberg",
+          "note": "Same move, 480 years apart: make the book cheap enough and the reader base explodes."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Genre as color system",
+          "note": "Wayfinding applied to literature — the cover as signage, not illustration."
+        },
+        {
+          "type": "ECHO",
+          "title": "The tote-bag economy",
+          "note": "Penguin covers as merch: the design outgrew the books it was built to sell."
+        }
+      ]
+    },
+    "dior": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Christian Dior",
+      "byline": {
+        "name": "Christian Dior",
+        "sub": "1905–1957"
+      },
+      "cat": "FASHION / THE NEW LOOK VS THE RATION BOOK",
+      "capRight": "FEB 12 1947",
+      "spec": {
+        "DEBUT": "30 Avenue Montaigne, Feb 12, 1947",
+        "THE_VERDICT": "Carmel Snow: ‘It’s quite a revolution’",
+        "FABRIC": "Up to 20 yards a dress — under rationing",
+        "REIGN": "Ten years, then gone at 52"
+      },
+      "fact": "The New Look launched while fabric was still rationed: skirts using twenty yards of cloth in a Europe where a legal dress allowed about three. Women in a Paris market attacked a New Look wearer and tore the dress off her — luxury as political provocation, photographed for the papers.",
+      "more": [
+        "His sister Catherine was in the French Resistance, was caught, and survived Ravensbrück. 'Miss Dior,' the house's first perfume, is named for her — the prettiest name in fashion sits on one of its darkest stories.",
+        "Chanel's review: 'Dior doesn't dress women, he upholsters them.' She came out of retirement at 71 in part to fight the corseted silhouette she'd spent her life killing.",
+        "By 1949 the house reportedly accounted for most of Paris couture exports and a measurable slice of France's total export earnings — a single designer as national economic policy."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "ysl",
+          "note": "He died suddenly in 1957; his 21-year-old assistant inherited the biggest fashion house on Earth."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "balenciaga",
+          "note": "The rival he deferred to: ‘the master of us all.’"
+        },
+        {
+          "type": "HISTORY",
+          "ref": "chanel-lbd",
+          "note": "The New Look re-corseted the woman Chanel had freed — she un-retired at 71 to answer it."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Catherine Dior, Ravensbrück",
+          "note": "Resistance member, deported, survived. Miss Dior perfume carries her name."
+        },
+        {
+          "type": "ECHO",
+          "title": "The ration riots",
+          "note": "Rue Lepic, 1947: a New Look dress torn off its wearer. Twenty yards of cloth read as an insult."
+        }
+      ]
+    },
+    "balenciaga": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Cristóbal Balenciaga",
+      "byline": {
+        "name": "Cristóbal Balenciaga",
+        "sub": "1895–1972"
+      },
+      "cat": "FASHION / THE MASTER WHO REFUSED THE CAMERAS",
+      "capRight": "PARIS 1937–1968",
+      "spec": {
+        "ORIGIN": "Getaria, Spain — a seamstress’s son",
+        "EXILE": "To Paris in 1937, mid–civil war",
+        "PRESS": "One interview in his lifetime",
+        "EXIT": "Closed the house in 1968 rather than compromise"
+      },
+      "fact": "He fled the Spanish Civil War to Paris in 1937, built couture's most revered house — then shut it down in 1968 rather than make ready-to-wear. Clients grieved like a death: Diana Vreeland said Mona von Bismarck locked herself in her room for three days.",
+      "more": [
+        "Dior called him 'the master of us all'; Chanel said he was the only one of them who could actually build a garment alone — cut it, fit it, sew it. Everyone else, she said, was a designer; he was a couturier.",
+        "He gave a single press interview in his life — The Times, 1971, the year before he died. No runway bows, no photos, no explanations. The refusal was the brand: mystery as luxury."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "dior",
+          "note": "Rivals in the ledger, master and admirer in private."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "chanel-lbd",
+          "note": "Mutual respect across enemy lines — she defended his craft above everyone’s, including her own."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "The apprentices",
+          "note": "Givenchy, Courrèges, Ungaro all trained in his orbit — one atelier seeded a generation of houses."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "The one-seam coat",
+          "note": "1961: a coat cut from a single piece of fabric with one seam. Couture as pure geometry."
+        },
+        {
+          "type": "ECHO",
+          "title": "Demna’s Balenciaga",
+          "note": "The house that refused publicity now runs on virality — meme couture under the quietest name in fashion history."
+        }
+      ]
+    },
+    "ysl": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Yves Saint Laurent",
+      "byline": {
+        "name": "Yves Saint Laurent",
+        "sub": "1936–2008"
+      },
+      "cat": "FASHION / POWER, TAILORED FOR WOMEN",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Yves%20Saint-Laurent%20at%20his%20old%20studio%20of%20the%20same%20name%2C%201961.jpg?width=900",
+      "capRight": "STUDIO, 1961",
+      "spec": {
+        "BORN": "Oran, French Algeria, 1936",
+        "AT_DIOR": "Named head of the house at 21",
+        "LE_SMOKING": "The women’s tuxedo, 1966",
+        "FIRST": "First living designer with a Met retrospective, 1983"
+      },
+      "fact": "In 1960 he was conscripted for the Algerian War — twenty days in, he collapsed, was hospitalized and subjected to electroshock, and Dior's owners replaced him while he was in the ward. He sued the house, won, and used the damages to co-found YSL with Pierre Bergé. The firing financed the empire.",
+      "more": [
+        "Le Smoking (1966) put women in tuxedos, and restaurants turned them away — socialite Nan Kempner, refused entry at La Côte Basque, removed the trousers and wore the jacket alone as a dress. The ban became the advertisement.",
+        "The 1965 Mondrian dresses turned De Stijl canvases into cocktail dresses — modernist painting as pattern-cutting, and among the most copied garments of the decade.",
+        "He put Black models at the front of Paris couture — Mounia opened his shows — decades before the industry pretended it had always done so."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "dior",
+          "note": "Heir at 21, fired in a psychiatric ward at 24, avenged in court. Succession as origin story."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "chanel-lbd",
+          "note": "The line usually credited to Bergé: Chanel gave women freedom; Saint Laurent gave them power."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Mondrian & De Stijl",
+          "note": "A 1920s grid painting became 1965’s most famous dress — high modernism at cocktail length."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The Algerian War",
+          "note": "Born in Oran, broken by the draft for the war over his own birthplace."
+        },
+        {
+          "type": "ECHO",
+          "title": "Helmut Newton, Rue Aubriot",
+          "note": "The 1975 photograph of Le Smoking in a Paris alley — arguably the definitive fashion photo."
+        }
+      ]
+    },
+    "mcqueen": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Alexander McQueen",
+      "byline": {
+        "name": "Lee Alexander McQueen",
+        "sub": "1969–2010"
+      },
+      "cat": "FASHION / SAVILE ROW GOTHIC",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Feather%20dress%20from%20Horn%20of%20Plenty%20by%20Alexander%20McQueen%20at%20Savage%20Beauty.jpg?width=900",
+      "capRight": "HORN OF PLENTY",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinyl%20dress%20from%20Horn%20of%20Plenty%20by%20Alexander%20McQueen%20at%20Savage%20Beauty.jpg?width=900",
+          "cap": "VINYL, HORN OF PLENTY"
+        }
+      ],
+      "spec": {
+        "START": "Savile Row apprentice at 16",
+        "MA_SHOW": "1992 — Isabella Blow bought all of it",
+        "HOUSES": "Givenchy 1996–2001, then his own",
+        "LEGACY": "‘Savage Beauty’ — 661K visitors at the Met"
+      },
+      "fact": "A cab driver's son from the East End, he apprenticed on Savile Row at 16 and claimed to have chalked an obscenity into the lining of a jacket cut for Prince Charles. True or not, it's the whole brand in one anecdote: perfect tailoring with a knife sewn inside.",
+      "more": [
+        "His 1995 'Highland Rape' show was denounced as misogyny; he said the rape was England's — of Scotland, his family's country. The wrecked tartan and torn lace were the Jacobite clearances worn as accusation.",
+        "Isabella Blow bought his entire 1992 graduate collection for £5,000, paid in weekly installments, and made his name (and his hats). After her death in 2007, his shows turned elegiac; three years later he was gone too.",
+        "The armadillo boots from Plato's Atlantis (2010) — twelve inches tall, barely walkable — went global when Lady Gaga wore them in 'Bad Romance.' His final complete show was streamed live; demand crashed the feed."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "westwood",
+          "note": "The inheritance: tartan as accusation, Britishness weaponized, the establishment’s tailoring turned against it."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "schiaparelli",
+          "note": "The shock-couture bloodline runs through Givenchy — her former assistant founded the house McQueen later ran."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Savile Row cutting",
+          "note": "Under all the theater: bumster trousers and frock coats built with apprentice-trained precision. The scandal was perfectly tailored."
+        },
+        {
+          "type": "ECHO",
+          "title": "Savage Beauty",
+          "note": "The 2011 Met retrospective ran to midnight to handle the queues — mourning at museum scale."
+        }
+      ]
+    },
+    "kawakubo": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Rei Kawakubo",
+      "byline": {
+        "name": "Rei Kawakubo",
+        "sub": "b. 1942 · Comme des Garçons"
+      },
+      "cat": "FASHION / THE BEAUTY OF THE BROKEN",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Comme%20des%20Garcons%20at%20the%20Met%20(62473).jpg?width=900",
+      "capRight": "MET, 2017",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dresses%20by%20Rei%20Kawakubo%20-%20Sarah%20Stierch%2003.jpg?width=900",
+          "cap": "CDG DRESSES"
+        }
+      ],
+      "spec": {
+        "TRAINING": "None — fine arts & literature, Keio",
+        "HOUSE": "Comme des Garçons, Tokyo",
+        "PARIS_DEBUT": "1981 — black, holes, asymmetry",
+        "HONOR": "2017 Met solo — first living designer since YSL"
+      },
+      "fact": "Her early-'80s Paris shows — black, torn, asymmetric, oversized — were received as an attack: critics reached for 'Hiroshima chic,' post-war racism dressed up as fashion criticism. Within a decade, the look they mocked was the uniform of every creative director in the city.",
+      "more": [
+        "The 1982 'lace' sweater was machine-knit with deliberate holes — distressed, unfinished, sold at luxury prices. The industry named the movement deconstruction; she has refused every label, including that one.",
+        "Dover Street Market (2004) rebuilt retail as curation — Supreme hung next to couture before 'streetwear × luxury' existed as a category. Half of today's collab economy runs on her floor plan."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "westwood",
+          "note": "Two women made destruction a couture language — punk’s safety pins and her holes arrive at the same place from different worlds."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "chanel-lbd",
+          "note": "Black as the entire palette — the little black dress taken to its logical, radical conclusion."
+        },
+        {
+          "type": "ECHO",
+          "ref": "jordan1",
+          "note": "Dover Street Market incubated the streetwear-luxury crossover the sneaker economy now runs on."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Deconstruction",
+          "note": "Seams outside, linings exposed, garments mid-collapse — construction itself made visible as the design."
+        },
+        {
+          "type": "ECHO",
+          "title": "Art of the In-Between",
+          "note": "Met, 2017: only the second living designer ever given a solo show. She barely attended her own coronation."
+        }
+      ]
+    },
+    "genji": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "The Tale of Genji",
+      "byline": {
+        "name": "Murasaki Shikibu",
+        "sub": "c. 973–1014 · Heian court"
+      },
+      "cat": "BOOK / THE FIRST NOVEL — BY A WOMAN, 1,000 YEARS AGO",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Genji%20emaki%20SUZUMUSHI.JPG?width=900",
+      "capRight": "c. 1010",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Genji%20emaki%2001003%20001.jpg?width=900",
+          "cap": "12TH-C. SCROLL"
+        }
+      ],
+      "spec": {
+        "LENGTH": "54 chapters, ~800 embedded poems",
+        "AUTHOR": "Lady-in-waiting to Empress Shōshi",
+        "SCRIPT": "Kana — the ‘women’s hand’",
+        "CLAIM": "Widely called the world’s first novel"
+      },
+      "fact": "The world's first novel (by most definitions) was written around 1010 by a woman whose real name we don't know — 'Murasaki Shikibu' is a court nickname. Men of her era wrote in prestige Chinese; she wrote in kana, the script dismissed as women's writing, and produced the foundation of Japanese literature.",
+      "more": [
+        "Genji pictures became a genre that ran for a millennium — the 12th-century illustrated scrolls are National Treasures, and ukiyo-e masters were still printing Genji scenes 800 years after she wrote.",
+        "Arthur Waley's 1920s English translation stunned literary London — Virginia Woolf reviewed it, absorbing that a Heian court lady had beaten Europe to the psychological novel by nine centuries."
+      ],
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "Genji-e: the novel fed Japan’s print culture for centuries — Edo publishers never stopped illustrating her."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "The court aesthetics underneath it — seasonal allusion, exquisite restraint — are the deep source of what Europe later binged on."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The nameless author",
+          "note": "Court diaries record her wit and her critics; history never recorded her actual name."
+        },
+        {
+          "type": "ECHO",
+          "title": "The ¥2000 note",
+          "note": "Japan put the scroll and its author on a banknote in 2000 — the first novelist on modern currency anywhere."
+        }
+      ]
+    },
+    "origin": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "On the Origin of Species",
+      "byline": {
+        "name": "Charles Darwin",
+        "sub": "1809–1882"
+      },
+      "cat": "BOOK / THE DANGEROUS IDEA, DELAYED 20 YEARS",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Origin%20of%20Species%201859%20title%20page.jpg?width=900",
+      "capRight": "NOV 24 1859",
+      "spec": {
+        "FIRST_PRINTING": "1,250 copies — claimed on day one",
+        "DELAY": "~20 years between theory and book",
+        "TRIGGER": "Wallace’s 1858 letter from Ternate",
+        "ON_HUMANS": "One sentence, total"
+      },
+      "fact": "Darwin sat on the theory for two decades — he told a friend that admitting species change felt 'like confessing a murder.' What forced publication was the mail: Alfred Russel Wallace, feverish in the Malay Archipelago, sent him the same theory in a letter. Origin was written in a thirteen-month panic.",
+      "more": [
+        "The first printing was fully claimed by the book trade on publication day. Darwin, hedging to the last, gave humanity exactly one sentence: 'Light will be thrown on the origin of man.'",
+        "Sixty-six years later the book stood trial in Tennessee — Scopes, 1925, a teacher fined $100 for teaching it. The culture war it opened has never actually closed."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "frankenstein",
+          "note": "Shelley fictionalized the science-without-limits anxiety forty years before Darwin gave it a mechanism."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Wallace’s letter",
+          "note": "The politest ambush in science: the co-discoverer mailed his scoop to the man he’d scooped."
+        },
+        {
+          "type": "ECHO",
+          "title": "Social Darwinism — the misread",
+          "note": "‘Survival of the fittest’ is Spencer’s phrase, not Darwin’s. The book’s most damaging afterlife is a misquote."
+        }
+      ]
+    },
+    "orwell-1984": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "Nineteen Eighty-Four",
+      "byline": {
+        "name": "George Orwell",
+        "sub": "1903–1950"
+      },
+      "cat": "BOOK / THE DYSTOPIA THAT NAMED THE PRESENT",
+      "capRight": "1949",
+      "spec": {
+        "WRITTEN": "Isle of Jura, 1946–48, dying of TB",
+        "PUBLISHED": "June 1949 — he died 7 months later",
+        "VOCABULARY": "Big Brother · doublethink · memory hole",
+        "SPIKE": "#1 on Amazon, January 2017"
+      },
+      "fact": "Orwell wrote it racing his own tuberculosis, typing in bed with a fever in a farmhouse on the Isle of Jura. He lived seven months past publication — long enough to see it land, not long enough to watch 'Orwellian' become politics' most-used adjective.",
+      "more": [
+        "In January 2017 a 68-year-old novel hit #1 on Amazon after 'alternative facts' entered the news cycle; it spiked again during the Snowden leaks. The book functions as a civic smoke alarm — sales are the signal.",
+        "Room 101, the torture chamber, is named after a conference room at the BBC where Orwell sat through meetings. The scariest room in literature is a meeting room."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "penguin",
+          "note": "The orange-spine delivery system: Penguin made it the most-assigned dystopia in the language."
+        },
+        {
+          "type": "ECHO",
+          "title": "‘Orwellian’",
+          "note": "The only author whose name is a standard unit of political warning — applied, with perfect irony, by every side at once."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The Jura race",
+          "note": "Doctors ordered rest; he typed the final draft himself because no typist would come to the island. The book may have cost the years."
+        }
+      ]
+    },
+    "silent-spring": {
+      "kind": "BOOK",
+      "pullable": true,
+      "title": "Silent Spring",
+      "byline": {
+        "name": "Rachel Carson",
+        "sub": "1907–1964"
+      },
+      "cat": "BOOK / THE BOOK THAT BANNED A MOLECULE",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Rachel-Carson.jpg?width=900",
+      "capRight": "1962",
+      "spec": {
+        "SERIALIZED": "The New Yorker, June 1962",
+        "TARGET": "DDT + indiscriminate pesticide use",
+        "INDUSTRY_RESPONSE": "~$250K campaign to discredit her",
+        "AFTERMATH": "EPA 1970 · US DDT ban 1972"
+      },
+      "fact": "The chemical industry spent roughly a quarter-million 1962 dollars to bury it — Monsanto published a parody called 'The Desolate Year'; opponents called her hysterical, a spinster, probably a Communist. Kennedy's science advisory committee investigated and sided with her. Ten years later, DDT was banned.",
+      "more": [
+        "Carson testified before Congress while dying of breast cancer, in a wig, keeping the illness secret so it couldn't be used to reframe the science as personal grievance. She died eighteen months later, at 56.",
+        "The environmental movement has a birthday argument: Earth Day 1970, or this book's New Yorker serialization in the summer of 1962. The EPA's own official history treats Silent Spring as its origin story."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "origin",
+          "note": "Darwin gave ecology its theory; Carson gave it its politics."
+        },
+        {
+          "type": "ECHO",
+          "ref": "westwood",
+          "note": "‘Buy less, choose well’ is this book’s argument, retailed — fashion’s climate conscience descends from it."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The smear playbook",
+          "note": "‘Hysterical woman vs sound science’ — the template built for Carson gets reused on every inconvenient scientist since."
+        },
+        {
+          "type": "ECHO",
+          "title": "Earth Day & the EPA",
+          "note": "1970: the machinery her book demanded finally got built."
+        }
+      ]
     }
   }
 }
