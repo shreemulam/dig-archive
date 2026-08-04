@@ -211,6 +211,22 @@
   }
   .fact-next:hover{filter:brightness(1.25)}
 
+  .disc{
+    border:1px solid var(--line);border-left:3px solid var(--pink);
+    background:var(--bg-2);padding:18px 20px;margin-bottom:34px;
+  }
+  .disc:empty{display:none}
+  .disc .k{
+    font-size:10px;letter-spacing:.16em;color:var(--pink);
+    text-transform:uppercase;margin-bottom:4px;
+  }
+  .d-item{padding:11px 0;border-bottom:1px dashed var(--line)}
+  .d-item:last-child{border-bottom:none;padding-bottom:2px}
+  .d-text{font-size:12.5px;line-height:1.6;color:var(--ink)}
+  .d-meta{margin-top:6px;font-size:9.5px;letter-spacing:.12em;color:var(--ink-faint);text-transform:uppercase}
+  .d-meta a{color:var(--ice);text-decoration:none;border-bottom:1px solid color-mix(in srgb, var(--ice) 50%, transparent)}
+  .d-meta a:hover{border-bottom-color:var(--ice)}
+
   .card-actions{display:flex;gap:14px;align-items:center;margin-top:auto;flex-wrap:wrap}
   #openMap{
     font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.1em;
@@ -429,6 +445,7 @@
         <p id="fact"></p>
         <button class="fact-next" id="factNext">Next fact ▸</button>
       </div>
+      <div class="disc" id="disc"></div>
       <div class="card-actions">
         <button id="openMap">Open constellation ↗</button>
         <span class="hint" id="connHint"></span>
@@ -572,6 +589,19 @@ function renderCard(id){
   };
   showFact();
   $('factNext').onclick = ()=>{ fi = (fi+1)%facts.length; showFact(); };
+
+  const disc = $('disc');
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  if(h.discourse && h.discourse.length){
+    disc.innerHTML = '<div class="k">// The discourse — live from the internet</div>' +
+      h.discourse.map(d=>`
+        <div class="d-item">
+          <div class="d-text">${d.src==='HN'?'':'“'}${esc(d.text)}${d.src==='HN'?'':'”'}</div>
+          <div class="d-meta">${d.src==='HN'?'HACKER NEWS':'BLUESKY'} · ${esc(d.by)} · ▲ ${d.score}${d.comments?` · ${d.comments} REPLIES`:''} · <a href="${d.url}" target="_blank" rel="noopener">OPEN THREAD ↗</a></div>
+        </div>`).join('');
+  } else {
+    disc.innerHTML = '';
+  }
   const linked = h.connections.filter(c=>c.ref).length;
   $('connHint').textContent = `${h.connections.length} linked records · ${linked} openable`;
   $('recCount').innerHTML = `REC <b>${recNum(id)}/${String(IDS.length).padStart(3,'0')}</b>`;
