@@ -1,4 +1,4 @@
-# RANDOM ACCESS ARCHIVE
+# DIG.ARCHIVE
 
 A rabbit-hole engine for art, design, architecture, fashion, and culture history.
 Hit **PULL** → get a random record → open its **constellation** → click any bright-bordered
