@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RANDOM ACCESS ARCHIVE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0e0a;
+    --bg-2:#13140e;
+    --line:#2a2c20;
+    --ink:#e8e9dd;
+    --ink-dim:#8d8f7e;
+    --ink-faint:#565848;
+    --acid:#d4ff3f;      /* INFLUENCE + system accent */
+    --amber:#ffb02e;     /* MATERIAL */
+    --ice:#6ee7ff;       /* TECHNIQUE */
+    --pink:#ff5ca8;      /* ECHO */
+    --bone:#c9cbb8;      /* HISTORY */
+    --mono:'IBM Plex Mono',monospace;
+    --disp:'Chakra Petch',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--mono);
+    font-size:13px;
+    overflow:hidden;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:72px 72px;
+    background-position:center center;
+  }
+  ::selection{background:var(--acid);color:var(--bg)}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:stretch;
+    border-bottom:1px solid var(--line);
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(6px);
+    height:56px;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    padding:0 20px;border-right:1px solid var(--line);
+    font-family:var(--disp);font-weight:700;font-size:15px;
+    letter-spacing:.08em;white-space:nowrap;
+  }
+  .brand .dot{width:8px;height:8px;background:var(--acid);animation:blink 2.4s steps(2) infinite}
+  @keyframes blink{50%{opacity:.25}}
+  .brand span{color:var(--ink-dim);font-weight:400}
+  .head-mid{flex:1;display:flex;align-items:center;padding:0 20px;gap:24px;overflow:hidden}
+  .ticker{color:var(--ink-faint);font-size:11px;letter-spacing:.06em;white-space:nowrap;text-transform:uppercase}
+  .rec-count{
+    padding:0 20px;display:flex;align-items:center;
+    border-left:1px solid var(--line);color:var(--ink-dim);
+    font-size:11px;letter-spacing:.1em;white-space:nowrap;
+  }
+  .rec-count b{color:var(--ink);font-weight:500}
+  #pullBtn{
+    font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.12em;
+    background:var(--acid);color:#101204;border:none;cursor:pointer;
+    padding:0 32px;border-left:1px solid var(--line);
+    transition:filter .12s;
+    text-transform:uppercase;
+  }
+  #pullBtn:hover{filter:brightness(1.12)}
+  #pullBtn:active{filter:brightness(.85)}
+  #pullBtn:disabled{opacity:.5;cursor:wait}
+
+  /* ---------- TRAIL ---------- */
+  #trail{
+    position:fixed;top:56px;left:0;right:0;height:34px;z-index:49;
+    display:flex;align-items:center;gap:0;
+    padding:0 20px;overflow-x:auto;scrollbar-width:none;
+    border-bottom:1px solid var(--line);
+    background:var(--bg);
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    white-space:nowrap;
+  }
+  #trail::-webkit-scrollbar{display:none}
+  #trail .t-label{color:var(--ink-faint);margin-right:14px;flex:none}
+  #trail .crumb{
+    color:var(--ink-dim);cursor:pointer;flex:none;
+    padding:4px 2px;border-bottom:1px solid transparent;
+  }
+  #trail .crumb:hover{color:var(--acid)}
+  #trail .crumb.here{color:var(--acid);border-bottom-color:var(--acid);cursor:default}
+  #trail .sep{color:var(--ink-faint);margin:0 10px;flex:none}
+  #trail .depth{margin-left:auto;color:var(--ink-faint);flex:none;padding-left:20px}
+  #trail .depth b{color:var(--pink);font-weight:500}
+
+  /* ---------- STAGE ---------- */
+  #stage{position:fixed;inset:90px 0 34px 0}
+
+  /* ---------- CARD VIEW ---------- */
+  #cardView{
+    position:absolute;inset:0;display:grid;
+    grid-template-columns:minmax(0,46%) minmax(0,54%);
+    opacity:1;transition:opacity .35s cubic-bezier(.16,1,.3,1);
+  }
+  #cardView.hidden,#mapView.hidden{opacity:0;pointer-events:none}
+
+  .art-pane{
+    position:relative;border-right:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    padding:clamp(24px,4vw,56px);
+    background:radial-gradient(ellipse at 50% 40%, #16170f 0%, var(--bg) 70%);
+  }
+  .art-frame{position:relative;max-width:100%;max-height:100%}
+  .art-frame img{
+    display:block;max-width:100%;max-height:calc(100vh - 250px);
+    border:1px solid var(--line);
+    filter:contrast(1.02);
+  }
+  /* imageless placard */
+  .placard{
+    width:min(420px,38vw);aspect-ratio:1/1.1;
+    border:1px dashed var(--ink-faint);
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:26px;
+  }
+  .placard .p-kind{
+    font-family:var(--disp);font-weight:700;
+    font-size:clamp(34px,3.6vw,52px);line-height:.95;
+    color:var(--ink-faint);text-transform:uppercase;
+    word-break:break-word;
+  }
+  .placard .p-mid{font-size:10.5px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;line-height:2}
+  .placard .p-mid em{color:var(--amber);font-style:normal}
+  .placard .p-num{font-family:var(--disp);font-weight:600;font-size:15px;color:var(--ink-dim);letter-spacing:.1em}
+  /* registration marks */
+  .reg{position:absolute;width:14px;height:14px;pointer-events:none}
+  .reg::before,.reg::after{content:"";position:absolute;background:var(--acid)}
+  .reg::before{width:14px;height:1px;top:0;left:0}
+  .reg::after{width:1px;height:14px;top:0;left:0}
+  .reg.tl{top:-8px;left:-8px}
+  .reg.tr{top:-8px;right:-8px;transform:scaleX(-1)}
+  .reg.bl{bottom:-8px;left:-8px;transform:scaleY(-1)}
+  .reg.br{bottom:-8px;right:-8px;transform:scale(-1)}
+  .art-caption{
+    position:absolute;bottom:-26px;left:0;right:0;
+    display:flex;justify-content:space-between;
+    font-size:10px;letter-spacing:.12em;color:var(--ink-faint);text-transform:uppercase;
+  }
+
+  .dossier{
+    padding:clamp(24px,3.5vw,52px) clamp(24px,5vw,72px);
+    overflow-y:auto;display:flex;flex-direction:column;gap:0;
+  }
+  .idx-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    color:var(--ink-faint);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  .idx-row .tag{color:var(--acid)}
+  h1.title{
+    font-family:var(--disp);font-weight:700;
+    font-size:clamp(28px,3.8vw,50px);line-height:.98;
+    text-transform:uppercase;letter-spacing:.01em;
+    margin-bottom:6px;
+  }
+  .artist-line{
+    font-size:14px;color:var(--ink-dim);margin-bottom:30px;
+  }
+  .artist-line b{color:var(--ink);font-weight:500}
+
+  .spec{border-top:1px solid var(--line);margin-bottom:30px}
+  .spec-row{
+    display:flex;align-items:baseline;gap:12px;
+    padding:9px 0;border-bottom:1px solid var(--line);
+  }
+  .spec-row .k{
+    flex:0 0 110px;font-size:10px;letter-spacing:.16em;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+  .spec-row .leader{flex:1;border-bottom:1px dotted var(--ink-faint);opacity:.4;transform:translateY(-3px)}
+  .spec-row .v{text-align:right;color:var(--ink);font-size:12.5px}
+
+  .fact{
+    border:1px solid var(--line);border-left:3px solid var(--acid);
+    background:var(--bg-2);padding:18px 20px;margin-bottom:34px;
+  }
+  .fact .k{
+    font-size:10px;letter-spacing:.16em;color:var(--acid);
+    text-transform:uppercase;margin-bottom:8px;
+  }
+  .fact p{font-size:13.5px;line-height:1.65;color:var(--ink)}
+  .fact-head{display:flex;justify-content:space-between;align-items:baseline}
+  .fact-next{
+    margin-top:12px;padding:0 0 1px;display:inline-block;
+    background:none;border:none;border-bottom:1px solid var(--acid);
+    font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+    color:var(--acid);cursor:pointer;text-transform:uppercase;
+  }
+  .fact-next:hover{filter:brightness(1.25)}
+
+  .card-actions{display:flex;gap:14px;align-items:center;margin-top:auto;flex-wrap:wrap}
+  #openMap{
+    font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.1em;
+    background:transparent;color:var(--acid);cursor:pointer;
+    border:1px solid var(--acid);padding:13px 26px;text-transform:uppercase;
+    transition:background .12s,color .12s;
+  }
+  #openMap:hover{background:var(--acid);color:#101204}
+  .hint{color:var(--ink-faint);font-size:11px;letter-spacing:.05em}
+
+  /* ---------- MAP VIEW ---------- */
+  #mapView{
+    position:absolute;inset:0;overflow:hidden;
+    opacity:1;transition:opacity .35s cubic-bezier(.16,1,.3,1);
+    cursor:grab;
+  }
+  #mapView.dragging{cursor:grabbing}
+  #world{
+    position:absolute;left:50%;top:50%;width:0;height:0;
+    will-change:transform;
+  }
+  #edges{position:absolute;left:-2000px;top:-2000px;width:4000px;height:4000px;pointer-events:none}
+
+  .node{
+    position:absolute;transform:translate(-50%,-50%);
+    width:232px;background:var(--bg-2);
+    border:1px solid var(--line);padding:12px 14px 13px;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  .node.linked{cursor:pointer}
+  .node.linked:hover{border-color:var(--acid);box-shadow:0 0 0 1px var(--acid)}
+  .node.stub{opacity:.72}
+  .node .type-tag{
+    display:inline-block;font-size:9px;letter-spacing:.18em;
+    padding:3px 7px;margin-bottom:8px;text-transform:uppercase;
+    color:#101204;font-weight:500;
+  }
+  .node h3{
+    font-family:var(--disp);font-weight:600;font-size:14.5px;
+    line-height:1.15;margin-bottom:6px;text-transform:uppercase;
+  }
+  .node p{font-size:11.5px;line-height:1.5;color:var(--ink-dim)}
+  .node .open-cue{
+    margin-top:9px;font-size:10px;letter-spacing:.14em;
+    color:var(--acid);text-transform:uppercase;
+  }
+  .node .stub-cue{
+    margin-top:9px;font-size:9.5px;letter-spacing:.14em;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+
+  .center-node{
+    position:absolute;transform:translate(-50%,-50%);
+    width:190px;text-align:center;
+  }
+  .center-node img{
+    width:150px;display:block;margin:0 auto 10px;
+    border:1px solid var(--acid);
+    box-shadow:0 0 0 6px var(--bg), 0 0 0 7px var(--line);
+  }
+  .center-node .mini-placard{
+    width:150px;height:110px;margin:0 auto 10px;
+    border:1px dashed var(--acid);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--disp);font-weight:700;font-size:15px;
+    color:var(--acid);text-transform:uppercase;letter-spacing:.08em;
+    background:var(--bg);
+    box-shadow:0 0 0 6px var(--bg), 0 0 0 7px var(--line);
+  }
+  .center-node h2{
+    font-family:var(--disp);font-weight:700;font-size:16px;
+    text-transform:uppercase;line-height:1.1;
+  }
+  .center-node .sub{color:var(--ink-dim);font-size:10.5px;margin-top:4px;letter-spacing:.08em}
+
+  .map-topbar{
+    position:absolute;top:16px;left:20px;z-index:5;
+    display:flex;gap:14px;align-items:center;
+  }
+  #backBtn{
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    background:var(--bg-2);color:var(--ink);border:1px solid var(--line);
+    padding:9px 16px;cursor:pointer;text-transform:uppercase;
+  }
+  #backBtn:hover{border-color:var(--acid);color:var(--acid)}
+  .map-title{font-size:11px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+  .map-title b{color:var(--ink);font-weight:500}
+
+  .legend{
+    position:absolute;bottom:18px;left:20px;z-index:5;
+    display:flex;flex-direction:column;gap:6px;
+    background:color-mix(in srgb, var(--bg) 82%, transparent);
+    border:1px solid var(--line);padding:12px 16px;
+    font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .legend .row{display:flex;align-items:center;gap:10px}
+  .legend .sw{width:22px;height:2px}
+  .map-help{
+    position:absolute;bottom:18px;right:20px;z-index:5;
+    font-size:10px;letter-spacing:.12em;color:var(--ink-faint);text-transform:uppercase;
+    text-align:right;line-height:1.9;
+  }
+  .map-help em{color:var(--acid);font-style:normal}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    position:fixed;bottom:0;left:0;right:0;height:34px;z-index:50;
+    border-top:1px solid var(--line);
+    background:var(--bg);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 20px;font-size:10px;letter-spacing:.14em;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+  footer .stat b{color:var(--acid);font-weight:500}
+
+  /* shuffle flicker */
+  .flicker{animation:flick .07s steps(2) infinite}
+  @keyframes flick{50%{opacity:.55}}
+
+  /* entrance */
+  .reveal{animation:rise .5s cubic-bezier(.16,1,.3,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .node.reveal{animation:pop .45s cubic-bezier(.16,1,.3,1) both}
+  @keyframes pop{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+  .node.stub.reveal{animation-name:pop-stub}
+  @keyframes pop-stub{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:.72;transform:translate(-50%,-50%) scale(1)}}
+
+  @media (max-width:860px){
+    #cardView{grid-template-columns:1fr;overflow-y:auto;display:block}
+    .art-pane{border-right:none;border-bottom:1px solid var(--line);min-height:44vh}
+    .art-frame img{max-height:38vh}
+    .placard{width:min(320px,80vw)}
+    .dossier{padding:28px 22px 60px}
+    .head-mid{display:none}
+    .node{width:190px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><div class="dot"></div>RANDOM ACCESS <span>/ARCHIVE</span></div>
+  <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE — PULL A RECORD, OPEN ITS CONSTELLATION, FALL IN</div></div>
+  <div class="rec-count" id="recCount">REC <b>—/—</b></div>
+  <button id="pullBtn">⟳ Pull</button>
+</header>
+
+<div id="trail"></div>
+
+<div id="stage">
+
+  <!-- CARD -->
+  <div id="cardView">
+    <div class="art-pane" id="artPane"></div>
+    <div class="dossier" id="dossier">
+      <div class="idx-row"><span class="tag" id="idxTag"></span><span id="idxCat"></span></div>
+      <h1 class="title" id="title"></h1>
+      <div class="artist-line" id="artistLine"></div>
+      <div class="spec" id="spec"></div>
+      <div class="fact">
+        <div class="k fact-head"><span>// Things you didn't know</span><span id="factCount"></span></div>
+        <p id="fact"></p>
+        <button class="fact-next" id="factNext">Next fact ▸</button>
+      </div>
+      <div class="card-actions">
+        <button id="openMap">Open constellation ↗</button>
+        <span class="hint" id="connHint"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div id="mapView" class="hidden">
+    <div class="map-topbar">
+      <button id="backBtn">← Dossier</button>
+      <div class="map-title">CONSTELLATION // <b id="mapTitle"></b></div>
+    </div>
+    <div id="world">
+      <svg id="edges" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div id="nodes"></div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="map-help"><em>Click a bright-bordered node to open its record</em><br>Drag to pan · Scroll to zoom · [R] random</div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="stat" id="footStat">SYS <b>ONLINE</b></div>
+  <div>UTIL–CYB v0.2 · RABBIT-HOLE BUILD</div>
+</footer>
+
+<script>
+/* ================= DATA — fetched from records.json ================= */
+let TYPES = {}, RECORDS = {}, IDS = [];
+
+/* ================= STATE ================= */
+let currentId = 'kiss';
+let trail = ['kiss'];
+
+const $ = id => document.getElementById(id);
+const recNum = id => String(IDS.indexOf(id)+1).padStart(3,'0');
+
+/* ================= TRAIL ================= */
+function renderTrail(){
+  const t = $('trail');
+  t.innerHTML = '<span class="t-label">TRAIL //</span>';
+  trail.forEach((id, i)=>{
+    if(i>0) t.insertAdjacentHTML('beforeend','<span class="sep">▸</span>');
+    const here = i===trail.length-1;
+    t.insertAdjacentHTML('beforeend',
+      `<span class="crumb ${here?'here':''}" data-i="${i}">${RECORDS[id].title}</span>`);
+  });
+  t.insertAdjacentHTML('beforeend', `<span class="depth">DEPTH <b>${String(trail.length-1).padStart(2,'0')}</b></span>`);
+  t.querySelectorAll('.crumb:not(.here)').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const i = +el.dataset.i;
+      trail = trail.slice(0, i+1);
+      currentId = trail[trail.length-1];
+      renderCard(currentId); showView('card'); renderTrail();
+    });
+  });
+  t.scrollLeft = t.scrollWidth;
+}
+
+/* ================= CARD RENDER ================= */
+function renderCard(id){
+  const h = RECORDS[id];
+
+  // art pane: image or placard
+  const pane = $('artPane');
+  if(h.img){
+    pane.innerHTML = `
+      <div class="art-frame reveal" id="artFrame">
+        <div class="reg tl"></div><div class="reg tr"></div><div class="reg bl"></div><div class="reg br"></div>
+        <img id="artImg" src="${h.img}" alt="${h.title}">
+        <div class="art-caption"><span>${h.byline.name.toUpperCase()}</span><span>${h.capRight||''}</span></div>
+      </div>`;
+  } else {
+    pane.innerHTML = `
+      <div class="art-frame reveal" id="artFrame">
+        <div class="reg tl"></div><div class="reg tr"></div><div class="reg bl"></div><div class="reg br"></div>
+        <div class="placard">
+          <div class="p-kind">${h.kind}<br>FILE</div>
+          <div class="p-mid">NO VISUAL RECORD ON FILE<br><em>TEXT DOSSIER ONLY</em><br>${h.capRight||''}</div>
+          <div class="p-num">REC ${recNum(id)}</div>
+        </div>
+        <div class="art-caption"><span>${h.byline.name.toUpperCase()}</span><span>${h.capRight||''}</span></div>
+      </div>`;
+  }
+
+  $('idxTag').textContent = `REC ${recNum(id)} · ${h.kind}`;
+  $('idxCat').textContent = h.cat;
+  $('title').textContent = h.title;
+  $('artistLine').innerHTML = `<b>${h.byline.name}</b> · ${h.byline.sub}`;
+
+  const facts = [h.fact, ...(h.more||[])];
+  let fi = 0;
+  const showFact = ()=>{
+    $('fact').textContent = facts[fi];
+    $('factCount').textContent = facts.length>1
+      ? `${String(fi+1).padStart(2,'0')}/${String(facts.length).padStart(2,'0')}` : '';
+    $('factNext').style.display = facts.length>1 ? '' : 'none';
+  };
+  showFact();
+  $('factNext').onclick = ()=>{ fi = (fi+1)%facts.length; showFact(); };
+  const linked = h.connections.filter(c=>c.ref).length;
+  $('connHint').textContent = `${h.connections.length} linked records · ${linked} openable`;
+  $('recCount').innerHTML = `REC <b>${recNum(id)}/${String(IDS.length).padStart(3,'0')}</b>`;
+
+  const spec = $('spec');
+  spec.innerHTML = '';
+  for(const [k,v] of Object.entries(h.spec)){
+    spec.insertAdjacentHTML('beforeend',
+      `<div class="spec-row"><span class="k">${k.replace(/_/g,' ')}</span><span class="leader"></span><span class="v">${v}</span></div>`);
+  }
+  $('dossier').classList.remove('reveal'); void $('dossier').offsetWidth; $('dossier').classList.add('reveal');
+  $('footStat').innerHTML = `SYS <b>ONLINE</b> · ${IDS.length} RECORDS ON FILE · IMG: WIKIMEDIA COMMONS · PD/CC`;
+}
+
+/* ================= NAVIGATION ================= */
+function openRecord(id, {resetTrail=false, view='card'}={}){
+  if(resetTrail){ trail = [id]; }
+  else if(trail[trail.length-1] !== id){ trail.push(id); }
+  currentId = id;
+  renderCard(id);
+  renderTrail();
+  if(view==='map'){ renderMap(id); showView('map'); }
+  else showView('card');
+}
+
+/* ================= PULL (slot shuffle) ================= */
+let lastPull = -1;
+function pull(){
+  const pool = IDS.filter(id=>RECORDS[id].pullable);
+  const btn = $('pullBtn');
+  btn.disabled = true;
+  let next;
+  do { next = pool[Math.floor(Math.random()*pool.length)]; } while(pool.length>1 && next===lastPull);
+  lastPull = next;
+
+  showView('card');
+  const t = $('title');
+  t.classList.add('flicker');
+  let ticks = 0;
+  const iv = setInterval(()=>{
+    const r = IDS[Math.floor(Math.random()*IDS.length)];
+    t.textContent = RECORDS[r].title;
+    ticks++;
+    if(ticks>=9){
+      clearInterval(iv);
+      t.classList.remove('flicker');
+      openRecord(next, {resetTrail:true});
+      btn.disabled = false;
+    }
+  }, 75);
+}
+
+/* ================= MAP ================= */
+let pan = {x:0,y:0}, zoom = 1;
+function applyTransform(){
+  $('world').style.transform = `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`;
+}
+
+function nodePositions(n){
+  // radial spread, alternating radii, slight per-index jitter for asymmetry
+  const pts = [];
+  const offset = -Math.PI/2 + 0.35;
+  for(let i=0;i<n;i++){
+    const a = offset + (i * 2*Math.PI/n);
+    const r = (i%2===0 ? 330 : 440) + ((i*29)%40) - 20;
+    pts.push([Math.round(Math.cos(a)*r*1.25), Math.round(Math.sin(a)*r*0.82)]);
+  }
+  return pts;
+}
+
+function renderMap(id){
+  const h = RECORDS[id];
+  $('mapTitle').textContent = h.title.toUpperCase();
+  const nodes = $('nodes'), edges = $('edges');
+  nodes.innerHTML = ''; edges.innerHTML = '';
+  pan = {x:0,y:0}; zoom = 1; applyTransform();
+
+  // center node
+  const centerVisual = h.img
+    ? `<img src="${h.img}" alt="">`
+    : `<div class="mini-placard">${h.kind}<br>FILE</div>`;
+  nodes.insertAdjacentHTML('beforeend', `
+    <div class="center-node reveal" style="left:0;top:0">
+      ${centerVisual}
+      <h2>${h.title}</h2>
+      <div class="sub">${h.byline.name} · ${h.capRight||''}</div>
+    </div>`);
+
+  const pos = nodePositions(h.connections.length);
+  h.connections.forEach((c, idx)=>{
+    const [nx,ny] = pos[idx];
+    const tt = TYPES[c.type];
+    const isLink = !!c.ref;
+    const displayTitle = isLink ? RECORDS[c.ref].title : c.title;
+
+    edges.insertAdjacentHTML('beforeend',
+      `<line x1="2000" y1="2000" x2="${2000+nx}" y2="${2000+ny}"
+        stroke="${tt.hex}" stroke-width="1.5" stroke-dasharray="${tt.dash}" opacity="${isLink?0.85:0.45}"/>`);
+
+    const cue = isLink
+      ? `<div class="open-cue">▸ Open record ${recNum(c.ref)}</div>`
+      : `<div class="stub-cue">// Archive stub — not yet digitized</div>`;
+
+    nodes.insertAdjacentHTML('beforeend', `
+      <div class="node reveal ${isLink?'linked':'stub'}" ${isLink?`data-ref="${c.ref}"`:''}
+           style="left:${nx}px;top:${ny}px;animation-delay:${idx*60}ms">
+        <span class="type-tag" style="background:${tt.hex}">${c.type}</span>
+        <h3>${displayTitle}</h3>
+        <p>${c.note}</p>
+        ${cue}
+      </div>`);
+  });
+
+}
+
+function buildLegend(){
+  const lg = $('legend');
+  lg.innerHTML = '<div class="row" style="color:var(--ink);margin-bottom:2px">LINK TYPES</div>';
+  for(const [name,t] of Object.entries(TYPES)){
+    lg.insertAdjacentHTML('beforeend',
+      `<div class="row"><span class="sw" style="background:${t.hex}"></span>${name}</div>`);
+  }
+}
+
+/* pan + zoom — click vs drag disambiguation */
+(function(){
+  const mv = $('mapView');
+  let dragging=false, moved=false, sx=0, sy=0, px=0, py=0;
+  mv.addEventListener('pointerdown', e=>{
+    if(e.target.closest('button')) return;
+    dragging=true; moved=false; sx=e.clientX; sy=e.clientY; px=pan.x; py=pan.y;
+    mv.setPointerCapture(e.pointerId);
+  });
+  mv.addEventListener('pointermove', e=>{
+    if(!dragging) return;
+    const dx = e.clientX-sx, dy = e.clientY-sy;
+    if(Math.abs(dx)>4||Math.abs(dy)>4){ moved=true; mv.classList.add('dragging'); }
+    if(moved){ pan.x = px+dx; pan.y = py+dy; applyTransform(); }
+  });
+  mv.addEventListener('pointerup', e=>{
+    mv.classList.remove('dragging');
+    if(dragging && !moved){
+      // plain click, not a drag — hit-test under the pointer (capture retargets e.target)
+      const el = document.elementFromPoint(e.clientX, e.clientY);
+      const node = el && el.closest('.node.linked');
+      if(node) openRecord(node.dataset.ref);
+    }
+    dragging=false; moved=false;
+  });
+  mv.addEventListener('wheel', e=>{
+    e.preventDefault();
+    zoom = Math.min(1.8, Math.max(0.4, zoom * (e.deltaY<0 ? 1.08 : 0.925)));
+    applyTransform();
+  }, {passive:false});
+})();
+
+/* ================= VIEW SWITCH ================= */
+function showView(v){
+  $('cardView').classList.toggle('hidden', v!=='card');
+  $('mapView').classList.toggle('hidden', v!=='map');
+}
+
+$('openMap').addEventListener('click', ()=>{ renderMap(currentId); showView('map'); });
+$('backBtn').addEventListener('click', ()=> showView('card'));
+$('pullBtn').addEventListener('click', pull);
+document.addEventListener('keydown', e=>{
+  if(e.key==='r'||e.key==='R') pull();
+  if(e.key==='Escape') showView('card');
+});
+
+/* ================= INIT ================= */
+fetch('records.json')
+  .then(r=>r.json())
+  .then(data=>{
+    TYPES = data.types; RECORDS = data.records; IDS = Object.keys(RECORDS);
+    buildLegend(); renderCard(currentId); renderTrail();
+  })
+  .catch(()=>{ document.getElementById('ticker').textContent = 'RECORDS.JSON FAILED TO LOAD — SERVE OVER HTTP (npx serve .) OR CHECK DEPLOY'; });
+</script>
+</body>
+</html>

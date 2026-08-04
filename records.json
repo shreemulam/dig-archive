@@ -1,0 +1,1366 @@
+{
+  "types": {
+    "INFLUENCE": {
+      "hex": "#d4ff3f",
+      "dash": ""
+    },
+    "MATERIAL": {
+      "hex": "#ffb02e",
+      "dash": ""
+    },
+    "TECHNIQUE": {
+      "hex": "#6ee7ff",
+      "dash": ""
+    },
+    "ECHO": {
+      "hex": "#ff5ca8",
+      "dash": ""
+    },
+    "HISTORY": {
+      "hex": "#c9cbb8",
+      "dash": "6 5"
+    }
+  },
+  "records": {
+    "kiss": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "The Kiss",
+      "byline": {
+        "name": "Gustav Klimt",
+        "sub": "1862–1918"
+      },
+      "cat": "PAINTING / VIENNA SECESSION",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?width=900",
+      "capRight": "1907–1908",
+      "spec": {
+        "YEAR": "1907–1908",
+        "MEDIUM": "Oil + gold leaf on canvas",
+        "DIMENSIONS": "180 × 180 cm",
+        "MOVEMENT": "Vienna Secession",
+        "LOCATION": "Belvedere, Vienna"
+      },
+      "fact": "Klimt's father was a gold engraver — the gold leaf isn't decoration, it's an inherited trade. He applied it like a medieval icon-maker, which is why the lovers float in sacred, flattened space instead of a real room.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "Klimt’s golden portraits became the poster case for art the Reich seized."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "adele",
+          "note": "The other golden woman — painted the year before, same gold, wilder fate."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "The flattened space and patterned robes come from the Japanese print wave flooding Vienna."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Byzantine mosaics, Ravenna",
+          "note": "Klimt visited San Vitale in 1903. The flat gold field around the lovers is lifted from 6th-century mosaic walls."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Gold-leaf gilding",
+          "note": "Same technique as Orthodox icons — bole, leaf, burnish. Sacred tech repurposed for eros."
+        },
+        {
+          "type": "ECHO",
+          "title": "The dorm-poster economy",
+          "note": "Arguably the most reproduced embrace in art history — immersive shows, mugs, a whole Vienna tourism industry."
+        }
+      ],
+      "more": [
+        "The couple is probably Klimt and Emilie Flöge, his lifelong companion. He never married her — or anyone — but 'Emilie must come' were reportedly his last words after his stroke.",
+        "He painted in a floor-length blue smock with, by most accounts, nothing underneath. Vienna's most scandalous painter dressed like a monk."
+      ]
+    },
+    "wave": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "The Great Wave off Kanagawa",
+      "byline": {
+        "name": "Katsushika Hokusai",
+        "sub": "1760–1849"
+      },
+      "cat": "WOODBLOCK PRINT / UKIYO-E",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Wave_off_Kanagawa.jpg?width=900",
+      "capRight": "c. 1831",
+      "spec": {
+        "YEAR": "c. 1831",
+        "MEDIUM": "Woodblock print, ink + color",
+        "DIMENSIONS": "25.7 × 37.9 cm",
+        "MOVEMENT": "Ukiyo-e",
+        "LOCATION": "~100 impressions worldwide"
+      },
+      "fact": "Hokusai was about 70 and broke when he made it, and a print cost roughly a double helping of noodles. It's not a painting — thousands were pulled, which is exactly why it conquered the world.",
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "prussian-blue",
+          "note": "The wave is drawn in a synthetic German pigment, newly imported — a flex of foreign chemistry."
+        },
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "Hokusai drew; separate craftsmen carved and printed. He never touched the final print."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "Patient zero of the print wave that rewired European art."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "starry",
+          "note": "Van Gogh collected ukiyo-e and praised the Wave in letters. His sky is the wave, airborne."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Mt. Fuji is the real subject",
+          "note": "It’s one of ‘Thirty-six Views of Mount Fuji.’ The wave is the photobomb; the mountain is the star."
+        },
+        {
+          "type": "ECHO",
+          "title": "🌊 the emoji",
+          "note": "The wave emoji is modeled on this print — Apple's design is a direct homage. It ships on billions of devices."
+        }
+      ],
+      "more": [
+        "Hokusai changed his artist name more than 30 times and moved house 93 times. The name he kept longest translates roughly to 'Old Man Crazy About Painting.'",
+        "On his deathbed at 89: 'If heaven gives me just ten more years… I shall become a true artist.'"
+      ]
+    },
+    "starry": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "The Starry Night",
+      "byline": {
+        "name": "Vincent van Gogh",
+        "sub": "1853–1890"
+      },
+      "cat": "PAINTING / POST-IMPRESSIONISM",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?width=900",
+      "capRight": "JUNE 1889",
+      "spec": {
+        "YEAR": "June 1889",
+        "MEDIUM": "Oil on canvas",
+        "DIMENSIONS": "73.7 × 92.1 cm",
+        "MOVEMENT": "Post-Impressionism",
+        "LOCATION": "MoMA, New York"
+      },
+      "fact": "Painted from memory inside the Saint-Paul asylum — the village isn't visible from his window. Van Gogh called it a failure in a letter to Theo. It is now, by most measures, the most beloved painting on Earth.",
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "wave",
+          "note": "The sky curls like the wave claw. Van Gogh owned ukiyo-e prints and copied them outright."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "scream",
+          "note": "Same molten anxious sky, four years apart. Two nervous systems painting weather."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "He copied Hiroshige stroke for stroke and told Theo all art should start from Japan."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Impasto",
+          "note": "Paint laid so thick it casts its own shadows. The texture is half the image."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Real turbulence math",
+          "note": "Physicists found the sky’s swirls match Kolmogorov turbulence statistics — actual fluid dynamics, painted by eye."
+        },
+        {
+          "type": "ECHO",
+          "title": "\"Vincent\" — Don McLean",
+          "note": "‘Starry, starry night…’ (1971) turned the painting into a pop lyric that now orbits it forever."
+        }
+      ],
+      "more": [
+        "The brightest 'star' isn't a star — astronomers matched the sky to June 1889 and identified it as Venus, exactly where he painted it.",
+        "The sky runs on Prussian blue and ultramarine — both blues in this archive, swirled into one night."
+      ]
+    },
+    "scream": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "The Scream",
+      "byline": {
+        "name": "Edvard Munch",
+        "sub": "1863–1944"
+      },
+      "cat": "PAINTING / EXPRESSIONISM",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg?width=900",
+      "capRight": "1893",
+      "spec": {
+        "YEAR": "1893 (4 versions)",
+        "MEDIUM": "Oil, tempera, pastel on cardboard",
+        "DIMENSIONS": "91 × 73.5 cm",
+        "MOVEMENT": "Expressionism / Symbolism",
+        "LOCATION": "National Museum, Oslo"
+      },
+      "fact": "The figure isn't screaming — it's covering its ears against a 'scream passing through nature,' as Munch wrote. Everyone reads it backwards, which might be the most Expressionist thing about it.",
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "krakatoa",
+          "note": "One theory says the blood sky is a real memory — the volcano that repainted every sunset on Earth."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "expressionism",
+          "note": "Die Brücke painters treated Munch as a prophet — distortion as emotional truth."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "82 Munch works were purged from German museums as ‘degenerate.’"
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "starry",
+          "note": "The anxious painted sky, four years earlier. Munch saw Van Gogh at the 1889 Paris fair."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Stolen. Twice.",
+          "note": "1994: lifted during the Lillehammer Olympics opening ceremony. 2004: taken at gunpoint in daylight. Both recovered."
+        },
+        {
+          "type": "ECHO",
+          "title": "😱 + Ghostface",
+          "note": "The emoji is a direct cite, and the Scream movie mask was designed from this face. Horror’s favorite painting."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "worlds-fair-1889",
+          "note": "Munch hit Paris on a state grant as the 1889 fair ran — the Scream’s DNA picks up here."
+        }
+      ],
+      "more": [
+        "There's a pencil inscription hidden in the sky: 'Can only have been painted by a madman!' In 2021, handwriting analysis confirmed Munch wrote it himself.",
+        "A pastel version sold for $119.9M in 2012 — at the time, the most ever paid for any artwork at auction."
+      ]
+    },
+    "pearl": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "Girl with a Pearl Earring",
+      "byline": {
+        "name": "Johannes Vermeer",
+        "sub": "1632–1675"
+      },
+      "cat": "PAINTING / DUTCH GOLDEN AGE",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1665_Girl_with_a_Pearl_Earring.jpg?width=900",
+      "capRight": "c. 1665",
+      "spec": {
+        "YEAR": "c. 1665",
+        "MEDIUM": "Oil on canvas",
+        "DIMENSIONS": "44.5 × 39 cm",
+        "MOVEMENT": "Dutch Golden Age",
+        "LOCATION": "Mauritshuis, The Hague"
+      },
+      "fact": "It's not a portrait — it's a 'tronie,' a study of a type, of nobody in particular. And the pearl probably isn't a pearl: none that size existed, and polished tin is the leading theory. The most famous face in Dutch art belongs to no one.",
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "ultramarine",
+          "note": "The headscarf blue is ground Afghan lapis — costlier than gold. Vermeer kept buying it and died in debt."
+        },
+        {
+          "type": "TECHNIQUE",
+          "ref": "camera-obscura",
+          "note": "Soft focus, one light source, photographic depth — the lens-tracing debate starts here."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Sold for 2 guilders",
+          "note": "Bought at auction in 1881 for about the price of dinner, filthy and unattributed."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "The \"Dutch Mona Lisa\"",
+          "note": "The over-the-shoulder gaze does what Leonardo did: eye contact across 350 years, no story attached."
+        },
+        {
+          "type": "ECHO",
+          "title": "Banksy, Bristol harbour",
+          "note": "‘Girl with a Pierced Eardrum’ swaps the pearl for a security alarm box. The tronie becomes street furniture."
+        }
+      ],
+      "more": [
+        "She has no visible eyelashes or eyebrows — 2018 scans found the lashes were painted so finely they've faded, along with a green curtain behind her that has darkened to black."
+      ]
+    },
+    "adele": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "Adele Bloch-Bauer I",
+      "byline": {
+        "name": "Gustav Klimt",
+        "sub": "1862–1918"
+      },
+      "cat": "PAINTING / VIENNA SECESSION",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustav_Klimt_046.jpg?width=900",
+      "capRight": "1907",
+      "spec": {
+        "YEAR": "1907",
+        "MEDIUM": "Oil, gold + silver leaf on canvas",
+        "DIMENSIONS": "140 × 140 cm",
+        "MOVEMENT": "Vienna Secession",
+        "LOCATION": "Neue Galerie, New York"
+      },
+      "fact": "Adele is the only person Klimt ever painted twice in full portrait. Her niece, Maria Altmann, sued the Republic of Austria for it — and won at the US Supreme Court at age 88. In 2006 it sold for $135M, then the highest price ever paid for a painting.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "Seized from the Bloch-Bauer apartment in 1938 and hung in the Belvedere as ‘The Lady in Gold’ — her name erased."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "kiss",
+          "note": "Painted back-to-back with The Kiss at the peak of the gold period."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Republic of Austria v. Altmann",
+          "note": "2004, US Supreme Court: a private citizen can sue a foreign state for stolen art. The precedent still moves paintings today."
+        },
+        {
+          "type": "ECHO",
+          "title": "Woman in Gold (2015)",
+          "note": "Helen Mirren as Maria Altmann. The restitution became the movie; the movie became the argument."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Gold AND silver leaf",
+          "note": "Look close: the shimmer is two metals. The eyes-in-triangles on her dress are Egyptian protective eyes."
+        }
+      ],
+      "more": [
+        "Adele died of meningitis in 1925, at 43. A line in her will asking that the Klimts go to the Austrian state gallery became the legal battleground 73 years later — she never owned them; her husband did."
+      ]
+    },
+    "nazi-loot": {
+      "kind": "EVENT",
+      "title": "Nazi Art Looting",
+      "byline": {
+        "name": "Third Reich, occupied Europe",
+        "sub": "1933–1945"
+      },
+      "cat": "EVENT / CRIME AT CIVILIZATIONAL SCALE",
+      "capRight": "1933–1945",
+      "spec": {
+        "SCALE": "~20% of Europe’s art displaced",
+        "APPARATUS": "ERR task force + forced sales",
+        "SORTING_HOUSE": "Jeu de Paume, Paris",
+        "STATUS": "Thousands of works still missing"
+      },
+      "fact": "At the Jeu de Paume — the Paris museum the Nazis used as a sorting warehouse — a curator named Rose Valland quietly stayed on staff, pretended not to speak German, and secretly logged every crate for four years. Her notes helped recover roughly 60,000 works.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "adele",
+          "note": "The poster case: Klimt’s golden Adele, seized 1938, fought back across 68 years."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "The state exhibition that turned confiscation into public spectacle."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "monuments-men",
+          "note": "The Allied unit that chased it all into the salt mines."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "gurlitt",
+          "note": "The hoard that surfaced in a Munich flat — in 2012."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Rose Valland",
+          "note": "Curator, spy, one of the most decorated women in French history. Kept the ledger that undid the theft."
+        },
+        {
+          "type": "ECHO",
+          "title": "The Washington Principles",
+          "note": "1998: 44 nations agree — softly, non-bindingly — to give things back. Claims are still being fought today."
+        }
+      ],
+      "more": [
+        "Much of it wasn't for selling — Hitler was stockpiling for a planned 'Führermuseum' in his hometown of Linz. The museum was never built; the shopping lists survive."
+      ]
+    },
+    "degenerate-art": {
+      "kind": "EVENT",
+      "title": "Degenerate Art",
+      "byline": {
+        "name": "‘Entartete Kunst’ exhibition, Munich",
+        "sub": "1937"
+      },
+      "cat": "EVENT / STATE VS MODERNISM",
+      "capRight": "1937",
+      "spec": {
+        "WORKS_PURGED": "~16,000 from German museums",
+        "TARGETS": "Expressionism, Dada, Bauhaus, jazz",
+        "ATTENDANCE": "2M+ visitors in Munich",
+        "FATE": "Sold abroad or burned"
+      },
+      "fact": "The exhibition of art the Reich hated was a blockbuster — over two million visitors, roughly three times the attendance of the approved 'Great German Art' show running next door. People queued for hours to see the paintings the state told them to despise.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "Confiscation as ideology first, warehouse-scale theft second."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "scream",
+          "note": "82 Munch works were purged from German collections. Norway’s national painter, labeled degenerate."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "expressionism",
+          "note": "The movement the Reich hated most — which is a kind of review."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "gurlitt",
+          "note": "Hildebrand Gurlitt was one of four dealers licensed to sell the confiscated ‘degenerate’ works abroad."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Vienna, 1907",
+          "note": "The Academy of Fine Arts rejected a young Adolf Hitler twice — the same years Klimt was painting The Kiss across town."
+        },
+        {
+          "type": "ECHO",
+          "title": "Lucerne auction, 1939",
+          "note": "125 confiscated masterworks sold to foreign buyers at the Grand Hotel. Museums still hold the receipts."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "bauhaus",
+          "note": "The Reich forced the school shut in 1933, then hung its work here in 1937. The diaspora designed the rest of the century anyway."
+        }
+      ],
+      "more": [
+        "The works were hung crooked, crowded, and graffitied with the prices museums had paid — modern art framed as taxpayer fraud. The hanging style is still studied as weaponized curation."
+      ]
+    },
+    "monuments-men": {
+      "kind": "EVENT",
+      "title": "The Monuments Men",
+      "byline": {
+        "name": "Allied MFAA unit",
+        "sub": "1943–1946"
+      },
+      "cat": "EVENT / ART RECOVERY AT WAR",
+      "capRight": "1943–1946",
+      "spec": {
+        "PERSONNEL": "~350 from 13 nations",
+        "PROFILE": "Curators, architects, artists in uniform",
+        "BIG_FIND": "Altaussee salt mine, Austria",
+        "RECOVERED": "Millions of objects"
+      },
+      "fact": "Inside the Altaussee salt mine the unit found more than 6,500 paintings — Vermeer, Michelangelo's Bruges Madonna, the Ghent Altarpiece — stored next to crates of demolition explosives the local Nazi gauleiter had ordered placed there. Miners had sabotaged the detonation order.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "The cleanup crew for the largest art theft in history."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The Ghent Altarpiece",
+          "note": "The most stolen artwork of all time — taken 13 times, by Napoleon and Hitler both. One panel is still missing since 1934."
+        },
+        {
+          "type": "ECHO",
+          "title": "The Monuments Men (2014)",
+          "note": "Clooney’s film made the unit famous 70 years late."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Blue Shield & cultural protection",
+          "note": "Their playbook became the modern doctrine for protecting art in war zones — Ukraine runs it now."
+        }
+      ],
+      "more": [
+        "Eisenhower's 1943 order made field commanders formally responsible for cultural sites — the first order of its kind in a modern army. You still can't bomb a bridge differently for a Tiepolo; now you have to document why."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower%2C_Bradley_and_Patton_inspect_looted_art_HD-SN-99-02758.JPEG?width=900",
+      "imgCaption": "MERKERS MINE, 1945"
+    },
+    "gurlitt": {
+      "kind": "EVENT",
+      "title": "The Gurlitt Trove",
+      "byline": {
+        "name": "Schwabing, Munich",
+        "sub": "seized 2012 · public 2013"
+      },
+      "cat": "EVENT / THE HOARD IN THE FLAT",
+      "capRight": "2012",
+      "spec": {
+        "WORKS_FOUND": "1,500+ (Chagall, Matisse, Dix)",
+        "OWNER": "Cornelius Gurlitt, recluse",
+        "SOURCE": "Father dealt for the Reich",
+        "TRIGGER": "A routine tax check on a train"
+      },
+      "fact": "A routine cash check on a train from Zurich unraveled it: an elderly recluse living alone in a Munich flat with 1,500 artworks the world thought were lost or burned. Cornelius Gurlitt had sold almost nothing. He just lived with them, in the dark, for decades.",
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "Proof the loot never stopped moving — it just went quiet for 70 years."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "His father Hildebrand was one of the four dealers licensed to sell the purged art."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Kunstmuseum Bern",
+          "note": "Gurlitt willed it all to a Swiss museum he’d never visited. It accepted — along with the research burden."
+        },
+        {
+          "type": "ECHO",
+          "title": "Claims still open",
+          "note": "A decade of provenance research later, only a handful of works have been returned. Restitution is slow even when the hoard is found."
+        }
+      ],
+      "more": [
+        "Cornelius told the one journalist who reached him: 'I have never loved anything more than my pictures.' No pension, almost no records, no visitors. The art was the biography."
+      ]
+    },
+    "japonisme": {
+      "kind": "CONCEPT",
+      "title": "Japonisme",
+      "byline": {
+        "name": "Europe discovers the floating world",
+        "sub": "1854–1910s"
+      },
+      "cat": "CONCEPT / A CONTINENT CHANGES ITS EYES",
+      "capRight": "1854 →",
+      "spec": {
+        "TRIGGER": "Japan’s ports forced open, 1853–54",
+        "VECTOR": "Prints as export packing paper",
+        "INFECTED": "Monet, Degas, Van Gogh, Klimt, Wright",
+        "NAMED": "Paris, 1872"
+      },
+      "fact": "Ukiyo-e prints first reached Europe partly as packing paper — crumpled around exported ceramics and tea. The biggest influence on Western art in a century arrived, literally, as trash.",
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "wave",
+          "note": "The print that became the movement’s logo."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "starry",
+          "note": "Van Gogh copied Hiroshige outright and told Theo all art should start from Japan."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "kiss",
+          "note": "Klimt’s flattened, patterned space is Vienna’s dialect of it."
+        },
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "The production system behind the aesthetic."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Perry’s black ships",
+          "note": "US gunboats forced Japan’s ports open in 1853–54. The art movement begins with a naval ultimatum."
+        },
+        {
+          "type": "ECHO",
+          "title": "Monet’s Giverny",
+          "note": "He built a Japanese bridge, planted a print collection’s worth of gardens, and painted his wife in a kimono."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "fallingwater",
+          "note": "Frank Lloyd Wright bankrolled his early career dealing ukiyo-e — then built Japan’s spatial ideas into American architecture."
+        }
+      ],
+      "more": [
+        "The word was coined by French critic Philippe Burty in 1872 — the influence ran for two decades before anyone thought to name it."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent_van_Gogh_-_Courtesan-_after_Eisen_-_Google_Art_Project.jpg?width=900",
+      "imgCaption": "VAN GOGH AFTER EISEN"
+    },
+    "ukiyo-e": {
+      "kind": "TECHNIQUE",
+      "title": "Ukiyo-e",
+      "byline": {
+        "name": "‘Pictures of the floating world’",
+        "sub": "17th–19th c. Japan"
+      },
+      "cat": "TECHNIQUE / POP CULTURE PRINTING",
+      "capRight": "EDO JAPAN",
+      "spec": {
+        "SUBJECT": "Actors, courtesans, landscapes",
+        "SYSTEM": "Artist → carver → printer → publisher",
+        "MATRIX": "Cherry woodblocks",
+        "PRICE": "Noodles, roughly"
+      },
+      "fact": "Ukiyo-e wasn't fine art in Japan — it was pop media: pin-ups, celebrity portraits, travel posters. And Hokusai coined the word 'manga' for his sketchbooks. The lineage from the Great Wave to anime is one unbroken line.",
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "wave",
+          "note": "The most famous product of the system."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "Export packing paper → European art revolution."
+        },
+        {
+          "type": "ECHO",
+          "title": "Manga & anime",
+          "note": "Hokusai’s word, Hokusai’s line. Japan’s biggest cultural export still runs on ukiyo-e DNA."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Cherry wood blocks",
+          "note": "Hard enough for hair-thin lines, soft enough to carve. One block per color, registered by hand."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Hiroshige’s Tōkaidō",
+          "note": "The other giant: 53 stations of the highway to Kyoto — Edo Japan’s greatest road-trip series."
+        }
+      ],
+      "more": [
+        "Every print carries government censor seals — Edo publishers needed approval stamps, and today those seals are how prints get dated."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshige_Atake_sous_une_averse_soudaine.jpg?width=900",
+      "imgCaption": "HIROSHIGE, 1857"
+    },
+    "prussian-blue": {
+      "kind": "MATERIAL",
+      "title": "Prussian Blue",
+      "byline": {
+        "name": "The first synthetic pigment",
+        "sub": "Berlin, c. 1706"
+      },
+      "cat": "MATERIAL / ACCIDENTAL CHEMISTRY",
+      "capRight": "c. 1706",
+      "spec": {
+        "ORIGIN": "A contaminated batch of red dye",
+        "CHEMISTRY": "Iron ferrocyanide",
+        "REACH": "Hokusai, Picasso, blueprints",
+        "BONUS": "WHO essential medicine"
+      },
+      "fact": "Invented by accident when a Berlin dye-maker's potash was contaminated with animal blood — he was trying to make red. The result became the first modern synthetic pigment, the blue of blueprints, and, strangely, a medical antidote for thallium and radioactive cesium poisoning.",
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "wave",
+          "note": "Smuggled-in Berlin chemistry is what makes the Wave that blue."
+        },
+        {
+          "type": "MATERIAL",
+          "ref": "ultramarine",
+          "note": "The ancient blue it undercut — a monopoly six thousand years old, ended by an accident."
+        },
+        {
+          "type": "ECHO",
+          "title": "Blueprints & cyanotypes",
+          "note": "Same compound. Every ‘blueprint’ you’ve ever said out loud is this pigment talking."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The antidote",
+          "note": "On the WHO essential medicines list — it binds heavy metals in the gut. A painting pigment you can be prescribed."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Picasso’s Blue Period",
+          "note": "Cheap, cold, and everywhere by 1901 — the sad years are painted in industrial blue."
+        }
+      ],
+      "more": [
+        "It's in The Starry Night too — Van Gogh's night sky runs on the same Berlin accident as Hokusai's wave."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian_blue.jpg?width=900",
+      "imgCaption": "THE PIGMENT"
+    },
+    "ultramarine": {
+      "kind": "MATERIAL",
+      "title": "Ultramarine",
+      "byline": {
+        "name": "Blue beyond the sea",
+        "sub": "mined ~6,000 years"
+      },
+      "cat": "MATERIAL / THE MONEY PIGMENT",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Lapis-lazuli_hg.jpg?width=900",
+      "capRight": "SAR-E-SANG",
+      "spec": {
+        "SOURCE": "One valley: Sar-e-Sang, Afghanistan",
+        "COST": "Historically above gold",
+        "RESERVED_FOR": "The Virgin Mary’s robe",
+        "SYNTHESIZED": "France, 1826"
+      },
+      "fact": "For centuries virtually all of it came from a single valley in Afghanistan. It cost more than gold, so Renaissance contracts specified — in writing — exactly how much ultramarine a painter had to use, and where. Blue wasn't a color choice; it was a line item.",
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "pearl",
+          "note": "Vermeer’s addiction. He used it even in underlayers no one would see — and died in debt."
+        },
+        {
+          "type": "MATERIAL",
+          "ref": "prussian-blue",
+          "note": "The synthetic upstart that broke the monopoly a century later."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Yves Klein Blue",
+          "note": "1960: Klein patents his own ultramarine binder recipe (IKB) and paints canvases in nothing else. The pigment becomes the artwork."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Contract clauses for blue",
+          "note": "Renaissance commissions itemized ultramarine like saffron. Mary wears blue because blue was the budget."
+        },
+        {
+          "type": "ECHO",
+          "title": "YInMn Blue, 2009",
+          "note": "The first new blue pigment in 200 years, found by accident in an Oregon lab. The hunt never ended."
+        },
+        {
+          "type": "MATERIAL",
+          "ref": "red-lipstick",
+          "note": "The red version of this story: carmine, an empire of crushed beetles."
+        }
+      ],
+      "more": [
+        "Michelangelo left 'The Entombment' unfinished — one theory holds he couldn't source ultramarine, and you did not paint Mary's robe in anything less."
+      ]
+    },
+    "camera-obscura": {
+      "kind": "TECHNIQUE",
+      "title": "Camera Obscura",
+      "byline": {
+        "name": "The dark room",
+        "sub": "antiquity → 1839"
+      },
+      "cat": "TECHNIQUE / SEEING WITH A MACHINE",
+      "capRight": "DARK ROOM",
+      "spec": {
+        "PRINCIPLE": "Pinhole or lens projects the world, inverted",
+        "KNOWN_SINCE": "Aristotle; theorized by Ibn al-Haytham",
+        "SUSPECTS": "Vermeer, Canaletto, Caravaggio",
+        "DESCENDANT": "Photography"
+      },
+      "fact": "The debate over whether Vermeer traced lens projections got its strangest chapter in 2013, when a Texas inventor with no painting training rebuilt Vermeer's room, built the optics, and repainted 'The Music Lesson' — convincingly — on camera ('Tim's Vermeer'). Proof of nothing, and yet.",
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "pearl",
+          "note": "The soft focus and single-source light that started the whole argument."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "The birth of photography",
+          "note": "Niépce and Daguerre didn’t invent the camera — they invented film. The obscura had been waiting 2,000 years for chemistry."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Hockney–Falco thesis",
+          "note": "David Hockney’s heresy: the old masters used optics widely and hid it. Art historians are still angry."
+        },
+        {
+          "type": "ECHO",
+          "title": "Tim’s Vermeer (2013)",
+          "note": "An inventor, a rebuilt room, 130 days of painting. The documentary is the argument."
+        }
+      ],
+      "more": [
+        "Ibn al-Haytham wrote the Book of Optics around 1011–1021, reportedly while feigning madness to escape a Cairo caliph's death sentence. House arrest, dark room, scientific revolution."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Camera_obscura.jpg?width=900",
+      "imgCaption": "THE PRINCIPLE"
+    },
+    "krakatoa": {
+      "kind": "EVENT",
+      "title": "Krakatoa",
+      "byline": {
+        "name": "Sunda Strait, Indonesia",
+        "sub": "27 Aug 1883"
+      },
+      "cat": "EVENT / THE SKY CHANGES COLOR",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa_eruption_lithograph.jpg?width=900",
+      "capRight": "1883",
+      "spec": {
+        "BLAST": "Loudest sound in recorded history",
+        "HEARD": "4,800 km away",
+        "AEROSOLS": "Global blood-red sunsets for months",
+        "TOLL": "36,000+ lives"
+      },
+      "fact": "The explosion was heard 4,800 kilometers away — sailors 60 km out had their eardrums ruptured. For months afterward, volcanic aerosols turned sunsets blood-red worldwide; fire brigades in New York were called out for skies that looked like burning buildings.",
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "scream",
+          "note": "One theory: Munch’s sky is a real Oslo sunset, remembered from the Krakatoa winter."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Tambora, 1815",
+          "note": "The other art-making volcano: its ‘year without a summer’ trapped Mary Shelley indoors — Frankenstein is volcanic weather."
+        },
+        {
+          "type": "ECHO",
+          "title": "The first global media event",
+          "note": "Telegraph cables carried the eruption worldwide in hours. The planet consumed a disaster together for the first time."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Aerosol optics",
+          "note": "Sulfate particles scatter short wavelengths — the physics of why catastrophe photographs beautifully."
+        }
+      ],
+      "more": [
+        "The pressure wave circled the Earth three and a half times — barometers in every capital recorded the planet ringing like a bell for five days."
+      ]
+    },
+    "expressionism": {
+      "kind": "CONCEPT",
+      "title": "Expressionism",
+      "byline": {
+        "name": "Paint the feeling, not the retina",
+        "sub": "c. 1905–1933"
+      },
+      "cat": "CONCEPT / DISTORTION AS TRUTH",
+      "capRight": "c. 1905 →",
+      "spec": {
+        "BORN": "Dresden & Munich (Die Brücke, Der Blaue Reiter)",
+        "METHOD": "Color and form bent to inner state",
+        "ENEMIES": "Academies, then the Reich",
+        "HALF_LIFE": "Cinema, comics, everything"
+      },
+      "fact": "The founding move: if the world feels wrong, paint it wrong — accuracy to the nervous system over accuracy to the eye. It made Expressionism the first movement a government would try to exterminate by exhibition.",
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "scream",
+          "note": "Painted a decade early, adopted as the movement’s founding document."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "starry",
+          "note": "The other precursor: weather as inner state, 1889."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "The movement the Reich hated most — purged, mocked, and accidentally made immortal."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Die Brücke, Dresden 1905",
+          "note": "Four architecture students, one manifesto, woodcuts like alarms. The bridge from Munch to modernism."
+        },
+        {
+          "type": "ECHO",
+          "title": "The Cabinet of Dr. Caligari",
+          "note": "1920: Expressionism walks into cinema — painted shadows, impossible angles — and never leaves. Every noir owes it."
+        }
+      ],
+      "more": [
+        "Ernst Ludwig Kirchner, Die Brücke's founder, was declared degenerate in 1937 — over 600 works confiscated. He died by suicide the following year."
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirchner%20-%20Street%2C%20Dresden%2C%201908%2C%2012.1951.jpg?width=900",
+      "imgCaption": "KIRCHNER, STREET, DRESDEN"
+    },
+    "eiffel": {
+      "kind": "ARCHITECTURE",
+      "pullable": true,
+      "title": "The Eiffel Tower",
+      "byline": {
+        "name": "Gustave Eiffel et Cie",
+        "sub": "design: Koechlin, Nouguier, Sauvestre"
+      },
+      "cat": "ARCHITECTURE / THE TEMPORARY TOWER",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour_Eiffel_Wikimedia_Commons.jpg?width=900",
+      "capRight": "1887–1889",
+      "spec": {
+        "HEIGHT": "312 m — world’s tallest for 41 years",
+        "STRUCTURE": "18,038 iron pieces, 2.5M rivets",
+        "PERMIT": "Built to stand 20 years",
+        "BUILD_TIME": "2 years, 2 months"
+      },
+      "fact": "Paris's artistic establishment hated it — 300 names, Maupassant among them, signed a protest against the 'useless and monstrous' tower. Maupassant then reportedly ate lunch in its restaurant daily: the only place in Paris he couldn't see it from.",
+      "more": [
+        "It was scheduled for demolition in 1909. Radio saved it — the antenna made the tower militarily useful, and 'temporary' quietly became permanent.",
+        "Eiffel kept a small private apartment near the top — wallpapered, furnished, used to receive Thomas Edison. It's still there."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "worlds-fair-1889",
+          "note": "Built as the entrance arch to the 1889 fair — the exhibit that outlived the exhibition."
+        },
+        {
+          "type": "MATERIAL",
+          "title": "Puddled iron, not steel",
+          "note": "Chosen for predictable behavior. The math was so exact all 18,038 pieces were pre-drilled off-site and riveted like a kit."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "The skyscraper race",
+          "note": "It proved metal-frame height was buildable — Chrysler and Empire State are its grandchildren."
+        },
+        {
+          "type": "ECHO",
+          "title": "The icon template",
+          "note": "The most-visited paid monument on Earth, and the template for every city’s ‘we need a tower’ ambition since."
+        }
+      ]
+    },
+    "fallingwater": {
+      "kind": "ARCHITECTURE",
+      "pullable": true,
+      "title": "Fallingwater",
+      "byline": {
+        "name": "Frank Lloyd Wright",
+        "sub": "1867–1959 · built 1935–37"
+      },
+      "cat": "ARCHITECTURE / HOUSE OVER A WATERFALL",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Fallingwater3.jpg?width=900",
+      "capRight": "1935–1937",
+      "spec": {
+        "ARCHITECT": "Frank Lloyd Wright, age 67",
+        "CLIENT": "Edgar Kaufmann, Pittsburgh",
+        "SITE": "Bear Run, Pennsylvania",
+        "THE_MOVE": "On the falls, not facing them"
+      },
+      "fact": "Legend says Wright drew it in about two hours — while Kaufmann was already driving the 140 miles to check on a design that did not yet exist. The drawings produced in that panic are essentially what got built.",
+      "more": [
+        "The famous cantilevers were under-reinforced. Kaufmann's engineers secretly added steel; Wright raged — and they were still right: by 2002 the sagging terraces needed an $11.5M post-tensioning rescue.",
+        "Kaufmann wanted a house with a view of his favorite waterfall. Wright put the house ON the waterfall — you can't see it from inside, you live inside its sound instead."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "Wright bankrolled his early career dealing ukiyo-e prints — some years he made more selling Japan than architecture. The horizontals are Japan, translated."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "The cantilever",
+          "note": "Reinforced-concrete trays anchored in bedrock, floating over the stream with no visible support — the trick that makes the photograph."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Organic architecture",
+          "note": "Wright’s doctrine: build with the site, not on it. This is the manifesto, poured in concrete."
+        },
+        {
+          "type": "ECHO",
+          "title": "The pilgrimage house",
+          "note": "Timed tickets, a LEGO Architecture kit, every architecture syllabus — the most famous private house in America."
+        }
+      ]
+    },
+    "bauhaus": {
+      "kind": "DESIGN",
+      "pullable": true,
+      "title": "The Bauhaus",
+      "byline": {
+        "name": "Founded by Walter Gropius",
+        "sub": "Weimar → Dessau → Berlin"
+      },
+      "cat": "DESIGN / THE SCHOOL THAT DESIGNED THE CENTURY",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Bauhaus-Dessau_main_building.jpg?width=900",
+      "capRight": "1919–1933",
+      "spec": {
+        "FOUNDED": "Weimar, 1919",
+        "CREED": "Art + craft + industry, unified",
+        "LIFESPAN": "14 years, 3 cities, 3 directors",
+        "CLOSED": "Under Nazi pressure, 1933"
+      },
+      "fact": "The school existed for 14 years and graduated fewer people than a mid-size high school — then its diaspora designed everything: your sans-serif type, your tubular-steel chair, your white-walled apartment, half of Tel Aviv, and the look of the word 'modern.'",
+      "more": [
+        "The founding manifesto promised equality of the sexes; in practice most women were steered into the weaving workshop. The weavers — Anni Albers above all — then produced some of the most influential work the school ever made.",
+        "When the Nazis forced it shut in 1933, the faculty scattered: Gropius and Breuer to Harvard, Mies to Chicago, Moholy-Nagy to the New Bauhaus. Closing the school is what globalized it."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "Purged and mocked in the 1937 show — the Reich correctly identified its enemy."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "helvetica",
+          "note": "The rationalist type culture that made a perfectly neutral Swiss sans inevitable."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "IKEA & the flat-pack world",
+          "note": "Good design, mass production, low cost — the Bauhaus pitch, operationalized into a global furniture empire."
+        },
+        {
+          "type": "ECHO",
+          "title": "White City, Tel Aviv",
+          "note": "Émigré architects built ~4,000 Bauhaus-style buildings there — the largest concentration on Earth, UNESCO-listed."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "Tubular steel",
+          "note": "Breuer looked at his bicycle handlebars and made the Wassily chair — furniture from plumbing, still in production."
+        }
+      ]
+    },
+    "helvetica": {
+      "kind": "DESIGN",
+      "pullable": true,
+      "title": "Helvetica",
+      "byline": {
+        "name": "Max Miedinger + Eduard Hoffmann",
+        "sub": "Haas Type Foundry"
+      },
+      "cat": "DESIGN / THE FONT THAT DISAPPEARED INTO EVERYTHING",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/HelveticaSpecimenCH.svg?width=900",
+      "capRight": "1957",
+      "spec": {
+        "BORN": "Münchenstein, Switzerland, 1957",
+        "ORIGINAL_NAME": "Neue Haas Grotesk",
+        "RENAMED": "‘Helvetica’ = pseudo-Latin for Swiss",
+        "CLIENTS": "NYC Subway, IRS, NASA, Apple…"
+      },
+      "fact": "It was renamed 'Helvetica' purely so sales reps could market Swiss neutrality as a product. It worked so well the typeface became the definition of 'no opinion' — which is itself the strongest opinion in the history of type.",
+      "more": [
+        "The NYC subway runs on it, the IRS taxes you in it, NASA flew it on the Space Shuttle, and Apple shipped it as a system font for years. In 2007 a feature-length documentary about it became an unlikely hit.",
+        "Arial exists because Microsoft wouldn't pay the license — a metrically identical stand-in drawn to occupy exactly the same space. Designers can tell at a glance, and they judge."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "bauhaus",
+          "note": "Same rationalist lineage — type stripped of story, grid over gesture."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Swiss International Style",
+          "note": "Grids, asymmetry, objective photography — the cool-headed system this face fronts."
+        },
+        {
+          "type": "ECHO",
+          "title": "Helvetica (2007)",
+          "note": "Gary Hustwit made a hit film about a font. The font is the main character and has no lines."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Arial, the understudy",
+          "note": "The license-dodging twin: same widths, different curves, eternal contempt."
+        }
+      ]
+    },
+    "chanel-lbd": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "The Little Black Dress",
+      "byline": {
+        "name": "Gabrielle ‘Coco’ Chanel",
+        "sub": "1883–1971"
+      },
+      "cat": "FASHION / BLACK, WEAPONIZED",
+      "capRight": "1926",
+      "spec": {
+        "DEBUT": "Vogue, October 1926",
+        "NICKNAME": "‘Chanel’s Ford’",
+        "BEFORE": "Black = mourning + servants’ uniforms",
+        "AFTER": "The default dress of the century"
+      },
+      "fact": "Vogue called it 'Chanel's Ford' — a dress like the Model T: simple, black, for everyone. The radical part was the color: she took black, reserved for grief and household staff, and turned it into the most elegant thing a woman could wear.",
+      "more": [
+        "Chanel spent WWII living at the Ritz with a German intelligence officer and carried an Abwehr agent number — F-7124, codename Westminster. Fashion history spent decades not mentioning it; the archives opened, and now it does.",
+        "Givenchy's black dress on Audrey Hepburn in 'Breakfast at Tiffany's' (1961) is the LBD's coronation — it sold at auction in 2006 for £467,200."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "title": "Mourning dress, inverted",
+          "note": "Victorian widows wore black by rulebook. Chanel stole the palette of grief and sold it as freedom."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Minimalism as luxury",
+          "note": "Removing decoration as the status move — a straight line from 1926 to quiet-luxury discourse."
+        },
+        {
+          "type": "ECHO",
+          "title": "Breakfast at Tiffany’s",
+          "note": "Hepburn + Givenchy, 1961: the most reproduced garment in film."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Coco’s war",
+          "note": "Agent F-7124. The industry’s most uncomfortable file, open since the 2010s."
+        }
+      ]
+    },
+    "jordan1": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Air Jordan 1",
+      "byline": {
+        "name": "Nike × Michael Jordan",
+        "sub": "design: Peter Moore"
+      },
+      "cat": "FASHION / THE SHOE THAT BUILT A MARKET",
+      "capRight": "1985",
+      "spec": {
+        "RELEASED": "1985, $65",
+        "COLORWAY": "‘Bred’ — black + red",
+        "THE_FINE": "$5,000 per game, allegedly",
+        "RESALE": "A multi-billion-$ market, anchored here"
+      },
+      "fact": "The 'banned by the NBA' story that sold the shoe is mostly marketing — the league's letter was about a different shoe entirely, and Jordan barely wore the black-and-red 1s in games. Nike ran the ban ads anyway. The myth outsold the facts, permanently.",
+      "more": [
+        "It created the sneakerhead resale economy: a $65 shoe from 1985 now anchors a market with its own exchanges, authentication labs, and price charts — footwear as an asset class.",
+        "Peter Moore designed it in roughly two weeks, and sketched the Air Jordan 'wings' logo on a napkin. He said later he never expected anyone to care past one season."
+      ],
+      "connections": [
+        {
+          "type": "ECHO",
+          "ref": "hiphop",
+          "note": "Sneakers became hip-hop’s uniform and hip-hop became sneaker marketing — one economy, two turntables."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Streetwear",
+          "note": "The drop, the queue, the flip — Supreme and everything after runs the Jordan playbook."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The ban that wasn’t",
+          "note": "The NBA letter concerned the Air Ship. The retcon is so complete the shoe is literally nicknamed ‘Banned.’"
+        },
+        {
+          "type": "ECHO",
+          "title": "StockX & the sneaker exchange",
+          "note": "Bid/ask spreads for shoes. The Jordan 1 is the blue chip."
+        }
+      ]
+    },
+    "red-lipstick": {
+      "kind": "BEAUTY",
+      "pullable": true,
+      "title": "Red Lipstick",
+      "byline": {
+        "name": "Everyone, everywhere",
+        "sub": "~5,000 years"
+      },
+      "cat": "BEAUTY / WAR PAINT, LITERALLY",
+      "capRight": "3000 BCE →",
+      "spec": {
+        "EARLIEST": "Sumer — crushed gemstones + lead",
+        "CLEOPATRA": "Carmine, from cochineal insects",
+        "WWII": "Kept in production as a morale good",
+        "TODAY": "The ‘lipstick index’"
+      },
+      "fact": "During WWII the US government kept lipstick in production as a wartime morale necessity — and since Hitler famously hated red lipstick, wearing it read as defiance. Elizabeth Arden designed 'Montezuma Red' to match the trim on women Marines' uniforms.",
+      "more": [
+        "In 1912, New York suffragettes wore red lipstick as a public shock tactic — by most tellings, Elizabeth Arden handed tubes to marchers. Respectable women didn't paint; that was the point.",
+        "Cleopatra's red was carmine — crushed cochineal insects — and it's still in lipstick and food today. Check labels for 'carmine' or E120: same bug."
+      ],
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "ultramarine",
+          "note": "Carmine: a red empire built on Mexican beetles — the same shape of story as the blue monopoly from one Afghan valley."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Suffragette red",
+          "note": "1912: cosmetics as protest signage. The tube fits in a fist."
+        },
+        {
+          "type": "ECHO",
+          "title": "The lipstick index",
+          "note": "Leonard Lauder’s recession theory: when the economy drops, small luxuries spike. Economists argue; marketers never stopped quoting it."
+        },
+        {
+          "type": "ECHO",
+          "title": "MAC Ruby Woo",
+          "note": "The best-selling shade on Earth is still a blue-red — a direct descendant of the WWII formulas."
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/We_Can_Do_It!.jpg?width=900",
+      "imgCaption": "WWII MORALE POSTER"
+    },
+    "warhol-soup": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "Campbell’s Soup Cans",
+      "byline": {
+        "name": "Andy Warhol",
+        "sub": "1928–1987"
+      },
+      "cat": "POP ART / 32 CANS ON A SHELF",
+      "capRight": "1962",
+      "spec": {
+        "WORKS": "32 canvases — one per flavor",
+        "DEBUT": "Ferus Gallery, Los Angeles, 1962",
+        "PRICE_THEN": "$100 each",
+        "LOCATION": "MoMA, as a set"
+      },
+      "fact": "At the 1962 debut, a rival gallery down the street stacked real Campbell's cans in its window: 'the real thing, 33¢.' The joke aged badly — MoMA now owns all 32 canvases and displays them like supermarket shelving, which was the point all along.",
+      "more": [
+        "Warhol ate Campbell's soup for lunch nearly every day for 20 years. The most radical subject he could find was his own routine.",
+        "He hand-painted the first cans, then switched to silkscreen — mechanical reproduction as both technique and message. Asked why, he said he wanted to be a machine."
+      ],
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "Art as reproducible pop media, printed in editions — Edo Japan ran this playbook 150 years earlier."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "hiphop",
+          "note": "The appropriation lineage: soup cans → sampling. Take what’s already everywhere, and sign it."
+        },
+        {
+          "type": "INFLUENCE",
+          "title": "Duchamp’s readymades",
+          "note": "The urinal made context the artwork in 1917. Warhol industrialized the insight."
+        },
+        {
+          "type": "HISTORY",
+          "title": "Shot at the Factory",
+          "note": "Valerie Solanas shot Warhol in 1968. He survived in a surgical corset and said he was afraid of his own art after."
+        },
+        {
+          "type": "ECHO",
+          "title": "Brand as art, art as brand",
+          "note": "Campbell’s eventually leaned in — limited-edition Warhol cans, sold at Target, 2012."
+        }
+      ]
+    },
+    "hiphop": {
+      "kind": "POP",
+      "pullable": true,
+      "title": "The Birth of Hip-Hop",
+      "byline": {
+        "name": "DJ Kool Herc + Cindy Campbell",
+        "sub": "1520 Sedgwick Ave, Bronx"
+      },
+      "cat": "POP / THE PARTY THAT BECAME A GENRE",
+      "capRight": "AUG 11 1973",
+      "spec": {
+        "ORIGIN": "A back-to-school party, 25¢ at the door",
+        "INVENTION": "The breakbeat — loop the drum break",
+        "ELEMENTS": "DJing, MCing, breaking, graffiti",
+        "NOW": "The most-streamed genre on Earth"
+      },
+      "fact": "It starts with a sister's fundraiser: Cindy Campbell rented her building's rec room, charged a quarter for girls, fifty cents for guys, and her brother DJ'd. Herc's trick — two copies of the same record, looping the drum break — is the big bang. 1520 Sedgwick Avenue is now officially recognized as the genre's birthplace.",
+      "more": [
+        "Sampling is collage with copyright lawyers: the same appropriation move as Warhol's soup cans, run through turntables. The 1991 Biz Markie ruling — 'Thou shalt not steal' — changed the sound of the genre overnight.",
+        "Four elements were codified early: DJing, MCing, breaking, graffiti. The genre defined itself as a full culture — with its own visual art and dance — before the music industry ever touched it."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "warhol-soup",
+          "note": "Appropriation as art — take the existing culture, recontextualize, repeat. Warhol did it with soup; producers did it with James Brown."
+        },
+        {
+          "type": "ECHO",
+          "ref": "jordan1",
+          "note": "The uniform. Run-DMC’s ‘My Adidas’ landed a seven-figure Adidas deal in 1986 — the first non-athlete sneaker deal, and the template."
+        },
+        {
+          "type": "HISTORY",
+          "title": "1520 Sedgwick Avenue",
+          "note": "Tenants fought speculators to save the building in the 2000s and won — landmark status via block party."
+        },
+        {
+          "type": "TECHNIQUE",
+          "title": "The breakbeat",
+          "note": "Two copies, one break, extended forever. The turntable becomes an instrument."
+        },
+        {
+          "type": "ECHO",
+          "title": "Graffiti → gallery",
+          "note": "From subway cars to Basquiat and street-art auctions — the visual element took the same trip uptown."
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1520%20Sedwick%20Ave.%2C%20Bronx%2C%20New%20York1.JPG?width=900",
+      "imgCaption": "1520 SEDGWICK AVE"
+    },
+    "worlds-fair-1889": {
+      "kind": "EVENT",
+      "pullable": true,
+      "title": "The 1889 World’s Fair",
+      "byline": {
+        "name": "Exposition Universelle",
+        "sub": "Paris"
+      },
+      "cat": "EVENT / THE FAIR THAT LEFT A TOWER BEHIND",
+      "capRight": "1889",
+      "spec": {
+        "OCCASION": "100 years since the Revolution",
+        "VISITORS": "32 million",
+        "THE_GATE": "A ‘temporary’ iron tower",
+        "LEGACY": "The tower stayed; the fair evaporated"
+      },
+      "fact": "Thirty-two million people visited — when France's entire population was 38 million. The entrance arch, a temporary iron tower the artists hated, is the only major structure left, and is now shorthand for the whole country.",
+      "more": [
+        "Debussy heard a Javanese gamelan orchestra at this fair and it rewired him — the scales and shimmer surface in his music for the rest of his life. The same fair circuit was feeding painters Japan.",
+        "The dark inventory: 'colonial villages' exhibited human beings from French colonies as living displays. The century's proudest showcase of progress included people behind fences."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "eiffel",
+          "note": "The gate that outlived the party."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "World’s fairs were Japonisme’s supply line — Japan’s pavilions primed a generation of painters."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "scream",
+          "note": "Munch was in Paris on a state grant as the fair ran — Van Gogh, Gauguin, and the modern city hit him at once."
+        },
+        {
+          "type": "ECHO",
+          "ref": "wave",
+          "note": "Debussy’s gamelan revelation here feeds the same current that put the Great Wave on La Mer’s cover in 1905."
+        },
+        {
+          "type": "HISTORY",
+          "title": "The human zoos",
+          "note": "The ‘colonial exhibition’ problem — 1889’s shame, finally in the textbooks."
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Exposition%20universelle%20de%201889%20Vue%20g%C3%A9n%C3%A9rale%20du%20jardin%20central%2C%20le%20palais%20du%20Trocad%C3%A9ro%20dans%20le%20fond%2C%207%C3%A8me%20et%2016%C3%A8me%20arro%2C%20PH76776.jpg?width=900",
+      "imgCaption": "PARIS, 1889"
+    }
+  }
+}
