@@ -107,7 +107,70 @@
     grid-template-columns:minmax(0,46%) minmax(0,54%);
     opacity:1;transition:opacity .35s cubic-bezier(.16,1,.3,1);
   }
-  #cardView.hidden,#mapView.hidden{opacity:0;pointer-events:none}
+  #cardView.hidden,#mapView.hidden,#homeView.hidden{opacity:0;pointer-events:none}
+
+  /* ---------- HOME ---------- */
+  #homeView{
+    position:absolute;inset:0;overflow-y:auto;
+    opacity:1;transition:opacity .35s cubic-bezier(.16,1,.3,1);
+  }
+  .home-wrap{max-width:1180px;margin:0 auto;padding:clamp(20px,4vw,64px)}
+  .hero{
+    display:grid;grid-template-columns:1.05fr .95fr;
+    gap:clamp(24px,4vw,60px);align-items:center;
+    min-height:min(62vh,560px);
+  }
+  .eyebrow{font-size:11px;letter-spacing:.22em;color:var(--pink);text-transform:uppercase;margin-bottom:20px}
+  .hero h1{
+    font-family:var(--disp);font-weight:700;
+    font-size:clamp(38px,5.6vw,80px);line-height:.94;
+    text-transform:uppercase;
+  }
+  .hero h1 em{color:var(--acid);font-style:normal}
+  .hero .sub{margin-top:24px;font-size:13.5px;line-height:1.85;color:var(--ink-dim);max-width:56ch}
+  .hero .sub b{color:var(--ink);font-weight:500}
+  .hero-ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;align-items:center}
+  #homePull{
+    font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.1em;
+    background:var(--acid);color:#101204;border:none;cursor:pointer;
+    padding:17px 32px;text-transform:uppercase;transition:filter .12s;
+  }
+  #homePull:hover{filter:brightness(1.12)}
+  #homeAtlas{
+    font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.1em;
+    background:transparent;color:var(--ink);border:1px solid var(--line);
+    padding:16px 26px;cursor:pointer;text-transform:uppercase;
+  }
+  #homeAtlas:hover{border-color:var(--acid);color:var(--acid)}
+  #homeDaily{
+    margin-top:22px;font-size:10.5px;letter-spacing:.14em;
+    color:var(--ink-faint);text-transform:uppercase;cursor:pointer;width:fit-content;
+  }
+  #homeDaily b{color:var(--acid);font-weight:500}
+  #homeDaily:hover{color:var(--ink-dim)}
+  .globe-pane{display:flex;align-items:center;justify-content:center;position:relative;min-height:280px}
+  #globe{display:block}
+  .feat-row{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);
+    margin-top:clamp(28px,5vh,56px);
+  }
+  .feat{background:var(--bg);padding:26px 24px}
+  .feat .n{font-family:var(--disp);font-weight:700;color:var(--acid);font-size:12px;letter-spacing:.14em;margin-bottom:12px}
+  .feat h3{font-family:var(--disp);font-weight:600;font-size:15px;text-transform:uppercase;margin-bottom:9px}
+  .feat p{font-size:12px;line-height:1.75;color:var(--ink-dim)}
+  .stat-strip{
+    display:flex;justify-content:space-around;flex-wrap:wrap;gap:12px;
+    border:1px solid var(--line);border-top:none;padding:15px 20px;
+    font-size:10px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase;
+    margin-bottom:40px;
+  }
+  .stat-strip b{color:var(--ink);font-weight:500}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;min-height:auto;gap:8px}
+    .globe-pane{order:-1;min-height:0}
+    .feat-row{grid-template-columns:1fr}
+  }
 
   .art-pane{
     position:relative;border-right:1px solid var(--line);
@@ -432,6 +495,46 @@
 
 <div id="stage">
 
+  <!-- HOME -->
+  <div id="homeView" class="hidden">
+    <div class="home-wrap">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">// A culture engine — not a feed</div>
+          <h1>Scroll less.<br><em>Fall deeper.</em></h1>
+          <p class="sub">DIG.ARCHIVE is a rabbit-hole engine for art, design, fashion &amp; culture.
+          Pull one random record — a painting, a sneaker, a scandal — and open the web of
+          <b>real connections</b> behind it: who stole what, who copied whom, which volcano
+          wrote which book. No feed. No algorithm. Just the good kind of falling.</p>
+          <div class="hero-ctas">
+            <button id="homePull">⟳ Pull your first record</button>
+            <button id="homeAtlas">⊞ See the whole map</button>
+          </div>
+          <div id="homeDaily"></div>
+        </div>
+        <div class="globe-pane"><canvas id="globe"></canvas></div>
+      </div>
+      <div class="feat-row">
+        <div class="feat">
+          <div class="n">01 / PULL</div>
+          <h3>One button, zero algorithm</h3>
+          <p>Slot-machine into the archive: Klimt to Kawakubo, Gutenberg to the Air Jordan 1. Every record is a dossier — specs, receipts, and the facts nobody told you.</p>
+        </div>
+        <div class="feat">
+          <div class="n">02 / FALL</div>
+          <h3>Everything is connected</h3>
+          <p>Every record opens a constellation of real links — influence, material, technique, echo, history — and every node opens another. The hole has no bottom.</p>
+        </div>
+        <div class="feat">
+          <div class="n">03 / RECEIPT</div>
+          <h3>Post the hole you fell down</h3>
+          <p>Your descent gets logged. Export the trail as a receipt — proof you went from a sneaker to a 1455 lawsuit in six clicks.</p>
+        </div>
+      </div>
+      <div class="stat-strip" id="statStrip"></div>
+    </div>
+  </div>
+
   <!-- CARD -->
   <div id="cardView">
     <div class="art-pane" id="artPane"></div>
@@ -633,7 +736,7 @@ function openRecord(id, {resetTrail=false, view='card', silent=false}={}){
 /* ================= ROUTER ================= */
 function route(){
   const h = location.hash.replace(/^#\/?/, '');
-  if(!h){ showView('card'); return; }
+  if(!h){ showView('home'); return; }
   if(h==='atlas'){ openAtlas(true); return; }
   const [id, sub] = h.split('/');
   if(!RECORDS[id]) return;
@@ -955,14 +1058,96 @@ function buildLegend(){
 
 /* ================= VIEW SWITCH ================= */
 function showView(v){
+  $('homeView').classList.toggle('hidden', v!=='home');
   $('cardView').classList.toggle('hidden', v!=='card');
   $('mapView').classList.toggle('hidden', v!=='map');
+}
+
+/* ================= GLOBE ================= */
+function initGlobe(){
+  const cv = $('globe'), ctx = cv.getContext('2d');
+  const N = 340, pts = [];
+  for(let i=0;i<N;i++){
+    const y = 1 - (i/(N-1))*2;
+    const r = Math.sqrt(1-y*y);
+    const th = i * 2.399963229728653;   // golden angle
+    pts.push([Math.cos(th)*r, y, Math.sin(th)*r]);
+  }
+  let arcs = [];
+  const newArcs = ()=>{ arcs = Array.from({length:7}, ()=>({
+    a:(Math.random()*N)|0, b:(Math.random()*N)|0, t:Math.random() })); };
+  newArcs(); setInterval(newArcs, 7000);
+
+  let S = 0;
+  function size(){
+    const s = Math.min(cv.parentElement.clientWidth, 460) || 320;
+    const d = window.devicePixelRatio||1;
+    cv.width = s*d; cv.height = s*d;
+    cv.style.width = s+'px'; cv.style.height = s+'px';
+    ctx.setTransform(d,0,0,d,0,0);
+    S = s;
+  }
+  size();
+  window.addEventListener('resize', size);
+
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let rot = 0.6;
+  function frame(){
+    requestAnimationFrame(frame);
+    if($('homeView').classList.contains('hidden')) return;  // draw only when visible
+    if(!reduced) rot += 0.0032;
+    const c = S/2, R = S*0.4;
+    ctx.clearRect(0,0,S,S);
+
+    const halo = ctx.createRadialGradient(c,c,R*0.2, c,c,R*1.3);
+    halo.addColorStop(0,'rgba(212,255,63,0.055)');
+    halo.addColorStop(1,'rgba(212,255,63,0)');
+    ctx.fillStyle = halo; ctx.fillRect(0,0,S,S);
+
+    const cos = Math.cos(rot), sin = Math.sin(rot);
+    const proj = pts.map(([x,y,z])=>{
+      const X = x*cos + z*sin, Z = -x*sin + z*cos;
+      return [c + X*R, c + y*R, Z];
+    });
+    for(const [px,py,Z] of proj){
+      const a = 0.12 + 0.5*(Z+1)/2;
+      ctx.fillStyle = `rgba(201,203,184,${a})`;
+      ctx.fillRect(px, py, Z>0.15?1.8:1.1, Z>0.15?1.8:1.1);
+    }
+    for(const arc of arcs){
+      const A = proj[arc.a], B = proj[arc.b];
+      if(A[2]<-0.25 && B[2]<-0.25) continue;
+      const mx=(A[0]+B[0])/2, my=(A[1]+B[1])/2;
+      const dx=mx-c, dy=my-c, dl=Math.hypot(dx,dy)||1;
+      const cx2 = c + dx/dl*R*1.38, cy2 = c + dy/dl*R*1.38;
+      ctx.strokeStyle = 'rgba(212,255,63,0.32)';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(A[0],A[1]);
+      ctx.quadraticCurveTo(cx2,cy2,B[0],B[1]); ctx.stroke();
+      ctx.fillStyle = '#d4ff3f';
+      ctx.fillRect(A[0]-1.5,A[1]-1.5,3,3);
+      ctx.fillRect(B[0]-1.5,B[1]-1.5,3,3);
+      if(!reduced) arc.t = (arc.t + 0.0045)%1;
+      const t = arc.t, u = 1-t;
+      const px = u*u*A[0] + 2*u*t*cx2 + t*t*B[0];
+      const py = u*u*A[1] + 2*u*t*cy2 + t*t*B[1];
+      ctx.shadowColor = '#ff5ca8'; ctx.shadowBlur = 9;
+      ctx.fillStyle = '#ff5ca8';
+      ctx.beginPath(); ctx.arc(px,py,2.2,0,7); ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+  }
+  requestAnimationFrame(frame);
 }
 
 $('openMap').addEventListener('click', ()=>{ renderMap(currentId); showView('map'); syncHash(`#/${currentId}/map`); });
 $('backBtn').addEventListener('click', ()=>{ showView('card'); syncHash(`#/${currentId}`); });
 $('pullBtn').addEventListener('click', pull);
 $('atlasBtn').addEventListener('click', ()=> openAtlas());
+$('homePull').addEventListener('click', pull);
+$('homeAtlas').addEventListener('click', ()=> openAtlas());
+document.querySelector('.brand').style.cursor = 'pointer';
+document.querySelector('.brand').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); });
 $('closeReceipt').addEventListener('click', ()=> $('receiptOverlay').classList.add('hidden'));
 $('receiptOverlay').addEventListener('click', e=>{ if(e.target.id==='receiptOverlay') e.currentTarget.classList.add('hidden'); });
 $('dlReceipt').addEventListener('click', ()=>{
@@ -1013,9 +1198,19 @@ fetch('records.json')
       trail = saved; currentId = saved[saved.length-1];
     }
 
-    buildLegend(); renderCard(currentId); renderTrail();
+    buildLegend(); renderCard(currentId); renderTrail(); initGlobe();
+
+    $('homeDaily').innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
+    $('homeDaily').onclick = ()=> openRecord(daily, {resetTrail:true});
+    $('statStrip').innerHTML =
+      `<span><b>${IDS.length}</b> RECORDS</span><span><b>5</b> LINK TYPES</span>`+
+      `<span><b>0</b> ADS</span><span><b>0</b> ALGORITHMS</span><span><b>∞</b> DEPTH</span>`+
+      `<span>EXPLORED <b>${visited.size}/${IDS.length}</b></span>`;
+
     if(h==='atlas') openAtlas(true);
-    else if(sub==='map'){ renderMap(currentId); showView('map'); }
+    else if(RECORDS[hid] && sub==='map'){ renderMap(currentId); showView('map'); }
+    else if(RECORDS[hid]) showView('card');
+    else showView('home');
   })
   .catch(()=>{ document.getElementById('ticker').textContent = 'RECORDS.JSON FAILED TO LOAD — SERVE OVER HTTP (npx serve .) OR CHECK DEPLOY'; });
 </script>
