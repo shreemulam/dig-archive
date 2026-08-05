@@ -56,26 +56,14 @@
           "type": "INFLUENCE",
           "ref": "japonisme",
           "note": "The flattened space and patterned robes come from the Japanese print wave flooding Vienna."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Byzantine mosaics, Ravenna",
-          "note": "Klimt visited San Vitale in 1903. The flat gold field around the lovers is lifted from 6th-century mosaic walls."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Gold-leaf gilding",
-          "note": "Same technique as Orthodox icons — bole, leaf, burnish. Sacred tech repurposed for eros."
-        },
-        {
-          "type": "ECHO",
-          "title": "The dorm-poster economy",
-          "note": "Arguably the most reproduced embrace in art history — immersive shows, mugs, a whole Vienna tourism industry."
         }
       ],
       "more": [
         "The couple is probably Klimt and Emilie Flöge, his lifelong companion. He never married her — or anyone — but 'Emilie must come' were reportedly his last words after his stroke.",
-        "He painted in a floor-length blue smock with, by most accounts, nothing underneath. Vienna's most scandalous painter dressed like a monk."
+        "He painted in a floor-length blue smock with, by most accounts, nothing underneath. Vienna's most scandalous painter dressed like a monk.",
+        "Byzantine mosaics, Ravenna — Klimt visited San Vitale in 1903. The flat gold field around the lovers is lifted from 6th-century mosaic walls.",
+        "Gold-leaf gilding — Same technique as Orthodox icons — bole, leaf, burnish. Sacred tech repurposed for eros.",
+        "The dorm-poster economy — Arguably the most reproduced embrace in art history — immersive shows, mugs, a whole Vienna tourism industry."
       ],
       "discourse": [
         {
@@ -137,19 +125,15 @@
           "note": "Van Gogh collected ukiyo-e and praised the Wave in letters. His sky is the wave, airborne."
         },
         {
-          "type": "HISTORY",
-          "title": "Mt. Fuji is the real subject",
-          "note": "It’s one of ‘Thirty-six Views of Mount Fuji.’ The wave is the photobomb; the mountain is the star."
-        },
-        {
           "type": "ECHO",
-          "title": "🌊 the emoji",
-          "note": "The wave emoji is modeled on this print — Apple's design is a direct homage. It ships on billions of devices."
+          "note": "The wave emoji is modeled on this print — Apple's design is a direct homage. It ships on billions of devices.",
+          "ref": "emoji"
         }
       ],
       "more": [
         "Hokusai changed his artist name more than 30 times and moved house 93 times. The name he kept longest translates roughly to 'Old Man Crazy About Painting.'",
-        "On his deathbed at 89: 'If heaven gives me just ten more years… I shall become a true artist.'"
+        "On his deathbed at 89: 'If heaven gives me just ten more years… I shall become a true artist.'",
+        "Mt. Fuji is the real subject — It’s one of ‘Thirty-six Views of Mount Fuji.’ The wave is the photobomb; the mountain is the star."
       ],
       "gallery": [
         {
@@ -226,26 +210,14 @@
           "type": "INFLUENCE",
           "ref": "japonisme",
           "note": "He copied Hiroshige stroke for stroke and told Theo all art should start from Japan."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Impasto",
-          "note": "Paint laid so thick it casts its own shadows. The texture is half the image."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Real turbulence math",
-          "note": "Physicists found the sky’s swirls match Kolmogorov turbulence statistics — actual fluid dynamics, painted by eye."
-        },
-        {
-          "type": "ECHO",
-          "title": "\"Vincent\" — Don McLean",
-          "note": "‘Starry, starry night…’ (1971) turned the painting into a pop lyric that now orbits it forever."
         }
       ],
       "more": [
         "The brightest 'star' isn't a star — astronomers matched the sky to June 1889 and identified it as Venus, exactly where he painted it.",
-        "The sky runs on Prussian blue and ultramarine — both blues in this archive, swirled into one night."
+        "The sky runs on Prussian blue and ultramarine — both blues in this archive, swirled into one night.",
+        "Impasto — Paint laid so thick it casts its own shadows. The texture is half the image.",
+        "Real turbulence math — Physicists found the sky’s swirls match Kolmogorov turbulence statistics — actual fluid dynamics, painted by eye.",
+        "\"Vincent\" — Don McLean — ‘Starry, starry night…’ (1971) turned the painting into a pop lyric that now orbits it forever."
       ],
       "discourse": [
         {
@@ -324,13 +296,13 @@
         },
         {
           "type": "HISTORY",
-          "title": "Stolen. Twice.",
-          "note": "1994: lifted during the Lillehammer Olympics opening ceremony. 2004: taken at gunpoint in daylight. Both recovered."
+          "note": "1994: lifted during the Lillehammer Olympics opening ceremony. 2004: taken at gunpoint in daylight. Both recovered.",
+          "ref": "art-heists"
         },
         {
           "type": "ECHO",
-          "title": "😱 + Ghostface",
-          "note": "The emoji is a direct cite, and the Scream movie mask was designed from this face. Horror’s favorite painting."
+          "note": "The emoji is a direct cite, and the Scream movie mask was designed from this face. Horror’s favorite painting.",
+          "ref": "emoji"
         },
         {
           "type": "HISTORY",
@@ -400,23 +372,19 @@
           "note": "Soft focus, one light source, photographic depth — the lens-tracing debate starts here."
         },
         {
-          "type": "HISTORY",
-          "title": "Sold for 2 guilders",
-          "note": "Bought at auction in 1881 for about the price of dinner, filthy and unattributed."
-        },
-        {
           "type": "INFLUENCE",
-          "title": "The \"Dutch Mona Lisa\"",
-          "note": "The over-the-shoulder gaze does what Leonardo did: eye contact across 350 years, no story attached."
+          "note": "The over-the-shoulder gaze does what Leonardo did: eye contact across 350 years, no story attached.",
+          "ref": "mona-lisa"
         },
         {
           "type": "ECHO",
-          "title": "Banksy, Bristol harbour",
-          "note": "‘Girl with a Pierced Eardrum’ swaps the pearl for a security alarm box. The tronie becomes street furniture."
+          "note": "‘Girl with a Pierced Eardrum’ swaps the pearl for a security alarm box. The tronie becomes street furniture.",
+          "ref": "banksy"
         }
       ],
       "more": [
-        "She has no visible eyelashes or eyebrows — 2018 scans found the lashes were painted so finely they've faded, along with a green curtain behind her that has darkened to black."
+        "She has no visible eyelashes or eyebrows — 2018 scans found the lashes were painted so finely they've faded, along with a green curtain behind her that has darkened to black.",
+        "Sold for 2 guilders — Bought at auction in 1881 for about the price of dinner, filthy and unattributed."
       ],
       "discourse": [
         {
@@ -482,25 +450,13 @@
           "type": "INFLUENCE",
           "ref": "kiss",
           "note": "Painted back-to-back with The Kiss at the peak of the gold period."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Republic of Austria v. Altmann",
-          "note": "2004, US Supreme Court: a private citizen can sue a foreign state for stolen art. The precedent still moves paintings today."
-        },
-        {
-          "type": "ECHO",
-          "title": "Woman in Gold (2015)",
-          "note": "Helen Mirren as Maria Altmann. The restitution became the movie; the movie became the argument."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Gold AND silver leaf",
-          "note": "Look close: the shimmer is two metals. The eyes-in-triangles on her dress are Egyptian protective eyes."
         }
       ],
       "more": [
-        "Adele died of meningitis in 1925, at 43. A line in her will asking that the Klimts go to the Austrian state gallery became the legal battleground 73 years later — she never owned them; her husband did."
+        "Adele died of meningitis in 1925, at 43. A line in her will asking that the Klimts go to the Austrian state gallery became the legal battleground 73 years later — she never owned them; her husband did.",
+        "Republic of Austria v. Altmann — 2004, US Supreme Court: a private citizen can sue a foreign state for stolen art. The precedent still moves paintings today.",
+        "Woman in Gold (2015) — Helen Mirren as Maria Altmann. The restitution became the movie; the movie became the argument.",
+        "Gold AND silver leaf — Look close: the shimmer is two metals. The eyes-in-triangles on her dress are Egyptian protective eyes."
       ],
       "discourse": [
         {
@@ -560,17 +516,13 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Rose Valland",
-          "note": "Curator, spy, one of the most decorated women in French history. Kept the ledger that undid the theft."
-        },
-        {
-          "type": "ECHO",
-          "title": "The Washington Principles",
-          "note": "1998: 44 nations agree — softly, non-bindingly — to give things back. Claims are still being fought today."
+          "note": "Curator, spy, one of the most decorated women in French history. Kept the ledger that undid the theft.",
+          "ref": "rose-valland"
         }
       ],
       "more": [
-        "Much of it wasn't for selling — Hitler was stockpiling for a planned 'Führermuseum' in his hometown of Linz. The museum was never built; the shopping lists survive."
+        "Much of it wasn't for selling — Hitler was stockpiling for a planned 'Führermuseum' in his hometown of Linz. The museum was never built; the shopping lists survive.",
+        "The Washington Principles — 1998: 44 nations agree — softly, non-bindingly — to give things back. Claims are still being fought today."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeu%20de%20Paume%2C%20Jardin%20des%20Tuileries%2C%20Paris%2025%20May%202017.jpg?width=900"
     },
@@ -613,22 +565,14 @@
         },
         {
           "type": "HISTORY",
-          "title": "Vienna, 1907",
-          "note": "The Academy of Fine Arts rejected a young Adolf Hitler twice — the same years Klimt was painting The Kiss across town."
-        },
-        {
-          "type": "ECHO",
-          "title": "Lucerne auction, 1939",
-          "note": "125 confiscated masterworks sold to foreign buyers at the Grand Hotel. Museums still hold the receipts."
-        },
-        {
-          "type": "HISTORY",
           "ref": "bauhaus",
           "note": "The Reich forced the school shut in 1933, then hung its work here in 1937. The diaspora designed the rest of the century anyway."
         }
       ],
       "more": [
-        "The works were hung crooked, crowded, and graffitied with the prices museums had paid — modern art framed as taxpayer fraud. The hanging style is still studied as weaponized curation."
+        "The works were hung crooked, crowded, and graffitied with the prices museums had paid — modern art framed as taxpayer fraud. The hanging style is still studied as weaponized curation.",
+        "Vienna, 1907 — The Academy of Fine Arts rejected a young Adolf Hitler twice — the same years Klimt was painting The Kiss across town.",
+        "Lucerne auction, 1939 — 125 confiscated masterworks sold to foreign buyers at the Grand Hotel. Museums still hold the receipts."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Entartete%20Kunst%20poster%2C%20Berlin%2C%201938.jpg?width=900",
       "discourse": [
@@ -674,22 +618,14 @@
         },
         {
           "type": "HISTORY",
-          "title": "The Ghent Altarpiece",
-          "note": "The most stolen artwork of all time — taken 13 times, by Napoleon and Hitler both. One panel is still missing since 1934."
-        },
-        {
-          "type": "ECHO",
-          "title": "The Monuments Men (2014)",
-          "note": "Clooney’s film made the unit famous 70 years late."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Blue Shield & cultural protection",
-          "note": "Their playbook became the modern doctrine for protecting art in war zones — Ukraine runs it now."
+          "note": "The most stolen artwork of all time — taken 13 times, by Napoleon and Hitler both. One panel is still missing since 1934.",
+          "ref": "ghent-altarpiece"
         }
       ],
       "more": [
-        "Eisenhower's 1943 order made field commanders formally responsible for cultural sites — the first order of its kind in a modern army. You still can't bomb a bridge differently for a Tiepolo; now you have to document why."
+        "Eisenhower's 1943 order made field commanders formally responsible for cultural sites — the first order of its kind in a modern army. You still can't bomb a bridge differently for a Tiepolo; now you have to document why.",
+        "The Monuments Men (2014) — Clooney’s film made the unit famous 70 years late.",
+        "Blue Shield & cultural protection — Their playbook became the modern doctrine for protecting art in war zones — Ukraine runs it now."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower%2C_Bradley_and_Patton_inspect_looted_art_HD-SN-99-02758.JPEG?width=900",
       "imgCaption": "MERKERS MINE, 1945",
@@ -730,20 +666,12 @@
           "type": "HISTORY",
           "ref": "degenerate-art",
           "note": "His father Hildebrand was one of the four dealers licensed to sell the purged art."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Kunstmuseum Bern",
-          "note": "Gurlitt willed it all to a Swiss museum he’d never visited. It accepted — along with the research burden."
-        },
-        {
-          "type": "ECHO",
-          "title": "Claims still open",
-          "note": "A decade of provenance research later, only a handful of works have been returned. Restitution is slow even when the hoard is found."
         }
       ],
       "more": [
-        "Cornelius told the one journalist who reached him: 'I have never loved anything more than my pictures.' No pension, almost no records, no visitors. The art was the biography."
+        "Cornelius told the one journalist who reached him: 'I have never loved anything more than my pictures.' No pension, almost no records, no visitors. The art was the biography.",
+        "Kunstmuseum Bern — Gurlitt willed it all to a Swiss museum he’d never visited. It accepted — along with the research burden.",
+        "Claims still open — A decade of provenance research later, only a handful of works have been returned. Restitution is slow even when the hoard is found."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/CHE%20%E2%80%94%20BE%20%E2%80%94%20Gde.%20Bern%20%E2%80%94%20Bern%20Stadt%20%E2%80%94%20Hodlerstrasse%208%20(Kunstmuseum%20Bern%20%C2%B7%20Kasse)%20Mattes%202022-07-30.jpg?width=900"
     },
@@ -785,14 +713,9 @@
           "note": "The production system behind the aesthetic."
         },
         {
-          "type": "HISTORY",
-          "title": "Perry’s black ships",
-          "note": "US gunboats forced Japan’s ports open in 1853–54. The art movement begins with a naval ultimatum."
-        },
-        {
           "type": "ECHO",
-          "title": "Monet’s Giverny",
-          "note": "He built a Japanese bridge, planted a print collection’s worth of gardens, and painted his wife in a kimono."
+          "note": "He built a Japanese bridge, planted a print collection’s worth of gardens, and painted his wife in a kimono.",
+          "ref": "monet"
         },
         {
           "type": "INFLUENCE",
@@ -801,7 +724,8 @@
         }
       ],
       "more": [
-        "The word was coined by French critic Philippe Burty in 1872 — the influence ran for two decades before anyone thought to name it."
+        "The word was coined by French critic Philippe Burty in 1872 — the influence ran for two decades before anyone thought to name it.",
+        "Perry’s black ships — US gunboats forced Japan’s ports open in 1853–54. The art movement begins with a naval ultimatum."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent_van_Gogh_-_Courtesan-_after_Eisen_-_Google_Art_Project.jpg?width=900",
       "imgCaption": "VAN GOGH AFTER EISEN",
@@ -853,18 +777,8 @@
         },
         {
           "type": "ECHO",
-          "title": "Manga & anime",
-          "note": "Hokusai’s word, Hokusai’s line. Japan’s biggest cultural export still runs on ukiyo-e DNA."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Cherry wood blocks",
-          "note": "Hard enough for hair-thin lines, soft enough to carve. One block per color, registered by hand."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Hiroshige’s Tōkaidō",
-          "note": "The other giant: 53 stations of the highway to Kyoto — Edo Japan’s greatest road-trip series."
+          "note": "Hokusai’s word, Hokusai’s line. Japan’s biggest cultural export still runs on ukiyo-e DNA.",
+          "ref": "manga"
         },
         {
           "type": "TECHNIQUE",
@@ -873,7 +787,9 @@
         }
       ],
       "more": [
-        "Every print carries government censor seals — Edo publishers needed approval stamps, and today those seals are how prints get dated."
+        "Every print carries government censor seals — Edo publishers needed approval stamps, and today those seals are how prints get dated.",
+        "Cherry wood blocks — Hard enough for hair-thin lines, soft enough to carve. One block per color, registered by hand.",
+        "Hiroshige’s Tōkaidō — The other giant: 53 stations of the highway to Kyoto — Edo Japan’s greatest road-trip series."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshige_Atake_sous_une_averse_soudaine.jpg?width=900",
       "imgCaption": "HIROSHIGE, 1857",
@@ -930,25 +846,13 @@
           "type": "MATERIAL",
           "ref": "ultramarine",
           "note": "The ancient blue it undercut — a monopoly six thousand years old, ended by an accident."
-        },
-        {
-          "type": "ECHO",
-          "title": "Blueprints & cyanotypes",
-          "note": "Same compound. Every ‘blueprint’ you’ve ever said out loud is this pigment talking."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The antidote",
-          "note": "On the WHO essential medicines list — it binds heavy metals in the gut. A painting pigment you can be prescribed."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Picasso’s Blue Period",
-          "note": "Cheap, cold, and everywhere by 1901 — the sad years are painted in industrial blue."
         }
       ],
       "more": [
-        "It's in The Starry Night too — Van Gogh's night sky runs on the same Berlin accident as Hokusai's wave."
+        "It's in The Starry Night too — Van Gogh's night sky runs on the same Berlin accident as Hokusai's wave.",
+        "Blueprints & cyanotypes — Same compound. Every ‘blueprint’ you’ve ever said out loud is this pigment talking.",
+        "The antidote — On the WHO essential medicines list — it binds heavy metals in the gut. A painting pigment you can be prescribed.",
+        "Picasso’s Blue Period — Cheap, cold, and everywhere by 1901 — the sad years are painted in industrial blue."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian_blue.jpg?width=900",
       "imgCaption": "THE PIGMENT",
@@ -1009,18 +913,8 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Yves Klein Blue",
-          "note": "1960: Klein patents his own ultramarine binder recipe (IKB) and paints canvases in nothing else. The pigment becomes the artwork."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Contract clauses for blue",
-          "note": "Renaissance commissions itemized ultramarine like saffron. Mary wears blue because blue was the budget."
-        },
-        {
-          "type": "ECHO",
-          "title": "YInMn Blue, 2009",
-          "note": "The first new blue pigment in 200 years, found by accident in an Oregon lab. The hunt never ended."
+          "note": "1960: Klein patents his own ultramarine binder recipe (IKB) and paints canvases in nothing else. The pigment becomes the artwork.",
+          "ref": "yves-klein"
         },
         {
           "type": "MATERIAL",
@@ -1029,7 +923,9 @@
         }
       ],
       "more": [
-        "Michelangelo left 'The Entombment' unfinished — one theory holds he couldn't source ultramarine, and you did not paint Mary's robe in anything less."
+        "Michelangelo left 'The Entombment' unfinished — one theory holds he couldn't source ultramarine, and you did not paint Mary's robe in anything less.",
+        "Contract clauses for blue — Renaissance commissions itemized ultramarine like saffron. Mary wears blue because blue was the budget.",
+        "YInMn Blue, 2009 — The first new blue pigment in 200 years, found by accident in an Oregon lab. The hunt never ended."
       ],
       "discourse": [
         {
@@ -1082,22 +978,14 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "The birth of photography",
-          "note": "Niépce and Daguerre didn’t invent the camera — they invented film. The obscura had been waiting 2,000 years for chemistry."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Hockney–Falco thesis",
-          "note": "David Hockney’s heresy: the old masters used optics widely and hid it. Art historians are still angry."
-        },
-        {
-          "type": "ECHO",
-          "title": "Tim’s Vermeer (2013)",
-          "note": "An inventor, a rebuilt room, 130 days of painting. The documentary is the argument."
+          "note": "Niépce and Daguerre didn’t invent the camera — they invented film. The obscura had been waiting 2,000 years for chemistry.",
+          "ref": "photography"
         }
       ],
       "more": [
-        "Ibn al-Haytham wrote the Book of Optics around 1011–1021, reportedly while feigning madness to escape a Cairo caliph's death sentence. House arrest, dark room, scientific revolution."
+        "Ibn al-Haytham wrote the Book of Optics around 1011–1021, reportedly while feigning madness to escape a Cairo caliph's death sentence. House arrest, dark room, scientific revolution.",
+        "Hockney–Falco thesis — David Hockney’s heresy: the old masters used optics widely and hid it. Art historians are still angry.",
+        "Tim’s Vermeer (2013) — An inventor, a rebuilt room, 130 days of painting. The documentary is the argument."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Camera_obscura.jpg?width=900",
       "imgCaption": "THE PRINCIPLE",
@@ -1147,20 +1035,12 @@
           "type": "HISTORY",
           "note": "Tambora’s ‘year without a summer’ trapped Mary Shelley indoors — Frankenstein is volcanic weather, on paper.",
           "ref": "frankenstein"
-        },
-        {
-          "type": "ECHO",
-          "title": "The first global media event",
-          "note": "Telegraph cables carried the eruption worldwide in hours. The planet consumed a disaster together for the first time."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Aerosol optics",
-          "note": "Sulfate particles scatter short wavelengths — the physics of why catastrophe photographs beautifully."
         }
       ],
       "more": [
-        "The pressure wave circled the Earth three and a half times — barometers in every capital recorded the planet ringing like a bell for five days."
+        "The pressure wave circled the Earth three and a half times — barometers in every capital recorded the planet ringing like a bell for five days.",
+        "The first global media event — Telegraph cables carried the eruption worldwide in hours. The planet consumed a disaster together for the first time.",
+        "Aerosol optics — Sulfate particles scatter short wavelengths — the physics of why catastrophe photographs beautifully."
       ],
       "discourse": [
         {
@@ -1214,18 +1094,14 @@
           "note": "The movement the Reich hated most — purged, mocked, and accidentally made immortal."
         },
         {
-          "type": "INFLUENCE",
-          "title": "Die Brücke, Dresden 1905",
-          "note": "Four architecture students, one manifesto, woodcuts like alarms. The bridge from Munch to modernism."
-        },
-        {
           "type": "ECHO",
-          "title": "The Cabinet of Dr. Caligari",
-          "note": "1920: Expressionism walks into cinema — painted shadows, impossible angles — and never leaves. Every noir owes it."
+          "note": "1920: Expressionism walks into cinema — painted shadows, impossible angles — and never leaves. Every noir owes it.",
+          "ref": "caligari"
         }
       ],
       "more": [
-        "Ernst Ludwig Kirchner, Die Brücke's founder, was declared degenerate in 1937 — over 600 works confiscated. He died by suicide the following year."
+        "Ernst Ludwig Kirchner, Die Brücke's founder, was declared degenerate in 1937 — over 600 works confiscated. He died by suicide the following year.",
+        "Die Brücke, Dresden 1905 — Four architecture students, one manifesto, woodcuts like alarms. The bridge from Munch to modernism."
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirchner%20-%20Street%2C%20Dresden%2C%201908%2C%2012.1951.jpg?width=900",
       "imgCaption": "KIRCHNER, STREET, DRESDEN",
@@ -1268,28 +1144,16 @@
       "fact": "Paris's artistic establishment hated it — 300 names, Maupassant among them, signed a protest against the 'useless and monstrous' tower. Maupassant then reportedly ate lunch in its restaurant daily: the only place in Paris he couldn't see it from.",
       "more": [
         "It was scheduled for demolition in 1909. Radio saved it — the antenna made the tower militarily useful, and 'temporary' quietly became permanent.",
-        "Eiffel kept a small private apartment near the top — wallpapered, furnished, used to receive Thomas Edison. It's still there."
+        "Eiffel kept a small private apartment near the top — wallpapered, furnished, used to receive Thomas Edison. It's still there.",
+        "Puddled iron, not steel — Chosen for predictable behavior. The math was so exact all 18,038 pieces were pre-drilled off-site and riveted like a kit.",
+        "The skyscraper race — It proved metal-frame height was buildable — Chrysler and Empire State are its grandchildren.",
+        "The icon template — The most-visited paid monument on Earth, and the template for every city’s ‘we need a tower’ ambition since."
       ],
       "connections": [
         {
           "type": "HISTORY",
           "ref": "worlds-fair-1889",
           "note": "Built as the entrance arch to the 1889 fair — the exhibit that outlived the exhibition."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Puddled iron, not steel",
-          "note": "Chosen for predictable behavior. The math was so exact all 18,038 pieces were pre-drilled off-site and riveted like a kit."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "The skyscraper race",
-          "note": "It proved metal-frame height was buildable — Chrysler and Empire State are its grandchildren."
-        },
-        {
-          "type": "ECHO",
-          "title": "The icon template",
-          "note": "The most-visited paid monument on Earth, and the template for every city’s ‘we need a tower’ ambition since."
         }
       ],
       "gallery": [
@@ -1353,28 +1217,16 @@
       "fact": "Legend says Wright drew it in about two hours — while Kaufmann was already driving the 140 miles to check on a design that did not yet exist. The drawings produced in that panic are essentially what got built.",
       "more": [
         "The famous cantilevers were under-reinforced. Kaufmann's engineers secretly added steel; Wright raged — and they were still right: by 2002 the sagging terraces needed an $11.5M post-tensioning rescue.",
-        "Kaufmann wanted a house with a view of his favorite waterfall. Wright put the house ON the waterfall — you can't see it from inside, you live inside its sound instead."
+        "Kaufmann wanted a house with a view of his favorite waterfall. Wright put the house ON the waterfall — you can't see it from inside, you live inside its sound instead.",
+        "The cantilever — Reinforced-concrete trays anchored in bedrock, floating over the stream with no visible support — the trick that makes the photograph.",
+        "Organic architecture — Wright’s doctrine: build with the site, not on it. This is the manifesto, poured in concrete.",
+        "The pilgrimage house — Timed tickets, a LEGO Architecture kit, every architecture syllabus — the most famous private house in America."
       ],
       "connections": [
         {
           "type": "INFLUENCE",
           "ref": "japonisme",
           "note": "Wright bankrolled his early career dealing ukiyo-e prints — some years he made more selling Japan than architecture. The horizontals are Japan, translated."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "The cantilever",
-          "note": "Reinforced-concrete trays anchored in bedrock, floating over the stream with no visible support — the trick that makes the photograph."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Organic architecture",
-          "note": "Wright’s doctrine: build with the site, not on it. This is the manifesto, poured in concrete."
-        },
-        {
-          "type": "ECHO",
-          "title": "The pilgrimage house",
-          "note": "Timed tickets, a LEGO Architecture kit, every architecture syllabus — the most famous private house in America."
         }
       ],
       "discourse": [
@@ -1416,7 +1268,10 @@
       "fact": "The school existed for 14 years and graduated fewer people than a mid-size high school — then its diaspora designed everything: your sans-serif type, your tubular-steel chair, your white-walled apartment, half of Tel Aviv, and the look of the word 'modern.'",
       "more": [
         "The founding manifesto promised equality of the sexes; in practice most women were steered into the weaving workshop. The weavers — Anni Albers above all — then produced some of the most influential work the school ever made.",
-        "When the Nazis forced it shut in 1933, the faculty scattered: Gropius and Breuer to Harvard, Mies to Chicago, Moholy-Nagy to the New Bauhaus. Closing the school is what globalized it."
+        "When the Nazis forced it shut in 1933, the faculty scattered: Gropius and Breuer to Harvard, Mies to Chicago, Moholy-Nagy to the New Bauhaus. Closing the school is what globalized it.",
+        "IKEA & the flat-pack world — Good design, mass production, low cost — the Bauhaus pitch, operationalized into a global furniture empire.",
+        "White City, Tel Aviv — Émigré architects built ~4,000 Bauhaus-style buildings there — the largest concentration on Earth, UNESCO-listed.",
+        "Tubular steel — Breuer looked at his bicycle handlebars and made the Wassily chair — furniture from plumbing, still in production."
       ],
       "connections": [
         {
@@ -1428,21 +1283,6 @@
           "type": "INFLUENCE",
           "ref": "helvetica",
           "note": "The rationalist type culture that made a perfectly neutral Swiss sans inevitable."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "IKEA & the flat-pack world",
-          "note": "Good design, mass production, low cost — the Bauhaus pitch, operationalized into a global furniture empire."
-        },
-        {
-          "type": "ECHO",
-          "title": "White City, Tel Aviv",
-          "note": "Émigré architects built ~4,000 Bauhaus-style buildings there — the largest concentration on Earth, UNESCO-listed."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Tubular steel",
-          "note": "Breuer looked at his bicycle handlebars and made the Wassily chair — furniture from plumbing, still in production."
         }
       ],
       "discourse": [
@@ -1500,28 +1340,16 @@
       "fact": "It was renamed 'Helvetica' purely so sales reps could market Swiss neutrality as a product. It worked so well the typeface became the definition of 'no opinion' — which is itself the strongest opinion in the history of type.",
       "more": [
         "The NYC subway runs on it, the IRS taxes you in it, NASA flew it on the Space Shuttle, and Apple shipped it as a system font for years. In 2007 a feature-length documentary about it became an unlikely hit.",
-        "Arial exists because Microsoft wouldn't pay the license — a metrically identical stand-in drawn to occupy exactly the same space. Designers can tell at a glance, and they judge."
+        "Arial exists because Microsoft wouldn't pay the license — a metrically identical stand-in drawn to occupy exactly the same space. Designers can tell at a glance, and they judge.",
+        "Swiss International Style — Grids, asymmetry, objective photography — the cool-headed system this face fronts.",
+        "Helvetica (2007) — Gary Hustwit made a hit film about a font. The font is the main character and has no lines.",
+        "Arial, the understudy — The license-dodging twin: same widths, different curves, eternal contempt."
       ],
       "connections": [
         {
           "type": "INFLUENCE",
           "ref": "bauhaus",
           "note": "Same rationalist lineage — type stripped of story, grid over gesture."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Swiss International Style",
-          "note": "Grids, asymmetry, objective photography — the cool-headed system this face fronts."
-        },
-        {
-          "type": "ECHO",
-          "title": "Helvetica (2007)",
-          "note": "Gary Hustwit made a hit film about a font. The font is the main character and has no lines."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Arial, the understudy",
-          "note": "The license-dodging twin: same widths, different curves, eternal contempt."
         }
       ],
       "discourse": [
@@ -1553,7 +1381,7 @@
           "src": "BSKY",
           "text": "Helvetica the Typeface, the Movie, the Poster",
           "by": "@object.cv",
-          "score": 52,
+          "score": 51,
           "comments": 7,
           "url": "https://bsky.app/profile/object.cv/post/3moy7blcs7s2x"
         }
@@ -1578,29 +1406,13 @@
       "fact": "Vogue called it 'Chanel's Ford' — a dress like the Model T: simple, black, for everyone. The radical part was the color: she took black, reserved for grief and household staff, and turned it into the most elegant thing a woman could wear.",
       "more": [
         "Chanel spent WWII living at the Ritz with a German intelligence officer and carried an Abwehr agent number — F-7124, codename Westminster. Fashion history spent decades not mentioning it; the archives opened, and now it does.",
-        "Givenchy's black dress on Audrey Hepburn in 'Breakfast at Tiffany's' (1961) is the LBD's coronation — it sold at auction in 2006 for £467,200."
+        "Givenchy's black dress on Audrey Hepburn in 'Breakfast at Tiffany's' (1961) is the LBD's coronation — it sold at auction in 2006 for £467,200.",
+        "Mourning dress, inverted — Victorian widows wore black by rulebook. Chanel stole the palette of grief and sold it as freedom.",
+        "Minimalism as luxury — Removing decoration as the status move — a straight line from 1926 to quiet-luxury discourse.",
+        "Breakfast at Tiffany’s — Hepburn + Givenchy, 1961: the most reproduced garment in film.",
+        "Coco’s war — Agent F-7124. The industry’s most uncomfortable file, open since the 2010s."
       ],
       "connections": [
-        {
-          "type": "INFLUENCE",
-          "title": "Mourning dress, inverted",
-          "note": "Victorian widows wore black by rulebook. Chanel stole the palette of grief and sold it as freedom."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Minimalism as luxury",
-          "note": "Removing decoration as the status move — a straight line from 1926 to quiet-luxury discourse."
-        },
-        {
-          "type": "ECHO",
-          "title": "Breakfast at Tiffany’s",
-          "note": "Hepburn + Givenchy, 1961: the most reproduced garment in film."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Coco’s war",
-          "note": "Agent F-7124. The industry’s most uncomfortable file, open since the 2010s."
-        },
         {
           "type": "HISTORY",
           "ref": "schiaparelli",
@@ -1643,7 +1455,9 @@
       "fact": "The 'banned by the NBA' story that sold the shoe is mostly marketing — the league's letter was about a different shoe entirely, and Jordan barely wore the black-and-red 1s in games. Nike ran the ban ads anyway. The myth outsold the facts, permanently.",
       "more": [
         "It created the sneakerhead resale economy: a $65 shoe from 1985 now anchors a market with its own exchanges, authentication labs, and price charts — footwear as an asset class.",
-        "Peter Moore designed it in roughly two weeks, and sketched the Air Jordan 'wings' logo on a napkin. He said later he never expected anyone to care past one season."
+        "Peter Moore designed it in roughly two weeks, and sketched the Air Jordan 'wings' logo on a napkin. He said later he never expected anyone to care past one season.",
+        "The ban that wasn’t — The NBA letter concerned the Air Ship. The retcon is so complete the shoe is literally nicknamed ‘Banned.’",
+        "StockX & the sneaker exchange — Bid/ask spreads for shoes. The Jordan 1 is the blue chip."
       ],
       "connections": [
         {
@@ -1653,18 +1467,8 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Streetwear",
-          "note": "The drop, the queue, the flip — Supreme and everything after runs the Jordan playbook."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The ban that wasn’t",
-          "note": "The NBA letter concerned the Air Ship. The retcon is so complete the shoe is literally nicknamed ‘Banned.’"
-        },
-        {
-          "type": "ECHO",
-          "title": "StockX & the sneaker exchange",
-          "note": "Bid/ask spreads for shoes. The Jordan 1 is the blue chip."
+          "note": "The drop, the queue, the flip — Supreme and everything after runs the Jordan playbook.",
+          "ref": "streetwear"
         },
         {
           "type": "INFLUENCE",
@@ -1699,28 +1503,16 @@
       "fact": "During WWII the US government kept lipstick in production as a wartime morale necessity — and since Hitler famously hated red lipstick, wearing it read as defiance. Elizabeth Arden designed 'Montezuma Red' to match the trim on women Marines' uniforms.",
       "more": [
         "In 1912, New York suffragettes wore red lipstick as a public shock tactic — by most tellings, Elizabeth Arden handed tubes to marchers. Respectable women didn't paint; that was the point.",
-        "Cleopatra's red was carmine — crushed cochineal insects — and it's still in lipstick and food today. Check labels for 'carmine' or E120: same bug."
+        "Cleopatra's red was carmine — crushed cochineal insects — and it's still in lipstick and food today. Check labels for 'carmine' or E120: same bug.",
+        "Suffragette red — 1912: cosmetics as protest signage. The tube fits in a fist.",
+        "The lipstick index — Leonard Lauder’s recession theory: when the economy drops, small luxuries spike. Economists argue; marketers never stopped quoting it.",
+        "MAC Ruby Woo — The best-selling shade on Earth is still a blue-red — a direct descendant of the WWII formulas."
       ],
       "connections": [
         {
           "type": "MATERIAL",
           "ref": "ultramarine",
           "note": "Carmine: a red empire built on Mexican beetles — the same shape of story as the blue monopoly from one Afghan valley."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Suffragette red",
-          "note": "1912: cosmetics as protest signage. The tube fits in a fist."
-        },
-        {
-          "type": "ECHO",
-          "title": "The lipstick index",
-          "note": "Leonard Lauder’s recession theory: when the economy drops, small luxuries spike. Economists argue; marketers never stopped quoting it."
-        },
-        {
-          "type": "ECHO",
-          "title": "MAC Ruby Woo",
-          "note": "The best-selling shade on Earth is still a blue-red — a direct descendant of the WWII formulas."
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/We_Can_Do_It!.jpg?width=900",
@@ -1755,7 +1547,9 @@
       "fact": "At the 1962 debut, a rival gallery down the street stacked real Campbell's cans in its window: 'the real thing, 33¢.' The joke aged badly — MoMA now owns all 32 canvases and displays them like supermarket shelving, which was the point all along.",
       "more": [
         "Warhol ate Campbell's soup for lunch nearly every day for 20 years. The most radical subject he could find was his own routine.",
-        "He hand-painted the first cans, then switched to silkscreen — mechanical reproduction as both technique and message. Asked why, he said he wanted to be a machine."
+        "He hand-painted the first cans, then switched to silkscreen — mechanical reproduction as both technique and message. Asked why, he said he wanted to be a machine.",
+        "Shot at the Factory — Valerie Solanas shot Warhol in 1968. He survived in a surgical corset and said he was afraid of his own art after.",
+        "Brand as art, art as brand — Campbell’s eventually leaned in — limited-edition Warhol cans, sold at Target, 2012."
       ],
       "connections": [
         {
@@ -1770,18 +1564,8 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Duchamp’s readymades",
-          "note": "The urinal made context the artwork in 1917. Warhol industrialized the insight."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Shot at the Factory",
-          "note": "Valerie Solanas shot Warhol in 1968. He survived in a surgical corset and said he was afraid of his own art after."
-        },
-        {
-          "type": "ECHO",
-          "title": "Brand as art, art as brand",
-          "note": "Campbell’s eventually leaned in — limited-edition Warhol cans, sold at Target, 2012."
+          "note": "The urinal made context the artwork in 1917. Warhol industrialized the insight.",
+          "ref": "duchamp"
         }
       ],
       "discourse": [
@@ -1822,7 +1606,9 @@
       "fact": "It starts with a sister's fundraiser: Cindy Campbell rented her building's rec room, charged a quarter for girls, fifty cents for guys, and her brother DJ'd. Herc's trick — two copies of the same record, looping the drum break — is the big bang. 1520 Sedgwick Avenue is now officially recognized as the genre's birthplace.",
       "more": [
         "Sampling is collage with copyright lawyers: the same appropriation move as Warhol's soup cans, run through turntables. The 1991 Biz Markie ruling — 'Thou shalt not steal' — changed the sound of the genre overnight.",
-        "Four elements were codified early: DJing, MCing, breaking, graffiti. The genre defined itself as a full culture — with its own visual art and dance — before the music industry ever touched it."
+        "Four elements were codified early: DJing, MCing, breaking, graffiti. The genre defined itself as a full culture — with its own visual art and dance — before the music industry ever touched it.",
+        "1520 Sedgwick Avenue — Tenants fought speculators to save the building in the 2000s and won — landmark status via block party.",
+        "The breakbeat — Two copies, one break, extended forever. The turntable becomes an instrument."
       ],
       "connections": [
         {
@@ -1836,19 +1622,9 @@
           "note": "The uniform. Run-DMC’s ‘My Adidas’ landed a seven-figure Adidas deal in 1986 — the first non-athlete sneaker deal, and the template."
         },
         {
-          "type": "HISTORY",
-          "title": "1520 Sedgwick Avenue",
-          "note": "Tenants fought speculators to save the building in the 2000s and won — landmark status via block party."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "The breakbeat",
-          "note": "Two copies, one break, extended forever. The turntable becomes an instrument."
-        },
-        {
           "type": "ECHO",
-          "title": "Graffiti → gallery",
-          "note": "From subway cars to Basquiat and street-art auctions — the visual element took the same trip uptown."
+          "note": "From subway cars to Basquiat and street-art auctions — the visual element took the same trip uptown.",
+          "ref": "basquiat"
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1520%20Sedwick%20Ave.%2C%20Bronx%2C%20New%20York1.JPG?width=900",
@@ -1891,7 +1667,8 @@
       "fact": "Thirty-two million people visited — when France's entire population was 38 million. The entrance arch, a temporary iron tower the artists hated, is the only major structure left, and is now shorthand for the whole country.",
       "more": [
         "Debussy heard a Javanese gamelan orchestra at this fair and it rewired him — the scales and shimmer surface in his music for the rest of his life. The same fair circuit was feeding painters Japan.",
-        "The dark inventory: 'colonial villages' exhibited human beings from French colonies as living displays. The century's proudest showcase of progress included people behind fences."
+        "The dark inventory: 'colonial villages' exhibited human beings from French colonies as living displays. The century's proudest showcase of progress included people behind fences.",
+        "The human zoos — The ‘colonial exhibition’ problem — 1889’s shame, finally in the textbooks."
       ],
       "connections": [
         {
@@ -1915,9 +1692,9 @@
           "note": "Debussy’s gamelan revelation here feeds the same current that put the Great Wave on La Mer’s cover in 1905."
         },
         {
-          "type": "HISTORY",
-          "title": "The human zoos",
-          "note": "The ‘colonial exhibition’ problem — 1889’s shame, finally in the textbooks."
+          "type": "INFLUENCE",
+          "ref": "debussy",
+          "note": "The gamelan pavilion’s most famous casualty."
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Exposition%20universelle%20de%201889%20Vue%20g%C3%A9n%C3%A9rale%20du%20jardin%20central%2C%20le%20palais%20du%20Trocad%C3%A9ro%20dans%20le%20fond%2C%207%C3%A8me%20et%2016%C3%A8me%20arro%2C%20PH76776.jpg?width=900",
@@ -1944,7 +1721,10 @@
       "more": [
         "The Chanel rivalry was open war: Chanel only ever called her 'that Italian artist who makes clothes,' and at a 1939 ball steered her — allegedly by accident — into the candelabra, setting her costume on fire.",
         "Her 1938 Skeleton Dress used padded quilting to raise bones on black crepe — couture anatomy, made with Dalí. Museums treat it as the first true art-fashion collaboration.",
-        "Hubert de Givenchy started as her assistant — the house that later hired Alexander McQueen traces straight back to her salon."
+        "Hubert de Givenchy started as her assistant — the house that later hired Alexander McQueen traces straight back to her salon.",
+        "Shocking Pink — She named and marketed a color in 1937. Every hot-pink drop since — including Barbiecore — runs her playbook.",
+        "The 2012 revival — The house reopened and became red-carpet surrealism again — gilded lungs, eye brooches, Bella Hadid discourse.",
+        "Trompe-l’oeil knitwear — Her 1927 sweater with a knitted-in fake bow was the breakout: an optical illusion you could buy."
       ],
       "connections": [
         {
@@ -1954,23 +1734,8 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Dalí & the Surrealists",
-          "note": "Lobster phone, lobster dress — same year, same lobster. She put the movement on a body."
-        },
-        {
-          "type": "MATERIAL",
-          "title": "Shocking Pink",
-          "note": "She named and marketed a color in 1937. Every hot-pink drop since — including Barbiecore — runs her playbook."
-        },
-        {
-          "type": "ECHO",
-          "title": "The 2012 revival",
-          "note": "The house reopened and became red-carpet surrealism again — gilded lungs, eye brooches, Bella Hadid discourse."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Trompe-l’oeil knitwear",
-          "note": "Her 1927 sweater with a knitted-in fake bow was the breakout: an optical illusion you could buy."
+          "note": "Lobster phone, lobster dress — same year, same lobster. She put the movement on a body.",
+          "ref": "dali"
         }
       ],
       "discourse": [
@@ -2012,33 +1777,17 @@
       "fact": "Punk's look existed as merchandise before the music charted: Westwood and McLaren's King's Road shop dressed the Sex Pistols — a band McLaren managed — so the uniform, the boutique, and the scandal were one vertically integrated operation.",
       "more": [
         "In 1989 Tatler put her on the cover dressed as Margaret Thatcher — in a suit Thatcher had ordered but not yet collected — with the line 'this woman was once a punk.' She called it her favorite image of herself.",
-        "Her late-career message was 'buy less, choose well, make it last' — the founder of punk fashion telling the industry to stop selling. She meant both, and lived long enough to be right twice."
+        "Her late-career message was 'buy less, choose well, make it last' — the founder of punk fashion telling the industry to stop selling. She meant both, and lived long enough to be right twice.",
+        "God Save the Queen — The safety-pinned Queen artwork and the shop’s clothes are one visual system: Jamie Reid’s collage wore Westwood.",
+        "The Thatcher cover — Tatler, 1989. The establishment and its saboteur, same silhouette.",
+        "Corsets & crinolines, weaponized — She mined fashion history — 18th-c. cuts, tartan, the mini-crini — and made the archive subversive.",
+        "The orb on resale apps — Her jewelry became Gen-Z’s entry drug to vintage — the punk brand as heirloom."
       ],
       "connections": [
         {
           "type": "INFLUENCE",
           "ref": "jordan1",
           "note": "The playbook — subculture uniform becomes scarce commodity becomes market — runs from King’s Road straight through sneaker drops."
-        },
-        {
-          "type": "ECHO",
-          "title": "God Save the Queen",
-          "note": "The safety-pinned Queen artwork and the shop’s clothes are one visual system: Jamie Reid’s collage wore Westwood."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The Thatcher cover",
-          "note": "Tatler, 1989. The establishment and its saboteur, same silhouette."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "Corsets & crinolines, weaponized",
-          "note": "She mined fashion history — 18th-c. cuts, tartan, the mini-crini — and made the archive subversive."
-        },
-        {
-          "type": "ECHO",
-          "title": "The orb on resale apps",
-          "note": "Her jewelry became Gen-Z’s entry drug to vintage — the punk brand as heirloom."
         },
         {
           "type": "INFLUENCE",
@@ -2085,7 +1834,9 @@
       "fact": "It was written because the weather was apocalyptic: Tambora's 1815 eruption made 1816 'the year without a summer,' trapping the Shelley party indoors at Lake Geneva, where Byron proposed a ghost-story contest. An 18-year-old won it with the founding document of science fiction.",
       "more": [
         "The monster is never named Frankenstein — that's the doctor. The creature reads Paradise Lost, argues ethics, and asks for a companion; the flat-head-and-bolts image belongs to the 1931 film, not the book.",
-        "She published it anonymously at 20, and for years critics assumed her husband wrote it. The 1831 edition finally carried her name and her account of the waking dream that started it."
+        "She published it anonymously at 20, and for years critics assumed her husband wrote it. The 1831 edition finally carried her name and her account of the waking dream that started it.",
+        "Karloff’s flat head — Jack Pierce’s 1931 makeup replaced the book’s articulate creature with the icon everyone draws. The adaptation ate the source.",
+        "‘Playing Frankenstein’ — Every gene-editing, AI, and cloning debate reaches for this novel. It supplied the ethics vocabulary in advance."
       ],
       "connections": [
         {
@@ -2097,16 +1848,6 @@
           "type": "ECHO",
           "ref": "expressionism",
           "note": "The 1931 film’s look — shadows, angles, the laboratory — is German Expressionism exported to Hollywood."
-        },
-        {
-          "type": "ECHO",
-          "title": "Karloff’s flat head",
-          "note": "Jack Pierce’s 1931 makeup replaced the book’s articulate creature with the icon everyone draws. The adaptation ate the source."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "‘Playing Frankenstein’",
-          "note": "Every gene-editing, AI, and cloning debate reaches for this novel. It supplied the ethics vocabulary in advance."
         }
       ],
       "discourse": [
@@ -2164,7 +1905,9 @@
       "fact": "Right as the Bible was finished, Gutenberg's investor Johann Fust sued him, won, and took the workshop, the type, and the finished Bibles. The inventor of European printing walked away from his own revolution nearly broke — the founder-gets-forced-out story is 570 years old.",
       "more": [
         "Movable metal type wasn't first: Korea's Jikji was printed with it in 1377, 78 years earlier. Europe's version won on distribution, not invention.",
-        "The typeface deliberately imitated scribal handwriting so the books could be sold like manuscripts — skeuomorphism, version 1.0: new technology dressed as the old one to feel trustworthy."
+        "The typeface deliberately imitated scribal handwriting so the books could be sold like manuscripts — skeuomorphism, version 1.0: new technology dressed as the old one to feel trustworthy.",
+        "Fust v. Gutenberg — The 1455 lawsuit that transferred the whole operation to his investor — run by Gutenberg’s own ex-apprentice.",
+        "The auction ceiling — No complete copy has traded since 1978. Single leaves sell for the price of a car."
       ],
       "connections": [
         {
@@ -2176,16 +1919,6 @@
           "type": "INFLUENCE",
           "ref": "penguin",
           "note": "The 500-year lineage from this workshop to the sixpence paperback: printing keeps re-democratizing itself."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Fust v. Gutenberg",
-          "note": "The 1455 lawsuit that transferred the whole operation to his investor — run by Gutenberg’s own ex-apprentice."
-        },
-        {
-          "type": "ECHO",
-          "title": "The auction ceiling",
-          "note": "No complete copy has traded since 1978. Single leaves sell for the price of a car."
         }
       ],
       "gallery": [
@@ -2248,7 +1981,9 @@
       "fact": "Allen Lane, stuck at Exeter station with nothing worth reading, decided serious books should cost what cigarettes cost. The design system — three horizontal bands, color-coded by genre — was drawn by Edward Young, a 21-year-old office junior, who also sketched the penguin at the London Zoo.",
       "more": [
         "In 1947 Jan Tschichold arrived and wrote the Penguin Composition Rules — four pages that standardized every spine, margin, and title page. Mass-market books got a design constitution.",
-        "The color code did the marketing with zero copy: you could spot your genre across a shop. Orange-equals-fiction became so strong the color itself is now the brand — on mugs, totes, and knockoffs everywhere."
+        "The color code did the marketing with zero copy: you could spot your genre across a shop. Orange-equals-fiction became so strong the color itself is now the brand — on mugs, totes, and knockoffs everywhere.",
+        "Genre as color system — Wayfinding applied to literature — the cover as signage, not illustration.",
+        "The tote-bag economy — Penguin covers as merch: the design outgrew the books it was built to sell."
       ],
       "connections": [
         {
@@ -2262,14 +1997,9 @@
           "note": "Same move, 480 years apart: make the book cheap enough and the reader base explodes."
         },
         {
-          "type": "TECHNIQUE",
-          "title": "Genre as color system",
-          "note": "Wayfinding applied to literature — the cover as signage, not illustration."
-        },
-        {
-          "type": "ECHO",
-          "title": "The tote-bag economy",
-          "note": "Penguin covers as merch: the design outgrew the books it was built to sell."
+          "type": "INFLUENCE",
+          "ref": "tschichold",
+          "note": "The rule-writer himself: four pages that governed every spine and margin."
         }
       ],
       "discourse": [
@@ -2328,16 +2058,6 @@
           "type": "HISTORY",
           "ref": "chanel-lbd",
           "note": "The New Look re-corseted the woman Chanel had freed — she un-retired at 71 to answer it."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Catherine Dior, Ravensbrück",
-          "note": "Resistance member, deported, survived. Miss Dior perfume carries her name."
-        },
-        {
-          "type": "ECHO",
-          "title": "The ration riots",
-          "note": "Rue Lepic, 1947: a New Look dress torn off its wearer. Twenty yards of cloth read as an insult."
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Dior%20Dress%20indianapolis.jpg?width=900",
@@ -2379,7 +2099,10 @@
       "fact": "He fled the Spanish Civil War to Paris in 1937, built couture's most revered house — then shut it down in 1968 rather than make ready-to-wear. Clients grieved like a death: Diana Vreeland said Mona von Bismarck locked herself in her room for three days.",
       "more": [
         "Dior called him 'the master of us all'; Chanel said he was the only one of them who could actually build a garment alone — cut it, fit it, sew it. Everyone else, she said, was a designer; he was a couturier.",
-        "He gave a single press interview in his life — The Times, 1971, the year before he died. No runway bows, no photos, no explanations. The refusal was the brand: mystery as luxury."
+        "He gave a single press interview in his life — The Times, 1971, the year before he died. No runway bows, no photos, no explanations. The refusal was the brand: mystery as luxury.",
+        "The apprentices — Givenchy, Courrèges, Ungaro all trained in his orbit — one atelier seeded a generation of houses.",
+        "The one-seam coat — 1961: a coat cut from a single piece of fabric with one seam. Couture as pure geometry.",
+        "Demna’s Balenciaga — The house that refused publicity now runs on virality — meme couture under the quietest name in fashion history."
       ],
       "connections": [
         {
@@ -2391,21 +2114,6 @@
           "type": "INFLUENCE",
           "ref": "chanel-lbd",
           "note": "Mutual respect across enemy lines — she defended his craft above everyone’s, including her own."
-        },
-        {
-          "type": "INFLUENCE",
-          "title": "The apprentices",
-          "note": "Givenchy, Courrèges, Ungaro all trained in his orbit — one atelier seeded a generation of houses."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "The one-seam coat",
-          "note": "1961: a coat cut from a single piece of fabric with one seam. Couture as pure geometry."
-        },
-        {
-          "type": "ECHO",
-          "title": "Demna’s Balenciaga",
-          "note": "The house that refused publicity now runs on virality — meme couture under the quietest name in fashion history."
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Babydoll%20dress%20by%20Balenciaga%2C%201958.jpg?width=900"
@@ -2431,7 +2139,9 @@
       "more": [
         "Le Smoking (1966) put women in tuxedos, and restaurants turned them away — socialite Nan Kempner, refused entry at La Côte Basque, removed the trousers and wore the jacket alone as a dress. The ban became the advertisement.",
         "The 1965 Mondrian dresses turned De Stijl canvases into cocktail dresses — modernist painting as pattern-cutting, and among the most copied garments of the decade.",
-        "He put Black models at the front of Paris couture — Mounia opened his shows — decades before the industry pretended it had always done so."
+        "He put Black models at the front of Paris couture — Mounia opened his shows — decades before the industry pretended it had always done so.",
+        "The Algerian War — Born in Oran, broken by the draft for the war over his own birthplace.",
+        "Helmut Newton, Rue Aubriot — The 1975 photograph of Le Smoking in a Paris alley — arguably the definitive fashion photo."
       ],
       "connections": [
         {
@@ -2446,18 +2156,8 @@
         },
         {
           "type": "INFLUENCE",
-          "title": "Mondrian & De Stijl",
-          "note": "A 1920s grid painting became 1965’s most famous dress — high modernism at cocktail length."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The Algerian War",
-          "note": "Born in Oran, broken by the draft for the war over his own birthplace."
-        },
-        {
-          "type": "ECHO",
-          "title": "Helmut Newton, Rue Aubriot",
-          "note": "The 1975 photograph of Le Smoking in a Paris alley — arguably the definitive fashion photo."
+          "note": "A 1920s grid painting became 1965’s most famous dress — high modernism at cocktail length.",
+          "ref": "mondrian"
         }
       ]
     },
@@ -2488,7 +2188,9 @@
       "more": [
         "His 1995 'Highland Rape' show was denounced as misogyny; he said the rape was England's — of Scotland, his family's country. The wrecked tartan and torn lace were the Jacobite clearances worn as accusation.",
         "Isabella Blow bought his entire 1992 graduate collection for £5,000, paid in weekly installments, and made his name (and his hats). After her death in 2007, his shows turned elegiac; three years later he was gone too.",
-        "The armadillo boots from Plato's Atlantis (2010) — twelve inches tall, barely walkable — went global when Lady Gaga wore them in 'Bad Romance.' His final complete show was streamed live; demand crashed the feed."
+        "The armadillo boots from Plato's Atlantis (2010) — twelve inches tall, barely walkable — went global when Lady Gaga wore them in 'Bad Romance.' His final complete show was streamed live; demand crashed the feed.",
+        "Savile Row cutting — Under all the theater: bumster trousers and frock coats built with apprentice-trained precision. The scandal was perfectly tailored.",
+        "Savage Beauty — The 2011 Met retrospective ran to midnight to handle the queues — mourning at museum scale."
       ],
       "connections": [
         {
@@ -2500,16 +2202,6 @@
           "type": "INFLUENCE",
           "ref": "schiaparelli",
           "note": "The shock-couture bloodline runs through Givenchy — her former assistant founded the house McQueen later ran."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Savile Row cutting",
-          "note": "Under all the theater: bumster trousers and frock coats built with apprentice-trained precision. The scandal was perfectly tailored."
-        },
-        {
-          "type": "ECHO",
-          "title": "Savage Beauty",
-          "note": "The 2011 Met retrospective ran to midnight to handle the queues — mourning at museum scale."
         }
       ],
       "discourse": [
@@ -2557,7 +2249,9 @@
       "fact": "Her early-'80s Paris shows — black, torn, asymmetric, oversized — were received as an attack: critics reached for 'Hiroshima chic,' post-war racism dressed up as fashion criticism. Within a decade, the look they mocked was the uniform of every creative director in the city.",
       "more": [
         "The 1982 'lace' sweater was machine-knit with deliberate holes — distressed, unfinished, sold at luxury prices. The industry named the movement deconstruction; she has refused every label, including that one.",
-        "Dover Street Market (2004) rebuilt retail as curation — Supreme hung next to couture before 'streetwear × luxury' existed as a category. Half of today's collab economy runs on her floor plan."
+        "Dover Street Market (2004) rebuilt retail as curation — Supreme hung next to couture before 'streetwear × luxury' existed as a category. Half of today's collab economy runs on her floor plan.",
+        "Deconstruction — Seams outside, linings exposed, garments mid-collapse — construction itself made visible as the design.",
+        "Art of the In-Between — Met, 2017: only the second living designer ever given a solo show. She barely attended her own coronation."
       ],
       "connections": [
         {
@@ -2574,16 +2268,6 @@
           "type": "ECHO",
           "ref": "jordan1",
           "note": "Dover Street Market incubated the streetwear-luxury crossover the sneaker economy now runs on."
-        },
-        {
-          "type": "TECHNIQUE",
-          "title": "Deconstruction",
-          "note": "Seams outside, linings exposed, garments mid-collapse — construction itself made visible as the design."
-        },
-        {
-          "type": "ECHO",
-          "title": "Art of the In-Between",
-          "note": "Met, 2017: only the second living designer ever given a solo show. She barely attended her own coronation."
         }
       ],
       "discourse": [
@@ -2631,7 +2315,9 @@
       "fact": "The world's first novel (by most definitions) was written around 1010 by a woman whose real name we don't know — 'Murasaki Shikibu' is a court nickname. Men of her era wrote in prestige Chinese; she wrote in kana, the script dismissed as women's writing, and produced the foundation of Japanese literature.",
       "more": [
         "Genji pictures became a genre that ran for a millennium — the 12th-century illustrated scrolls are National Treasures, and ukiyo-e masters were still printing Genji scenes 800 years after she wrote.",
-        "Arthur Waley's 1920s English translation stunned literary London — Virginia Woolf reviewed it, absorbing that a Heian court lady had beaten Europe to the psychological novel by nine centuries."
+        "Arthur Waley's 1920s English translation stunned literary London — Virginia Woolf reviewed it, absorbing that a Heian court lady had beaten Europe to the psychological novel by nine centuries.",
+        "The nameless author — Court diaries record her wit and her critics; history never recorded her actual name.",
+        "The ¥2000 note — Japan put the scroll and its author on a banknote in 2000 — the first novelist on modern currency anywhere."
       ],
       "connections": [
         {
@@ -2643,16 +2329,6 @@
           "type": "INFLUENCE",
           "ref": "japonisme",
           "note": "The court aesthetics underneath it — seasonal allusion, exquisite restraint — are the deep source of what Europe later binged on."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The nameless author",
-          "note": "Court diaries record her wit and her critics; history never recorded her actual name."
-        },
-        {
-          "type": "ECHO",
-          "title": "The ¥2000 note",
-          "note": "Japan put the scroll and its author on a banknote in 2000 — the first novelist on modern currency anywhere."
         }
       ],
       "discourse": [
@@ -2710,23 +2386,15 @@
       "fact": "Darwin sat on the theory for two decades — he told a friend that admitting species change felt 'like confessing a murder.' What forced publication was the mail: Alfred Russel Wallace, feverish in the Malay Archipelago, sent him the same theory in a letter. Origin was written in a thirteen-month panic.",
       "more": [
         "The first printing was fully claimed by the book trade on publication day. Darwin, hedging to the last, gave humanity exactly one sentence: 'Light will be thrown on the origin of man.'",
-        "Sixty-six years later the book stood trial in Tennessee — Scopes, 1925, a teacher fined $100 for teaching it. The culture war it opened has never actually closed."
+        "Sixty-six years later the book stood trial in Tennessee — Scopes, 1925, a teacher fined $100 for teaching it. The culture war it opened has never actually closed.",
+        "Wallace’s letter — The politest ambush in science: the co-discoverer mailed his scoop to the man he’d scooped.",
+        "Social Darwinism — the misread — ‘Survival of the fittest’ is Spencer’s phrase, not Darwin’s. The book’s most damaging afterlife is a misquote."
       ],
       "connections": [
         {
           "type": "INFLUENCE",
           "ref": "frankenstein",
           "note": "Shelley fictionalized the science-without-limits anxiety forty years before Darwin gave it a mechanism."
-        },
-        {
-          "type": "HISTORY",
-          "title": "Wallace’s letter",
-          "note": "The politest ambush in science: the co-discoverer mailed his scoop to the man he’d scooped."
-        },
-        {
-          "type": "ECHO",
-          "title": "Social Darwinism — the misread",
-          "note": "‘Survival of the fittest’ is Spencer’s phrase, not Darwin’s. The book’s most damaging afterlife is a misquote."
         }
       ],
       "discourse": [
@@ -2783,23 +2451,15 @@
       "fact": "Orwell wrote it racing his own tuberculosis, typing in bed with a fever in a farmhouse on the Isle of Jura. He lived seven months past publication — long enough to see it land, not long enough to watch 'Orwellian' become politics' most-used adjective.",
       "more": [
         "In January 2017 a 68-year-old novel hit #1 on Amazon after 'alternative facts' entered the news cycle; it spiked again during the Snowden leaks. The book functions as a civic smoke alarm — sales are the signal.",
-        "Room 101, the torture chamber, is named after a conference room at the BBC where Orwell sat through meetings. The scariest room in literature is a meeting room."
+        "Room 101, the torture chamber, is named after a conference room at the BBC where Orwell sat through meetings. The scariest room in literature is a meeting room.",
+        "‘Orwellian’ — The only author whose name is a standard unit of political warning — applied, with perfect irony, by every side at once.",
+        "The Jura race — Doctors ordered rest; he typed the final draft himself because no typist would come to the island. The book may have cost the years."
       ],
       "connections": [
         {
           "type": "HISTORY",
           "ref": "penguin",
           "note": "The orange-spine delivery system: Penguin made it the most-assigned dystopia in the language."
-        },
-        {
-          "type": "ECHO",
-          "title": "‘Orwellian’",
-          "note": "The only author whose name is a standard unit of political warning — applied, with perfect irony, by every side at once."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The Jura race",
-          "note": "Doctors ordered rest; he typed the final draft himself because no typist would come to the island. The book may have cost the years."
         }
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1984%20first%20edition%20cover.jpg?width=900",
@@ -2858,7 +2518,9 @@
       "fact": "The chemical industry spent roughly a quarter-million 1962 dollars to bury it — Monsanto published a parody called 'The Desolate Year'; opponents called her hysterical, a spinster, probably a Communist. Kennedy's science advisory committee investigated and sided with her. Ten years later, DDT was banned.",
       "more": [
         "Carson testified before Congress while dying of breast cancer, in a wig, keeping the illness secret so it couldn't be used to reframe the science as personal grievance. She died eighteen months later, at 56.",
-        "The environmental movement has a birthday argument: Earth Day 1970, or this book's New Yorker serialization in the summer of 1962. The EPA's own official history treats Silent Spring as its origin story."
+        "The environmental movement has a birthday argument: Earth Day 1970, or this book's New Yorker serialization in the summer of 1962. The EPA's own official history treats Silent Spring as its origin story.",
+        "The smear playbook — ‘Hysterical woman vs sound science’ — the template built for Carson gets reused on every inconvenient scientist since.",
+        "Earth Day & the EPA — 1970: the machinery her book demanded finally got built."
       ],
       "connections": [
         {
@@ -2870,16 +2532,6 @@
           "type": "ECHO",
           "ref": "westwood",
           "note": "‘Buy less, choose well’ is this book’s argument, retailed — fashion’s climate conscience descends from it."
-        },
-        {
-          "type": "HISTORY",
-          "title": "The smear playbook",
-          "note": "‘Hysterical woman vs sound science’ — the template built for Carson gets reused on every inconvenient scientist since."
-        },
-        {
-          "type": "ECHO",
-          "title": "Earth Day & the EPA",
-          "note": "1970: the machinery her book demanded finally got built."
         }
       ],
       "discourse": [
@@ -2898,6 +2550,981 @@
           "score": 1663,
           "comments": 43,
           "url": "https://bsky.app/profile/where-in-the-world.bsky.social/post/3mgudjsa2a223"
+        }
+      ]
+    },
+    "dali": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Salvador Dalí",
+      "byline": {
+        "name": "Salvador Dalí",
+        "sub": "1904–1989"
+      },
+      "cat": "ARTIST / SURREALISM AS A FULL-TIME PERFORMANCE",
+      "capRight": "1904–1989",
+      "spec": {
+        "MOVEMENT": "Surrealism (expelled from it, 1934)",
+        "SIGNATURE": "Melting clocks, lobsters, the mustache",
+        "SIDE_WORK": "Hitchcock dream sequences, Disney short",
+        "LOGO": "He designed the Chupa Chups wrapper"
+      },
+      "fact": "He designed the Chupa Chups logo — the daisy wrapper on the lollipop, 1969, and his idea to put it on TOP of the pop so it's always visible. The most famous surrealist artwork by reach isn't in a museum; it's in every corner shop on Earth.",
+      "more": [
+        "The Surrealists formally expelled him in 1934 (politics, money, showmanship). His answer: 'I myself am surrealism.' He kept the brand; they kept the meetings.",
+        "In later years he signed thousands of blank sheets for lithographs — cash for signatures — which is why Dalí authentication is a professional nightmare to this day."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "schiaparelli",
+          "note": "The lobster dress, the skeleton dress, the shoe hat — surrealism entered fashion through their collaborations."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "duchamp",
+          "note": "Dada opened the door — art as idea, provocation as medium — and Dalí walked through it in costume."
+        },
+        {
+          "type": "ECHO",
+          "ref": "warhol-soup",
+          "note": "The artist-as-celebrity playbook — mustache, TV spots, branded everything — Dalí wrote it, Warhol industrialized it."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "SE",
+          "text": "Who are the 20th century painters on this t-shirt?",
+          "by": "history.stackexchange",
+          "score": 10,
+          "comments": 2,
+          "url": "https://history.stackexchange.com/questions/28082/who-are-the-20th-century-painters-on-this-t-shirt"
+        },
+        {
+          "src": "HN",
+          "text": "Sleep technique used by Salvador Dalí works",
+          "by": "ohiovr",
+          "score": 737,
+          "comments": 238,
+          "url": "https://news.ycombinator.com/item?id=29515882"
+        },
+        {
+          "src": "HN",
+          "text": "Salvador Dalí is the most faked artist?",
+          "by": "yarapavan",
+          "score": 80,
+          "comments": 55,
+          "url": "https://news.ycombinator.com/item?id=36032564"
+        },
+        {
+          "src": "BSKY",
+          "text": "The Persistence of Memory, by Salvador Dalí, 1931, 📸 by David Ramos",
+          "by": "@artbutmakeitsports.bsky.social",
+          "score": 2050,
+          "comments": 8,
+          "url": "https://bsky.app/profile/artbutmakeitsports.bsky.social/post/3mkkqqz6agc2g"
+        }
+      ]
+    },
+    "duchamp": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Duchamp’s Fountain",
+      "byline": {
+        "name": "Marcel Duchamp",
+        "sub": "1887–1968"
+      },
+      "cat": "ARTIST / THE URINAL THAT BROKE ART",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcel%20Duchamp%2C%201917%2C%20Fountain%2C%20photograph%20by%20Alfred%20Stieglitz.jpg?width=900",
+      "capRight": "1917",
+      "spec": {
+        "THE_WORK": "A porcelain urinal, signed ‘R. Mutt’",
+        "SUBMITTED": "1917, to a show with no jury",
+        "FATE": "Rejected anyway; original lost",
+        "VERDICT": "Voted most influential artwork of the 20th c. (2004)"
+      },
+      "fact": "He submitted a urinal signed 'R. Mutt' to a 1917 exhibition whose only rule was that nobody could be rejected. They rejected it. The original was lost — probably thrown out as, well, a urinal — and in 2004 a poll of 500 art experts named it the most influential artwork of the twentieth century.",
+      "more": [
+        "The argument it made — the idea is the art, the object is optional — is the operating system for most of what's happened in art since. Every 'my kid could do that' debate is still arguing with this urinal.",
+        "He also drew a mustache on a Mona Lisa postcard and titled it with a French pun ('L.H.O.O.Q.'). Defacing the most famous painting alive became one of the most reproduced artworks of its century."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "warhol-soup",
+          "note": "Readymades made context the artwork; Warhol just added a supermarket and a silkscreen."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "mona-lisa",
+          "note": "L.H.O.O.Q. — the mustache postcard. Vandalism as art criticism."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "dali",
+          "note": "Dada’s cold provocation became surrealism’s hot theater."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "banksy",
+          "note": "Anti-art that the art market cannot stop buying — the Fountain’s longest-running joke."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "To piss in it, or live in it... 🚽 Duchamp called it art. 🏛️ Pigeons call it home. 🏠",
+          "by": "@aukeflorian.nl",
+          "score": 82,
+          "comments": 4,
+          "url": "https://bsky.app/profile/aukeflorian.nl/post/3lknwaurj7227"
+        },
+        {
+          "src": "BSKY",
+          "text": "What is this garbage—it couldn't possibly be art",
+          "by": "@sunshowers.io",
+          "score": 58,
+          "comments": 9,
+          "url": "https://bsky.app/profile/sunshowers.io/post/3moql6hyn422h"
+        }
+      ]
+    },
+    "basquiat": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Jean-Michel Basquiat",
+      "byline": {
+        "name": "Jean-Michel Basquiat",
+        "sub": "1960–1988"
+      },
+      "cat": "ARTIST / FROM SAMO© TO $110 MILLION",
+      "capRight": "SAMO©",
+      "spec": {
+        "START": "SAMO© graffiti, downtown Manhattan, 1977",
+        "BREAKOUT": "From street to Whitney Biennial in ~5 years",
+        "RECORD": "$110.5M (2017) — highest for any US artist",
+        "DIED": "27, in 1988"
+      },
+      "fact": "He started as SAMO© — cryptic graffiti aphorisms on SoHo walls — and was selling hand-painted postcards when he cornered Andy Warhol in a restaurant. Eleven years later he was dead at 27; twenty-nine years after that, one canvas sold for $110.5 million, the record for any American artist.",
+      "more": [
+        "The 1985 Warhol collaboration show was panned so hard it strained the friendship — the poster had them in boxing gloves. Those 'failed' collaborations now anchor museum retrospectives.",
+        "His crowned skulls and word-lists carried Black history, jazz, and anatomy books into rooms that had excluded all three. The crown was the point: nobility, asserted, not granted."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "hiphop",
+          "note": "Same block, same decade, same move: downtown NYC turning street language into a global art form."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "warhol-soup",
+          "note": "Mentor, collaborator, sparring partner — pop art’s machine meets graffiti’s hand."
+        },
+        {
+          "type": "ECHO",
+          "ref": "banksy",
+          "note": "The street-to-auction-house pipeline he opened is the one Banksy both rides and mocks."
+        },
+        {
+          "type": "ECHO",
+          "ref": "streetwear",
+          "note": "His crown is on more sneakers and hoodies than any museum wall — the estate licenses what the street invented."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Jean-Michel Basquiat on How to Be an Artist",
+          "by": "karimford",
+          "score": 84,
+          "comments": 46,
+          "url": "https://news.ycombinator.com/item?id=25330546"
+        },
+        {
+          "src": "BSKY",
+          "text": "Pez Dispenser, by Jean-Michel Basquiat, 1984, 📸 by @PhotoBowles",
+          "by": "@artbutmakeitsports.bsky.social",
+          "score": 632,
+          "comments": 1,
+          "url": "https://bsky.app/profile/artbutmakeitsports.bsky.social/post/3lanieveec22j"
+        },
+        {
+          "src": "BSKY",
+          "text": "Remembering my mom’s insane Basquiat lore.",
+          "by": "@hazelmonforton.com",
+          "score": 200,
+          "comments": 9,
+          "url": "https://bsky.app/profile/hazelmonforton.com/post/3m6iu7i4cs223"
+        }
+      ]
+    },
+    "banksy": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Banksy",
+      "byline": {
+        "name": "Identity unconfirmed",
+        "sub": "Bristol, active ~1990s–"
+      },
+      "cat": "ARTIST / VANDALISM THE MARKET CANNOT STOP BUYING",
+      "capRight": "BRISTOL",
+      "spec": {
+        "ORIGIN": "Bristol stencil scene",
+        "IDENTITY": "Unconfirmed for 30+ years",
+        "STUNT": "Shredded his own painting mid-auction",
+        "RESULT": "The shredded version resold for £18.6M"
+      },
+      "fact": "In 2018, the moment 'Girl with Balloon' hammered at £1.04M at Sotheby's, a shredder hidden in the frame activated and half-destroyed it live. Renamed 'Love is in the Bin,' the damaged work resold three years later for £18.6 million — the market bought the insult, framed it, and marked it up 18×.",
+      "more": [
+        "His 'Girl with a Pierced Eardrum' — Vermeer's girl with a security alarm for an earring — sits on a Bristol harbourside wall. During lockdown someone added a surgical mask; the city kept it for a while.",
+        "Thirty years of fame and the identity has held — which is itself the artwork: the only untraceable brand in an industry built on signatures."
+      ],
+      "connections": [
+        {
+          "type": "ECHO",
+          "ref": "pearl",
+          "note": "Girl with a Pierced Eardrum: the Mauritshuis icon, re-pierced with a burglar alarm."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "duchamp",
+          "note": "The shredder stunt is the Fountain’s great-grandchild: the gesture is the work."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "basquiat",
+          "note": "Walks the street-to-auction pipeline Basquiat opened — while sawing at it from inside."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "westwood",
+          "note": "British subversion as a commercial force: the establishment pays best for its own mockery."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "I'm still very proud of my \"shredded Banksy\" costume from a few years ago.",
+          "by": "@wardqnormal.bsky.social",
+          "score": 131,
+          "comments": 5,
+          "url": "https://bsky.app/profile/wardqnormal.bsky.social/post/3l7twkne2yu2i"
+        }
+      ]
+    },
+    "mona-lisa": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "Mona Lisa",
+      "byline": {
+        "name": "Leonardo da Vinci",
+        "sub": "1452–1519"
+      },
+      "cat": "ARTWORK / FAMOUS BECAUSE SHE WAS STOLEN",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa%2C%20by%20Leonardo%20da%20Vinci%2C%20from%20C2RMF%20retouched.jpg?width=900",
+      "capRight": "c. 1503–1517",
+      "spec": {
+        "PAINTED": "c. 1503–1517, never delivered",
+        "STOLEN": "1911, by a Louvre glazier",
+        "RECOVERED": "Florence, 1913",
+        "TODAY": "Bulletproof glass, ~30 seconds per visitor"
+      },
+      "fact": "Before 1911 she was one respected Leonardo among many. Then Vincenzo Peruggia — a glazier who'd worked at the Louvre — walked out with her under his smock, and the theft made her the most famous artwork alive: for two years, more people queued to see the empty wall than had come to see the painting.",
+      "more": [
+        "Peruggia kept her in a trunk in his Paris boarding room for two years, then tried to 'return' her to Italy by selling her to a Florence dealer. Italy gave him a light sentence and a hero's murmur; France got the painting and the mythology.",
+        "She receives so much mail she has her own mailbox at the Louvre. Leonardo never delivered her to the man who commissioned her — he carried her around for the rest of his life, retouching."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "art-heists",
+          "note": "The theft that proved stealing a masterpiece manufactures fame better than any exhibition."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "pearl",
+          "note": "The ‘Dutch Mona Lisa’ comparison exists because this gaze set the template: eye contact, no story."
+        },
+        {
+          "type": "ECHO",
+          "ref": "duchamp",
+          "note": "L.H.O.O.Q. — fame so total that defacing a postcard of her became famous too."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "Masked thieves stole priceless jewels from the Louvre on Sunday morning. The Paris museum has suffered a string of successful art heists, dating back to the theft of the Mona Lisa in 1911.",
+          "by": "@npr.org",
+          "score": 167,
+          "comments": 8,
+          "url": "https://bsky.app/profile/npr.org/post/3m3ndqletdc2r"
+        },
+        {
+          "src": "BSKY",
+          "text": "Masked thieves stole priceless jewels from the Louvre on Sunday morning. The Paris museum has suffered a string of successful art heists, dating back to the theft of the Mona Lisa in 1911. n.pr/4hmMGSz",
+          "by": "@npr.org",
+          "score": 161,
+          "comments": 7,
+          "url": "https://bsky.app/profile/npr.org/post/3m3nhxhq3l72h"
+        }
+      ]
+    },
+    "art-heists": {
+      "kind": "EVENT",
+      "pullable": true,
+      "title": "Art Heists",
+      "byline": {
+        "name": "The crime that never pays",
+        "sub": "1911 →"
+      },
+      "cat": "EVENT / STEALING WHAT CANNOT BE SOLD",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa%20stolen-1911.jpg?width=900",
+      "capRight": "THE EMPTY WALL, 1911",
+      "spec": {
+        "THE_PROBLEM": "Famous art is unsellable — everyone knows it",
+        "BIGGEST": "Gardner Museum, 1990 — ~$500M, unsolved",
+        "RECOVERY_RATE": "Estimated ~10%",
+        "GARDNER_RULE": "The empty frames still hang"
+      },
+      "fact": "In 1990 two men dressed as police talked their way into Boston's Gardner Museum and left with 13 works — a Vermeer, three Rembrandts — worth ~$500M. Unsolved 35 years later. The museum's will forbids rearranging the collection, so the empty frames still hang on the walls, waiting.",
+      "more": [
+        "The paradox: famous art can't be fenced — every dealer on Earth knows the Gardner Vermeer on sight. Stolen masterpieces mostly become underworld collateral, traded between criminals at ~10% of value, too hot to surface.",
+        "The Scream has been stolen twice, the Ghent Altarpiece thirteen times, the Mona Lisa once — and in every case the theft grew the legend. Museums won't say it, but the heist is the best marketing a painting can get."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "mona-lisa",
+          "note": "Patient zero: the 1911 theft invented modern art fame."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "scream",
+          "note": "Taken in 1994 during the Olympics, and again at gunpoint in 2004. Recovered both times."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "ghent-altarpiece",
+          "note": "The most stolen artwork in history — thirteen times and counting."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "The biggest heist of all was state-run — twenty percent of Europe’s art."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Empty Frames and Other Oddities from the Unsolved Gardner Museum Heist",
+          "by": "Caiero",
+          "score": 53,
+          "comments": 29,
+          "url": "https://news.ycombinator.com/item?id=39744595"
+        },
+        {
+          "src": "BSKY",
+          "text": "Last Seen (about the Gardner Museum heist)!",
+          "by": "@joshgondelman.bsky.social",
+          "score": 61,
+          "comments": 5,
+          "url": "https://bsky.app/profile/joshgondelman.bsky.social/post/3mn3rau5l3s2e"
+        },
+        {
+          "src": "BSKY",
+          "text": "A former FBI agent is offering the first detailed account of how investigators identified who carried out the 1990 Isabella Stewart Gardner Museum heist.",
+          "by": "@apnews.com",
+          "score": 69,
+          "comments": 0,
+          "url": "https://bsky.app/profile/apnews.com/post/3mkfzrq6ewf2t"
+        }
+      ]
+    },
+    "ghent-altarpiece": {
+      "kind": "ARTWORK",
+      "pullable": true,
+      "title": "The Ghent Altarpiece",
+      "byline": {
+        "name": "Jan & Hubert van Eyck",
+        "sub": "completed 1432"
+      },
+      "cat": "ARTWORK / THE MOST STOLEN OBJECT ON EARTH",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamgods%20open.jpg?width=900",
+      "capRight": "1432",
+      "spec": {
+        "COMPLETED": "1432, St Bavo’s Cathedral, Ghent",
+        "CRIMES": "Stolen ~13 times; burned, ransomed, trafficked",
+        "STILL_MISSING": "The ‘Just Judges’ panel, since 1934",
+        "MILESTONE": "Oil painting’s first full flex"
+      },
+      "fact": "It has been stolen roughly thirteen times — by Napoleon's army, by the Nazis (bound for Hitler's museum, found in the Altaussee mine), and in 1934 a lone panel, the Just Judges, vanished in a ransom scheme. The ransomer died with the secret; Belgium has been checking tips ever since. The panel in the cathedral today is a copy.",
+      "more": [
+        "It's also a technical origin point: the van Eycks pushed oil paint further than anyone before — jewels you can count, individual hairs — and effectively advertised the medium that would own Western art for 500 years."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "monuments-men",
+          "note": "Pulled out of the Altaussee salt mine in 1945, next to the crates of explosives."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "On Hitler’s shopping list by name — the Führermuseum’s intended centerpiece."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "art-heists",
+          "note": "Thirteen thefts. The Just Judges panel is still the world’s most famous missing artwork."
+        },
+        {
+          "type": "TECHNIQUE",
+          "ref": "pearl",
+          "note": "The oil technique perfected here is the same medium doing quiet miracles in Delft two centuries on."
+        }
+      ]
+    },
+    "rose-valland": {
+      "kind": "PERSON",
+      "pullable": true,
+      "title": "Rose Valland",
+      "byline": {
+        "name": "Rose Valland",
+        "sub": "1898–1980"
+      },
+      "cat": "PERSON / THE SPY AT THE SORTING HOUSE",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Rose%20Valland%20vers%201930.%20Archives%20diplomatiques%20(La%20Courneuve).png?width=900",
+      "capRight": "c. 1930",
+      "spec": {
+        "POST": "Curator, Jeu de Paume, occupied Paris",
+        "COVER": "Pretended not to understand German",
+        "LOGGED": "~4 years of looted-art shipments",
+        "HONORS": "Among the most decorated women in French history"
+      },
+      "fact": "For four years she stayed on staff at the Jeu de Paume — the Nazis' art-sorting warehouse — pretending not to understand German, memorizing shipment manifests by day and copying them at night. Her secret ledger helped recover some 60,000 works, and told Resistance rail workers which trains not to blow up.",
+      "more": [
+        "In 1944 her intelligence stopped train 40044, packed with looted modern art, from leaving France — the story fictionalized in the 1964 film 'The Train.' After liberation she put on a French army uniform and spent years in Germany hunting the rest."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "nazi-loot",
+          "note": "The ledger that undid the theft, kept one desk away from Göring’s shopping visits."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "monuments-men",
+          "note": "Her lists told the Allied art unit where to dig — Altaussee included."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "Currently reading this book - translated from the original French version. Rose Valland saved some of the world’s greatest art from the Nazis.",
+          "by": "@69metsfan.bsky.social",
+          "score": 65,
+          "comments": 1,
+          "url": "https://bsky.app/profile/69metsfan.bsky.social/post/3lhzelst2622b"
+        }
+      ]
+    },
+    "yves-klein": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Yves Klein Blue",
+      "byline": {
+        "name": "Yves Klein",
+        "sub": "1928–1962"
+      },
+      "cat": "ARTIST / THE MAN WHO CLAIMED A COLOR",
+      "capRight": "IKB, 1960",
+      "spec": {
+        "THE_COLOR": "International Klein Blue — matte ultramarine",
+        "REGISTERED": "Soleau envelope, 1960",
+        "OUTPUT": "~200 blue monochromes",
+        "DIED": "34, in 1962"
+      },
+      "fact": "He worked with a chemist to make an ultramarine that stayed as electric dry as it looked wet, registered the recipe in 1960, and named it after himself. Then he painted nearly two hundred canvases in nothing else. Asked what they depicted: the void. The pigment IS the artwork — the logical end of every blue in this archive.",
+      "more": [
+        "He sold 'Zones of Immaterial Pictorial Sensibility' — literal nothing — for gold, then threw half the gold into the Seine while the buyer burned the receipt. Conceptual art's cleanest transaction, decades early.",
+        "'Leap into the Void' (1960), the photo of him swan-diving off a wall, was a photomontage — the tarpaulin and the catchers were retouched out. The fake documentation of a real conviction."
+      ],
+      "connections": [
+        {
+          "type": "MATERIAL",
+          "ref": "ultramarine",
+          "note": "Six thousand years of the money pigment, ending as one man’s registered trademark."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "duchamp",
+          "note": "Selling receipts for nothing is the readymade’s purest descendant."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "Yves Klein, 1959, “Untitled blue monochrome (IKB 82)”",
+          "by": "@griph.bsky.social",
+          "score": 1486,
+          "comments": 24,
+          "url": "https://bsky.app/profile/griph.bsky.social/post/3monoi22trs22"
+        },
+        {
+          "src": "BSKY",
+          "text": "• Tribute to the artist Yves Klein - (The Berardo Collection 2006) Monte Palace Madeira Tropical Garden Funchal, Madeira Island, Portugal #Stunday #Photography #Photographie #Paysage #Scape #Landscape #Nature #Outdoor #Outdoorphotography #Travel #Travelphotography #Art #Madeira #Portugal •",
+          "by": "@javierfranco.eurosky.social",
+          "score": 75,
+          "comments": 3,
+          "url": "https://bsky.app/profile/javierfranco.eurosky.social/post/3lyspcbzzsc2h"
+        }
+      ]
+    },
+    "monet": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Claude Monet",
+      "byline": {
+        "name": "Claude Monet",
+        "sub": "1840–1926"
+      },
+      "cat": "ARTIST / THE GARDEN BUILT TO BE PAINTED",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Water%20Lilies%20-%20Google%20Art%20Project%20(462013).jpg?width=900",
+      "capRight": "GIVERNY",
+      "spec": {
+        "NAMED_A_MOVEMENT": "‘Impression, Sunrise’ (1872) — via a sneer",
+        "THE_GARDEN": "Giverny — a diverted river, a Japanese bridge",
+        "OUTPUT": "~250 water-lily canvases",
+        "EYES": "Cataracts, surgery 1923"
+      },
+      "fact": "'Impressionism' started as an insult — a critic sneering at his 'Impression, Sunrise' (1872). The movement kept the slur. Thirty years later Monet stopped chasing landscapes and built one instead: at Giverny he diverted a river arm, planted by color palette, and imported a Japanese bridge — a garden designed as a painting factory.",
+      "more": [
+        "Cataracts slowly turned his palette muddy red-brown — you can date late canvases by his eyesight. After 1923 surgery he saw blues so intensely (possibly into ultraviolet) that he repainted or destroyed earlier work.",
+        "The water lilies were dismissed late in his life as a blind old man's wallpaper; they're now treated as proto-abstraction — rooms at the Orangerie people sit inside like chapels."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "The bridge, the prints on his walls, the flat mirrored water — Giverny is Japonisme you can walk through."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "photography",
+          "note": "Once the camera owned accuracy, painting was freed to chase light and time — impressionism is painting’s answer to the lens."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "starry",
+          "note": "Van Gogh saw the impressionists in Paris in 1886 — then pushed their broken color somewhere far more violent."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "Water Lilies, 1916-19 Claude Monet Oil on canvas #ArtSky",
+          "by": "@rosevanlear.bsky.social",
+          "score": 413,
+          "comments": 4,
+          "url": "https://bsky.app/profile/rosevanlear.bsky.social/post/3mgge7fa5c22u"
+        },
+        {
+          "src": "BSKY",
+          "text": "When I visited Monet's garden in person last year, I was inspired to paint his water lilies in different colored light as well. Cobalt Light Original Oil Painting by Erin Hanson, 2025 16 x 10 in #monet #lilies #lilypond #floral #oilpainting #sciart #dailyart #art @fineartgallery.bsky.social",
+          "by": "@erinhansonartist.bsky.social",
+          "score": 143,
+          "comments": 1,
+          "url": "https://bsky.app/profile/erinhansonartist.bsky.social/post/3mitu4izkss2b"
+        }
+      ]
+    },
+    "mondrian": {
+      "kind": "ARTIST",
+      "pullable": true,
+      "title": "Piet Mondrian",
+      "byline": {
+        "name": "Piet Mondrian",
+        "sub": "1872–1944"
+      },
+      "cat": "ARTIST / THE GRID THAT ATE THE WORLD",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Piet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg?width=900",
+      "capRight": "COMPOSITION II, 1930",
+      "spec": {
+        "MOVEMENT": "De Stijl — founded 1917, Netherlands",
+        "RULES": "Straight lines, right angles, primaries only",
+        "OBSESSION": "Boogie-woogie jazz",
+        "LAST_WORK": "‘Broadway Boogie Woogie’, NYC"
+      },
+      "fact": "He painted Dutch windmills and trees for twenty years before reducing everything to the grid — and the grid had rules: verticals, horizontals, primaries, no symmetry, ever. He'd shift a black line by millimeters for weeks. The paintings look machine-made; they're hand-agonized.",
+      "more": [
+        "He was a boogie-woogie fanatic — first thing he did in New York was go dancing. His last finished painting, 'Broadway Boogie Woogie,' breaks his own black lines into stuttering yellow taxis and traffic: the grid, syncopated.",
+        "De Stijl wanted the grid to absorb everything — painting, chairs, buildings, cities. It roughly worked: every minimalist interior, modernist poster, and app layout grid is downstream of this handful of Dutch zealots."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "ysl",
+          "note": "The 1965 Mondrian dresses — the grid walks off the canvas and into couture."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "bauhaus",
+          "note": "De Stijl and the Bauhaus traded people and dogma — parallel churches of the right angle."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "starry",
+          "note": "The other Dutch line: Van Gogh bent nature into feeling; Mondrian straightened it into law."
+        }
+      ]
+    },
+    "debussy": {
+      "kind": "PERSON",
+      "pullable": true,
+      "title": "Debussy & La Mer",
+      "byline": {
+        "name": "Claude Debussy",
+        "sub": "1862–1918"
+      },
+      "cat": "PERSON / THE WAVE, ORCHESTRATED",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Debussy%20by%20Atelier%20Nadar.jpg?width=900",
+      "capRight": "LA MER, 1905",
+      "spec": {
+        "THE_SCORE": "La Mer, 1905",
+        "THE_COVER": "Hokusai’s Great Wave, by his request",
+        "THE_SPARK": "Javanese gamelan, 1889 World’s Fair",
+        "LABEL": "Called ‘impressionist’ — he hated it"
+      },
+      "fact": "When La Mer was published in 1905, Debussy asked for Hokusai's Great Wave on the cover — a Japanese woodblock fronting French orchestral music about the sea. The whole east-west circuit of the era, printed on one score.",
+      "more": [
+        "At the 1889 World's Fair he heard a Javanese gamelan orchestra and never recovered — the layered bells and non-Western scales surface in his music for the rest of his life. He said Javanese counterpoint made Palestrina look like child's play.",
+        "Critics called his music 'impressionist' by analogy with Monet; he loathed the term. The painters got it from a sneer, the composer got it secondhand — nobody in the movement chose its name."
+      ],
+      "connections": [
+        {
+          "type": "ECHO",
+          "ref": "wave",
+          "note": "He put the print on the score — the Wave’s first great remix."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "worlds-fair-1889",
+          "note": "The gamelan pavilion rewired him — the fair’s most durable souvenir."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "japonisme",
+          "note": "Japonisme’s reach past painting: into harmony itself."
+        },
+        {
+          "type": "ECHO",
+          "ref": "monet",
+          "note": "Yoked together under a label they both got from other people’s insults."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "Turns out you can stay in the Eastbourne hotel room where Debussy wrote much of La mer. They've called it the Debussy Suite (Suite bergamasque was right there)",
+          "by": "@joannawyld.bsky.social",
+          "score": 47,
+          "comments": 6,
+          "url": "https://bsky.app/profile/joannawyld.bsky.social/post/3m33nu2cc322c"
+        },
+        {
+          "src": "BSKY",
+          "text": "Que l'année 2025 soit une mer d'huile -- Claude Debussy, La Mer, par l'orchestre Philarmonique Tchèque, conduit par Roger Desormières (1960)",
+          "by": "@jean-no.bsky.social",
+          "score": 41,
+          "comments": 1,
+          "url": "https://bsky.app/profile/jean-no.bsky.social/post/3leu4i7psnk2n"
+        }
+      ]
+    },
+    "caligari": {
+      "kind": "POP",
+      "pullable": true,
+      "title": "The Cabinet of Dr. Caligari",
+      "byline": {
+        "name": "Robert Wiene, dir.",
+        "sub": "Germany, 1920"
+      },
+      "cat": "POP / EXPRESSIONISM WALKS INTO CINEMA",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Das%20Kabinett%20des%20Doktor%20Caligari%201920%20Poster.jpg?width=900",
+      "capRight": "1920",
+      "spec": {
+        "SETS": "Painted shadows, impossible angles",
+        "WHY_PAINTED": "Lighting was expensive; paint was not",
+        "THE_TWIST": "A framing device the writers fought",
+        "LEGACY": "Horror, noir, Burton — all downstream"
+      },
+      "fact": "The shadows in Caligari are painted on the walls — light itself, faked in paint, partly because electricity was expensive in 1920 Berlin. Necessity became a style: the tilted streets and knife-edge shadows invented the look of horror and film noir in one low-budget move.",
+      "more": [
+        "The writers' script was an attack on blind obedience to authority; the studio added a framing device that reveals the narrator as an asylum patient, flipping the meaning. Critic Siegfried Kracauer's famous argument ('From Caligari to Hitler') reads that reversal as Weimar Germany rehearsing its own submission."
+      ],
+      "connections": [
+        {
+          "type": "INFLUENCE",
+          "ref": "expressionism",
+          "note": "The movement’s painted distortion, projected at 24 frames a second."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "frankenstein",
+          "note": "Hollywood’s 1931 Frankenstein borrowed this film’s shadows wholesale — Karloff’s monster lives on a Caligari set."
+        },
+        {
+          "type": "ECHO",
+          "ref": "scream",
+          "note": "The same nervous-system aesthetic: the world bent to match the anxiety."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "BSKY",
+          "text": "The Cabinet of Dr. Caligari (1920) The Cabinet of Dr. Caligari at the Sphere",
+          "by": "@moviessilently.bsky.social",
+          "score": 293,
+          "comments": 13,
+          "url": "https://bsky.app/profile/moviessilently.bsky.social/post/3lvgtasz4z22z"
+        },
+        {
+          "src": "BSKY",
+          "text": "Well, if it's World Goth Day... Conrad Veidt in THE CABINET OF DR CALIGARI",
+          "by": "@moviessilently.bsky.social",
+          "score": 364,
+          "comments": 15,
+          "url": "https://bsky.app/profile/moviessilently.bsky.social/post/3lpsdmzrj322s"
+        }
+      ]
+    },
+    "photography": {
+      "kind": "TECHNIQUE",
+      "pullable": true,
+      "title": "The Birth of Photography",
+      "byline": {
+        "name": "Niépce, Daguerre, Talbot",
+        "sub": "1826–1839"
+      },
+      "cat": "TECHNIQUE / THE LENS LEARNS TO REMEMBER",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20the%20Window%20at%20Le%20Gras%2C%20Joseph%20Nic%C3%A9phore%20Ni%C3%A9pce.jpg?width=900",
+      "capRight": "c. 1826 — 8-HOUR EXPOSURE",
+      "spec": {
+        "FIRST_PHOTO": "Niépce, c. 1826 — an 8-hour exposure",
+        "GONE_PUBLIC": "1839 — France buys Daguerre’s patent",
+        "THE_GIFT": "Released ‘free to the world’ (except England)",
+        "CASUALTY": "The portrait-miniature industry"
+      },
+      "fact": "The first photograph — Niépce's view from his window, c. 1826 — needed roughly eight hours of exposure, which is why the sun lights both sides of the courtyard. Thirteen years later France bought Daguerre's process and declared it 'free to the world.' Except England: Daguerre had quietly patented it there first.",
+      "more": [
+        "The camera obscura had existed for two thousand years; photography is just the moment chemistry learned to keep what the lens already saw.",
+        "It bankrupted portrait miniaturists within a generation — and freed painting from the job of accuracy. Impressionism, expressionism, abstraction: all of it happens after the camera takes over remembering."
+      ],
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "camera-obscura",
+          "note": "Two millennia of the dark room, waiting for film."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "monet",
+          "note": "Once the lens owned likeness, painters were free to chase light instead — the camera is impressionism’s silent partner."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "expressionism",
+          "note": "Step two of the same liberation: if the camera does the seeing, painting can do the feeling."
+        }
+      ]
+    },
+    "emoji": {
+      "kind": "POP",
+      "pullable": true,
+      "title": "Emoji",
+      "byline": {
+        "name": "Shigetaka Kurita + NTT DoCoMo",
+        "sub": "Japan, 1999"
+      },
+      "cat": "POP / ART HISTORY IN YOUR KEYBOARD",
+      "capRight": "1999",
+      "spec": {
+        "THE_FIRST_SET": "176 pictograms, 12×12 pixels",
+        "DESIGNER": "Shigetaka Kurita, 1999",
+        "CANONIZED": "MoMA acquired the original set, 2016",
+        "GOVERNANCE": "The Unicode Consortium votes on new ones"
+      },
+      "fact": "MoMA acquired the original 176 emoji in 2016 — twelve-by-twelve-pixel graphics designed by Shigetaka Kurita for Japanese pagers now sit in the same collection as Starry Night. And two of the most-sent images on Earth are literal art citations: 🌊 is Hokusai's wave, 😱 is Munch's Scream.",
+      "more": [
+        "New emoji are approved by vote at the Unicode Consortium — a committee of mostly tech companies is the closest thing global visual language has to an academy. Salon painting had juries; your keyboard has one too.",
+        "The lineage is older than phones: Japanese picture-writing conventions run from illustrated scrolls through manga iconography (sweat drop, anger cross) straight into Kurita's set."
+      ],
+      "connections": [
+        {
+          "type": "ECHO",
+          "ref": "wave",
+          "note": "🌊 — a 19th-century woodblock, shipped on three billion devices."
+        },
+        {
+          "type": "ECHO",
+          "ref": "scream",
+          "note": "😱 — Munch’s figure, flattened to 12×12 pixels, meaning survives."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "manga",
+          "note": "Manga’s visual shorthand — the sweat drop, the anger vein — is emoji’s direct grammar."
+        }
+      ]
+    },
+    "manga": {
+      "kind": "POP",
+      "pullable": true,
+      "title": "Manga",
+      "byline": {
+        "name": "From Hokusai’s sketchbooks",
+        "sub": "1814 → industry"
+      },
+      "cat": "POP / THE WORD HOKUSAI COINED",
+      "capRight": "1814 →",
+      "spec": {
+        "THE_WORD": "Hokusai Manga, 1814 — ‘whimsical pictures’",
+        "FORM": "15 volumes of sketchbooks",
+        "MODERNIZED": "Osamu Tezuka’s cinematic panels, 1940s–",
+        "SCALE": "Out-earns the American comics industry many times over"
+      },
+      "fact": "Hokusai coined the word: his 'Hokusai Manga' (1814) were fifteen volumes of sketchbooks — thousands of drawings of wrestlers, ghosts, waves, cats, plumbing. 'Whimsical pictures.' The word survived two centuries and became the largest comics industry on Earth.",
+      "more": [
+        "The modern form is usually credited to Osamu Tezuka, who imported film grammar — closeups, cuts, motion lines — into postwar comics. The through-line from ukiyo-e's flat drama to anime is unbroken.",
+        "Its iconographic shorthand — the sweat drop, the nosebleed, the anger cross — is a codified visual language readers learn without noticing. Emoji lifted the grammar wholesale."
+      ],
+      "connections": [
+        {
+          "type": "TECHNIQUE",
+          "ref": "ukiyo-e",
+          "note": "Same publishers, same woodblocks, same pop audience — manga is ukiyo-e’s direct heir."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "genji",
+          "note": "Illustrated Genji scrolls are the deep ancestor: words and pictures sharing narrative work, a thousand years back."
+        },
+        {
+          "type": "ECHO",
+          "ref": "emoji",
+          "note": "Manga’s shorthand became the keyboard’s."
+        }
+      ]
+    },
+    "streetwear": {
+      "kind": "FASHION",
+      "pullable": true,
+      "title": "Streetwear & The Drop",
+      "byline": {
+        "name": "Skate, hip-hop, and scarcity",
+        "sub": "1990s →"
+      },
+      "cat": "FASHION / SCARCITY AS A BUSINESS MODEL",
+      "capRight": "THURS 11AM",
+      "spec": {
+        "THE_MECHANIC": "The drop — tiny supply, fixed time, hard queue",
+        "THE_TEMPLE": "Supreme, Lafayette St, 1994",
+        "THE_PROOF": "A $30 branded brick reselling for $1,000",
+        "ENDGAME": "LVMH collabs and IPO valuations"
+      },
+      "fact": "Supreme once sold a clay brick with its logo for $30; it resold for up to $1,000. That's the drop economy in one object: manufactured scarcity plus a logo equals an asset class. The queue isn't a side effect — the queue is the product.",
+      "more": [
+        "Louis Vuitton sent Supreme a cease-and-desist in 2000 for parodying its monogram. In 2017 they collaborated instead. Seventeen years from lawsuit to co-branding is the whole story of luxury surrendering to the street.",
+        "The lineage: Westwood's provocation retail → hip-hop's uniform-making → skate shops' insider codes → Supreme's Thursday drops → every brand on Earth doing 'limited' anything."
+      ],
+      "connections": [
+        {
+          "type": "ECHO",
+          "ref": "jordan1",
+          "note": "The blue-chip asset of the resale economy this model created."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "westwood",
+          "note": "King’s Road wrote the manual: the shop as provocation, the clothes as membership."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "hiphop",
+          "note": "The culture that turned brands into lyrics and lyrics into demand."
+        },
+        {
+          "type": "ECHO",
+          "ref": "kawakubo",
+          "note": "Dover Street Market gave street brands couture shelf space — the crossover’s official venue."
+        },
+        {
+          "type": "ECHO",
+          "ref": "basquiat",
+          "note": "His crown on a hoodie is the same trade he made on canvas: street symbol, luxury price."
+        }
+      ]
+    },
+    "tschichold": {
+      "kind": "DESIGN",
+      "pullable": true,
+      "title": "Jan Tschichold",
+      "byline": {
+        "name": "Jan Tschichold",
+        "sub": "1902–1974"
+      },
+      "cat": "DESIGN / THE ZEALOT WHO RECANTED",
+      "capRight": "1928 / 1947",
+      "spec": {
+        "MANIFESTO": "Die neue Typographie, 1928",
+        "ARRESTED": "1933 — ‘cultural Bolshevism’",
+        "REFUGE": "Switzerland; later, Penguin Books",
+        "LATE_WORK": "Sabon — the classicist’s typeface"
+      },
+      "fact": "In 1928 he wrote modernism's rulebook — Die neue Typographie: sans-serif, asymmetry, no ornament, ever. In 1933 the Nazis arrested him for 'cultural Bolshevism' and he fled to Switzerland. Then the twist: he renounced his own manifesto, arguing its rigid absolutism shared a root with the politics that had jailed him. The zealot became typography's great apostate.",
+      "more": [
+        "His 1947–49 Penguin Composition Rules — four pages — standardized the look of the mass-market book. The man who wrote modernism's rules and then classical typography's rebuttal ended up quietly designing how everyone reads."
+      ],
+      "connections": [
+        {
+          "type": "HISTORY",
+          "ref": "bauhaus",
+          "note": "Radicalized by a 1923 Bauhaus exhibition; jailed under the same purge that closed the school."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "penguin",
+          "note": "The Composition Rules: modernist discipline applied to sixpence paperbacks."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "degenerate-art",
+          "note": "His arrest was the typographic front of the same war on modernism."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "helvetica",
+          "note": "The rational Swiss type culture he helped build produced the neutral sans he lived to grumble at."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "SE",
+          "text": "Typographers' \"canon of exemplars\": What are some books that typographers think are examples of great typography?",
+          "by": "graphicdesign.stackexchange",
+          "score": 5,
+          "comments": 1,
+          "url": "https://graphicdesign.stackexchange.com/questions/131247/typographers-canon-of-exemplars-what-are-some-books-that-typographers-think"
+        },
+        {
+          "src": "BSKY",
+          "text": "Jan Tschichold 'Penguin books concept work and design, c.1947. He also wrote Penguin Composition Rules which were the guidelines for composing the pages and typography of Penguin Books. The rules were embodied in a four page booklet of typographic instructions' dan-alexander.com/design/jan-t...",
+          "by": "@sardonicus.eu",
+          "score": 88,
+          "comments": 2,
+          "url": "https://bsky.app/profile/sardonicus.eu/post/3leclhasfrk2h"
         }
       ]
     }

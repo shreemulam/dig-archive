@@ -22,6 +22,15 @@ const QUERIES = {
   origin:'Origin of Species Darwin', 'orwell-1984':'Orwell 1984 novel',
   'silent-spring':'Silent Spring Rachel Carson', frankenstein:'Frankenstein Mary Shelley',
   gutenberg:'Gutenberg printing press', penguin:'Penguin books cover design',
+  dali:'Salvador Dali', duchamp:'Duchamp Fountain urinal', basquiat:'Basquiat',
+  banksy:'Banksy shredder auction', 'mona-lisa':'Mona Lisa theft 1911',
+  'art-heists':'Gardner museum heist', 'ghent-altarpiece':'Ghent Altarpiece stolen',
+  'rose-valland':'Rose Valland art', 'yves-klein':'Yves Klein blue IKB',
+  monet:'Monet Giverny water lilies', mondrian:'Mondrian De Stijl grid',
+  debussy:'Debussy La Mer', caligari:'Cabinet of Dr Caligari',
+  photography:'first photograph Niepce daguerreotype', emoji:'emoji history MoMA',
+  manga:'manga history Hokusai Tezuka', streetwear:'Supreme drop streetwear resale',
+  tschichold:'Jan Tschichold typography',
 };
 
 // StackExchange site per record — only where a genuinely good site exists
@@ -36,6 +45,10 @@ const SE_SITES = {
   origin:'literature', 'silent-spring':'literature',
   'camera-obscura':'photo', 'prussian-blue':'chemistry', ultramarine:'chemistry',
   fallingwater:'engineering',
+  'mona-lisa':'history', 'art-heists':'history', 'ghent-altarpiece':'history',
+  'rose-valland':'history', dali:'history', duchamp:'history', monet:'history',
+  photography:'photo', caligari:'movies', manga:'anime', debussy:'music',
+  tschichold:'graphicdesign', mondrian:'graphicdesign',
 };
 
 const sleep = ms => new Promise(r=>setTimeout(r, ms));
