@@ -593,11 +593,12 @@ function renderCard(id){
   const disc = $('disc');
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   if(h.discourse && h.discourse.length){
+    const SRC = {HN:'HACKER NEWS', BSKY:'BLUESKY', SE:'STACK EXCHANGE', REDDIT:'REDDIT'};
     disc.innerHTML = '<div class="k">// The discourse — live from the internet</div>' +
       h.discourse.map(d=>`
         <div class="d-item">
-          <div class="d-text">${d.src==='HN'?'':'“'}${esc(d.text)}${d.src==='HN'?'':'”'}</div>
-          <div class="d-meta">${d.src==='HN'?'HACKER NEWS':'BLUESKY'} · ${esc(d.by)} · ▲ ${d.score}${d.comments?` · ${d.comments} REPLIES`:''} · <a href="${d.url}" target="_blank" rel="noopener">OPEN THREAD ↗</a></div>
+          <div class="d-text">${d.src==='BSKY'?'“':''}${esc(d.text)}${d.src==='BSKY'?'”':''}</div>
+          <div class="d-meta">${SRC[d.src]||d.src} · ${esc(d.by)} · ▲ ${d.score}${d.comments?` · ${d.comments} ${d.src==='SE'?'ANSWERS':'REPLIES'}`:''} · <a href="${d.url}" target="_blank" rel="noopener">OPEN THREAD ↗</a></div>
         </div>`).join('');
   } else {
     disc.innerHTML = '';

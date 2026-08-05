@@ -159,28 +159,36 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "Great Fox Wave inspired by the famous woodblock print by Hokusai from 2021 #animalart #feralart",
-          "by": "@juliartworld.bsky.social",
-          "score": 2946,
-          "comments": 24,
-          "url": "https://bsky.app/profile/juliartworld.bsky.social/post/3lizeolpyhs2g"
-        },
-        {
-          "src": "BSKY",
-          "text": "The Great Wave off Kanagawa | Katsushika Hokusai 1831 #Ukiyo-e #WoodblockPrint",
-          "by": "@oh-that-guy.bsky.social",
-          "score": 676,
-          "comments": 15,
-          "url": "https://bsky.app/profile/oh-that-guy.bsky.social/post/3m5op2onc5c2i"
-        },
-        {
           "src": "HN",
           "text": "1-Bit Hokusai's \"The Great Wave\" (2023)",
           "by": "stephen-hill",
           "score": 615,
           "comments": 93,
           "url": "https://news.ycombinator.com/item?id=47863570"
+        },
+        {
+          "src": "HN",
+          "text": "1-Bit Hokusai’s ”The Great Wave”",
+          "by": "scraplab",
+          "score": 391,
+          "comments": 72,
+          "url": "https://news.ycombinator.com/item?id=35866283"
+        },
+        {
+          "src": "BSKY",
+          "text": "The Great Wave off Kanagawa | Katsushika Hokusai 1831 #Ukiyo-e #WoodblockPrint",
+          "by": "@oh-that-guy.bsky.social",
+          "score": 675,
+          "comments": 15,
+          "url": "https://bsky.app/profile/oh-that-guy.bsky.social/post/3m5op2onc5c2i"
+        },
+        {
+          "src": "BSKY",
+          "text": "Great Fox Wave inspired by the famous woodblock print by Hokusai from 2021 #animalart #feralart",
+          "by": "@juliartworld.bsky.social",
+          "score": 2946,
+          "comments": 24,
+          "url": "https://bsky.app/profile/juliartworld.bsky.social/post/3lizeolpyhs2g"
         }
       ]
     },
@@ -241,6 +249,22 @@
       ],
       "discourse": [
         {
+          "src": "HN",
+          "text": "Extending Van Gogh’s Starry Night with Inpainting",
+          "by": "lelf",
+          "score": 281,
+          "comments": 43,
+          "url": "https://news.ycombinator.com/item?id=8696255"
+        },
+        {
+          "src": "HN",
+          "text": "Code is indeed poetry: Van Gogh's Starry Night comes to Life",
+          "by": "davewingler",
+          "score": 134,
+          "comments": 26,
+          "url": "https://news.ycombinator.com/item?id=3578905"
+        },
+        {
           "src": "BSKY",
           "text": "I thought this was way cool. It’s a fire hydrant painted in Starry Night by Van Gogh in Kirkwood.",
           "by": "@ianwrobel.bsky.social",
@@ -255,14 +279,6 @@
           "score": 1074,
           "comments": 16,
           "url": "https://bsky.app/profile/oh-that-guy.bsky.social/post/3malqm2eeos2t"
-        },
-        {
-          "src": "HN",
-          "text": "Extending Van Gogh’s Starry Night with Inpainting",
-          "by": "lelf",
-          "score": 281,
-          "comments": 43,
-          "url": "https://news.ycombinator.com/item?id=8696255"
         }
       ]
     },
@@ -404,10 +420,26 @@
       ],
       "discourse": [
         {
+          "src": "HN",
+          "text": "108B Pixel Scan of Johannes Vermeer's Girl with a Pearl Earring",
+          "by": "twalichiewicz",
+          "score": 476,
+          "comments": 138,
+          "url": "https://news.ycombinator.com/item?id=43852266"
+        },
+        {
+          "src": "HN",
+          "text": "Activist glues his head to glass covering 'Girl with a Pearl Earring' painting",
+          "by": "f1shy",
+          "score": 84,
+          "comments": 445,
+          "url": "https://news.ycombinator.com/item?id=33359991"
+        },
+        {
           "src": "BSKY",
           "text": "Vermeer’s Girl With The Pearl Earring will be shown in Osaka, later this year, and the press conference was as Japanese as you’d expect #Vermeer",
           "by": "@bassano.bsky.social",
-          "score": 19880,
+          "score": 19879,
           "comments": 130,
           "url": "https://bsky.app/profile/bassano.bsky.social/post/3mmvaow6hgk23"
         },
@@ -418,14 +450,6 @@
           "score": 1975,
           "comments": 75,
           "url": "https://bsky.app/profile/riotgrlerin.bsky.social/post/3lnaslfi6yk26"
-        },
-        {
-          "src": "HN",
-          "text": "108B Pixel Scan of Johannes Vermeer's Girl with a Pearl Earring",
-          "by": "twalichiewicz",
-          "score": 476,
-          "comments": 138,
-          "url": "https://news.ycombinator.com/item?id=43852266"
         }
       ]
     },
@@ -784,19 +808,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "Process for \"Japonisme\" I worked differently than usual, building the illustration up from brown and green and adding additional subtle colours near the end.",
-          "by": "@lisajenkinsart.bsky.social",
-          "score": 89,
-          "comments": 0,
-          "url": "https://bsky.app/profile/lisajenkinsart.bsky.social/post/3mgak524wuy2c"
-        },
-        {
-          "src": "BSKY",
           "text": "Emil Orlik 1870-1932 Two Japanese Men #CzechArtist #Japonisme #NationalGalleryPrague",
           "by": "@floatingworlds.bsky.social",
           "score": 50,
           "comments": 0,
           "url": "https://bsky.app/profile/floatingworlds.bsky.social/post/3lghc3qp7a22w"
+        },
+        {
+          "src": "BSKY",
+          "text": "Process for \"Japonisme\" I worked differently than usual, building the illustration up from brown and green and adding additional subtle colours near the end.",
+          "by": "@lisajenkinsart.bsky.social",
+          "score": 89,
+          "comments": 0,
+          "url": "https://bsky.app/profile/lisajenkinsart.bsky.social/post/3mgak524wuy2c"
         }
       ]
     },
@@ -855,6 +879,14 @@
       "imgCaption": "HIROSHIGE, 1857",
       "discourse": [
         {
+          "src": "HN",
+          "text": "Japanese Woodblock Print Search",
+          "by": "curmudgeon22",
+          "score": 207,
+          "comments": 32,
+          "url": "https://news.ycombinator.com/item?id=47107781"
+        },
+        {
           "src": "BSKY",
           "text": "Koinobori 鯉のぼり Koinobori are carp-shaped windsocks traditionally flown in Japan to celebrate Children's Day. I also tried to create a modern version of the traditional ukiyo-e prints. #ukiyo-e #japan #illustration",
           "by": "@damare.bsky.social",
@@ -869,14 +901,6 @@
           "score": 460,
           "comments": 0,
           "url": "https://bsky.app/profile/womensartbluesky.bsky.social/post/3lqjrh4iul22e"
-        },
-        {
-          "src": "HN",
-          "text": "Japanese Woodblock Print Search",
-          "by": "curmudgeon22",
-          "score": 207,
-          "comments": 32,
-          "url": "https://news.ycombinator.com/item?id=47107781"
         }
       ]
     },
@@ -929,6 +953,14 @@
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian_blue.jpg?width=900",
       "imgCaption": "THE PIGMENT",
       "discourse": [
+        {
+          "src": "SE",
+          "text": "What is the chemical composition of Ferrous Ferrocyanide?",
+          "by": "chemistry.stackexchange",
+          "score": 7,
+          "comments": 1,
+          "url": "https://chemistry.stackexchange.com/questions/157652/what-is-the-chemical-composition-of-ferrous-ferrocyanide"
+        },
         {
           "src": "BSKY",
           "text": "#workinprogress #evolving #landscape #mountains #mixedmedia 🙂",
@@ -1001,12 +1033,12 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "Here's my piece for the #oohchiczine fashion zine! It's an honor to be a part of this project for a third year in a row :) Please check out the full zine and everyone else's pieces on oohchiczine.com 🦋💙",
-          "by": "@pierromancy.bsky.social",
-          "score": 693,
-          "comments": 10,
-          "url": "https://bsky.app/profile/pierromancy.bsky.social/post/3lzepxidxz22w"
+          "src": "SE",
+          "text": "What is the source of the intense blue colour of ultramarine pigment?",
+          "by": "chemistry.stackexchange",
+          "score": 4,
+          "comments": 0,
+          "url": "https://chemistry.stackexchange.com/questions/182277/what-is-the-source-of-the-intense-blue-colour-of-ultramarine-pigment"
         },
         {
           "src": "BSKY",
@@ -1015,6 +1047,14 @@
           "score": 93,
           "comments": 6,
           "url": "https://bsky.app/profile/theofficialgrb.bsky.social/post/3lzwbitg5fk27"
+        },
+        {
+          "src": "BSKY",
+          "text": "Here's my piece for the #oohchiczine fashion zine! It's an honor to be a part of this project for a third year in a row :) Please check out the full zine and everyone else's pieces on oohchiczine.com 🦋💙",
+          "by": "@pierromancy.bsky.social",
+          "score": 693,
+          "comments": 10,
+          "url": "https://bsky.app/profile/pierromancy.bsky.social/post/3lzepxidxz22w"
         }
       ]
     },
@@ -1125,19 +1165,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "The loudest things ever recorded: 3. The Saturn V Rocket Launch 2. The 1883 Krakatoa volcanic eruption 1. An autoplaying Facebook reel",
-          "by": "@soozuk.bsky.social",
-          "score": 179,
-          "comments": 0,
-          "url": "https://bsky.app/profile/soozuk.bsky.social/post/3mk33mch7dk2q"
-        },
-        {
-          "src": "BSKY",
           "text": "Ah, a fellow 1883 Krakatoa eruption connoisseur",
           "by": "@janecoaston.bsky.social",
           "score": 57,
           "comments": 6,
           "url": "https://bsky.app/profile/janecoaston.bsky.social/post/3ltzhhvs62k2c"
+        },
+        {
+          "src": "BSKY",
+          "text": "The loudest things ever recorded: 3. The Saturn V Rocket Launch 2. The 1883 Krakatoa volcanic eruption 1. An autoplaying Facebook reel",
+          "by": "@soozuk.bsky.social",
+          "score": 179,
+          "comments": 0,
+          "url": "https://bsky.app/profile/soozuk.bsky.social/post/3mk33mch7dk2q"
         }
       ]
     },
@@ -1260,10 +1300,26 @@
       ],
       "discourse": [
         {
+          "src": "HN",
+          "text": "Paris Will Create the City's Largest Gardens Around the Eiffel Tower",
+          "by": "gmck",
+          "score": 129,
+          "comments": 94,
+          "url": "https://news.ycombinator.com/item?id=19985285"
+        },
+        {
+          "src": "HN",
+          "text": "Selling the Eiffel Tower, Twice",
+          "by": "kiernanmcgowan",
+          "score": 25,
+          "comments": 9,
+          "url": "https://news.ycombinator.com/item?id=15610125"
+        },
+        {
           "src": "BSKY",
           "text": "For 137 years, the Eiffel Tower honored 72 male scientists in gold lettering. Not one woman was included. Now Paris is adding the names of 72 women scientists to finally correct that history. Brilliant minds were always there. History just failed to recognize them. #SheShed",
           "by": "@andreadevon.sheshed.rocks",
-          "score": 1173,
+          "score": 1174,
           "comments": 27,
           "url": "https://bsky.app/profile/andreadevon.sheshed.rocks/post/3mmrashv3vr25"
         },
@@ -1271,17 +1327,9 @@
           "src": "BSKY",
           "text": "🔥 10 Interesting Facts About the Eiffel Tower – Surprising & Fascinating Join us & read the article: 👉 patreon.com/go4know #knowledge #funfacts #facts ##edusky #ai #blog #aiart #chatgpt #photo #photography #eiffel #tower #paris #architecture #landmark #history #tourism #science #design #travel",
           "by": "@go4know.com",
-          "score": 519,
+          "score": 520,
           "comments": 5,
           "url": "https://bsky.app/profile/go4know.com/post/3lyknumvxfs2k"
-        },
-        {
-          "src": "HN",
-          "text": "Paris Will Create the City's Largest Gardens Around the Eiffel Tower",
-          "by": "gmck",
-          "score": 129,
-          "comments": 94,
-          "url": "https://news.ycombinator.com/item?id=19985285"
         }
       ]
     },
@@ -1399,12 +1447,20 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "Marianne Brandt (1893-1983), designer from the Bauhaus school, head of the Bauhaus Metal Workshop in 1927, pioneer of modern design #WomensArt",
-          "by": "@womensartbluesky.bsky.social",
-          "score": 620,
-          "comments": 1,
-          "url": "https://bsky.app/profile/womensartbluesky.bsky.social/post/3mfnznizhxc2c"
+          "src": "SE",
+          "text": "Where did the early graphic design theory in Asia originate from?",
+          "by": "graphicdesign.stackexchange",
+          "score": 15,
+          "comments": 3,
+          "url": "https://graphicdesign.stackexchange.com/questions/126893/where-did-the-early-graphic-design-theory-in-asia-originate-from"
+        },
+        {
+          "src": "HN",
+          "text": "Exploring Bauhaus: Revolutionary design school that shaped modern world",
+          "by": "thunderbong",
+          "score": 113,
+          "comments": 81,
+          "url": "https://news.ycombinator.com/item?id=39665090"
         },
         {
           "src": "BSKY",
@@ -1415,12 +1471,12 @@
           "url": "https://bsky.app/profile/womensartbluesky.bsky.social/post/3lpnreb4onk2k"
         },
         {
-          "src": "HN",
-          "text": "Exploring Bauhaus: Revolutionary design school that shaped modern world",
-          "by": "thunderbong",
-          "score": 113,
-          "comments": 81,
-          "url": "https://news.ycombinator.com/item?id=39665090"
+          "src": "BSKY",
+          "text": "Marianne Brandt (1893-1983), designer from the Bauhaus school, head of the Bauhaus Metal Workshop in 1927, pioneer of modern design #WomensArt",
+          "by": "@womensartbluesky.bsky.social",
+          "score": 620,
+          "comments": 1,
+          "url": "https://bsky.app/profile/womensartbluesky.bsky.social/post/3mfnznizhxc2c"
         }
       ]
     },
@@ -1469,6 +1525,22 @@
         }
       ],
       "discourse": [
+        {
+          "src": "SE",
+          "text": "What is so good about Helvetica?",
+          "by": "graphicdesign.stackexchange",
+          "score": 83,
+          "comments": 6,
+          "url": "https://graphicdesign.stackexchange.com/questions/44577/what-is-so-good-about-helvetica"
+        },
+        {
+          "src": "SE",
+          "text": "What is the difference between a font and a typeface?",
+          "by": "graphicdesign.stackexchange",
+          "score": 66,
+          "comments": 7,
+          "url": "https://graphicdesign.stackexchange.com/questions/12717/what-is-the-difference-between-a-font-and-a-typeface"
+        },
         {
           "src": "BSKY",
           "text": "Also Helvetica has been Nasa’s primary typeface since like, 1975, so it’s not chasing a trend from fifteen years ago - they’re the OG, baby",
@@ -1715,19 +1787,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "Rare photo of Andy Warhol's appearance on Supermarket Sweep. He received the lowest score in the show's history",
-          "by": "@danmentos.com",
-          "score": 309,
-          "comments": 6,
-          "url": "https://bsky.app/profile/danmentos.com/post/3l4wqtlagvg22"
-        },
-        {
-          "src": "BSKY",
           "text": "I just want to give a twist to the Campbell's Soup Cans by Warhol 😀",
           "by": "@lovebeefybutts.bsky.social",
           "score": 164,
           "comments": 2,
           "url": "https://bsky.app/profile/lovebeefybutts.bsky.social/post/3kynpuujbms2h"
+        },
+        {
+          "src": "BSKY",
+          "text": "Rare photo of Andy Warhol's appearance on Supermarket Sweep. He received the lowest score in the show's history",
+          "by": "@danmentos.com",
+          "score": 309,
+          "comments": 6,
+          "url": "https://bsky.app/profile/danmentos.com/post/3l4wqtlagvg22"
         }
       ]
     },
@@ -2039,20 +2111,20 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "I sincerely believe Mary Wollstonecraft Shelley would have loved Mel Brooks' Young Frankenstein.",
-          "by": "@virginiabarksdale.bsky.social",
-          "score": 1716,
-          "comments": 2,
-          "url": "https://bsky.app/profile/virginiabarksdale.bsky.social/post/3m3gordkwoc24"
+          "src": "SE",
+          "text": "Stories From the Year Without a Summer",
+          "by": "literature.stackexchange",
+          "score": 7,
+          "comments": 1,
+          "url": "https://literature.stackexchange.com/questions/5823/stories-from-the-year-without-a-summer"
         },
         {
-          "src": "BSKY",
-          "text": "I do not wish women to have power over men; but over themselves. ~ Mary Shelley #Quote #BookSky #PlayWright",
-          "by": "@totallypaula.bsky.social",
-          "score": 635,
-          "comments": 14,
-          "url": "https://bsky.app/profile/totallypaula.bsky.social/post/3mml6ikdck22r"
+          "src": "SE",
+          "text": "What is the origin of the name \"Frankenstein\"?",
+          "by": "literature.stackexchange",
+          "score": 6,
+          "comments": 3,
+          "url": "https://literature.stackexchange.com/questions/8348/what-is-the-origin-of-the-name-frankenstein"
         },
         {
           "src": "HN",
@@ -2061,6 +2133,14 @@
           "score": 40,
           "comments": 5,
           "url": "https://news.ycombinator.com/item?id=26923930"
+        },
+        {
+          "src": "BSKY",
+          "text": "I sincerely believe Mary Wollstonecraft Shelley would have loved Mel Brooks' Young Frankenstein.",
+          "by": "@virginiabarksdale.bsky.social",
+          "score": 1716,
+          "comments": 2,
+          "url": "https://bsky.app/profile/virginiabarksdale.bsky.social/post/3m3gordkwoc24"
         }
       ]
     },
@@ -2116,12 +2196,20 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "Well it's official he is dead, that's right Johannes Gutenberg inventor of the moveable type printing press is and has been dead since 1468",
-          "by": "@geftokingmongoose.bsky.social",
-          "score": 310,
-          "comments": 24,
-          "url": "https://bsky.app/profile/geftokingmongoose.bsky.social/post/3lxlnoepe3k2k"
+          "src": "SE",
+          "text": "Why didn't Europeans before Gutenberg print with woodblocks?",
+          "by": "history.stackexchange",
+          "score": 39,
+          "comments": 2,
+          "url": "https://history.stackexchange.com/questions/48389/why-didnt-europeans-before-gutenberg-print-with-woodblocks"
+        },
+        {
+          "src": "SE",
+          "text": "How did the monks whose job was to copy books react to Gutenberg's printing press?",
+          "by": "history.stackexchange",
+          "score": 23,
+          "comments": 1,
+          "url": "https://history.stackexchange.com/questions/5552/how-did-the-monks-whose-job-was-to-copy-books-react-to-gutenbergs-printing-pres"
         },
         {
           "src": "BSKY",
@@ -2130,6 +2218,14 @@
           "score": 134,
           "comments": 0,
           "url": "https://bsky.app/profile/questabandoner.bsky.social/post/3kss6ay5ook26"
+        },
+        {
+          "src": "BSKY",
+          "text": "Well it's official he is dead, that's right Johannes Gutenberg inventor of the moveable type printing press is and has been dead since 1468",
+          "by": "@geftokingmongoose.bsky.social",
+          "score": 310,
+          "comments": 24,
+          "url": "https://bsky.app/profile/geftokingmongoose.bsky.social/post/3lxlnoepe3k2k"
         }
       ]
     },
@@ -2179,19 +2275,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "The cover for my new #history #book is full of hidden clues and Easter eggs... Want to decode them and sneak a glimpse at what's inside? Take a peek at the Alt text! Huge thanks to the art team at Penguin, and especially designer Isabelle De Cat. www.penguin.co.uk/books/461263...",
-          "by": "@cathamclarke.bsky.social",
-          "score": 164,
-          "comments": 7,
-          "url": "https://bsky.app/profile/cathamclarke.bsky.social/post/3lssrdzy6xk2o"
-        },
-        {
-          "src": "BSKY",
           "text": "Mind you, on this theme, this is what Penguin thought triffids looked like in 1960",
           "by": "@oddthisday.bsky.social",
           "score": 104,
           "comments": 11,
           "url": "https://bsky.app/profile/oddthisday.bsky.social/post/3mmlpypnpqk2b"
+        },
+        {
+          "src": "BSKY",
+          "text": "The cover for my new #history #book is full of hidden clues and Easter eggs... Want to decode them and sneak a glimpse at what's inside? Take a peek at the Alt text! Huge thanks to the art team at Penguin, and especially designer Isabelle De Cat. www.penguin.co.uk/books/461263...",
+          "by": "@cathamclarke.bsky.social",
+          "score": 164,
+          "comments": 7,
+          "url": "https://bsky.app/profile/cathamclarke.bsky.social/post/3lssrdzy6xk2o"
         }
       ]
     },
@@ -2419,19 +2515,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "If you like niche internet heroes, a woman in Vancouver is LEGENDARY for her fashion articles. Recently she's been especially focused on Alexander McQueen collections which is why they've been showing up on the main page all the time. It's crazy how much she singlehandedly does to document art!!!",
-          "by": "@depthsofwikipedia.bsky.social",
-          "score": 618,
-          "comments": 3,
-          "url": "https://bsky.app/profile/depthsofwikipedia.bsky.social/post/3lgxtdevyl22d"
-        },
-        {
-          "src": "BSKY",
           "text": "For those who aren’t into fashion or pop, Gaga served tonight, and she did it in 2009 archive McQueen, head to toe, with Nine Inch Nails’ drummer to boot.",
           "by": "@justjustan.bsky.social",
           "score": 162,
           "comments": 0,
           "url": "https://bsky.app/profile/justjustan.bsky.social/post/3mdu2ak4m4c2i"
+        },
+        {
+          "src": "BSKY",
+          "text": "If you like niche internet heroes, a woman in Vancouver is LEGENDARY for her fashion articles. Recently she's been especially focused on Alexander McQueen collections which is why they've been showing up on the main page all the time. It's crazy how much she singlehandedly does to document art!!!",
+          "by": "@depthsofwikipedia.bsky.social",
+          "score": 618,
+          "comments": 3,
+          "url": "https://bsky.app/profile/depthsofwikipedia.bsky.social/post/3lgxtdevyl22d"
         }
       ]
     },
@@ -2493,19 +2589,19 @@
       "discourse": [
         {
           "src": "BSKY",
-          "text": "The legendary Japanese fashion designer Rei Kawakubo, the visionary founder of the avant-garde label Comme des Garçons.",
-          "by": "@roger1952.bsky.social",
-          "score": 47,
-          "comments": 0,
-          "url": "https://bsky.app/profile/roger1952.bsky.social/post/3mfxf6wy5722f"
-        },
-        {
-          "src": "BSKY",
           "text": "Rei Kawakubo at the opening of her Comme des Garçons shop in Henri Bendel in 1983.",
           "by": "@roger1952.bsky.social",
           "score": 46,
           "comments": 0,
           "url": "https://bsky.app/profile/roger1952.bsky.social/post/3mhbkbjntps22"
+        },
+        {
+          "src": "BSKY",
+          "text": "The legendary Japanese fashion designer Rei Kawakubo, the visionary founder of the avant-garde label Comme des Garçons.",
+          "by": "@roger1952.bsky.social",
+          "score": 47,
+          "comments": 0,
+          "url": "https://bsky.app/profile/roger1952.bsky.social/post/3mfxf6wy5722f"
         }
       ]
     },
@@ -2561,6 +2657,22 @@
       ],
       "discourse": [
         {
+          "src": "SE",
+          "text": "Why did Waley choose to transcribe the titles of some chapters as opposed to translating them in The Tale of Genji?",
+          "by": "literature.stackexchange",
+          "score": 6,
+          "comments": 0,
+          "url": "https://literature.stackexchange.com/questions/15369/why-did-waley-choose-to-transcribe-the-titles-of-some-chapters-as-opposed-to-tra"
+        },
+        {
+          "src": "SE",
+          "text": "Which English translation of The Tale of Genji is the most accurate yet readable?",
+          "by": "literature.stackexchange",
+          "score": 5,
+          "comments": 1,
+          "url": "https://literature.stackexchange.com/questions/15056/which-english-translation-of-the-tale-of-genji-is-the-most-accurate-yet-readable"
+        },
+        {
           "src": "HN",
           "text": "Lost transcription of Tale of Genji chapter found in Japanese storeroom",
           "by": "apophasis",
@@ -2575,14 +2687,6 @@
           "score": 63,
           "comments": 1,
           "url": "https://bsky.app/profile/bornforart.bsky.social/post/3ly5ijhwems2b"
-        },
-        {
-          "src": "BSKY",
-          "text": "Tale of Genji has been disastrous for Japanese storytelling",
-          "by": "@kyh9.bsky.social",
-          "score": 40,
-          "comments": 0,
-          "url": "https://bsky.app/profile/kyh9.bsky.social/post/3mhbsowmwps2r"
         }
       ]
     },
@@ -2627,12 +2731,20 @@
       ],
       "discourse": [
         {
-          "src": "BSKY",
-          "text": "Tal día como hoy, hace 165 años (24 de noviembre de 1854), el geólogo, biólogo y naturalista Charles Darwin publicaba \"El origen de las especies\". #geología #biología #ciencia ⚒️🧪",
-          "by": "@lithospheric.jorgegines.com",
-          "score": 451,
-          "comments": 13,
-          "url": "https://bsky.app/profile/lithospheric.jorgegines.com/post/3lbpkh4vowc2n"
+          "src": "SE",
+          "text": "What does \"epesthai to logo\" mean in this letter from Charles Kingsley to Charles Darwin?",
+          "by": "literature.stackexchange",
+          "score": 10,
+          "comments": 1,
+          "url": "https://literature.stackexchange.com/questions/19110/what-does-epesthai-to-logo-mean-in-this-letter-from-charles-kingsley-to-charle"
+        },
+        {
+          "src": "SE",
+          "text": "What did Adam Sedgwick mean by \"tra-road\"?",
+          "by": "literature.stackexchange",
+          "score": 4,
+          "comments": 1,
+          "url": "https://literature.stackexchange.com/questions/19033/what-did-adam-sedgwick-mean-by-tra-road"
         },
         {
           "src": "BSKY",
@@ -2641,6 +2753,14 @@
           "score": 237,
           "comments": 8,
           "url": "https://bsky.app/profile/alisabokulich.bsky.social/post/3lbp4epv4b22c"
+        },
+        {
+          "src": "BSKY",
+          "text": "Tal día como hoy, hace 165 años (24 de noviembre de 1854), el geólogo, biólogo y naturalista Charles Darwin publicaba \"El origen de las especies\". #geología #biología #ciencia ⚒️🧪",
+          "by": "@lithospheric.jorgegines.com",
+          "score": 451,
+          "comments": 13,
+          "url": "https://bsky.app/profile/lithospheric.jorgegines.com/post/3lbpkh4vowc2n"
         }
       ]
     },
@@ -2684,6 +2804,22 @@
       ],
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1984%20first%20edition%20cover.jpg?width=900",
       "discourse": [
+        {
+          "src": "SE",
+          "text": "In 1984, why did O'Brien wait so long?",
+          "by": "literature.stackexchange",
+          "score": 39,
+          "comments": 3,
+          "url": "https://literature.stackexchange.com/questions/185/in-1984-why-did-obrien-wait-so-long"
+        },
+        {
+          "src": "SE",
+          "text": "What is the greater meaning of the thrush?",
+          "by": "literature.stackexchange",
+          "score": 13,
+          "comments": 1,
+          "url": "https://literature.stackexchange.com/questions/1928/what-is-the-greater-meaning-of-the-thrush"
+        },
         {
           "src": "BSKY",
           "text": "The George Orwell novel \"1984\" wasn't a fictional book. It was a warning.",

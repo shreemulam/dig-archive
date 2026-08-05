@@ -24,8 +24,36 @@ const QUERIES = {
   gutenberg:'Gutenberg printing press', penguin:'Penguin books cover design',
 };
 
+// StackExchange site per record — only where a genuinely good site exists
+const SE_SITES = {
+  helvetica:'graphicdesign', bauhaus:'graphicdesign', penguin:'graphicdesign',
+  'nazi-loot':'history', 'degenerate-art':'history', 'monuments-men':'history',
+  gurlitt:'history', 'worlds-fair-1889':'history', eiffel:'history',
+  gutenberg:'history', krakatoa:'history', 'red-lipstick':'history',
+  japonisme:'history', 'ukiyo-e':'history', expressionism:'history',
+  kiss:'history', wave:'history', starry:'history', scream:'history', pearl:'history',
+  frankenstein:'literature', 'orwell-1984':'literature', genji:'literature',
+  origin:'literature', 'silent-spring':'literature',
+  'camera-obscura':'photo', 'prussian-blue':'chemistry', ultramarine:'chemistry',
+  fallingwater:'engineering',
+};
+
 const sleep = ms => new Promise(r=>setTimeout(r, ms));
-const clean = t => t.replace(/\s+/g,' ').trim();
+const clean = t => t.replace(/\s+/g,' ').trim()
+  .replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
+
+async function se(q, site){
+  if(!site) return [];
+  try{
+    const r = await fetch(`https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=votes&q=${encodeURIComponent(q)}&site=${site}&pagesize=4`);
+    const d = await r.json();
+    return (d.items||[])
+      .filter(i=>i.score>=4)
+      .slice(0,2)
+      .map(i=>({src:'SE', text:clean(i.title), by:site+'.stackexchange', score:i.score,
+                comments:i.answer_count||0, url:i.link}));
+  }catch(e){ return []; }
+}
 
 async function hn(q){
   try{
@@ -63,11 +91,13 @@ const data = JSON.parse(fs.readFileSync('records.json','utf8'));
 let filled = 0;
 for(const [id, q] of Object.entries(QUERIES)){
   if(!data.records[id]) continue;
+  const s = await se(q, SE_SITES[id]);
   const [h, b] = [await hn(q), await bsky(q)];
-  const items = [...h, ...b].sort((a,z)=>z.score-a.score).slice(0,3);
+  // substance first (SE questions, HN threads), chatter after (Bluesky)
+  const items = [...s, ...h, ...b].slice(0,4);
   if(items.length){ data.records[id].discourse = items; filled++; }
   else delete data.records[id].discourse;
-  console.log(id.padEnd(18), h.length+' hn', b.length+' bsky');
+  console.log(id.padEnd(18), s.length+' se', h.length+' hn', b.length+' bsky');
   await sleep(700);
 }
 fs.writeFileSync('records.json', JSON.stringify(data, null, 2));
