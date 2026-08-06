@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="DIG.ARCHIVE — new acquisitions" href="/rss.xml">
 <style>
   :root{
     --bg:#0d0e0a;
@@ -413,6 +414,71 @@
     text-transform:uppercase;white-space:nowrap;
   }
   #atlasBtn:hover{color:var(--acid)}
+  #dailyBtn{
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    background:transparent;color:var(--pink);border:none;
+    border-left:1px solid var(--line);padding:0 18px;cursor:pointer;
+    text-transform:uppercase;white-space:nowrap;
+  }
+  #dailyBtn:hover{filter:brightness(1.2)}
+
+  /* ---------- DAILY DIG ---------- */
+  .daily-box{
+    margin-top:26px;border:1px solid var(--pink);
+    padding:16px 18px;max-width:520px;
+  }
+  .daily-box .db-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-size:10px;letter-spacing:.18em;color:var(--pink);text-transform:uppercase;margin-bottom:10px;
+  }
+  .daily-box .db-route{
+    font-family:var(--disp);font-weight:600;font-size:17px;
+    text-transform:uppercase;line-height:1.3;
+  }
+  .daily-box .db-route em{color:var(--pink);font-style:normal;padding:0 6px}
+  .daily-box .db-meta{margin-top:8px;font-size:10px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+  .daily-box .db-meta b{color:var(--ink);font-weight:500}
+  .daily-box button{
+    margin-top:14px;font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.12em;
+    background:var(--pink);color:#1a0710;border:none;cursor:pointer;
+    padding:11px 22px;text-transform:uppercase;
+  }
+  .daily-box button:hover{filter:brightness(1.12)}
+  #dailyHud{
+    position:fixed;bottom:48px;left:50%;transform:translateX(-50%);z-index:70;
+    display:flex;gap:16px;align-items:center;
+    background:var(--bg-2);border:1px solid var(--pink);
+    padding:10px 18px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);white-space:nowrap;
+  }
+  #dailyHud b{color:var(--pink);font-weight:500}
+  #dailyHud .abandon{cursor:pointer;color:var(--ink-faint)}
+  #dailyHud .abandon:hover{color:var(--ink)}
+  #dailyHud.hidden{display:none}
+
+  /* ---------- NEW DROPS / RESUME ---------- */
+  .new-tag{color:var(--pink)}
+  #newDrop{
+    margin-top:14px;font-size:10.5px;letter-spacing:.12em;line-height:2;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+  #newDrop b{color:var(--ink);font-weight:500}
+  #newDrop .nd-item{color:var(--ink-dim);cursor:pointer;border-bottom:1px solid transparent}
+  #newDrop .nd-item:hover{color:var(--acid)}
+  #resumeDig{
+    margin-top:10px;font-size:10.5px;letter-spacing:.14em;
+    color:var(--ink-faint);text-transform:uppercase;cursor:pointer;width:fit-content;
+  }
+  #resumeDig b{color:var(--ice);font-weight:500}
+  #resumeDig:hover{color:var(--ink-dim)}
+  .anode .kchip .new-tag{color:var(--pink)}
+  .cluster-label{
+    position:absolute;transform:translate(-50%,-50%);
+    font-family:var(--disp);font-weight:700;font-size:13px;letter-spacing:.2em;
+    color:var(--ink-faint);text-transform:uppercase;pointer-events:none;
+    text-align:center;line-height:1.6;
+  }
+  .cluster-label b{color:var(--ink-dim);font-weight:600;display:block;font-family:var(--mono);font-size:9px;letter-spacing:.16em}
   .anode{
     position:absolute;transform:translate(-50%,-50%);
     width:150px;background:var(--bg-2);
@@ -492,6 +558,7 @@
 <header>
   <div class="brand"><div class="dot"></div>DIG<span>.ARCHIVE</span></div>
   <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE — PULL A RECORD, OPEN ITS CONSTELLATION, FALL IN</div></div>
+  <button id="dailyBtn">◆ Daily</button>
   <button id="atlasBtn">⊞ Atlas</button>
   <div class="rec-count" id="recCount">REC <b>—/—</b></div>
   <button id="pullBtn">⟳ Pull</button>
@@ -517,6 +584,8 @@
             <button id="homeAtlas">⊞ See the whole map</button>
           </div>
           <div id="homeDaily"></div>
+          <div class="daily-box" id="dailyBox" style="display:none"></div>
+          <div id="newDrop" style="display:none"></div>
         </div>
         <div class="globe-pane"><canvas id="globe"></canvas></div>
       </div>
@@ -557,6 +626,7 @@
       <div class="disc" id="disc"></div>
       <div class="card-actions">
         <button id="openMap">Open constellation ↗</button>
+        <button id="storyBtn" style="background:transparent;color:var(--ink-dim);border:1px solid var(--line);font-family:var(--disp);font-weight:600;font-size:12px;letter-spacing:.1em;padding:13px 20px;cursor:pointer;text-transform:uppercase">⇩ Story card</button>
         <span class="hint" id="connHint"></span>
       </div>
     </div>
@@ -577,6 +647,8 @@
   </div>
 
 </div>
+
+<div id="dailyHud" class="hidden"></div>
 
 <div id="receiptOverlay" class="hidden">
   <canvas id="receiptCanvas"></canvas>
@@ -641,6 +713,7 @@ function renderTrail(){
   const ex = document.getElementById('exportBtn');
   if(ex) ex.addEventListener('click', openReceipt);
   sessionStorage.setItem('dig.trail', JSON.stringify(trail));
+  localStorage.setItem('dig.lastTrail', JSON.stringify(trail));
   t.scrollLeft = t.scrollWidth;
 }
 
@@ -683,7 +756,7 @@ function renderCard(id){
       </div>`;
   }
 
-  $('idxTag').textContent = `REC ${recNum(id)} · ${h.kind}`;
+  $('idxTag').innerHTML = `REC ${recNum(id)} · ${h.kind}${isNew(id)?' <span class="new-tag">· NEW THIS WEEK</span>':''}`;
   $('idxCat').textContent = h.cat;
   $('title').textContent = h.title;
   $('artistLine').innerHTML = `<b>${h.byline.name}</b> · ${h.byline.sub}`;
@@ -702,12 +775,13 @@ function renderCard(id){
   const disc = $('disc');
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   if(h.discourse && h.discourse.length){
-    const SRC = {HN:'HACKER NEWS', BSKY:'BLUESKY', SE:'STACK EXCHANGE', REDDIT:'REDDIT'};
+    const SRC = {HN:'HACKER NEWS', BSKY:'BLUESKY', SE:'STACK EXCHANGE', REDDIT:'REDDIT', THREADS:'THREADS', IG:'INSTAGRAM'};
+    const QUOTED = {BSKY:1, THREADS:1, IG:1};
     disc.innerHTML = '<div class="k">// The discourse — live from the internet</div>' +
       h.discourse.map(d=>`
         <div class="d-item">
-          <div class="d-text">${d.src==='BSKY'?'“':''}${esc(d.text)}${d.src==='BSKY'?'”':''}</div>
-          <div class="d-meta">${SRC[d.src]||d.src} · ${esc(d.by)} · ▲ ${d.score}${d.comments?` · ${d.comments} ${d.src==='SE'?'ANSWERS':'REPLIES'}`:''} · <a href="${d.url}" target="_blank" rel="noopener">OPEN THREAD ↗</a></div>
+          <div class="d-text">${QUOTED[d.src]?'“':''}${esc(d.text)}${QUOTED[d.src]?'”':''}</div>
+          <div class="d-meta">${SRC[d.src]||d.src} · ${esc(d.by)} · ▲ ${d.score}${d.comments?` · ${d.comments} ${d.src==='SE'?'ANSWERS':'REPLIES'}`:''}${d.url?` · <a href="${d.url}" target="_blank" rel="noopener">OPEN THREAD ↗</a>`:''}</div>
         </div>`).join('');
   } else {
     disc.innerHTML = '';
@@ -724,14 +798,16 @@ function renderCard(id){
   }
   $('dossier').classList.remove('reveal'); void $('dossier').offsetWidth; $('dossier').classList.add('reveal');
   markVisited(id);
-  $('footStat').innerHTML = `SYS <b>ONLINE</b> · EXPLORED <b>${visited.size}/${IDS.length}</b> · IMG: WIKIMEDIA COMMONS · PD/CC`;
+  $('footStat').innerHTML = `SYS <b>ONLINE</b> · EXPLORED <b>${visited.size}/${IDS.length}</b> · RANK <b>${rankName()}</b> · IMG: MET/AIC/COMMONS · PD/CC`;
 }
 
 /* ================= NAVIGATION ================= */
 function openRecord(id, {resetTrail=false, view='card', silent=false}={}){
+  const grew = !resetTrail && trail[trail.length-1] !== id;
   if(resetTrail){ trail = [id]; }
   else if(trail[trail.length-1] !== id){ trail.push(id); }
   currentId = id;
+  dailyNav(id, resetTrail, grew);
   renderCard(id);
   renderTrail();
   if(view==='map'){ renderMap(id); showView('map'); }
@@ -854,7 +930,7 @@ function atlasPositions(){
   const byKind = {};
   IDS.forEach(id=>{ (byKind[RECORDS[id].kind] = byKind[RECORDS[id].kind]||[]).push(id); });
   const kinds = Object.keys(byKind);
-  const pos = {};
+  const pos = {}, clusters = [];
   // ring radius scales with archive size so 200+ nodes still breathe
   const RX = 700 + Math.max(0, IDS.length-60)*3.2;
   const RY = RX*0.62;
@@ -862,6 +938,7 @@ function atlasPositions(){
     const a = -Math.PI/2 + ki*2*Math.PI/kinds.length;
     const cx = Math.cos(a)*RX, cy = Math.sin(a)*RY;
     const ids = byKind[k];
+    clusters.push({kind:k, cx:Math.round(cx), cy:Math.round(cy), ids});
     ids.forEach((id, i)=>{
       if(ids.length===1){ pos[id]=[Math.round(cx),Math.round(cy)]; return; }
       // concentric rings of ~9 inside each cluster
@@ -872,7 +949,7 @@ function atlasPositions(){
       pos[id]=[Math.round(cx+Math.cos(aa)*rr*1.15), Math.round(cy+Math.sin(aa)*rr*0.72)];
     });
   });
-  return pos;
+  return {pos, clusters};
 }
 
 function openAtlas(silent=false){
@@ -882,7 +959,7 @@ function openAtlas(silent=false){
   nodes.innerHTML = ''; edges.innerHTML = '';
   pan = {x:0,y:0}; zoom = IDS.length>120 ? 0.34 : 0.55; applyTransform();
 
-  const pos = atlasPositions();
+  const {pos, clusters} = atlasPositions();
   const drawn = new Set();
   IDS.forEach(id=>RECORDS[id].connections.forEach(c=>{
     if(!c.ref || !pos[c.ref]) return;
@@ -898,9 +975,14 @@ function openAtlas(silent=false){
     nodes.insertAdjacentHTML('beforeend', `
       <div class="anode reveal ${visited.has(id)?'visited':'dim'}" data-ref="${id}"
            style="left:${x}px;top:${y}px;animation-delay:${Math.min(i*25,500)}ms">
-        <div class="kchip">${r.kind}${visited.has(id)?' · SEEN':''}</div>
+        <div class="kchip">${r.kind}${visited.has(id)?' · SEEN':''}${isNew(id)?' <span class="new-tag">· NEW</span>':''}</div>
         <h4>${r.title}</h4>
       </div>`);
+  });
+  clusters.forEach(cl=>{
+    const seen = cl.ids.filter(i=>visited.has(i)).length;
+    nodes.insertAdjacentHTML('beforeend',
+      `<div class="cluster-label" style="left:${cl.cx}px;top:${cl.cy}px">${cl.kind}<b>${seen}/${cl.ids.length} DUG</b></div>`);
   });
   showView('map');
   if(!silent) syncHash('#/atlas');
@@ -975,6 +1057,245 @@ function openReceipt(){
   }
 
   $('receiptOverlay').classList.remove('hidden');
+  shareState = {text: receiptText(), filename: 'dig-archive-descent.png'};
+}
+
+/* ================= SHARE STATE (receipt / story / daily share one overlay) ================= */
+let shareState = {text:'', filename:'dig-share.png'};
+
+/* ================= DAILY DIG ================= */
+const EPOCH = '2026-08-06';
+const todayKey = () => new Date().toISOString().slice(0,10);
+const dailyNum = () => Math.max(1, Math.floor((Date.parse(todayKey()) - Date.parse(EPOCH))/86400000) + 1);
+function mulberry32(a){ return function(){ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+
+let ADJ = null;
+function buildAdj(){
+  ADJ = {};
+  IDS.forEach(id=>ADJ[id]=new Set());
+  IDS.forEach(id=>RECORDS[id].connections.forEach(c=>{
+    if(c.ref && RECORDS[c.ref]){ ADJ[id].add(c.ref); ADJ[c.ref].add(id); }
+  }));
+}
+function bfs(from){
+  const dist = {[from]:0}, q=[from];
+  while(q.length){ const cur=q.shift(); for(const nb of ADJ[cur]) if(!(nb in dist)){ dist[nb]=dist[cur]+1; q.push(nb); } }
+  return dist;
+}
+let daily = null, game = null, _dailyOpening = false;
+function getDaily(){
+  if(daily) return daily;
+  if(!IDS.length) return null;
+  if(!ADJ) buildAdj();
+  const rng = mulberry32(48271*dailyNum() + 7);
+  const pool = IDS.filter(i=>RECORDS[i].pullable);
+  for(let att=0; att<30; att++){
+    const start = pool[Math.floor(rng()*pool.length)];
+    const dist = bfs(start);
+    const targets = IDS.filter(i=>dist[i]>=3 && dist[i]<=5).sort();
+    if(targets.length){
+      const target = targets[Math.floor(rng()*targets.length)];
+      daily = {start, target, par: dist[target]};
+      return daily;
+    }
+  }
+  return null;
+}
+
+const RESULTS_KEY = 'dig.dailyResults';
+const dailyResults = () => JSON.parse(localStorage.getItem(RESULTS_KEY)||'{}');
+function saveDailyResult(hops, par){
+  const r = dailyResults(); r[todayKey()] = {hops, par};
+  localStorage.setItem(RESULTS_KEY, JSON.stringify(r));
+}
+function streak(){
+  const r = dailyResults(); let s=0;
+  const d = new Date();
+  if(!r[todayKey()]) d.setUTCDate(d.getUTCDate()-1);
+  for(;;){
+    const k = d.toISOString().slice(0,10);
+    if(r[k]){ s++; d.setUTCDate(d.getUTCDate()-1); } else break;
+  }
+  return s;
+}
+function rankName(){
+  const n = visited.size;
+  if(n >= IDS.length*0.7) return 'ARCHIVIST';
+  if(n >= IDS.length*0.35) return 'CURATOR';
+  if(n >= 12) return 'DIGGER';
+  return 'VISITOR';
+}
+
+function updateHud(){
+  const hud = $('dailyHud');
+  if(!game || game.status!=='playing'){ hud.classList.add('hidden'); return; }
+  hud.classList.remove('hidden');
+  hud.innerHTML = `◆ DAILY DIG #${dailyNum()} · TARGET: <b>${RECORDS[daily.target].title.toUpperCase()}</b> · HOPS <b>${String(game.hops).padStart(2,'0')}</b> · PAR ${daily.par} <span class="abandon">✕</span>`;
+  hud.querySelector('.abandon').onclick = ()=>{ game=null; updateHud(); };
+}
+function startDaily(){
+  if(!getDaily()) return;
+  game = {status:'playing', hops:0};
+  _dailyOpening = true;
+  openRecord(daily.start, {resetTrail:true});
+  _dailyOpening = false;
+  updateHud();
+}
+function dailyNav(id, wasReset, grew){
+  if(!game || game.status!=='playing') return;
+  if(wasReset && !_dailyOpening){ game=null; updateHud(); return; }
+  if(grew) game.hops++;
+  updateHud();
+  if(id === daily.target){
+    game.status = 'done';
+    saveDailyResult(game.hops, daily.par);
+    updateHud();
+    showDailyResult(game.hops, daily.par);
+    renderDailyBox();
+  }
+}
+function dailyShareText(hops, par){
+  const emoji = hops<=par ? '🟩'.repeat(Math.max(1,hops)) : '🟩'.repeat(par)+'🟨'.repeat(hops-par);
+  return `DIG.ARCHIVE — DAILY DIG #${dailyNum()}\n${RECORDS[daily.start].title} → ${RECORDS[daily.target].title}\n${hops} HOPS (PAR ${par}) ${emoji}\nhttps://dig-archive.vercel.app`;
+}
+function showDailyResult(hops, par){
+  if(!getDaily()) return;
+  const c = $('receiptCanvas'), s=2, W=420, H=380;
+  c.width=W*s; c.height=H*s; c.style.width=W+'px';
+  const x = c.getContext('2d'); x.scale(s,s);
+  x.fillStyle='#0d0e0a'; x.fillRect(0,0,W,H);
+  x.strokeStyle='#ff5ca8'; x.strokeRect(10.5,10.5,W-21,H-21);
+  x.fillStyle='#ff5ca8'; x.font='700 16px "Chakra Petch", monospace';
+  x.fillText(`◆ DAILY DIG #${dailyNum()}`, 28, 48);
+  x.fillStyle='#8d8f7e'; x.font='10px "IBM Plex Mono", monospace';
+  x.fillText(todayKey(), W-100, 48);
+  x.strokeStyle='#565848'; x.setLineDash([4,4]);
+  x.beginPath(); x.moveTo(28,64); x.lineTo(W-28,64); x.stroke(); x.setLineDash([]);
+  x.fillStyle='#e8e9dd'; x.font='600 15px "Chakra Petch", monospace';
+  x.fillText(RECORDS[daily.start].title.toUpperCase().slice(0,32), 28, 100);
+  x.fillStyle='#ff5ca8'; x.fillText('↓', 28, 126);
+  x.fillStyle='#e8e9dd';
+  x.fillText(RECORDS[daily.target].title.toUpperCase().slice(0,32), 28, 152);
+  x.fillStyle='#d4ff3f'; x.font='700 52px "Chakra Petch", monospace';
+  x.fillText(`${hops}`, 28, 226);
+  x.fillStyle='#8d8f7e'; x.font='11px "IBM Plex Mono", monospace';
+  x.fillText(`HOPS · PAR ${par} · ${hops<=par?'ON TARGET':'+'+(hops-par)+' OVER'}`, 28+String(hops).length*32+14, 222);
+  for(let i=0;i<Math.min(hops,12);i++){
+    x.fillStyle = i<par ? '#2ecc40' : '#e1a307';
+    x.fillRect(28+i*26, 248, 20, 20);
+  }
+  x.fillStyle='#8d8f7e'; x.font='10px "IBM Plex Mono", monospace';
+  x.fillText(`STREAK ${String(streak()).padStart(2,'0')} · RANK ${rankName()}`, 28, 306);
+  x.fillStyle='#d4ff3f';
+  x.fillText('DIG-ARCHIVE.VERCEL.APP', 28, 336);
+  shareState = {text: dailyShareText(hops, par), filename:`dig-daily-${dailyNum()}.png`};
+  $('receiptOverlay').classList.remove('hidden');
+}
+function renderDailyBox(){
+  const box = $('dailyBox');
+  if(!getDaily()){ box.style.display='none'; return; }
+  const res = dailyResults()[todayKey()];
+  box.style.display = '';
+  box.innerHTML = `
+    <div class="db-head"><span>◆ Daily dig #${dailyNum()}</span><span>Streak ${String(streak()).padStart(2,'0')}</span></div>
+    <div class="db-route">${RECORDS[daily.start].title} <em>→</em> ${RECORDS[daily.target].title}</div>
+    <div class="db-meta">Connect them through the graph · Par <b>${daily.par}</b> · Rank <b>${rankName()}</b></div>
+    ${res
+      ? `<div class="db-meta" style="margin-top:12px">Done today: <b>${res.hops} hops</b> · <span id="dbResult" style="cursor:pointer;color:var(--pink)">VIEW RESULT ▸</span></div>`
+      : `<button id="dbPlay">▶ Play today’s dig</button>`}`;
+  const p = document.getElementById('dbPlay'); if(p) p.onclick = startDaily;
+  const r = document.getElementById('dbResult'); if(r) r.onclick = ()=> showDailyResult(res.hops, res.par);
+}
+
+/* ================= STORY CARD (1080×1920, IG-story ratio) ================= */
+function wrapText(x, text, tx, ty, maxW, lineH, maxLines, font, color){
+  x.font = font; x.fillStyle = color;
+  const words = text.split(' ');
+  let line='', lines=0;
+  for(let i=0;i<words.length;i++){
+    const test = line ? line+' '+words[i] : words[i];
+    if(x.measureText(test).width > maxW && line){
+      lines++;
+      if(lines===maxLines){ x.fillText(line.replace(/.{3}$/,'')+'…', tx, ty); return ty; }
+      x.fillText(line, tx, ty); ty += lineH; line = words[i];
+    } else line = test;
+  }
+  if(line) x.fillText(line, tx, ty);
+  return ty;
+}
+function openStoryCard(){
+  const h = RECORDS[currentId];
+  const c = $('receiptCanvas');
+  const W=1080, H=1920;
+  c.width=W; c.height=H; c.style.width='min(300px, 78vw)';
+  const x = c.getContext('2d');
+
+  const draw = (im)=>{
+    x.fillStyle='#0d0e0a'; x.fillRect(0,0,W,H);
+    x.strokeStyle='#2a2c20'; x.lineWidth=1;
+    for(let g=108; g<W; g+=108){ x.beginPath(); x.moveTo(g,0); x.lineTo(g,H); x.stroke(); }
+    for(let g=108; g<H; g+=108){ x.beginPath(); x.moveTo(0,g); x.lineTo(W,g); x.stroke(); }
+    x.fillStyle='#d4ff3f'; x.fillRect(72,96,26,26);
+    x.font='700 58px "Chakra Petch", monospace';
+    x.fillText('DIG.ARCHIVE', 122, 122);
+    x.fillStyle='#8d8f7e'; x.font='26px "IBM Plex Mono", monospace';
+    x.fillText('THE CULTURE RABBIT-HOLE ENGINE', 72, 176);
+    x.fillStyle='#d4ff3f'; x.font='28px "IBM Plex Mono", monospace';
+    x.fillText(`REC ${recNum(currentId)} · ${h.kind}`, 72, 268);
+
+    const iy=300, ih=880, iw=W-144;
+    if(im){
+      const sc = Math.max(iw/im.width, ih/im.height);
+      const sw = iw/sc, sh = ih/sc;
+      x.save(); x.beginPath(); x.rect(72,iy,iw,ih); x.clip();
+      x.drawImage(im, (im.width-sw)/2, (im.height-sh)/2, sw, sh, 72, iy, iw, ih);
+      x.restore();
+      x.strokeStyle='#d4ff3f'; x.lineWidth=2; x.strokeRect(72,iy,iw,ih);
+    } else {
+      x.strokeStyle='#565848'; x.setLineDash([10,10]); x.lineWidth=2;
+      x.strokeRect(72,iy,iw,ih); x.setLineDash([]);
+      x.fillStyle='#565848'; x.font='700 110px "Chakra Petch", monospace';
+      x.fillText(h.kind, 120, iy+180);
+      x.fillText('FILE', 120, iy+300);
+      x.fillStyle='#ffb02e'; x.font='26px "IBM Plex Mono", monospace';
+      x.fillText('NO VISUAL RECORD ON FILE — TEXT DOSSIER', 120, iy+400);
+    }
+    // registration corners
+    x.strokeStyle='#d4ff3f'; x.lineWidth=3;
+    [[72,iy],[72+iw,iy],[72,iy+ih],[72+iw,iy+ih]].forEach(([cx,cy],i)=>{
+      const dx = i%2===0?1:-1, dy = i<2?1:-1;
+      x.beginPath(); x.moveTo(cx+dx*30,cy); x.lineTo(cx,cy); x.lineTo(cx,cy+dy*30); x.stroke();
+    });
+
+    let ty = wrapText(x, h.title.toUpperCase(), 72, 1300, W-144, 84, 2, '700 76px "Chakra Petch", monospace', '#e8e9dd');
+    x.fillStyle='#8d8f7e'; x.font='30px "IBM Plex Mono", monospace';
+    x.fillText(`${h.byline.name} · ${h.byline.sub}`.slice(0,52), 72, ty+56);
+    wrapText(x, h.fact, 72, ty+130, W-144, 48, 5, '32px "IBM Plex Mono", monospace', '#c9cbb8');
+
+    x.strokeStyle='#565848'; x.setLineDash([8,8]);
+    x.beginPath(); x.moveTo(72,1690); x.lineTo(W-72,1690); x.stroke(); x.setLineDash([]);
+    x.fillStyle='#d4ff3f'; x.font='700 54px "Chakra Petch", monospace';
+    x.fillText('SCROLL LESS. FALL DEEPER.', 72, 1768);
+    x.fillStyle='#e8e9dd'; x.font='32px "IBM Plex Mono", monospace';
+    x.fillText('DIG-ARCHIVE.VERCEL.APP', 72, 1820);
+    x.fillStyle='#8d8f7e'; x.font='24px "IBM Plex Mono", monospace';
+    x.fillText('ONE RECORD → ITS CONSTELLATION → KEEP FALLING', 72, 1862);
+
+    // cross-origin taint check: fall back to text-only card if the image poisons the canvas
+    try{ x.getImageData(0,0,1,1); }
+    catch(e){ if(im){ draw(null); return; } }
+
+    shareState = {text:`${h.title} — one record on DIG.ARCHIVE, the culture rabbit-hole engine.\nhttps://dig-archive.vercel.app/#/${currentId}`, filename:`dig-${currentId}-story.png`};
+    $('receiptOverlay').classList.remove('hidden');
+  };
+
+  if(h.img){
+    const im = new Image();
+    im.crossOrigin = 'anonymous';
+    im.onload = ()=>draw(im);
+    im.onerror = ()=>draw(null);
+    im.src = h.img;
+  } else draw(null);
 }
 
 function buildLegend(){
@@ -1078,17 +1399,22 @@ function showView(v){
 /* ================= GLOBE ================= */
 function initGlobe(){
   const cv = $('globe'), ctx = cv.getContext('2d');
-  const N = 340, pts = [];
+  const N = 280, pts = [];
   for(let i=0;i<N;i++){
     const y = 1 - (i/(N-1))*2;
     const r = Math.sqrt(1-y*y);
     const th = i * 2.399963229728653;   // golden angle
     pts.push([Math.cos(th)*r, y, Math.sin(th)*r]);
   }
-  let arcs = [];
-  const newArcs = ()=>{ arcs = Array.from({length:7}, ()=>({
-    a:(Math.random()*N)|0, b:(Math.random()*N)|0, t:Math.random() })); };
-  newArcs(); setInterval(newArcs, 7000);
+  const TILT = -0.38, cosT = Math.cos(TILT), sinT = Math.sin(TILT);
+
+  // arcs with individual fade lifecycles — no global swap, no visual pop
+  const AR = 8;
+  const arcs = Array.from({length:AR}, (_,i)=>spawnArc(i*140));
+  function spawnArc(age=0){
+    return { a:(Math.random()*N)|0, b:(Math.random()*N)|0,
+             t:Math.random(), age, life: 620 + Math.random()*420 };
+  }
 
   let S = 0;
   function size(){
@@ -1104,47 +1430,90 @@ function initGlobe(){
 
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let rot = 0.6;
+
+  function project(x,y,z,c,R){
+    const cs = Math.cos(rot), sn = Math.sin(rot);
+    const X = x*cs + z*sn, Z0 = -x*sn + z*cs;
+    const Y = y*cosT - Z0*sinT, Z = y*sinT + Z0*cosT;
+    return [c + X*R, c + Y*R, Z];
+  }
+  // draw a sampled 3D circle as front-facing wire segments
+  function wire(sample, c, R, alpha){
+    ctx.strokeStyle = `rgba(201,203,184,${alpha})`;
+    ctx.lineWidth = 1;
+    let prev = null;
+    for(let i=0;i<=72;i++){
+      const p = project(...sample(i/72 * Math.PI*2), c, R);
+      if(prev && p[2] > 0.02 && prev[2] > 0.02){
+        ctx.beginPath(); ctx.moveTo(prev[0],prev[1]); ctx.lineTo(p[0],p[1]); ctx.stroke();
+      }
+      prev = p;
+    }
+  }
+
   function frame(){
     requestAnimationFrame(frame);
-    if($('homeView').classList.contains('hidden')) return;  // draw only when visible
-    if(!reduced) rot += 0.0032;
+    if($('homeView').classList.contains('hidden')) return;
+    if(!reduced) rot += 0.0028;
     const c = S/2, R = S*0.4;
     ctx.clearRect(0,0,S,S);
 
     const halo = ctx.createRadialGradient(c,c,R*0.2, c,c,R*1.3);
-    halo.addColorStop(0,'rgba(212,255,63,0.055)');
+    halo.addColorStop(0,'rgba(212,255,63,0.05)');
     halo.addColorStop(1,'rgba(212,255,63,0)');
     ctx.fillStyle = halo; ctx.fillRect(0,0,S,S);
 
-    const cos = Math.cos(rot), sin = Math.sin(rot);
-    const proj = pts.map(([x,y,z])=>{
-      const X = x*cos + z*sin, Z = -x*sin + z*cos;
-      return [c + X*R, c + y*R, Z];
-    });
-    for(const [px,py,Z] of proj){
-      const a = 0.12 + 0.5*(Z+1)/2;
-      ctx.fillStyle = `rgba(201,203,184,${a})`;
-      ctx.fillRect(px, py, Z>0.15?1.8:1.1, Z>0.15?1.8:1.1);
+    // silhouette rim — the thing that makes it read as a sphere
+    ctx.strokeStyle = 'rgba(201,203,184,0.35)'; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.arc(c,c,R,0,Math.PI*2); ctx.stroke();
+
+    // wireframe: 6 meridians + 4 latitude rings (rotate with the globe)
+    for(let m=0;m<6;m++){
+      const L = m*Math.PI/6;
+      wire(t=>[Math.sin(t)*Math.cos(L), Math.cos(t), Math.sin(t)*Math.sin(L)], c, R, 0.16);
     }
-    for(const arc of arcs){
+    for(const phi of [-0.9,-0.45,0.45,0.9]){
+      const cr = Math.cos(phi), cy = Math.sin(phi);
+      wire(t=>[cr*Math.cos(t), cy, cr*Math.sin(t)], c, R, 0.14);
+    }
+    // equator, slightly hotter
+    wire(t=>[Math.cos(t), 0, Math.sin(t)], c, R, 0.26);
+
+    // point field
+    const proj = pts.map(p=>project(p[0],p[1],p[2],c,R));
+    for(const [px,py,Z] of proj){
+      if(Z > 0){
+        ctx.fillStyle = `rgba(232,233,221,${(0.25 + 0.5*Z).toFixed(3)})`;
+        ctx.fillRect(px,py,1.8,1.8);
+      } else {
+        ctx.fillStyle = 'rgba(201,203,184,0.07)';
+        ctx.fillRect(px,py,1.1,1.1);
+      }
+    }
+
+    // connection arcs — each fades in/out on its own clock (seamless loop)
+    for(let i=0;i<arcs.length;i++){
+      const arc = arcs[i];
+      if(!reduced){ arc.age++; if(arc.age >= arc.life){ arcs[i] = spawnArc(); continue; } }
+      const env = Math.sin(Math.PI * Math.min(1, arc.age/arc.life));  // 0→1→0
       const A = proj[arc.a], B = proj[arc.b];
       if(A[2]<-0.25 && B[2]<-0.25) continue;
       const mx=(A[0]+B[0])/2, my=(A[1]+B[1])/2;
       const dx=mx-c, dy=my-c, dl=Math.hypot(dx,dy)||1;
       const cx2 = c + dx/dl*R*1.38, cy2 = c + dy/dl*R*1.38;
-      ctx.strokeStyle = 'rgba(212,255,63,0.32)';
+      ctx.strokeStyle = `rgba(212,255,63,${(0.4*env).toFixed(3)})`;
       ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(A[0],A[1]);
       ctx.quadraticCurveTo(cx2,cy2,B[0],B[1]); ctx.stroke();
-      ctx.fillStyle = '#d4ff3f';
+      ctx.fillStyle = `rgba(212,255,63,${(0.9*env).toFixed(3)})`;
       ctx.fillRect(A[0]-1.5,A[1]-1.5,3,3);
       ctx.fillRect(B[0]-1.5,B[1]-1.5,3,3);
       if(!reduced) arc.t = (arc.t + 0.0045)%1;
       const t = arc.t, u = 1-t;
       const px = u*u*A[0] + 2*u*t*cx2 + t*t*B[0];
       const py = u*u*A[1] + 2*u*t*cy2 + t*t*B[1];
-      ctx.shadowColor = '#ff5ca8'; ctx.shadowBlur = 9;
-      ctx.fillStyle = '#ff5ca8';
+      ctx.shadowColor = '#ff5ca8'; ctx.shadowBlur = 9*env;
+      ctx.fillStyle = `rgba(255,92,168,${env.toFixed(3)})`;
       ctx.beginPath(); ctx.arc(px,py,2.2,0,7); ctx.fill();
       ctx.shadowBlur = 0;
     }
@@ -1163,16 +1532,26 @@ document.querySelector('.brand').addEventListener('click', ()=>{ showView('home'
 $('closeReceipt').addEventListener('click', ()=> $('receiptOverlay').classList.add('hidden'));
 $('receiptOverlay').addEventListener('click', e=>{ if(e.target.id==='receiptOverlay') e.currentTarget.classList.add('hidden'); });
 $('dlReceipt').addEventListener('click', ()=>{
-  const a = document.createElement('a');
-  a.href = $('receiptCanvas').toDataURL('image/png');
-  a.download = 'dig-archive-descent.png';
-  a.click();
+  try{
+    const a = document.createElement('a');
+    a.href = $('receiptCanvas').toDataURL('image/png');
+    a.download = shareState.filename || 'dig-share.png';
+    a.click();
+  }catch(e){ alert('Image blocked the export — use Copy text instead.'); }
 });
 $('copyReceipt').addEventListener('click', e=>{
-  navigator.clipboard.writeText(receiptText()).then(()=>{
+  navigator.clipboard.writeText(shareState.text || receiptText()).then(()=>{
     e.target.textContent = 'Copied ✓';
     setTimeout(()=>e.target.textContent='Copy text', 1500);
   });
+});
+$('storyBtn').addEventListener('click', openStoryCard);
+$('dailyBtn').addEventListener('click', ()=>{
+  if(!IDS.length) return;
+  const res = dailyResults()[todayKey()];
+  if(res){ getDaily(); showDailyResult(res.hops, res.par); }
+  else if(game && game.status==='playing'){ showView('card'); }
+  else startDaily();
 });
 document.addEventListener('keydown', e=>{
   if(!$('receiptOverlay').classList.contains('hidden')){
@@ -1185,10 +1564,20 @@ document.addEventListener('keydown', e=>{
 });
 
 /* ================= INIT ================= */
-fetch('records.json')
-  .then(r=>r.json())
-  .then(data=>{
+let DROPS = [];
+function isNew(id){
+  const d = DROPS[DROPS.length-1];
+  if(!d) return false;
+  return (Date.now() - Date.parse(d.date)) < 10*86400000 && d.ids.includes(id);
+}
+
+Promise.all([
+  fetch('records.json').then(r=>r.json()),
+  fetch('drops.json').then(r=>r.ok?r.json():[]).catch(()=>[]),
+])
+  .then(([data, drops])=>{
     TYPES = data.types; RECORDS = data.records; IDS = Object.keys(RECORDS);
+    DROPS = Array.isArray(drops) ? drops : [];
 
     // record of the day — deterministic from the date
     const pool = IDS.filter(i=>RECORDS[i].pullable);
@@ -1228,6 +1617,34 @@ fetch('records.json')
     }
 
     buildLegend(); renderCard(currentId); renderTrail(); initGlobe();
+    renderDailyBox();
+
+    // weekly drop — new acquisitions block
+    const latest = DROPS[DROPS.length-1];
+    if(latest && isNew(latest.ids[0])){
+      const nd = $('newDrop');
+      nd.style.display = '';
+      nd.innerHTML = `NEW ACQUISITIONS // <b>${latest.date}</b> — ` +
+        latest.ids.filter(i=>RECORDS[i]).map(i=>`<span class="nd-item" data-id="${i}">${RECORDS[i].title.toUpperCase()}</span>`).join(' · ');
+      nd.querySelectorAll('.nd-item').forEach(el=>
+        el.addEventListener('click', ()=> openRecord(el.dataset.id, {resetTrail:true})));
+    }
+
+    // resume last descent
+    try{
+      const last = JSON.parse(localStorage.getItem('dig.lastTrail')||'null');
+      if(Array.isArray(last) && last.length>=2 && last.every(x=>RECORDS[x]) && !location.hash.replace(/^#\/?/,'')){
+        const el = document.createElement('div');
+        el.id = 'resumeDig';
+        const crumbs = last.map(x=>RECORDS[x].title.toUpperCase()).join(' ▸ ');
+        el.innerHTML = `LAST DIG // <b>${crumbs.length>70 ? '…'+crumbs.slice(-70) : crumbs}</b> — RESUME ▸`;
+        el.onclick = ()=>{
+          trail = last; currentId = last[last.length-1];
+          renderCard(currentId); renderTrail(); showView('card'); syncHash('#/'+currentId);
+        };
+        $('homeDaily').after(el);
+      }
+    }catch(e){}
 
     $('homeDaily').innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
     $('homeDaily').onclick = ()=> openRecord(daily, {resetTrail:true});
