@@ -1,6 +1,35 @@
 // Bakes real internet discussion into records.json.
-// Sources: Hacker News (Algolia API) + Bluesky public search. Run: node scripts/fetch-discourse.mjs
+// Sources: Reddit (via scrape-creators CLI, needs SCRAPECREATORS_API_KEY),
+// StackExchange, Hacker News, Bluesky. Run: node scripts/fetch-discourse.mjs
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+
+// load .env if present (SCRAPECREATORS_API_KEY lives there, gitignored)
+try{
+  for(const line of fs.readFileSync('.env','utf8').split('\n')){
+    const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+    if(m && !process.env[m[1]]) process.env[m[1]] = m[2].trim();
+  }
+}catch(e){}
+
+function reddit(q){
+  if(!process.env.SCRAPECREATORS_API_KEY) return [];
+  try{
+    const out = execFileSync('scrape-creators-pp-cli',
+      ['reddit','list','--query', q, '--sort','top','--timeframe','all','--trim','--agent'],
+      {encoding:'utf8', timeout:45000, env:process.env});
+    const d = JSON.parse(out);
+    const posts = d.posts || d.data || d.results || (Array.isArray(d)?d:[]);
+    return posts
+      .map(p=>p.data||p)
+      .filter(p=>(p.score??p.ups??0)>=30 && (p.title||'').length>=15)
+      .slice(0,2)
+      .map(p=>({src:'REDDIT', text:(p.title||'').trim(),
+                by:'r/'+(p.subreddit||p.subreddit_name_prefixed||'').replace(/^r\//,''),
+                score:p.score??p.ups??0, comments:p.num_comments||0,
+                url:p.permalink ? ('https://reddit.com'+p.permalink) : (p.url||'')}));
+  }catch(e){ return []; }
+}
 
 const QUERIES = {
   kiss:'Klimt The Kiss', wave:'Hokusai Great Wave', starry:'Van Gogh Starry Night',
@@ -106,9 +135,10 @@ let filled = 0;
 for(const [id, rec] of Object.entries(data.records)){
   if(onlyMissing && rec.discourse) continue;
   const q = QUERIES[id] || rec.title;
+  const r = reddit(q);  // sync CLI call; no-op without SCRAPECREATORS_API_KEY
   const [s, h, b] = await Promise.all([se(q, SE_SITES[id]), hn(q), bsky(q)]);
-  // substance first (SE questions, HN threads), chatter after (Bluesky)
-  const items = [...s, ...h, ...b].slice(0,4);
+  // substance first (Reddit threads, SE questions, HN), chatter after (Bluesky)
+  const items = [...r, ...s, ...h, ...b].slice(0,4);
   if(items.length){ data.records[id].discourse = items; filled++; }
   console.log(id.padEnd(22), s.length+' se', h.length+' hn', b.length+' bsky');
   await sleep(500);
