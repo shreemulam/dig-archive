@@ -150,7 +150,7 @@
   #homeDaily b{color:var(--acid);font-weight:500}
   #homeDaily:hover{color:var(--ink-dim)}
   #todayCulture{
-    margin-top:10px;font-size:10.5px;letter-spacing:.12em;line-height:1.8;
+    margin-top:16px;font-size:10.5px;letter-spacing:.12em;line-height:1.8;
     color:var(--ink-faint);text-transform:uppercase;max-width:60ch;
   }
   #todayCulture b{color:var(--pink);font-weight:500}
@@ -424,8 +424,8 @@
 
   /* ---------- DAILY DIG ---------- */
   .daily-box{
-    margin-top:26px;border:1px solid var(--pink);
-    padding:16px 18px;max-width:520px;
+    margin-top:clamp(44px,7vh,72px);border:1px solid var(--pink);
+    padding:20px 22px;max-width:520px;
   }
   .daily-box .db-head{
     display:flex;justify-content:space-between;align-items:baseline;
@@ -459,14 +459,14 @@
   /* ---------- NEW DROPS / RESUME ---------- */
   .new-tag{color:var(--pink)}
   #newDrop{
-    margin-top:14px;font-size:10.5px;letter-spacing:.12em;line-height:2;
+    margin-top:26px;font-size:10.5px;letter-spacing:.12em;line-height:2;
     color:var(--ink-faint);text-transform:uppercase;
   }
   #newDrop b{color:var(--ink);font-weight:500}
   #newDrop .nd-item{color:var(--ink-dim);cursor:pointer;border-bottom:1px solid transparent}
   #newDrop .nd-item:hover{color:var(--acid)}
   #resumeDig{
-    margin-top:10px;font-size:10.5px;letter-spacing:.14em;
+    margin-top:18px;font-size:10.5px;letter-spacing:.14em;
     color:var(--ink-faint);text-transform:uppercase;cursor:pointer;width:fit-content;
   }
   #resumeDig b{color:var(--ice);font-weight:500}
