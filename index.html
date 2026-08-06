@@ -148,6 +148,12 @@
   }
   #homeDaily b{color:var(--acid);font-weight:500}
   #homeDaily:hover{color:var(--ink-dim)}
+  #todayCulture{
+    margin-top:10px;font-size:10.5px;letter-spacing:.12em;line-height:1.8;
+    color:var(--ink-faint);text-transform:uppercase;max-width:60ch;
+  }
+  #todayCulture b{color:var(--pink);font-weight:500}
+  #todayCulture a{color:var(--ice);text-decoration:none;border-bottom:1px solid color-mix(in srgb, var(--ice) 50%, transparent)}
   .globe-pane{display:flex;align-items:center;justify-content:center;position:relative;min-height:280px}
   #globe{display:block}
   .feat-row{
@@ -849,15 +855,21 @@ function atlasPositions(){
   IDS.forEach(id=>{ (byKind[RECORDS[id].kind] = byKind[RECORDS[id].kind]||[]).push(id); });
   const kinds = Object.keys(byKind);
   const pos = {};
+  // ring radius scales with archive size so 200+ nodes still breathe
+  const RX = 700 + Math.max(0, IDS.length-60)*3.2;
+  const RY = RX*0.62;
   kinds.forEach((k, ki)=>{
     const a = -Math.PI/2 + ki*2*Math.PI/kinds.length;
-    const cx = Math.cos(a)*700, cy = Math.sin(a)*430;
+    const cx = Math.cos(a)*RX, cy = Math.sin(a)*RY;
     const ids = byKind[k];
     ids.forEach((id, i)=>{
       if(ids.length===1){ pos[id]=[Math.round(cx),Math.round(cy)]; return; }
-      const aa = ki*1.7 + i*2*Math.PI/ids.length;
-      const rr = (ids.length>4 ? 200 : 120) + ((i*37)%40);
-      pos[id]=[Math.round(cx+Math.cos(aa)*rr*1.15), Math.round(cy+Math.sin(aa)*rr*0.75)];
+      // concentric rings of ~9 inside each cluster
+      const ring = Math.floor(i/9);
+      const inRing = i%9, ringN = Math.min(9, ids.length - ring*9);
+      const aa = ki*1.7 + ring*0.35 + inRing*2*Math.PI/ringN;
+      const rr = 110 + ring*115 + ((i*37)%36);
+      pos[id]=[Math.round(cx+Math.cos(aa)*rr*1.15), Math.round(cy+Math.sin(aa)*rr*0.72)];
     });
   });
   return pos;
@@ -868,7 +880,7 @@ function openAtlas(silent=false){
   $('mapTitle').textContent = `FULL ARCHIVE · ${IDS.length} RECORDS · ${visited.size} EXPLORED`;
   const nodes = $('nodes'), edges = $('edges');
   nodes.innerHTML = ''; edges.innerHTML = '';
-  pan = {x:0,y:0}; zoom = 0.55; applyTransform();
+  pan = {x:0,y:0}; zoom = IDS.length>120 ? 0.34 : 0.55; applyTransform();
 
   const pos = atlasPositions();
   const drawn = new Set();
@@ -988,7 +1000,7 @@ function buildLegend(){
 
   // rescale so the world point under (screenX,screenY) stays under it
   function zoomAt(screenX, screenY, nz){
-    nz = Math.min(1.8, Math.max(0.4, nz));
+    nz = Math.min(1.8, Math.max(0.22, nz));
     const c = center();
     const wx = (screenX-c.x-pan.x)/zoom, wy = (screenY-c.y-pan.y)/zoom;
     pan.x = screenX-c.x-wx*nz;
@@ -1182,9 +1194,26 @@ fetch('records.json')
     const pool = IDS.filter(i=>RECORDS[i].pullable);
     const daily = pool[Math.floor(Date.now()/86400000) % pool.length];
     const tk = $('ticker');
-    tk.innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
+    tk.innerHTML = `DIG OF THE DAY // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
     tk.classList.add('live');
     tk.onclick = ()=> openRecord(daily, {resetTrail:true});
+
+    // TODAY IN CULTURE — live from Wikipedia's on-this-day feed (CORS-open)
+    const now = new Date();
+    const mm = String(now.getMonth()+1).padStart(2,'0'), dd = String(now.getDate()).padStart(2,'0');
+    fetch(`https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/${mm}/${dd}`)
+      .then(r=>r.json())
+      .then(otd=>{
+        const CULT = /paint|artist|sculpt|museum|exhibit|novel|poet|publish|premiere|film|opera|symphon|compos|fashion|design|architect|photograph|theatre|theater|ballet|jazz|album|cathedral|manuscript/i;
+        const ev = (otd.events||[]).find(e=>CULT.test(e.text));
+        if(!ev) return;
+        const page = ev.pages && ev.pages[0];
+        const link = page ? `https://en.wikipedia.org/wiki/${encodeURIComponent(page.titles.canonical)}` : null;
+        const el = document.createElement('div');
+        el.id = 'todayCulture';
+        el.innerHTML = `TODAY IN CULTURE // <b>${ev.year}</b> — ${ev.text}${link?` <a href="${link}" target="_blank" rel="noopener">WIKI ↗</a>`:''}`;
+        $('homeDaily').after(el);
+      }).catch(()=>{});
 
     // restore: permalink first, then this session's trail
     const h = location.hash.replace(/^#\/?/, '');
