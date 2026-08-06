@@ -101,17 +101,17 @@ async function bsky(q){
 }
 
 const data = JSON.parse(fs.readFileSync('records.json','utf8'));
+const onlyMissing = process.env.ONLY_MISSING === '1';
 let filled = 0;
-for(const [id, q] of Object.entries(QUERIES)){
-  if(!data.records[id]) continue;
-  const s = await se(q, SE_SITES[id]);
-  const [h, b] = [await hn(q), await bsky(q)];
+for(const [id, rec] of Object.entries(data.records)){
+  if(onlyMissing && rec.discourse) continue;
+  const q = QUERIES[id] || rec.title;
+  const [s, h, b] = await Promise.all([se(q, SE_SITES[id]), hn(q), bsky(q)]);
   // substance first (SE questions, HN threads), chatter after (Bluesky)
   const items = [...s, ...h, ...b].slice(0,4);
   if(items.length){ data.records[id].discourse = items; filled++; }
-  else delete data.records[id].discourse;
-  console.log(id.padEnd(18), s.length+' se', h.length+' hn', b.length+' bsky');
-  await sleep(700);
+  console.log(id.padEnd(22), s.length+' se', h.length+' hn', b.length+' bsky');
+  await sleep(500);
 }
 fs.writeFileSync('records.json', JSON.stringify(data, null, 2));
 console.log(`\ndiscourse baked for ${filled}/${Object.keys(QUERIES).length} records`);

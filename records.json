@@ -3613,6 +3613,24 @@
           "ref": "mona-lisa",
           "note": "The period's afterlife compressed into one over-visited painting behind glass."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Hardware Renaissance",
+          "by": "nqureshi",
+          "score": 455,
+          "comments": 206,
+          "url": "https://news.ycombinator.com/item?id=4688863"
+        },
+        {
+          "src": "HN",
+          "text": "The death of social media is the renaissance of RSS (2025)",
+          "by": "jruohonen",
+          "score": 241,
+          "comments": 170,
+          "url": "https://news.ycombinator.com/item?id=47304886"
+        }
       ]
     },
     "baroque": {
@@ -3665,6 +3683,24 @@
           "ref": "renaissance",
           "note": "The harmony it inherited and deliberately knocked off balance."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Haute Baroque Capitalism (2017)",
+          "by": "bryanrasmussen",
+          "score": 80,
+          "comments": 33,
+          "url": "https://news.ycombinator.com/item?id=21960254"
+        },
+        {
+          "src": "HN",
+          "text": "Tiny Baroque Prints Once Served as Edible Prayers",
+          "by": "prismatic",
+          "score": 44,
+          "comments": 6,
+          "url": "https://news.ycombinator.com/item?id=39074159"
+        }
       ]
     },
     "rococo": {
@@ -3711,6 +3747,24 @@
           "type": "ECHO",
           "ref": "versace",
           "note": "Gilt, flesh, and zero shame — rococo's appetite, relicensed for the runway."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "China lands rover on Mars",
+          "by": "rococode",
+          "score": 581,
+          "comments": 314,
+          "url": "https://news.ycombinator.com/item?id=27161524"
+        },
+        {
+          "src": "HN",
+          "text": "The Cube Rule (2017)",
+          "by": "rococode",
+          "score": 380,
+          "comments": 136,
+          "url": "https://news.ycombinator.com/item?id=30793622"
         }
       ]
     },
@@ -3764,6 +3818,16 @@
           "ref": "expressionism",
           "note": "Weather-as-feeling, pushed one century and several nervous breakdowns further."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Walter Ong on Romanticism and Technology (2014)",
+          "by": "whocansay",
+          "score": 25,
+          "comments": 0,
+          "url": "https://news.ycombinator.com/item?id=22790473"
+        }
       ]
     },
     "realism": {
@@ -3815,6 +3879,24 @@
           "type": "ECHO",
           "ref": "migrant-mother",
           "note": "The documentary instinct with a camera: unposed labor as the whole point of the picture."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Racing for Realism",
+          "by": "mariuz",
+          "score": 396,
+          "comments": 150,
+          "url": "https://news.ycombinator.com/item?id=15976657"
+        },
+        {
+          "src": "HN",
+          "text": "Realism in UI Design",
+          "by": "ugh",
+          "score": 324,
+          "comments": 57,
+          "url": "https://news.ycombinator.com/item?id=1067333"
         }
       ]
     },
@@ -3868,6 +3950,16 @@
           "ref": "prussian-blue",
           "note": "The synthetic-pigment era gave the movement its cheap portable palette — those shadows owe the chemists."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Generative Impressionism",
+          "by": "DanielRibeiro",
+          "score": 47,
+          "comments": 3,
+          "url": "https://news.ycombinator.com/item?id=7601958"
+        }
       ]
     },
     "art-nouveau": {
@@ -3914,6 +4006,16 @@
           "type": "HISTORY",
           "ref": "art-deco",
           "note": "The correction: once the curve saturated everything, geometry came in to kill it."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "From Art Nouveau to Bauhaus: How Home Interiors Looked in Popular Art Movements",
+          "by": "prismatic",
+          "score": 164,
+          "comments": 105,
+          "url": "https://news.ycombinator.com/item?id=37346899"
         }
       ]
     },
@@ -3967,6 +4069,24 @@
           "ref": "guernica",
           "note": "The fractured grammar, thirty years on, applied to an air raid."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Show HN: Kubist, a little web app to make cubism-like images",
+          "by": "metaphorical",
+          "score": 231,
+          "comments": 48,
+          "url": "https://news.ycombinator.com/item?id=9410452"
+        },
+        {
+          "src": "HN",
+          "text": "Cubism.js: time series visualization",
+          "by": "dmarinoc",
+          "score": 219,
+          "comments": 28,
+          "url": "https://news.ycombinator.com/item?id=3884466"
+        }
       ]
     },
     "futurism": {
@@ -4019,6 +4139,24 @@
           "ref": "degenerate-art",
           "note": "While the Reich purged modernism, Italy's Fascists kept their futurists close — modern art as state style, for a while."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Why Stanislaw Lem’s futurism deserves attention (2015)",
+          "by": "dnetesn",
+          "score": 359,
+          "comments": 72,
+          "url": "https://news.ycombinator.com/item?id=16896880"
+        },
+        {
+          "src": "HN",
+          "text": "Why Stanislaw Lem’s futurism deserves attention",
+          "by": "pmcpinto",
+          "score": 194,
+          "comments": 67,
+          "url": "https://news.ycombinator.com/item?id=10198015"
+        }
       ]
     },
     "dada": {
@@ -4065,6 +4203,24 @@
           "type": "ECHO",
           "ref": "meme",
           "note": "Absurdist collage, anonymous authorship, virality — dada's operating system, now ambient."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Dada, an experimental new programming language",
+          "by": "marionauta",
+          "score": 412,
+          "comments": 420,
+          "url": "https://news.ycombinator.com/item?id=39614433"
+        },
+        {
+          "src": "HN",
+          "text": "Mark Zuckerberg's multi-account password was 'dadada'",
+          "by": "twoshedsmcginty",
+          "score": 182,
+          "comments": 78,
+          "url": "https://news.ycombinator.com/item?id=11845346"
         }
       ]
     },
@@ -4116,7 +4272,25 @@
           "note": "The adopted ancestor — Bosch was painting the unconscious 400 years before it had a bureau."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Algorithmic surrealism: A slow-motion guide to high-frequency trading",
+          "by": "Gigamouse",
+          "score": 169,
+          "comments": 33,
+          "url": "https://news.ycombinator.com/item?id=9733716"
+        },
+        {
+          "src": "HN",
+          "text": "Surrealism Is 100",
+          "by": "apollinaire",
+          "score": 95,
+          "comments": 36,
+          "url": "https://news.ycombinator.com/item?id=39585431"
+        }
+      ]
     },
     "abstract-expressionism": {
       "id": "abstract-expressionism",
@@ -4166,7 +4340,17 @@
           "note": "The institutional engine that canonized the movement and shipped it abroad."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Surrealists in New York: Atelier 17 and the Birth of Abstract Expressionism",
+          "by": "apollinaire",
+          "score": 37,
+          "comments": 1,
+          "url": "https://news.ycombinator.com/item?id=35043961"
+        }
+      ]
     },
     "minimalism": {
       "id": "minimalism",
@@ -4211,7 +4395,25 @@
           "note": "'Less, but better' — minimalism's ethics running a consumer-products division."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Pi's Minimalism Is Its Advantage",
+          "by": "luispa",
+          "score": 531,
+          "comments": 289,
+          "url": "https://news.ycombinator.com/item?id=49176038"
+        },
+        {
+          "src": "HN",
+          "text": "Minimalism – An undervalued development skill",
+          "by": "tipiirai",
+          "score": 506,
+          "comments": 172,
+          "url": "https://news.ycombinator.com/item?id=21871491"
+        }
+      ]
     },
     "pop-art": {
       "id": "pop-art",
@@ -4261,7 +4463,25 @@
           "note": "Logo-as-content, drops, irony at retail — pop's playbook on a hoodie."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Bryan Ferry on how Roxy Music invented art pop: 'We were game for anything'",
+          "by": "tintinnabula",
+          "score": 47,
+          "comments": 12,
+          "url": "https://news.ycombinator.com/item?id=16285481"
+        },
+        {
+          "src": "HN",
+          "text": "Marisol, Innovative Pop Art Sculptor, Dies at 85",
+          "by": "prismatic",
+          "score": 31,
+          "comments": 0,
+          "url": "https://news.ycombinator.com/item?id=11623515"
+        }
+      ]
     },
     "conceptual-art": {
       "id": "conceptual-art",
@@ -4306,7 +4526,25 @@
           "note": "Certificate-as-asset at blockchain scale — conceptual art's paperwork became the whole product."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "'Star Wars' conceptual artist Ralph McQuarrie passes away at age 82",
+          "by": "Kynlyn",
+          "score": 52,
+          "comments": 6,
+          "url": "https://news.ycombinator.com/item?id=3661807"
+        },
+        {
+          "src": "HN",
+          "text": "Chris Burden turned late-night TV commercials into conceptual art",
+          "by": "mr_tyzic",
+          "score": 27,
+          "comments": 6,
+          "url": "https://news.ycombinator.com/item?id=9559070"
+        }
+      ]
     },
     "brutalism": {
       "id": "brutalism",
@@ -4352,6 +4590,24 @@
           "type": "HISTORY",
           "ref": "pompidou",
           "note": "The high-tech riposte: turn the building inside out instead of pouring it solid."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "UX brutalism",
+          "by": "takinola",
+          "score": 354,
+          "comments": 177,
+          "url": "https://news.ycombinator.com/item?id=14986869"
+        },
+        {
+          "src": "HN",
+          "text": "Brutalism is Back",
+          "by": "tintinnabula",
+          "score": 170,
+          "comments": 205,
+          "url": "https://news.ycombinator.com/item?id=12685595"
         }
       ]
     },
@@ -4399,6 +4655,24 @@
           "type": "ECHO",
           "ref": "worlds-fair-1889",
           "note": "The expo-as-style-launchpad playbook — Paris had already run it once, with iron."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Why skyscraper architects always return to Art Deco",
+          "by": "gscott",
+          "score": 111,
+          "comments": 69,
+          "url": "https://news.ycombinator.com/item?id=23464888"
+        },
+        {
+          "src": "HN",
+          "text": "Britain's decade of Art Deco densification",
+          "by": "bswud",
+          "score": 104,
+          "comments": 37,
+          "url": "https://news.ycombinator.com/item?id=39713891"
         }
       ]
     },
@@ -4452,6 +4726,16 @@
           "ref": "swiss-style",
           "note": "The grid, handed to typographers — De Stijl's rules became layout defaults."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "How necessary are var, let, and const?",
+          "by": "tbassetto",
+          "score": 89,
+          "comments": 83,
+          "url": "https://news.ycombinator.com/item?id=9637871"
+        }
       ]
     },
     "arts-and-crafts": {
@@ -4498,6 +4782,24 @@
           "type": "ECHO",
           "ref": "billy-bookcase",
           "note": "The problem Morris couldn't solve — good design at working-class prices — answered by the factory he hated."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Museum of Arts and Crafts in Paris is a trove of cunning inventions",
+          "by": "vo2maxer",
+          "score": 102,
+          "comments": 30,
+          "url": "https://news.ycombinator.com/item?id=22213839"
+        },
+        {
+          "src": "HN",
+          "text": "Elite scientists are more likely to have a hobby in the arts and crafts",
+          "by": "yarapavan",
+          "score": 100,
+          "comments": 31,
+          "url": "https://news.ycombinator.com/item?id=10207410"
         }
       ]
     },
@@ -4551,6 +4853,24 @@
           "ref": "y2k-aesthetic",
           "note": "The blobs, brights, and plastic optimism resurface in the millennium's hardware."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Tweeting “Memphis” autolocks your Twitter account",
+          "by": "hirsin",
+          "score": 536,
+          "comments": 334,
+          "url": "https://news.ycombinator.com/item?id=26458296"
+        },
+        {
+          "src": "HN",
+          "text": "Why does every advert look the same? Corporate Memphis",
+          "by": "dehrmann",
+          "score": 203,
+          "comments": 189,
+          "url": "https://news.ycombinator.com/item?id=27107820"
+        }
       ]
     },
     "swiss-style": {
@@ -4601,7 +4921,25 @@
           "note": "The revolt: Milan's 1981 answer to three decades of Zurich restraint."
         }
       ],
-      "pullable": true
+      "pullable": true,
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Eduard: Swiss-Style Relief Shading for Maps Using Machine Learning",
+          "by": "argilium",
+          "score": 227,
+          "comments": 74,
+          "url": "https://news.ycombinator.com/item?id=34919659"
+        },
+        {
+          "src": "HN",
+          "text": "Swiss-Style Color Picker",
+          "by": "coloneltcb",
+          "score": 98,
+          "comments": 17,
+          "url": "https://news.ycombinator.com/item?id=10434486"
+        }
+      ]
     },
     "y2k-aesthetic": {
       "id": "y2k-aesthetic",
@@ -4648,6 +4986,16 @@
           "ref": "napster",
           "note": "The era's soundtrack delivery system — lawless, glowing, and gone by 2002."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "What is Frutiger Aero, the aesthetic taking over from Y2K?",
+          "by": "segasaturn",
+          "score": 36,
+          "comments": 14,
+          "url": "https://news.ycombinator.com/item?id=40135167"
+        }
       ]
     },
     "leonardo": {
@@ -4693,6 +5041,24 @@
           "type": "TECHNIQUE",
           "ref": "camera-obscura",
           "note": "His notebooks describe the darkened-room image four centuries before anyone could fix it to paper."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Leonardo Da Vinci’s To Do List (circa 1490)",
+          "by": "edw519",
+          "score": 274,
+          "comments": 68,
+          "url": "https://news.ycombinator.com/item?id=13187316"
+        },
+        {
+          "src": "HN",
+          "text": "Leonardo da Vinci’s The Last Supper in a new gigapixel image",
+          "by": "omarchowdhury",
+          "score": 258,
+          "comments": 56,
+          "url": "https://news.ycombinator.com/item?id=23721869"
         }
       ]
     },
@@ -4745,6 +5111,24 @@
           "ref": "renaissance",
           "note": "When people say 'Renaissance man' they mostly mean this résumé and Leonardo's."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Michelangelo's first painting, created when he was 12 or 13",
+          "by": "bookofjoe",
+          "score": 372,
+          "comments": 172,
+          "url": "https://news.ycombinator.com/item?id=46646263"
+        },
+        {
+          "src": "HN",
+          "text": "Michelangelo: Uber’s Machine Learning Platform",
+          "by": "holografix",
+          "score": 268,
+          "comments": 93,
+          "url": "https://news.ycombinator.com/item?id=15180608"
+        }
       ]
     },
     "caravaggio": {
@@ -4791,6 +5175,24 @@
           "ref": "caligari",
           "note": "Every noir cinematographer carving faces out of darkness is running his rig — tenebrism with a camera."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The last crimes of Caravaggio",
+          "by": "prismatic",
+          "score": 218,
+          "comments": 47,
+          "url": "https://news.ycombinator.com/item?id=39839257"
+        },
+        {
+          "src": "HN",
+          "text": "Caravaggio Was the Other Michelangelo of the Renaissance",
+          "by": "prismatic",
+          "score": 74,
+          "comments": 43,
+          "url": "https://news.ycombinator.com/item?id=33304681"
+        }
       ]
     },
     "rembrandt": {
@@ -4836,6 +5238,24 @@
           "type": "INFLUENCE",
           "ref": "goya",
           "note": "Goya named three masters: Velázquez, nature, and Rembrandt's etchings."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "717 Gigapixel Image of Rembrandt's Nightwatch",
+          "by": "gaws",
+          "score": 565,
+          "comments": 134,
+          "url": "https://news.ycombinator.com/item?id=30066078"
+        },
+        {
+          "src": "HN",
+          "text": "Rijksmuseum researchers discover new painting by Rembrandt van Rijn",
+          "by": "ohjeez",
+          "score": 138,
+          "comments": 34,
+          "url": "https://news.ycombinator.com/item?id=47249139"
         }
       ]
     },
@@ -4887,6 +5307,16 @@
           "type": "HISTORY",
           "ref": "nazi-loot",
           "note": "Göring traded 137 looted paintings for one Vermeer — which turned out to be a van Meegeren fake. The Reich got conned by demand it created."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "108B Pixel Scan of Johannes Vermeer's Girl with a Pearl Earring",
+          "by": "twalichiewicz",
+          "score": 476,
+          "comments": 138,
+          "url": "https://news.ycombinator.com/item?id=43852266"
         }
       ]
     },
@@ -5030,6 +5460,16 @@
           "type": "HISTORY",
           "ref": "degas",
           "note": "Degas painted Manet and his wife; Manet took a knife to Madame's face. Degas repossessed the canvas."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Launch HN: SharpestMinds (YC W18) – Online Community for AI Devs",
+          "by": "edouard-harris",
+          "score": 84,
+          "comments": 71,
+          "url": "https://news.ycombinator.com/item?id=16877457"
         }
       ]
     },
@@ -5358,6 +5798,24 @@
           "ref": "expressionism",
           "note": "The Blue Rider wing of it — color as inner necessity, scaled down to the size of a postcard and a joke."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Paul Klee's Personal Notebooks Are Now Online, Presenting His Bauhaus Teachings",
+          "by": "fforflo",
+          "score": 163,
+          "comments": 7,
+          "url": "https://news.ycombinator.com/item?id=11223979"
+        },
+        {
+          "src": "HN",
+          "text": "Paul Klee's personal notebooks on his Bauhaus teachings (2016)",
+          "by": "Anon84",
+          "score": 114,
+          "comments": 16,
+          "url": "https://news.ycombinator.com/item?id=22519374"
+        }
       ]
     },
     "hilma-af-klint": {
@@ -5398,6 +5856,24 @@
           "type": "TECHNIQUE",
           "ref": "surrealism",
           "note": "The Five practiced automatic drawing two decades before Breton's circle patented the idea."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Hilma af Klint: Swedish mystic hailed as pioneer of abstract art",
+          "by": "prismatic",
+          "score": 64,
+          "comments": 36,
+          "url": "https://news.ycombinator.com/item?id=33229895"
+        },
+        {
+          "src": "HN",
+          "text": "The Strange Afterlife of Hilma af Klint, Painting’s Posthumous Star",
+          "by": "FinnLobsien",
+          "score": 31,
+          "comments": 4,
+          "url": "https://news.ycombinator.com/item?id=45952925"
         }
       ]
     },
@@ -5440,6 +5916,16 @@
           "ref": "hilma-af-klint",
           "note": "Both had their price and place in the canon settled decades late — the market's clock runs slow for women."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "I Met the Reclusive Georgia O’Keeffe",
+          "by": "prismatic",
+          "score": 70,
+          "comments": 19,
+          "url": "https://news.ycombinator.com/item?id=24657201"
+        }
       ]
     },
     "hopper": {
@@ -5479,6 +5965,24 @@
           "type": "ECHO",
           "ref": "psycho",
           "note": "Hitchcock built the Bates mansion off Hopper's House by the Railroad — American menace, same architect."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Hollow City: Edward Hopper’s portraits of urban alienation",
+          "by": "prismatic",
+          "score": 71,
+          "comments": 30,
+          "url": "https://news.ycombinator.com/item?id=33475435"
+        },
+        {
+          "src": "HN",
+          "text": "Edward Hopper: An American Love Story",
+          "by": "keiferski",
+          "score": 42,
+          "comments": 9,
+          "url": "https://news.ycombinator.com/item?id=38979320"
         }
       ]
     },
@@ -5526,6 +6030,24 @@
           "ref": "okeeffe",
           "note": "Correspondents in life, co-inmates of the gift shop in death — the icon economy ate both biographies."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Frida Kahlo and the birth of Fridolatry",
+          "by": "Thevet",
+          "score": 69,
+          "comments": 46,
+          "url": "https://news.ycombinator.com/item?id=17317653"
+        },
+        {
+          "src": "HN",
+          "text": "Frida Kahlo's final painting vanished into storage",
+          "by": "RafelMri",
+          "score": 43,
+          "comments": 12,
+          "url": "https://news.ycombinator.com/item?id=40471927"
+        }
       ]
     },
     "rivera": {
@@ -5571,6 +6093,24 @@
           "type": "ECHO",
           "ref": "graffiti",
           "note": "Art bolted to public walls, aimed at people who'd never enter a gallery — muralism is street art's state-funded grandparent."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Destroyed by Rockefellers, Diego Rivera Mural Trespassed on Political Vision",
+          "by": "walterbell",
+          "score": 49,
+          "comments": 18,
+          "url": "https://news.ycombinator.com/item?id=10127466"
+        },
+        {
+          "src": "HN",
+          "text": "On Diego Rivera",
+          "by": "prismatic",
+          "score": 43,
+          "comments": 4,
+          "url": "https://news.ycombinator.com/item?id=28186596"
         }
       ]
     },
@@ -5622,6 +6162,24 @@
           "type": "HISTORY",
           "ref": "matisse",
           "note": "The lifelong rivalry — they traded paintings, each reportedly picking the other's weakest to study."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Thousands of Pablo Picasso’s works in a new online archive",
+          "by": "bookofjoe",
+          "score": 202,
+          "comments": 33,
+          "url": "https://news.ycombinator.com/item?id=40832214"
+        },
+        {
+          "src": "HN",
+          "text": "Found: The ‘how to draw’ books Pablo Picasso created for his daughter",
+          "by": "Kaibeezy",
+          "score": 154,
+          "comments": 7,
+          "url": "https://news.ycombinator.com/item?id=31711978"
         }
       ]
     },
@@ -5714,6 +6272,16 @@
           "type": "ECHO",
           "ref": "warhol-soup",
           "note": "Magritte went from painting ads to subverting them; Warhol reversed the pipeline — same door, opposite directions."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The life of René Magritte",
+          "by": "crapvoter",
+          "score": 28,
+          "comments": 3,
+          "url": "https://news.ycombinator.com/item?id=29397293"
         }
       ]
     },
@@ -5812,6 +6380,24 @@
           "ref": "rothko",
           "note": "Fellow traveler, opposite temperature: Pollock's flung paint, Rothko's slow fields — both dead by their own hands or habits within 14 years."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Jacksonpollock.org (2003)",
+          "by": "memalign",
+          "score": 495,
+          "comments": 145,
+          "url": "https://news.ycombinator.com/item?id=42986320"
+        },
+        {
+          "src": "HN",
+          "text": "Jacksonpollock.org (2003)",
+          "by": "edent",
+          "score": 165,
+          "comments": 151,
+          "url": "https://news.ycombinator.com/item?id=24269430"
+        }
       ]
     },
     "rothko": {
@@ -5903,6 +6489,16 @@
           "type": "ECHO",
           "ref": "manga",
           "note": "The loop closed: comics became high art, then high art's dot-screen look fed back into printed pulp aesthetics worldwide."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "New allegations of plagiarism against Roy Lichtenstein",
+          "by": "webmaven",
+          "score": 104,
+          "comments": 117,
+          "url": "https://news.ycombinator.com/item?id=35501868"
         }
       ]
     },
@@ -5996,6 +6592,16 @@
           "ref": "moma",
           "note": "Site of her 1969 guerrilla nude happening; the institution that ignored her now mounts her blockbusters."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Yayoi Kusama: Earth is a Polka Dot (2015) [video]",
+          "by": "brudgers",
+          "score": 34,
+          "comments": 7,
+          "url": "https://news.ycombinator.com/item?id=18338528"
+        }
       ]
     },
     "hockney": {
@@ -6042,6 +6648,24 @@
           "ref": "photography",
           "note": "His Polaroid 'joiners' rebuilt Cubist vision with a drugstore camera — dozens of frames, one restless eye."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "David Hockney, Who Restored the Human Form to Art, Dies at 88",
+          "by": "SirLJ",
+          "score": 109,
+          "comments": 36,
+          "url": "https://news.ycombinator.com/item?id=48502730"
+        },
+        {
+          "src": "HN",
+          "text": "David Hockney Shares Drawings",
+          "by": "brudgers",
+          "score": 26,
+          "comments": 4,
+          "url": "https://news.ycombinator.com/item?id=22749957"
+        }
       ]
     },
     "ai-weiwei": {
@@ -6087,6 +6711,24 @@
           "type": "INFLUENCE",
           "ref": "banksy",
           "note": "Parallel playbook — anonymity versus total exposure, but both weaponize spectacle against power."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Ai Weiwei Is Living in Our Future",
+          "by": "dirtyaura",
+          "score": 514,
+          "comments": 170,
+          "url": "https://news.ycombinator.com/item?id=8824691"
+        },
+        {
+          "src": "HN",
+          "text": "Chinese activist Ai Weiwei says Credit Suisse closing foundation's bank account",
+          "by": "justin66",
+          "score": 188,
+          "comments": 163,
+          "url": "https://news.ycombinator.com/item?id=28453256"
         }
       ]
     },
@@ -6185,6 +6827,24 @@
           "ref": "sistine-chapel",
           "note": "The sequel commission: finish the impossible statue, get handed an impossible ceiling."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "David Bowie Has Died",
+          "by": "hccampos",
+          "score": 1484,
+          "comments": 301,
+          "url": "https://news.ycombinator.com/item?id=10879262"
+        },
+        {
+          "src": "HN",
+          "text": "David Lynch has died",
+          "by": "wut42",
+          "score": 1190,
+          "comments": 378,
+          "url": "https://news.ycombinator.com/item?id=42728862"
+        }
       ]
     },
     "las-meninas": {
@@ -6277,6 +6937,24 @@
           "ref": "mona-lisa",
           "note": "Fellow member of the attacked-masterpieces club — both now work behind protective barriers."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Ultra high-resolution image of The Night Watch (2022)",
+          "by": "lhoff",
+          "score": 590,
+          "comments": 148,
+          "url": "https://news.ycombinator.com/item?id=41608648"
+        },
+        {
+          "src": "HN",
+          "text": "Most detailed ever photograph of The Night Watch goes online",
+          "by": "Someone",
+          "score": 396,
+          "comments": 125,
+          "url": "https://news.ycombinator.com/item?id=23151934"
+        }
       ]
     },
     "olympia": {
@@ -6327,6 +7005,24 @@
           "type": "INFLUENCE",
           "ref": "birth-of-venus",
           "note": "End of the line for the goddess alibi — four centuries of Venus poses, suddenly refused."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "AI solves International Math Olympiad problems at silver medal level",
+          "by": "ocfnash",
+          "score": 1370,
+          "comments": 525,
+          "url": "https://news.ycombinator.com/item?id=41069829"
+        },
+        {
+          "src": "HN",
+          "text": "AlphaGeometry: An Olympiad-level AI system for geometry",
+          "by": "_4bjt",
+          "score": 545,
+          "comments": 170,
+          "url": "https://news.ycombinator.com/item?id=39029801"
         }
       ]
     },
@@ -6424,6 +7120,24 @@
           "ref": "ai-weiwei",
           "note": "The template for artist-as-war-correspondent that Ai runs at global scale."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Picasso’s Guernica (Gigapixel)",
+          "by": "guigar",
+          "score": 186,
+          "comments": 83,
+          "url": "https://news.ycombinator.com/item?id=47728662"
+        },
+        {
+          "src": "HN",
+          "text": "The Backstory of Picasso's “Guernica”",
+          "by": "prismatic",
+          "score": 75,
+          "comments": 48,
+          "url": "https://news.ycombinator.com/item?id=32096301"
+        }
       ]
     },
     "nighthawks": {
@@ -6468,6 +7182,16 @@
           "type": "HISTORY",
           "ref": "american-gothic",
           "note": "Chicago's other American icon, bought 12 years earlier — the Midwest owns the two most parodied US paintings."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Show HN: Nighthawk: A stealthy, simple, unobtrusive music player",
+          "by": "quantummkv",
+          "score": 64,
+          "comments": 97,
+          "url": "https://news.ycombinator.com/item?id=17133531"
         }
       ]
     },
@@ -6607,6 +7331,24 @@
           "ref": "art-heists",
           "note": "Confiscated from William of Orange in 1568 — armies were taking paintings as trophies long before the Reich systematized it."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Jheronimus Bosch – The Garden of Earthly Delights – Interactive",
+          "by": "justbees",
+          "score": 189,
+          "comments": 21,
+          "url": "https://news.ycombinator.com/item?id=11067566"
+        },
+        {
+          "src": "HN",
+          "text": "The Garden of Earthly Delights by Jheronimus Bosch",
+          "by": "ivank",
+          "score": 128,
+          "comments": 23,
+          "url": "https://news.ycombinator.com/item?id=17329510"
+        }
       ]
     },
     "balloon-dog": {
@@ -6651,6 +7393,16 @@
           "type": "INFLUENCE",
           "ref": "pop-art",
           "note": "Pop's second generation: not painting consumer goods but becoming one."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "A party balloon shut down El Paso International Airport; estimated cost –$573k",
+          "by": "heifer",
+          "score": 193,
+          "comments": 132,
+          "url": "https://news.ycombinator.com/item?id=46993417"
         }
       ]
     },
@@ -6698,6 +7450,16 @@
           "ref": "earthrise",
           "note": "Both shot on the government clock, both public domain — America's two most reproduced photos are free because taxpayers funded the shutter."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Launch HN: InstaKin (YC S21) - Help immigrants to manage tasks in home countries",
+          "by": "yshirazi",
+          "score": 202,
+          "comments": 69,
+          "url": "https://news.ycombinator.com/item?id=27958605"
+        }
       ]
     },
     "earthrise": {
@@ -6743,6 +7505,24 @@
           "type": "INFLUENCE",
           "ref": "photography",
           "note": "Arguably the medium's most consequential single exposure — it changed the subject from 'them' to 'all of us.'"
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Apollo 8’s Earthrise: The Shot Seen Round the World",
+          "by": "pseudolus",
+          "score": 97,
+          "comments": 12,
+          "url": "https://news.ycombinator.com/item?id=18740059"
+        },
+        {
+          "src": "HN",
+          "text": "Who Took the Legendary Earthrise Photo from Apollo 8?",
+          "by": "sohkamyung",
+          "score": 77,
+          "comments": 27,
+          "url": "https://news.ycombinator.com/item?id=16067535"
         }
       ]
     },
@@ -6794,6 +7574,24 @@
           "type": "INFLUENCE",
           "ref": "salon-des-refuses",
           "note": "Same playbook, 50 years on: let the public come to jeer, and let the jeering do the advertising."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Launch HN: Armory.io (YC W17) – We Make Deployments Boring and Self-Service",
+          "by": "imosquera",
+          "score": 51,
+          "comments": 19,
+          "url": "https://news.ycombinator.com/item?id=13776456"
+        },
+        {
+          "src": "HN",
+          "text": "Show HN: Simple cloud deployments with CD as-a-Service",
+          "by": "techcofounder",
+          "score": 109,
+          "comments": 29,
+          "url": "https://news.ycombinator.com/item?id=32081749"
         }
       ]
     },
@@ -6891,6 +7689,16 @@
           "ref": "guernica",
           "note": "Capa shot the war Picasso painted — the Spanish Civil War forged both the image and the imagemaker's union."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Photographs of Hidden Spain",
+          "by": "phront",
+          "score": 62,
+          "comments": 22,
+          "url": "https://news.ycombinator.com/item?id=18865571"
+        }
       ]
     },
     "parthenon": {
@@ -6938,6 +7746,24 @@
           "ref": "art-heists",
           "note": "Elgin is the prototype dispute — legal-ish paperwork, imperial leverage, and a museum that won't give it back."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Why Is There a Full-Scale Replica of the Parthenon in Nashville, Tennessee?",
+          "by": "pseudolus",
+          "score": 138,
+          "comments": 80,
+          "url": "https://news.ycombinator.com/item?id=24950412"
+        },
+        {
+          "src": "HN",
+          "text": "Ancient colour revealed on the Parthenon Sculptures",
+          "by": "huxley",
+          "score": 42,
+          "comments": 21,
+          "url": "https://news.ycombinator.com/item?id=9972478"
+        }
       ]
     },
     "hagia-sophia": {
@@ -6979,6 +7805,24 @@
           "type": "MATERIAL",
           "ref": "kiss",
           "note": "Klimt's gold period runs on Byzantine mosaic — the same shimmering tesserae logic that lines these vaults."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The sound of the Hagia Sophia, more than 500 years ago",
+          "by": "blegh",
+          "score": 330,
+          "comments": 86,
+          "url": "https://news.ycombinator.com/item?id=22472779"
+        },
+        {
+          "src": "HN",
+          "text": "Turkey reconverts Istanbul's Hagia Sophia museum into a mosque",
+          "by": "pera",
+          "score": 49,
+          "comments": 14,
+          "url": "https://news.ycombinator.com/item?id=23794729"
         }
       ]
     },
@@ -7074,6 +7918,24 @@
           "ref": "art-nouveau",
           "note": "The style's maximum case — nature-worship ornament scaled to a skyline."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Barcelona’s Sagrada Familia will be completed in 2026",
+          "by": "mooreds",
+          "score": 501,
+          "comments": 329,
+          "url": "https://news.ycombinator.com/item?id=39815805"
+        },
+        {
+          "src": "HN",
+          "text": "The Sagrada Família takes its final shape",
+          "by": "pseudolus",
+          "score": 373,
+          "comments": 202,
+          "url": "https://news.ycombinator.com/item?id=45256575"
+        }
       ]
     },
     "gaudi": {
@@ -7121,6 +7983,24 @@
           "ref": "zaha-hadid",
           "note": "His hanging-chain models are proto-parametric design — Hadid's software curves have a 19th-century ancestor in string and birdshot."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "A different kind of string theory: Antoni Gaudi (2007)",
+          "by": "ZeljkoS",
+          "score": 51,
+          "comments": 6,
+          "url": "https://news.ycombinator.com/item?id=17627949"
+        },
+        {
+          "src": "HN",
+          "text": "Gaudí’s Great Temple",
+          "by": "Hooke",
+          "score": 31,
+          "comments": 13,
+          "url": "https://news.ycombinator.com/item?id=9886226"
+        }
       ]
     },
     "corbusier": {
@@ -7167,6 +8047,24 @@
           "type": "INFLUENCE",
           "ref": "cubism",
           "note": "His Purism was a corrective sequel to Cubism — same fractured geometry, tidied up and set to work."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "What Le Corbusier got right about office space",
+          "by": "simonebrunozzi",
+          "score": 156,
+          "comments": 125,
+          "url": "https://news.ycombinator.com/item?id=31000602"
+        },
+        {
+          "src": "HN",
+          "text": "What Le Corbusier got wrong and right in his design of Chandigarh",
+          "by": "efface",
+          "score": 96,
+          "comments": 61,
+          "url": "https://news.ycombinator.com/item?id=30798429"
         }
       ]
     },
@@ -7450,6 +8348,24 @@
           "ref": "worlds-fair-1889",
           "note": "Same city, same move, 88 years apart: state-sponsored techno-spectacle to declare France modern."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Paris’s Centre Pompidou to Close for Five Years Starting in 2025",
+          "by": "bookofjoe",
+          "score": 106,
+          "comments": 95,
+          "url": "https://news.ycombinator.com/item?id=36020811"
+        },
+        {
+          "src": "HN",
+          "text": "Routers at Centre Pompidou and software evolution",
+          "by": "mohsi",
+          "score": 38,
+          "comments": 10,
+          "url": "https://news.ycombinator.com/item?id=38565380"
+        }
       ]
     },
     "brasilia": {
@@ -7491,6 +8407,24 @@
           "type": "ECHO",
           "ref": "orwell-1984",
           "note": "Its critics' favorite genre: the planned utopia as alienation — a city accused of engineering out the street corner."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Brazil protests spread in Sao Paulo, Brasilia and Rio",
+          "by": "flaviojuvenal",
+          "score": 145,
+          "comments": 72,
+          "url": "https://news.ycombinator.com/item?id=5897052"
+        },
+        {
+          "src": "HN",
+          "text": "Brasília at Midnight",
+          "by": "Petiver",
+          "score": 54,
+          "comments": 74,
+          "url": "https://news.ycombinator.com/item?id=12212225"
         }
       ]
     },
@@ -7539,6 +8473,24 @@
           "ref": "lagerfeld",
           "note": "Lagerfeld commissioned her Chanel Mobile Art pavilion — a couture house touring a Hadid like a handbag."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Zaha Hadid, Groundbreaking Architect, Has Died",
+          "by": "antr",
+          "score": 313,
+          "comments": 56,
+          "url": "https://news.ycombinator.com/item?id=11398027"
+        },
+        {
+          "src": "HN",
+          "text": "Zaha Hadid: Maker of the 21st Century",
+          "by": "pseudolus",
+          "score": 63,
+          "comments": 28,
+          "url": "https://news.ycombinator.com/item?id=18608474"
+        }
       ]
     },
     "chrysler-building": {
@@ -7580,6 +8532,16 @@
           "type": "ECHO",
           "ref": "gatsby",
           "note": "Jazz Age New York's self-portrait: chrome optimism financed on margin, completed just as the party ended."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The ghost of a colonial road on the eastern side of the Chrysler Building",
+          "by": "cvarjas",
+          "score": 64,
+          "comments": 23,
+          "url": "https://news.ycombinator.com/item?id=38783517"
         }
       ]
     },
@@ -7675,6 +8637,24 @@
           "ref": "minimalism",
           "note": "Ten commandments of restraint, industrially applied — minimalism you could plug in."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "I designed a Dieter Rams-inspired iPhone dock",
+          "by": "farslan",
+          "score": 1509,
+          "comments": 356,
+          "url": "https://news.ycombinator.com/item?id=41623467"
+        },
+        {
+          "src": "HN",
+          "text": "Dieter Rams designed products to last, is horrified how we throw things away",
+          "by": "adrian_mrd",
+          "score": 541,
+          "comments": 302,
+          "url": "https://news.ycombinator.com/item?id=19590611"
+        }
       ]
     },
     "sony-walkman": {
@@ -7716,6 +8696,24 @@
           "type": "INFLUENCE",
           "ref": "napster",
           "note": "The mixtape taught a generation that music was personal, portable and copyable — Napster industrialized the instinct."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "New Sony Walkman music player",
+          "by": "rcarmo",
+          "score": 322,
+          "comments": 398,
+          "url": "https://news.ycombinator.com/item?id=34378985"
+        },
+        {
+          "src": "HN",
+          "text": "The First Sony Walkman Was Released 40 Years Ago",
+          "by": "lnguyen",
+          "score": 300,
+          "comments": 170,
+          "url": "https://news.ycombinator.com/item?id=20331569"
         }
       ]
     },
@@ -7763,6 +8761,24 @@
           "type": "ECHO",
           "ref": "2001-space-odyssey",
           "note": "Named off Kubrick's pod bay doors — Silicon Valley's habit of quoting the dystopia and shipping it as lifestyle."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Show HN: iPod.js – An online iPod that connects to Spotify and Apple Music",
+          "by": "tonyhawkins",
+          "score": 866,
+          "comments": 157,
+          "url": "https://news.ycombinator.com/item?id=27606099"
+        },
+        {
+          "src": "HN",
+          "text": "Apple is discontinuing the iPod",
+          "by": "minimaxir",
+          "score": 664,
+          "comments": 510,
+          "url": "https://news.ycombinator.com/item?id=31328703"
         }
       ]
     },
@@ -7853,6 +8869,16 @@
           "ref": "tschichold",
           "note": "Same decade, same faith — Tschichold gridding the page while Beck gridded the city."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Force Directed Graph of London's Railways",
+          "by": "edent",
+          "score": 39,
+          "comments": 0,
+          "url": "https://news.ycombinator.com/item?id=26131844"
+        }
       ]
     },
     "lego": {
@@ -7899,6 +8925,24 @@
           "type": "ECHO",
           "ref": "fallingwater",
           "note": "The LEGO Architecture line canonized Wright in studs — the avant-garde reissued as a shelf kit."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Brickit – scans your Lego bricks and helps you build new creations",
+          "by": "ChrisArchitect",
+          "score": 646,
+          "comments": 119,
+          "url": "https://news.ycombinator.com/item?id=27693560"
+        },
+        {
+          "src": "HN",
+          "text": "Snowcraft – Building a Lego Snowfort from giant Lego snow-bricks",
+          "by": "mikerg87",
+          "score": 186,
+          "comments": 47,
+          "url": "https://news.ycombinator.com/item?id=39063572"
         }
       ]
     },
@@ -7947,6 +8991,24 @@
           "ref": "instagram",
           "note": "Instagram's original icon was a Polaroid camera — instant photography reborn as pure interface, film sold separately (never)."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Polaroid Cube",
+          "by": "dskhatri",
+          "score": 575,
+          "comments": 181,
+          "url": "https://news.ycombinator.com/item?id=8164788"
+        },
+        {
+          "src": "HN",
+          "text": "Draw This: a polaroid camera that draws cartoons",
+          "by": "neuhaus",
+          "score": 361,
+          "comments": 55,
+          "url": "https://news.ycombinator.com/item?id=17460625"
+        }
       ]
     },
     "vespa": {
@@ -7989,6 +9051,24 @@
           "ref": "futurism",
           "note": "Italy's machine-worship, domesticated — the futurists wanted speed as violence; Italy bought it as a commute."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Open-Sourcing Vespa, Yahoo’s Data Processing and Serving Engine",
+          "by": "mkagenius",
+          "score": 512,
+          "comments": 121,
+          "url": "https://news.ycombinator.com/item?id=15345483"
+        },
+        {
+          "src": "HN",
+          "text": "Vespa.ai is spinning out of Yahoo as a separate company",
+          "by": "bratao",
+          "score": 351,
+          "comments": 134,
+          "url": "https://news.ycombinator.com/item?id=37769962"
+        }
       ]
     },
     "concorde": {
@@ -8030,6 +9110,24 @@
           "type": "HISTORY",
           "ref": "moon-landing-broadcast",
           "note": "It first flew in 1969, moon-landing year — the twin peaks of analog velocity; both programs are museum pieces now."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Concorde",
+          "by": "cheiVia0",
+          "score": 317,
+          "comments": 179,
+          "url": "https://news.ycombinator.com/item?id=12785320"
+        },
+        {
+          "src": "HN",
+          "text": "Concorde ‘B’",
+          "by": "robin_reala",
+          "score": 288,
+          "comments": 324,
+          "url": "https://news.ycombinator.com/item?id=17012995"
         }
       ]
     },
@@ -8156,6 +9254,24 @@
           "type": "ECHO",
           "ref": "bauhaus",
           "note": "'Good, cheap design for the many' — the Bauhaus pitch, executed by a Swedish logistics company with better margins."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "How Ikea's Billy bookcase took over the world",
+          "by": "sohkamyung",
+          "score": 303,
+          "comments": 237,
+          "url": "https://news.ycombinator.com/item?id=13741635"
+        },
+        {
+          "src": "HN",
+          "text": "Billy bookshelves as a retro motherboard \"rack\"",
+          "by": "ingve",
+          "score": 69,
+          "comments": 52,
+          "url": "https://news.ycombinator.com/item?id=47204799"
         }
       ]
     },
@@ -8387,6 +9503,24 @@
           "ref": "ysl",
           "note": "The 1973 'Battle of Versailles' show — Halston among the Americans who upstaged the French old guard, minimalist jersey against couture armor."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Show HN: ThreadTone – Halftone images made of thread",
+          "by": "theveloped",
+          "score": 303,
+          "comments": 44,
+          "url": "https://news.ycombinator.com/item?id=13254029"
+        },
+        {
+          "src": "HN",
+          "text": "Blender shader-based halftone CMYK offset printing emulation process",
+          "by": "CyMonk",
+          "score": 215,
+          "comments": 52,
+          "url": "https://news.ycombinator.com/item?id=31529853"
+        }
       ]
     },
     "versace": {
@@ -8529,6 +9663,16 @@
           "type": "INFLUENCE",
           "ref": "abloh",
           "note": "Abloh's quotation-mark method — recontextualize, barely alter, re-sign — is Margiela's operating system with the volume turned up."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Launch HN: Albedo (YC W21) – Highest resolution satellite imagery",
+          "by": "topherhaddad",
+          "score": 202,
+          "comments": 128,
+          "url": "https://news.ycombinator.com/item?id=25989085"
         }
       ]
     },
@@ -8673,6 +9817,16 @@
           "ref": "margiela",
           "note": "Margiela recontextualized quietly; Abloh did it in quotation marks, at retail scale, with the receipts printed on the product."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Virgil Abloh Dies at 41",
+          "by": "ChrisArchitect",
+          "score": 44,
+          "comments": 8,
+          "url": "https://news.ycombinator.com/item?id=29372464"
+        }
       ]
     },
     "mini-skirt": {
@@ -8719,6 +9873,16 @@
           "ref": "y2k-aesthetic",
           "note": "The micro-mini's 2000s revival ran the same loop: youth cohort weaponizes hemline, press panics, market follows."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Mary Quant, ’60s designer who invented the miniskirt, has died at 93",
+          "by": "graderjs",
+          "score": 167,
+          "comments": 98,
+          "url": "https://news.ycombinator.com/item?id=35557630"
+        }
       ]
     },
     "bikini": {
@@ -8759,6 +9923,16 @@
           "type": "ECHO",
           "ref": "meme",
           "note": "Naming your product after the week's biggest headline to hijack its press cycle — Réard ran engagement-bait in 1946."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Professor, the Bikini Model and the Suitcase Full of Trouble",
+          "by": "danso",
+          "score": 360,
+          "comments": 184,
+          "url": "https://news.ycombinator.com/item?id=5343590"
         }
       ]
     },
@@ -8855,6 +10029,16 @@
           "type": "INFLUENCE",
           "ref": "chanel-lbd",
           "note": "Wartime utility laundered into timeless wardrobe staple — the same trick Chanel pulled with jersey, executed by an entire army."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Agentic Loop: Three loops in a trench coat",
+          "by": "btables",
+          "score": 88,
+          "comments": 32,
+          "url": "https://news.ycombinator.com/item?id=48907672"
         }
       ]
     },
@@ -9040,6 +10224,24 @@
           "ref": "dali",
           "note": "Dalí illustrated Quixote — the arch-fantasist drawn by the arch-surrealist, windmills rendered by a man who fought his own."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Terry Gilliam’s Don Quixote film finally hits the big screen after 25 years",
+          "by": "walterbell",
+          "score": 253,
+          "comments": 100,
+          "url": "https://news.ycombinator.com/item?id=19662312"
+        },
+        {
+          "src": "HN",
+          "text": "“Don Quixote” as a manual for living",
+          "by": "drjohnson",
+          "score": 71,
+          "comments": 79,
+          "url": "https://news.ycombinator.com/item?id=28510213"
+        }
       ]
     },
     "alice-in-wonderland": {
@@ -9132,6 +10334,24 @@
           "ref": "frankenstein",
           "note": "Romanticism's twin obsessives — Ahab and Victor both chase the thing that unmakes them, and both books were misread on arrival."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "There Are Whales Alive Today Who Were Born Before Moby Dick Was Written",
+          "by": "spking",
+          "score": 259,
+          "comments": 103,
+          "url": "https://news.ycombinator.com/item?id=7256893"
+        },
+        {
+          "src": "HN",
+          "text": "There Are Whales Alive Today Who Were Born Before Moby Dick Was Written (2013)",
+          "by": "DyslexicAtheist",
+          "score": 163,
+          "comments": 99,
+          "url": "https://news.ycombinator.com/item?id=17924840"
+        }
       ]
     },
     "dracula": {
@@ -9177,6 +10397,24 @@
           "type": "HISTORY",
           "ref": "art-heists",
           "note": "A court-ordered destruction that failed — like stolen art, the condemned prints survived by going underground."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Dracula Theme – A dark theme for many different apps",
+          "by": "vmbrasseur",
+          "score": 489,
+          "comments": 227,
+          "url": "https://news.ycombinator.com/item?id=29494189"
+        },
+        {
+          "src": "HN",
+          "text": "Spanish crew shot an alternative Dracula after Bela Lugosi had gone to bed",
+          "by": "samizdis",
+          "score": 169,
+          "comments": 59,
+          "url": "https://news.ycombinator.com/item?id=26012623"
         }
       ]
     },
@@ -9224,6 +10462,24 @@
           "ref": "duchamp",
           "note": "1910s–20s scandal twins — a urinal signed R. Mutt and a novel prosecuted as filth, both now syllabus-canon."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Standard Ebooks' 1,000th title: Ulysses",
+          "by": "robin_reala",
+          "score": 367,
+          "comments": 128,
+          "url": "https://news.ycombinator.com/item?id=40535895"
+        },
+        {
+          "src": "HN",
+          "text": "United States vs. One Book Called “Ulysses”",
+          "by": "andyjohnson0",
+          "score": 147,
+          "comments": 64,
+          "url": "https://news.ycombinator.com/item?id=31763690"
+        }
       ]
     },
     "gatsby": {
@@ -9265,6 +10521,24 @@
           "ref": "art-deco",
           "note": "Fitzgerald named the Jazz Age; Deco built its skyline — the book and the style are each other's set dressing."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "What’s Entering Public Domain in 2021: The Great Gatsby, Music by Duke Ellington",
+          "by": "danso",
+          "score": 219,
+          "comments": 71,
+          "url": "https://news.ycombinator.com/item?id=25603683"
+        },
+        {
+          "src": "HN",
+          "text": "The Great Gatsby - For NES",
+          "by": "vanrenen",
+          "score": 103,
+          "comments": 32,
+          "url": "https://news.ycombinator.com/item?id=2218754"
+        }
       ]
     },
     "one-hundred-years": {
@@ -9305,6 +10579,16 @@
           "type": "ECHO",
           "ref": "kahlo",
           "note": "The same argument in paint: Kahlo rejected the 'surrealist' label too — both said they painted their own reality, and Europe kept mislabeling it."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Secret History of One Hundred Years of Solitude",
+          "by": "Thevet",
+          "score": 42,
+          "comments": 4,
+          "url": "https://news.ycombinator.com/item?id=10723955"
         }
       ]
     },
@@ -9397,6 +10681,24 @@
           "ref": "orwell-1984",
           "note": "Newspeak is the OED inverted — a dictionary engineered to shrink the sayable instead of recording it."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "From aardvark to woke: inside the Oxford English Dictionary",
+          "by": "memorable",
+          "score": 53,
+          "comments": 109,
+          "url": "https://news.ycombinator.com/item?id=31973770"
+        },
+        {
+          "src": "HN",
+          "text": "The Oxford English Dictionary: not just a labour of love, a feat of endurance",
+          "by": "diodorus",
+          "score": 27,
+          "comments": 3,
+          "url": "https://news.ycombinator.com/item?id=12333000"
+        }
       ]
     },
     "woolf": {
@@ -9442,6 +10744,24 @@
           "type": "INFLUENCE",
           "ref": "penguin",
           "note": "Hogarth proved writers could own the means of production; Penguin later proved readers could afford the output — two ends of one democratization."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "To write better code, read Virginia Woolf",
+          "by": "my_first_acct",
+          "score": 133,
+          "comments": 66,
+          "url": "https://news.ycombinator.com/item?id=11746297"
+        },
+        {
+          "src": "HN",
+          "text": "Virginia Woolf's list-making",
+          "by": "vinnyvichy",
+          "score": 74,
+          "comments": 20,
+          "url": "https://news.ycombinator.com/item?id=40964683"
         }
       ]
     },
@@ -9490,6 +10810,16 @@
           "ref": "futurism",
           "note": "The Futurists manifesto'd about art as assault on the audience; the Rite actually landed the punch."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Walt Disney's Dinosaurs: The Story of the Rite of Spring",
+          "by": "Petiver",
+          "score": 33,
+          "comments": 3,
+          "url": "https://news.ycombinator.com/item?id=13748807"
+        }
       ]
     },
     "sgt-pepper": {
@@ -9529,6 +10859,16 @@
           "type": "ECHO",
           "ref": "ziggy-stardust",
           "note": "Pepper invented the fictional-band conceit; Bowie moved into it full-time."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Sgt. Pepper’s to get new Atmos mix: current version ‘doesn’t sound quite right’",
+          "by": "Tomte",
+          "score": 57,
+          "comments": 54,
+          "url": "https://news.ycombinator.com/item?id=28006983"
         }
       ]
     },
@@ -9714,6 +11054,24 @@
           "ref": "napster",
           "note": "The next thing to rewire music distribution overnight — and MTV got to feel like the incumbent this time."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "MTV news website goes dark, archives pulled offline",
+          "by": "anigbrowl",
+          "score": 243,
+          "comments": 185,
+          "url": "https://news.ycombinator.com/item?id=40782101"
+        },
+        {
+          "src": "HN",
+          "text": "The first two hours of MTV (1981) [video]",
+          "by": "bookofjoe",
+          "score": 206,
+          "comments": 134,
+          "url": "https://news.ycombinator.com/item?id=28106020"
+        }
       ]
     },
     "napster": {
@@ -9759,6 +11117,24 @@
           "ref": "ipod",
           "note": "The 99¢ download was the treaty; the iPod collected the reparations."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Napster sparked a file-sharing revolution 25 years ago",
+          "by": "luuurker",
+          "score": 389,
+          "comments": 334,
+          "url": "https://news.ycombinator.com/item?id=40545436"
+        },
+        {
+          "src": "HN",
+          "text": "The Financial Industry Is Having Its Napster Moment",
+          "by": "T-A",
+          "score": 278,
+          "comments": 137,
+          "url": "https://news.ycombinator.com/item?id=11450532"
+        }
       ]
     },
     "robert-johnson": {
@@ -9798,6 +11174,16 @@
           "type": "INFLUENCE",
           "ref": "hiphop",
           "note": "Delta blues is the root DNA of the American songbook the breakbeat later looped — the source code under the source code."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Mack McCormick’s Long, Tortured Quest to Find the Real Robert Johnson",
+          "by": "tintinnabula",
+          "score": 41,
+          "comments": 5,
+          "url": "https://news.ycombinator.com/item?id=35509587"
         }
       ]
     },
@@ -9846,6 +11232,16 @@
           "ref": "photography",
           "note": "Méliès was a stage magician who treated the camera as a trick box — the substitution splice was reportedly discovered when his camera jammed mid-shot."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "NASA Budgets for a Trip to the Moon",
+          "by": "Ankaios",
+          "score": 38,
+          "comments": 49,
+          "url": "https://news.ycombinator.com/item?id=16354633"
+        }
       ]
     },
     "citizen-kane": {
@@ -9893,6 +11289,24 @@
           "ref": "orwell-1984",
           "note": "A press baron who manufactures reality — Hearst ran the demo; Orwell published the manual eight years later."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Herman Mankiewicz, Pauline Kael, and the Battle over “Citizen Kane”",
+          "by": "fortran77",
+          "score": 51,
+          "comments": 11,
+          "url": "https://news.ycombinator.com/item?id=25098264"
+        },
+        {
+          "src": "HN",
+          "text": "The Rise (and Inevitable Fall) of Citizen Kane",
+          "by": "furtively",
+          "score": 28,
+          "comments": 21,
+          "url": "https://news.ycombinator.com/item?id=25311215"
+        }
       ]
     },
     "psycho": {
@@ -9932,6 +11346,24 @@
           "type": "INFLUENCE",
           "ref": "caligari",
           "note": "The madhouse gothic and the unreliable interior — horror's Weimar bloodline, forty years on."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "I believe there are entire companies right now under AI psychosis",
+          "by": "reasonableklout",
+          "score": 2105,
+          "comments": 1272,
+          "url": "https://news.ycombinator.com/item?id=48153379"
+        },
+        {
+          "src": "HN",
+          "text": "Tech CEOs are apparently suffering from AI psychosis",
+          "by": "IAmGraydon",
+          "score": 722,
+          "comments": 360,
+          "url": "https://news.ycombinator.com/item?id=48295679"
         }
       ]
     },
@@ -9978,6 +11410,24 @@
           "ref": "blade-runner",
           "note": "Douglas Trumbull built both futures — the same effects hands, antiseptic in 1968, raining by 1982."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "‘2001: A Space Odyssey’ rendered in the style of Picasso",
+          "by": "cjdulberger",
+          "score": 473,
+          "comments": 94,
+          "url": "https://news.ycombinator.com/item?id=11874062"
+        },
+        {
+          "src": "HN",
+          "text": "Typography of 2001: A Space Odyssey (2014)",
+          "by": "sudobash1",
+          "score": 189,
+          "comments": 75,
+          "url": "https://news.ycombinator.com/item?id=28857373"
+        }
       ]
     },
     "star-wars": {
@@ -10022,6 +11472,24 @@
           "type": "ECHO",
           "ref": "jordan1",
           "note": "The Early Bird empty box and the sneaker drop run the same playbook: sell the promise, ship the product later."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Star Wars Route: Do a traceroute to 216.81.59.173",
+          "by": "fpp",
+          "score": 770,
+          "comments": 78,
+          "url": "https://news.ycombinator.com/item?id=5192656"
+        },
+        {
+          "src": "HN",
+          "text": "How I helped destroy Star Wars Galaxies",
+          "by": "mziulu",
+          "score": 650,
+          "comments": 119,
+          "url": "https://news.ycombinator.com/item?id=3675047"
         }
       ]
     },
@@ -10068,6 +11536,24 @@
           "ref": "y2k-aesthetic",
           "note": "The cyberpunk template that millennium-era design kept strip-mining for chrome, neon and kanji."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "‘Blade Runner’ at 40",
+          "by": "gumby",
+          "score": 389,
+          "comments": 424,
+          "url": "https://news.ycombinator.com/item?id=31887748"
+        },
+        {
+          "src": "HN",
+          "text": "The title cards in Blade Runner are amazing",
+          "by": "ExMachina73",
+          "score": 372,
+          "comments": 177,
+          "url": "https://news.ycombinator.com/item?id=49189287"
+        }
       ]
     },
     "ghibli": {
@@ -10108,6 +11594,24 @@
           "ref": "toy-story",
           "note": "Mutual admiration society: Lasseter championed Ghibli's US releases, and Totoro cameos in Toy Story 3."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Studio Ghibli releases 400 free-to-use images",
+          "by": "DyslexicAtheist",
+          "score": 647,
+          "comments": 124,
+          "url": "https://news.ycombinator.com/item?id=24564775"
+        },
+        {
+          "src": "HN",
+          "text": "Studio Ghibli set to become subsidiary of Nippon TV",
+          "by": "sohkamyung",
+          "score": 557,
+          "comments": 250,
+          "url": "https://news.ycombinator.com/item?id=37596788"
+        }
       ]
     },
     "toy-story": {
@@ -10147,6 +11651,24 @@
           "type": "HISTORY",
           "ref": "ipod",
           "note": "The billionaire Toy Story minted walked back into Apple in '97 — the iPod is downstream of Woody's opening weekend."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The 'Toy Story' You Remember",
+          "by": "ani_obsessive",
+          "score": 1196,
+          "comments": 338,
+          "url": "https://news.ycombinator.com/item?id=45883788"
+        },
+        {
+          "src": "HN",
+          "text": "Did Pixar accidentally delete Toy Story 2 during production? (2012)",
+          "by": "chenster",
+          "score": 515,
+          "comments": 253,
+          "url": "https://news.ycombinator.com/item?id=13417037"
         }
       ]
     },
@@ -10190,6 +11712,24 @@
           "ref": "instagram",
           "note": "The Brownie habit, franchised to every phone on Earth — 110 years between 'Kodak moment' and the filter feed."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Kodak Brownie changed privacy rights",
+          "by": "giuliomagnifico",
+          "score": 57,
+          "comments": 10,
+          "url": "https://news.ycombinator.com/item?id=28929590"
+        },
+        {
+          "src": "HN",
+          "text": "The iPhone is today’s Kodak Brownie Camera",
+          "by": "tambourine_man",
+          "score": 35,
+          "comments": 47,
+          "url": "https://news.ycombinator.com/item?id=25903771"
+        }
       ]
     },
     "instagram": {
@@ -10229,6 +11769,24 @@
           "type": "ECHO",
           "ref": "meme",
           "note": "Built one of the meme's main habitats, then watched the format outgrow the platform."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "When you browse Instagram and find Tony Abbott's passport number",
+          "by": "michael_fine",
+          "score": 2326,
+          "comments": 340,
+          "url": "https://news.ycombinator.com/item?id=24488224"
+        },
+        {
+          "src": "HN",
+          "text": "The newest Instagram “exploit” is the goofiest I've seen",
+          "by": "ssiddharth",
+          "score": 2210,
+          "comments": 491,
+          "url": "https://news.ycombinator.com/item?id=48359102"
         }
       ]
     },
@@ -10274,6 +11832,24 @@
           "type": "MATERIAL",
           "ref": "instagram",
           "note": "Distribution substrate — the feed is the petri dish."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Somebody used spoofed ADSB signals to raster the meme of JD Vance",
+          "by": "wubin",
+          "score": 549,
+          "comments": 150,
+          "url": "https://news.ycombinator.com/item?id=46802067"
+        },
+        {
+          "src": "HN",
+          "text": "The meme-ification of the “Demon Core”",
+          "by": "SaberTail",
+          "score": 400,
+          "comments": 288,
+          "url": "https://news.ycombinator.com/item?id=42200699"
         }
       ]
     },
@@ -10322,6 +11898,24 @@
           "ref": "nft-beeple",
           "note": "The counter-reformation: three decades later, a market for re-imposing scarcity on the free-copy machine."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Decentralisation: the next big step for the world wide web",
+          "by": "carsonfarmer",
+          "score": 532,
+          "comments": 208,
+          "url": "https://news.ycombinator.com/item?id=17941941"
+        },
+        {
+          "src": "HN",
+          "text": "30th Anniversary of the World Wide Web [video]",
+          "by": "nicoz3",
+          "score": 296,
+          "comments": 75,
+          "url": "https://news.ycombinator.com/item?id=19366079"
+        }
       ]
     },
     "pantone": {
@@ -10367,6 +11961,24 @@
           "ref": "prussian-blue",
           "note": "Before standards, new colors were lab accidents that made fortunes — Pantone is what happens when the accident era ends."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Pantone 448 C",
+          "by": "kmskontorp",
+          "score": 442,
+          "comments": 277,
+          "url": "https://news.ycombinator.com/item?id=22122507"
+        },
+        {
+          "src": "HN",
+          "text": "This file has Pantone colors that have been removed and replaced with black",
+          "by": "tosh",
+          "score": 403,
+          "comments": 235,
+          "url": "https://news.ycombinator.com/item?id=33369951"
+        }
       ]
     },
     "tulip-mania": {
@@ -10408,6 +12020,24 @@
           "type": "ECHO",
           "ref": "meme",
           "note": "Mackay's lurid version out-replicated the archival record for 180 years — the mania about the mania."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Tulipmania: More Boring Than You Thought",
+          "by": "wslh",
+          "score": 207,
+          "comments": 76,
+          "url": "https://news.ycombinator.com/item?id=15308824"
+        },
+        {
+          "src": "HN",
+          "text": "Tulip mania: the classic story of a Dutch financial bubble is mostly wrong",
+          "by": "okket",
+          "score": 184,
+          "comments": 63,
+          "url": "https://news.ycombinator.com/item?id=16399756"
         }
       ]
     },
@@ -10506,6 +12136,24 @@
           "ref": "leonardo",
           "note": "France has the Mona Lisa because Leonardo died there on the king's payroll — no heist required, just Renaissance HR."
         }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "The Louvre's CCTV password was \"Louvre\"",
+          "by": "JustSkyfall",
+          "score": 40,
+          "comments": 14,
+          "url": "https://news.ycombinator.com/item?id=45803302"
+        },
+        {
+          "src": "HN",
+          "text": "World's only particle accelerator for art is back at the Louvre",
+          "by": "lnguyen",
+          "score": 37,
+          "comments": 3,
+          "url": "https://news.ycombinator.com/item?id=15769036"
+        }
       ]
     },
     "moma": {
@@ -10557,6 +12205,24 @@
           "type": "ECHO",
           "ref": "emoji",
           "note": "Acquiring the original 176 emoji in 2016 was the founding logic still running: decide what counts as modern, then shelve it next to van Gogh."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "MoMA makes most exhibition catalogs since 1929 available on the internet",
+          "by": "dang",
+          "score": 196,
+          "comments": 13,
+          "url": "https://news.ycombinator.com/item?id=12855834"
+        },
+        {
+          "src": "HN",
+          "text": "Are You Smarter Than a Quant? Questions from the MoMath Masters Contest",
+          "by": "sonabinu",
+          "score": 85,
+          "comments": 48,
+          "url": "https://news.ycombinator.com/item?id=11225531"
         }
       ]
     },
@@ -10703,6 +12369,24 @@
           "type": "ECHO",
           "ref": "streetwear",
           "note": "The letterforms and the fame-logic run straight into logo culture — the tag became the drop."
+        }
+      ],
+      "discourse": [
+        {
+          "src": "HN",
+          "text": "Vikings went to Mediterranean for ‘summer jobs’ as mercenaries, left graffiti",
+          "by": "dxs",
+          "score": 289,
+          "comments": 132,
+          "url": "https://news.ycombinator.com/item?id=34906104"
+        },
+        {
+          "src": "HN",
+          "text": "San Francisco Graffiti",
+          "by": "walz",
+          "score": 214,
+          "comments": 242,
+          "url": "https://news.ycombinator.com/item?id=46763721"
         }
       ]
     }
