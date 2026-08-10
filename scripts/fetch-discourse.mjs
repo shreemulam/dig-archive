@@ -205,6 +205,7 @@ if(process.env.REPAIR === '1'){
 if(process.env.SOCIAL_PASS === '1'){
   let n = 0;
   for(const [id, rec] of Object.entries(data.records)){
+    if(process.env.ONLY_MISSING==='1' && (rec.discourse||[]).some(d=>d.src==='IG'||d.src==='THREADS')) continue;
     const q = QUERIES[id] || rec.title;
     const t = threads(q), g = igReels(q);
     if(t.length || g.length){
