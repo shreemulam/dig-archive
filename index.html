@@ -475,6 +475,34 @@
   #dailyHud .abandon:hover{color:var(--ink)}
   #dailyHud.hidden{display:none}
 
+  /* ---------- ONBOARDING ---------- */
+  #firstTimer{
+    margin-top:18px;font-size:11.5px;letter-spacing:.1em;line-height:1.9;
+    color:var(--acid);text-transform:uppercase;max-width:52ch;
+  }
+  #firstTimer b{border-bottom:1px solid var(--acid)}
+  #openMap.nudge{animation:nudgePulse 1.6s ease-in-out infinite}
+  @keyframes nudgePulse{
+    0%,100%{box-shadow:0 0 0 0 rgba(212,255,63,0)}
+    50%{box-shadow:0 0 0 4px rgba(212,255,63,.28), 0 0 24px rgba(212,255,63,.25)}
+  }
+  .nudge-hint{font-size:10px;letter-spacing:.12em;color:var(--acid);text-transform:uppercase}
+  #coldStrip{
+    position:fixed;bottom:34px;left:0;right:0;z-index:60;
+    display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;
+    background:var(--bg-2);border-top:1px solid var(--acid);
+    padding:12px 20px;font-size:10.5px;letter-spacing:.12em;
+    color:var(--ink);text-transform:uppercase;text-align:center;
+  }
+  #coldStrip b{color:var(--acid);font-weight:500}
+  #coldStrip .cs-btn{
+    cursor:pointer;color:var(--acid);border:1px solid var(--acid);
+    padding:6px 12px;white-space:nowrap;
+  }
+  #coldStrip .cs-btn:hover{background:var(--acid);color:var(--bg)}
+  #coldStrip .cs-x{cursor:pointer;color:var(--ink-faint);padding:6px}
+  #coldStrip .cs-x:hover{color:var(--ink)}
+
   /* ---------- NEW DROPS / RESUME ---------- */
   .new-tag{color:var(--pink)}
   #newDrop{
@@ -611,18 +639,18 @@
       <div class="feat-row">
         <div class="feat">
           <div class="n">01 / PULL</div>
-          <h3>One button, zero algorithm</h3>
-          <p>Slot-machine into the archive: Klimt to Kawakubo, Gutenberg to the Air Jordan 1. Every record is a dossier — specs, receipts, and the facts nobody told you.</p>
+          <h3>Get one true story</h3>
+          <p>Hit the green button and get one record from art, fashion, music, or design history — with the facts nobody told you in school. No feed, no account, no ads.</p>
         </div>
         <div class="feat">
-          <div class="n">02 / FALL</div>
-          <h3>Everything is connected</h3>
-          <p>Every record opens a constellation of real links — influence, material, technique, echo, history — and every node opens another. The hole has no bottom.</p>
+          <div class="n">02 / FOLLOW THE THREADS</div>
+          <h3>See how it all connects</h3>
+          <p>Every record opens a map of its real connections — who stole what, who copied whom, which volcano wrote which book. Every node on the map opens another one. That’s the rabbit hole.</p>
         </div>
         <div class="feat">
-          <div class="n">03 / RECEIPT</div>
-          <h3>Post the hole you fell down</h3>
-          <p>Your descent gets logged. Export the trail as a receipt — proof you went from a sneaker to a 1455 lawsuit in six clicks.</p>
+          <div class="n">03 / SHOW OFF</div>
+          <h3>Share where you ended up</h3>
+          <p>Your path gets logged like a receipt. Export it or make a story card — proof you got from a sneaker to a 1455 lawsuit in six taps.</p>
         </div>
       </div>
       <div class="stat-strip" id="statStrip"></div>
@@ -694,6 +722,14 @@ let mapMode = 'record';   // 'record' | 'atlas'
 
 const $ = id => document.getElementById(id);
 const recNum = id => String(IDS.indexOf(id)+1).padStart(3,'0');
+
+/* first-visit onboarding: 'dig.seen' = has opened a constellation once */
+const isFirstTimer = () => !localStorage.getItem('dig.seen');
+function markSeen(){ localStorage.setItem('dig.seen','1');
+  const n=$('openMap'); if(n) n.classList.remove('nudge');
+  const hint=document.querySelector('.nudge-hint'); if(hint) hint.remove();
+  const cs=document.getElementById('coldStrip'); if(cs) cs.remove();
+}
 
 /* visited records persist across sessions */
 const visited = new Set(JSON.parse(localStorage.getItem('dig.visited')||'[]'));
@@ -807,6 +843,11 @@ function renderCard(id){
   }
   const linked = h.connections.filter(c=>c.ref).length;
   $('connHint').textContent = `${h.connections.length} linked records · ${linked} openable`;
+  if(isFirstTimer()){
+    $('openMap').classList.add('nudge');
+    if(!document.querySelector('.nudge-hint'))
+      $('openMap').insertAdjacentHTML('afterend','<span class="nudge-hint">← the good part</span>');
+  }
   $('recCount').innerHTML = `REC <b>${recNum(id)}/${String(IDS.length).padStart(3,'0')}</b>`;
 
   const spec = $('spec');
@@ -1569,7 +1610,7 @@ function initGlobe(){
   requestAnimationFrame(frame);
 }
 
-$('openMap').addEventListener('click', ()=>{ renderMap(currentId); showView('map'); syncHash(`#/${currentId}/map`); });
+$('openMap').addEventListener('click', ()=>{ markSeen(); renderMap(currentId); showView('map'); syncHash(`#/${currentId}/map`); });
 $('backBtn').addEventListener('click', ()=>{ showView('card'); syncHash(`#/${currentId}`); });
 $('pullBtn').addEventListener('click', pull);
 $('atlasBtn').addEventListener('click', ()=> openAtlas());
@@ -1666,6 +1707,23 @@ Promise.all([
 
     buildLegend(); renderCard(currentId); renderTrail(); initGlobe();
     renderDailyBox();
+
+    if(isFirstTimer()){
+      const ft = document.createElement('div');
+      ft.id = 'firstTimer';
+      ft.innerHTML = 'First time? → Hit the green button. You’ll get one true story from culture history — then tap the <b>glowing threads</b> to see what it’s connected to.';
+      document.querySelector('.hero-ctas').after(ft);
+
+      const deepLink = /^#\/?[a-z0-9-]+/.test(location.hash) && location.hash.replace(/^#\/?/,'') !== '';
+      if(deepLink){
+        const cs = document.createElement('div');
+        cs.id = 'coldStrip';
+        cs.innerHTML = 'You’re in <b>DIG.ARCHIVE</b> — a web of true stories from art &amp; culture. Every bright-bordered card opens another. <span class="cs-btn" id="csHome">◆ What is this?</span> <span class="cs-x" id="csX">✕</span>';
+        document.body.appendChild(cs);
+        document.getElementById('csHome').onclick = ()=>{ cs.remove(); showView('home'); syncHash('#/'); };
+        document.getElementById('csX').onclick = ()=> cs.remove();
+      }
+    }
 
     // weekly drop — new acquisitions block
     const latest = DROPS[DROPS.length-1];
