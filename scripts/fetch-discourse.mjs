@@ -19,15 +19,15 @@ function reddit(q){
       ['reddit','list','--query', q, '--sort','top','--timeframe','all','--trim','--agent'],
       {encoding:'utf8', timeout:45000, env:process.env});
     const d = JSON.parse(out);
-    const posts = d.posts || d.data || d.results || (Array.isArray(d)?d:[]);
+    const res = d.results || d;
+    if(res.credits_remaining !== undefined) globalThis.__credits = res.credits_remaining;
+    const posts = res.posts || [];
     return posts
-      .map(p=>p.data||p)
-      .filter(p=>(p.score??p.ups??0)>=30 && (p.title||'').length>=15)
+      .filter(p=>(p.score??p.ups??0)>=30 && (p.title||'').length>=15 && relevant(p.title||'', q))
       .slice(0,2)
       .map(p=>({src:'REDDIT', text:(p.title||'').trim(),
-                by:'r/'+(p.subreddit||p.subreddit_name_prefixed||'').replace(/^r\//,''),
-                score:p.score??p.ups??0, comments:p.num_comments||0,
-                url:p.permalink ? ('https://reddit.com'+p.permalink) : (p.url||'')}));
+                by:'r/'+(p.subreddit||''), score:p.score??p.ups??0,
+                comments:p.num_comments||0, url:p.url||''}));
   }catch(e){ return []; }
 }
 
@@ -81,6 +81,14 @@ const SE_SITES = {
 };
 
 const sleep = ms => new Promise(r=>setTimeout(r, ms));
+// token-relevance gate: text must contain >=2 query tokens (or all, if fewer)
+function relevant(text, q, min=2){
+  const toks = [...new Set((q.toLowerCase().match(/[a-z0-9]{4,}/g)||[]))];
+  if(!toks.length) return true;
+  const t = (text||'').toLowerCase();
+  const hits = toks.filter(k=>t.includes(k)).length;
+  return hits >= Math.min(min, toks.length);
+}
 const clean = t => t.replace(/\s+/g,' ').trim()
   .replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 
@@ -117,7 +125,7 @@ async function bsky(q){
     return (d.posts||[])
       .filter(p=>{
         const t = p.record?.text||'';
-        return (p.likeCount||0)>=40 && t.length>=40 && t.length<=300 && !/^RT /.test(t);
+        return (p.likeCount||0)>=40 && t.length>=40 && t.length<=300 && !/^RT /.test(t) && relevant(t, q);
       })
       .slice(0,2)
       .map(p=>{
@@ -132,6 +140,103 @@ async function bsky(q){
 const data = JSON.parse(fs.readFileSync('records.json','utf8'));
 const onlyMissing = process.env.ONLY_MISSING === '1';
 let filled = 0;
+
+function threads(q){
+  if(!process.env.SCRAPECREATORS_API_KEY) return [];
+  try{
+    const out = execFileSync('scrape-creators-pp-cli',
+      ['threads','list-search','--query', q, '--agent'],
+      {encoding:'utf8', timeout:45000, env:process.env});
+    const res = JSON.parse(out).results || {};
+    if(res.credits_remaining !== undefined) globalThis.__credits = res.credits_remaining;
+    return (res.posts||[])
+      .map(p=>({ text:(p.caption&&p.caption.text||'').trim(), likes:p.like_count||0,
+                 user:p.user&&p.user.username||'', code:p.code }))
+      .filter(p=>p.likes>=20 && p.text.length>=30 && p.text.length<=300 && relevant(p.text, q))
+      .slice(0,1)
+      .map(p=>({src:'THREADS', text:p.text, by:'@'+p.user, score:p.likes, comments:0,
+                url:p.code?`https://www.threads.net/@${p.user}/post/${p.code}`:''}));
+  }catch(e){ return []; }
+}
+
+function igReels(q){
+  if(!process.env.SCRAPECREATORS_API_KEY) return [];
+  try{
+    const out = execFileSync('scrape-creators-pp-cli',
+      ['instagram','list-reels-2','--query', q, '--agent'],
+      {encoding:'utf8', timeout:45000, env:process.env});
+    const res = JSON.parse(out).results || {};
+    if(res.credits_remaining !== undefined) globalThis.__credits = res.credits_remaining;
+    return (res.reels||[])
+      .map(p=>({ text:(p.caption||'').replace(/#\S+/g,'').replace(/\s+/g,' ').trim(),
+                 likes:p.like_count||0, code:p.shortcode||p.code||'',
+                 user:(p.owner&&(p.owner.username||p.owner.handle))||'' }))
+      .filter(p=>p.likes>=100 && p.text.length>=30 && relevant(p.text, q, 1))
+      .slice(0,1)
+      .map(p=>({src:'IG', text:p.text.slice(0,220), by:p.user?'@'+p.user:'reel', score:p.likes, comments:0,
+                url:p.code?`https://www.instagram.com/reel/${p.code}/`:''}));
+  }catch(e){ return []; }
+}
+
+/* REPAIR=1: relevance-audit stored discourse, refetch reddit where emptied */
+if(process.env.REPAIR === '1'){
+  let dropped=0, refetched=0;
+  for(const [id, rec] of Object.entries(data.records)){
+    if(!rec.discourse) continue;
+    const q = QUERIES[id] || rec.title;
+    const before = rec.discourse.length;
+    rec.discourse = rec.discourse.filter(d=>{
+      if(d.src==='HN'||d.src==='SE') return true;          // curated APIs, already on-topic
+      return relevant(d.text, q, d.src==='IG'?1:2);
+    });
+    dropped += before - rec.discourse.length;
+    if(!rec.discourse.some(d=>d.src==='REDDIT')){
+      const r = reddit(q);
+      if(r.length){ rec.discourse = [...r, ...rec.discourse].slice(0,5); refetched++; }
+      await sleep(300);
+    }
+  }
+  fs.writeFileSync('records.json', JSON.stringify(data, null, 2));
+  console.log(`repair: dropped ${dropped} irrelevant entries, refetched reddit for ${refetched} records; credits: ${globalThis.__credits ?? '?'}`);
+  process.exit(0);
+}
+
+/* SOCIAL_PASS=1: Threads + IG reels only, merged into existing discourse (2 credits/record) */
+if(process.env.SOCIAL_PASS === '1'){
+  let n = 0;
+  for(const [id, rec] of Object.entries(data.records)){
+    const q = QUERIES[id] || rec.title;
+    const t = threads(q), g = igReels(q);
+    if(t.length || g.length){
+      const keep = (rec.discourse||[]).filter(d=>d.src!=='THREADS'&&d.src!=='IG');
+      rec.discourse = [...keep.filter(d=>d.src==='REDDIT'), ...t, ...g,
+                       ...keep.filter(d=>d.src!=='REDDIT')].slice(0,5);
+      n++;
+    }
+    console.log(id.padEnd(22), t.length+' threads', g.length+' ig', '| credits left:', globalThis.__credits ?? '?');
+    await sleep(400);
+  }
+  fs.writeFileSync('records.json', JSON.stringify(data, null, 2));
+  console.log(`\nthreads/ig merged into ${n} records; credits remaining: ${globalThis.__credits ?? '?'}`);
+  process.exit(0);
+}
+
+/* REDDIT_PASS=1: only fetch Reddit and merge into existing discourse (1 credit/record) */
+if(process.env.REDDIT_PASS === '1'){
+  for(const [id, rec] of Object.entries(data.records)){
+    const r = reddit(QUERIES[id] || rec.title);
+    if(r.length){
+      rec.discourse = [...r, ...(rec.discourse||[]).filter(d=>d.src!=='REDDIT')].slice(0,4);
+      filled++;
+    }
+    console.log(id.padEnd(22), r.length+' reddit', '| credits left:', globalThis.__credits ?? '?');
+    await sleep(400);
+  }
+  fs.writeFileSync('records.json', JSON.stringify(data, null, 2));
+  console.log(`\nreddit merged into ${filled} records; credits remaining: ${globalThis.__credits ?? '?'}`);
+  process.exit(0);
+}
+
 for(const [id, rec] of Object.entries(data.records)){
   if(onlyMissing && rec.discourse) continue;
   const q = QUERIES[id] || rec.title;
