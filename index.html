@@ -404,6 +404,16 @@
 
   /* ---------- VISITED / ATLAS / RECEIPT ---------- */
   .node.linked.visited{box-shadow:inset 3px 0 0 var(--acid)}
+  .node.hint-glow{
+    border-color:var(--pink)!important;
+    box-shadow:0 0 0 1px var(--pink), 0 0 26px rgba(255,92,168,.45)!important;
+    animation:hintPulse 1.2s ease-in-out infinite;
+  }
+  @keyframes hintPulse{50%{box-shadow:0 0 0 1px var(--pink), 0 0 40px rgba(255,92,168,.7)}}
+  #dailyHud .hint-btn{cursor:pointer;color:var(--ice)}
+  #dailyHud .hint-btn:hover{filter:brightness(1.25)}
+  #dailyHud .warm{color:var(--acid)}
+  #dailyHud .cold{color:var(--pink)}
   .ticker.live{cursor:pointer;color:var(--ink-dim)}
   .ticker.live b{color:var(--acid);font-weight:500}
   .ticker.live:hover{color:var(--ink)}
@@ -1130,12 +1140,16 @@ function updateHud(){
   const hud = $('dailyHud');
   if(!game || game.status!=='playing'){ hud.classList.add('hidden'); return; }
   hud.classList.remove('hidden');
-  hud.innerHTML = `◆ DAILY DIG #${dailyNum()} · TARGET: <b>${RECORDS[daily.target].title.toUpperCase()}</b> · HOPS <b>${String(game.hops).padStart(2,'0')}</b> · PAR ${daily.par} <span class="abandon">✕</span>`;
+  const dist = game.distMap[currentId];
+  const dirHtml = game.lastDelta<0 ? '<span class="warm">▲ WARMER</span>'
+                : game.lastDelta>0 ? '<span class="cold">▼ COLDER</span>' : '· START';
+  hud.innerHTML = `◆ DIG #${dailyNum()} · TARGET: <b>${RECORDS[daily.target].title.toUpperCase()}</b> · <b>${dist}</b> AWAY ${dirHtml} · HOPS <b>${String(game.hops).padStart(2,'0')}</b>/PAR ${daily.par} · <span class="hint-btn">◈ HINT (${game.hints})</span> <span class="abandon">✕</span>`;
   hud.querySelector('.abandon').onclick = ()=>{ game=null; updateHud(); };
+  hud.querySelector('.hint-btn').onclick = useHint;
 }
 function startDaily(){
   if(!getDaily()) return;
-  game = {status:'playing', hops:0};
+  game = {status:'playing', hops:0, hints:3, distMap: bfs(daily.target), lastDelta:0};
   _dailyOpening = true;
   openRecord(daily.start, {resetTrail:true});
   _dailyOpening = false;
@@ -1144,7 +1158,12 @@ function startDaily(){
 function dailyNav(id, wasReset, grew){
   if(!game || game.status!=='playing') return;
   if(wasReset && !_dailyOpening){ game=null; updateHud(); return; }
-  if(grew) game.hops++;
+  if(grew){
+    game.hops++;
+    const prev = game._prevDist ?? game.distMap[daily.start];
+    game.lastDelta = game.distMap[id] - prev;
+  }
+  game._prevDist = game.distMap[id];
   updateHud();
   if(id === daily.target){
     game.status = 'done';
@@ -1154,6 +1173,19 @@ function dailyNav(id, wasReset, grew){
     renderDailyBox();
   }
 }
+function useHint(){
+  if(!game || game.status!=='playing' || game.hints<=0) return;
+  game.hints--;
+  if($('mapView').classList.contains('hidden') || mapMode!=='record'){
+    renderMap(currentId); showView('map'); syncHash('#/'+currentId+'/map');
+  }
+  const here = game.distMap[currentId];
+  document.querySelectorAll('.node.linked').forEach(el=>{
+    if(game.distMap[el.dataset.ref] < here) el.classList.add('hint-glow');
+  });
+  updateHud();
+}
+
 function dailyShareText(hops, par){
   const emoji = hops<=par ? '🟩'.repeat(Math.max(1,hops)) : '🟩'.repeat(par)+'🟨'.repeat(hops-par);
   return `DIG.ARCHIVE — DAILY DIG #${dailyNum()}\n${RECORDS[daily.start].title} → ${RECORDS[daily.target].title}\n${hops} HOPS (PAR ${par}) ${emoji}\nhttps://dig-archive.vercel.app`;
