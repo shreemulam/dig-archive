@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="DIG.ARCHIVE — new acquisitions" href="/rss.xml">
+<script>window.va = window.va || function(){(window.vaq = window.vaq || []).push(arguments);};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 <style>
   :root{
     --bg:#0d0e0a;
@@ -812,7 +814,9 @@ function renderCard(id){
 }
 
 /* ================= NAVIGATION ================= */
+function track(name, data){ try{ window.va && window.va('event', {name, data}); }catch(e){} }
 function openRecord(id, {resetTrail=false, view='card', silent=false}={}){
+  track('record_open', {id});
   const grew = !resetTrail && trail[trail.length-1] !== id;
   if(resetTrail){ trail = [id]; }
   else if(trail[trail.length-1] !== id){ trail.push(id); }
@@ -856,6 +860,7 @@ function pull(){
   lastPull = next;
 
   showView('card');
+  track('pull');
   const t = $('title');
   t.classList.add('flicker');
   let ticks = 0;
@@ -1068,6 +1073,7 @@ function openReceipt(){
 
   $('receiptOverlay').classList.remove('hidden');
   shareState = {text: receiptText(), filename: 'dig-archive-descent.png'};
+  track('receipt_export', {depth: trail.length-1});
 }
 
 /* ================= SHARE STATE (receipt / story / daily share one overlay) ================= */
@@ -1150,6 +1156,7 @@ function updateHud(){
 function startDaily(){
   if(!getDaily()) return;
   game = {status:'playing', hops:0, hints:3, distMap: bfs(daily.target), lastDelta:0};
+  track('daily_start', {num: dailyNum()});
   _dailyOpening = true;
   openRecord(daily.start, {resetTrail:true});
   _dailyOpening = false;
@@ -1167,6 +1174,7 @@ function dailyNav(id, wasReset, grew){
   updateHud();
   if(id === daily.target){
     game.status = 'done';
+    track('daily_win', {num: dailyNum(), hops: game.hops, par: daily.par});
     saveDailyResult(game.hops, daily.par);
     updateHud();
     showDailyResult(game.hops, daily.par);
@@ -1321,6 +1329,7 @@ function openStoryCard(){
     $('receiptOverlay').classList.remove('hidden');
   };
 
+  track('story_card', {id: currentId});
   if(h.img){
     const im = new Image();
     im.crossOrigin = 'anonymous';
