@@ -597,19 +597,31 @@
   .node.stub.reveal{animation-name:pop-stub}
   @keyframes pop-stub{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:.72;transform:translate(-50%,-50%) scale(1)}}
 
+  #mobileNav{display:none}
   @media (max-width:700px){
-    .rec-count{display:none}
-    #dailyBtn,#atlasBtn{padding:0 12px}
-    #pullBtn{padding:0 18px}
+    #dailyBtn,#atlasBtn,#pullBtn{display:none}
+    .rec-count{margin-left:auto;border-left:none}
+    footer{display:none}
+    #stage{inset:90px 0 62px}
+    #mobileNav{
+      display:grid;grid-template-columns:repeat(4,1fr);
+      position:fixed;bottom:0;left:0;right:0;height:62px;z-index:65;
+      background:var(--bg);border-top:1px solid var(--line);
+      padding-bottom:env(safe-area-inset-bottom);
+    }
+    .mn-item{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+      background:none;border:none;border-left:1px solid var(--line);cursor:pointer;
+    }
+    .mn-item:first-child{border-left:none}
+    .mn-ico{font-size:17px;color:var(--ink-dim);line-height:1}
+    .mn-label{font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase}
+    .mn-item.primary .mn-ico,.mn-item.primary .mn-label{color:var(--acid)}
     .map-help{display:none}
-    .legend{font-size:9px;padding:8px 10px;gap:4px}
-    #dailyHud{font-size:9.5px;bottom:42px}
-  }
-  @media (max-width:560px){
-    .blabel{display:none}
+    .legend{font-size:9px;padding:8px 10px;gap:4px;bottom:74px}
+    #dailyHud{font-size:9.5px;bottom:76px}
+    #coldStrip{bottom:62px}
     .brand{padding:0 14px;font-size:14px}
-    #dailyBtn,#atlasBtn{padding:0 14px;font-size:13px}
-    #pullBtn{padding:0 20px;font-size:15px}
   }
   @media (max-width:860px){
     #cardView{grid-template-columns:1fr;overflow-y:auto;display:block}
@@ -716,6 +728,13 @@
   </div>
 
 </div>
+
+<nav id="mobileNav">
+  <button class="mn-item" id="mnHome"><div class="mn-ico">◉</div><div class="mn-label">Home</div></button>
+  <button class="mn-item primary" id="mnPull"><div class="mn-ico">⟳</div><div class="mn-label">Pull</div></button>
+  <button class="mn-item" id="mnDaily"><div class="mn-ico">◆</div><div class="mn-label">Daily</div></button>
+  <button class="mn-item" id="mnAtlas"><div class="mn-ico">⊞</div><div class="mn-label">Atlas</div></button>
+</nav>
 
 <div id="dailyHud" class="hidden"></div>
 
@@ -1640,6 +1659,10 @@ $('atlasBtn').addEventListener('click', ()=> openAtlas());
 $('homePull').addEventListener('click', pull);
 $('homeAtlas').addEventListener('click', ()=> openAtlas());
 $('globe').addEventListener('click', ()=>{ track('globe_pull'); pull(); });
+$('mnHome').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); });
+$('mnPull').addEventListener('click', pull);
+$('mnDaily').addEventListener('click', ()=> $('dailyBtn').click());
+$('mnAtlas').addEventListener('click', ()=> openAtlas());
 document.querySelectorAll('.feat').forEach((el,i)=>{
   el.addEventListener('click', ()=>{
     if(i===0) pull();
