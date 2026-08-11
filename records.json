@@ -106,6 +106,12 @@
           "comments": 7,
           "url": "https://bsky.app/profile/trahias.bsky.social/post/3mnbwttxp322k"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20-%20Gustav%20Klimt%20-%20Google%20Cultural%20Institute.jpg?width=900",
+          "cap": "THE KISS GUSTAV KLIMT GOOGLE CULTURAL INSTITUTE"
+        }
       ]
     },
     "wave": {
@@ -161,8 +167,16 @@
       ],
       "gallery": [
         {
-          "src": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/843,/0/default.jpg",
-          "cap": "AIC IMPRESSION"
+          "src": "https://www.artic.edu/iiif/2/05cd1ba7-67d1-96c5-0e78-2eb4114b65e7/full/843,/0/default.jpg",
+          "cap": "UNDER THE WAVE OFF KANAGAWA (KANAGAWA OKI NAMI U · 1830/33 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/2fa24f36-cc26-41b6-4b49-12bba2a6c1c8/full/843,/0/default.jpg",
+          "cap": "UNDER THE WAVE OFF KANAGAWA (KANAGAWA OKI NAMI U · 1830/33 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/as/web-large/DP141042.jpg",
+          "cap": "UNDER THE WAVE OFF KANAGAWA (KANAGAWA OKI NAMI U · ca. 1830–32 · MET"
         }
       ],
       "discourse": [
@@ -379,6 +393,12 @@
           "comments": 9,
           "url": "https://bsky.app/profile/sealeveloslo.bsky.social/post/3mb37furcw22h"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/3b374643-5328-3e00-c02b-5ab56e5ae8f8/full/843,/0/default.jpg",
+          "cap": "THE SCREAM · 1895 · AIC"
+        }
       ]
     },
     "pearl": {
@@ -582,6 +602,12 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DOL2TBuAfP5/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Looting%20Investigation%20Unit%20Final%20Report%20BUEHRLE%20Fold3%20Page%20134.jpg?width=900",
+          "cap": "ART LOOTING INVESTIGATION UNIT FINAL REPORT BUEHRLE FOLD3 PAGE 1"
+        }
       ]
     },
     "degenerate-art": {
@@ -658,6 +684,24 @@
           "comments": 2,
           "url": "https://bsky.app/profile/owillis.bsky.social/post/3mq2rbqhzxs2q"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalogue%20de%20l'Entartete%20%22Kunst%22%20-%20Art%20D%C3%A9g%C3%A9n%C3%A9r%C3%A9-%201937.png?width=900",
+          "cap": "CATALOGUE DE L'ENTARTETE \"KUNST\" ART DÉGÉNÉRÉ 1937"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Museum%20of%20World%20War%20II%20Natick%20Massachusetts%202015.%20Third%20Reich%20Nazi%20propganda%20poster%20Entartete%20Musik%20degenerate%20music%20Eine%20Abreichnung%20von%20Staatsrat%20Ziegler.jpg?width=900",
+          "cap": "MUSEUM OF WORLD WAR II NATICK MASSACHUSETTS 2015. THIRD REICH NA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/65483-Kaiser%20ENTARTETE%20KUNST%20Ausstellungsf%C3%BChrer%201937-38%20Degenerate%20art%20exhibition%20programme%20Cover%20No%20known%20copyright%20restrictions.jpg?width=900",
+          "cap": "65483 KAISER ENTARTETE KUNST AUSSTELLUNGSFÜHRER 1937 38 DEGENERA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/65483%2011%20Kaiser%20ENTARTETE%20KUNST%20Ausstellungsf%C3%BChrer%201937-38%20Degenerate%20art%20exhibition%20programme%20%22Art%20preaches%20class%20struggle%22%20No%20known%20copyright%20restrictions.jpg?width=900",
+          "cap": "65483 11 KAISER ENTARTETE KUNST AUSSTELLUNGSFÜHRER 1937 38 DEGEN"
+        }
       ]
     },
     "monuments-men": {
@@ -703,6 +747,16 @@
           "score": 74,
           "comments": 3,
           "url": "https://bsky.app/profile/karenho.bsky.social/post/3lyv6bvabfk2j"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monuments%20Men%2C%20Neuschwanstein%20Castle%2C%20Germany%2C%201945.png?width=900",
+          "cap": "MONUMENTS MEN, NEUSCHWANSTEIN CASTLE, GERMANY, 1945"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The-real-monuments-men-at-work.jpg?width=900",
+          "cap": "THE REAL MONUMENTS MEN AT WORK"
         }
       ]
     },
@@ -909,6 +963,24 @@
           "comments": 32,
           "url": "https://news.ycombinator.com/item?id=47107781"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tattooed-Helper-Yakuza-Ukiyo-e-by-Suzuki-Kinsen-1900.png?width=900",
+          "cap": "TATTOOED HELPER YAKUZA UKIYO E BY SUZUKI KINSEN 1900"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ukiyo-e%20dragon%202.jpg?width=900",
+          "cap": "UKIYO E DRAGON 2"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Daimyo%20Konishi%20Yukinaga%20Ukiyo-e.jpg?width=900",
+          "cap": "DAIMYO KONISHI YUKINAGA UKIYO E"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Master-Swordsmith-Goro-Masamune-Ukiyo-e.png?width=900",
+          "cap": "MASTER SWORDSMITH GORO MASAMUNE UKIYO E"
+        }
       ]
     },
     "prussian-blue": {
@@ -979,6 +1051,24 @@
           "score": 7,
           "comments": 1,
           "url": "https://chemistry.stackexchange.com/questions/157652/what-is-the-chemical-composition-of-ferrous-ferrocyanide"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian%20blue.jpg?width=900",
+          "cap": "PRUSSIAN BLUE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Perls%20Prussian%20blue%20components.jpg?width=900",
+          "cap": "PERLS PRUSSIAN BLUE COMPONENTS"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian%20Blue%20Powder%20XRD%20Profile%2C%20Simulated.jpg?width=900",
+          "cap": "PRUSSIAN BLUE POWDER XRD PROFILE, SIMULATED"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian%20Blue%20Sample.jpg?width=900",
+          "cap": "PRUSSIAN BLUE SAMPLE"
         }
       ]
     },
@@ -1059,6 +1149,16 @@
           "comments": 6,
           "url": "https://bsky.app/profile/theofficialgrb.bsky.social/post/3lzwbitg5fk27"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ultramarinepigment.jpg?width=900",
+          "cap": "ULTRAMARINEPIGMENT"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Natural%20ultramarine%20pigment.jpg?width=900",
+          "cap": "NATURAL ULTRAMARINE PIGMENT"
+        }
       ]
     },
     "camera-obscura": {
@@ -1128,6 +1228,20 @@
           "score": 40,
           "comments": 2,
           "url": "https://bsky.app/profile/prchovanec.bsky.social/post/3lvitow7te225"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Francisco%20(CA%2C%20USA)%2C%20Camera%20Obscura%20--%202022%20--%203048.jpg?width=900",
+          "cap": "SAN FRANCISCO (CA, USA), CAMERA OBSCURA 2022 3048"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Camera%20obscura2.jpg?width=900",
+          "cap": "CAMERA OBSCURA2"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Camera%20obscura.png?width=900",
+          "cap": "CAMERA OBSCURA"
         }
       ]
     },
@@ -1205,6 +1319,20 @@
           "score": 179,
           "comments": 0,
           "url": "https://bsky.app/profile/soozuk.bsky.social/post/3mk33mch7dk2q"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa%20eruption%20lithograph.jpg?width=900",
+          "cap": "KRAKATOA ERUPTION LITHOGRAPH"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Society%201988%20Krakatoa%20Plate%20VII.png?width=900",
+          "cap": "ROYAL SOCIETY 1988 KRAKATOA PLATE VII"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa%20and%20The%20Moon.jpg?width=900",
+          "cap": "KRAKATOA AND THE MOON"
         }
       ]
     },
@@ -1320,6 +1448,18 @@
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis-Emile%20Durandelle%2C%20The%20Eiffel%20Tower%20-%20State%20of%20the%20Construction%2C%201888.jpg?width=900",
           "cap": "CONSTRUCTION, 1888"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg?width=900",
+          "cap": "TOUR EIFFEL WIKIMEDIA COMMONS"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20The%20Eiffel%20Tower%20in%20spring%20-%202307.jpg?width=900",
+          "cap": "PARIS THE EIFFEL TOWER IN SPRING 2307"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lightning%20striking%20the%20Eiffel%20Tower%20-%20NOAA.jpg?width=900",
+          "cap": "LIGHTNING STRIKING THE EIFFEL TOWER NOAA"
         }
       ],
       "discourse": [
@@ -1434,6 +1574,24 @@
           "score": 178,
           "comments": 2,
           "url": "https://bsky.app/profile/odpomery.bsky.social/post/3lhbf3o26ic2e"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wrightfallingwater.jpg?width=900",
+          "cap": "WRIGHTFALLINGWATER"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fallingwater%202007.jpg?width=900",
+          "cap": "FALLINGWATER 2007"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fallingwater%20banner.jpg?width=900",
+          "cap": "FALLINGWATER BANNER"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fallingwater%20logo.png?width=900",
+          "cap": "FALLINGWATER LOGO"
         }
       ]
     },
@@ -1723,7 +1881,6 @@
           "note": "Same playbook, different decade: a garment-sized provocation that read as politics on sight."
         }
       ],
-      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/We_Can_Do_It!.jpg?width=900",
       "imgCaption": "WWII MORALE POSTER",
       "discourse": [
         {
@@ -2432,6 +2589,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/Da0rfMGq1b2/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Placa%20de%20Crist%C3%B3bal%20Balenciaga%2C%20Getaria.jpg?width=900",
+          "cap": "PLACA DE CRISTÓBAL BALENCIAGA, GETARIA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Balenciaga%20Museoa%20exhibit%2004.JPG?width=900",
+          "cap": "BALENCIAGA MUSEOA EXHIBIT 04"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Getaria%20-%20Palacio%20de%20Aldamar-Cristobal%20Balenciaga%20Museoa%202.JPG?width=900",
+          "cap": "GETARIA PALACIO DE ALDAMAR CRISTOBAL BALENCIAGA MUSEOA 2"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20Crist%C3%B3bal%20Balenciaga%20(1).jpg?width=900",
+          "cap": "MUSEO CRISTÓBAL BALENCIAGA (1)"
+        }
       ]
     },
     "ysl": {
@@ -2493,6 +2668,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DVc0H1CCdA3/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Study%20of%20Yves%20Saint%20Laurent%20by%20Reginald%20Gray.jpg?width=900",
+          "cap": "STUDY OF YVES SAINT LAURENT BY REGINALD GRAY"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monsieur%20Yves%20Saint%20Laurent.jpg?width=900",
+          "cap": "MONSIEUR YVES SAINT LAURENT"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yves%20Saint%20Laurent%20by%20Reginald%20Gray.jpg?width=900",
+          "cap": "YVES SAINT LAURENT BY REGINALD GRAY"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yves%20saint%20laurent.jpg?width=900",
+          "cap": "YVES SAINT LAURENT"
+        }
       ]
     },
     "mcqueen": {
@@ -2510,6 +2703,18 @@
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinyl%20dress%20from%20Horn%20of%20Plenty%20by%20Alexander%20McQueen%20at%20Savage%20Beauty.jpg?width=900",
           "cap": "VINYL, HORN OF PLENTY"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20McQueen%20clamshell%20dress%20(51611p).jpg?width=900",
+          "cap": "ALEXANDER MCQUEEN CLAMSHELL DRESS (51611P)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20McQueen%20clamshell%20dress%20(51590).jpg?width=900",
+          "cap": "ALEXANDER MCQUEEN CLAMSHELL DRESS (51590)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bird%20jacket%20by%20Alexander%20McQueen%20(51531).jpg?width=900",
+          "cap": "BIRD JACKET BY ALEXANDER MCQUEEN (51531)"
         }
       ],
       "spec": {
@@ -2588,6 +2793,18 @@
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dresses%20by%20Rei%20Kawakubo%20-%20Sarah%20Stierch%2003.jpg?width=900",
           "cap": "CDG DRESSES"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2005%20Rei%20Kawakubo%20for%20Comme%20des%20Gar%C3%A7ons%20printed%20wedding%20dress%2C%20Autumn-Winter%20collection%2002.jpg?width=900",
+          "cap": "2005 REI KAWAKUBO FOR COMME DES GARÇONS PRINTED WEDDING DRESS, A"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2005%20Rei%20Kawakubo%20for%20Comme%20des%20Gar%C3%A7ons%20printed%20wedding%20dress%2C%20Autumn-Winter%20collection%2001.jpg?width=900",
+          "cap": "2005 REI KAWAKUBO FOR COMME DES GARÇONS PRINTED WEDDING DRESS, A"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2008%20shirt%20by%20Rei%20Kawakubo%20for%20Comme%20des%20Gar%C3%A7ons%2C%20hairstyles%20print%2002.jpg?width=900",
+          "cap": "2008 SHIRT BY REI KAWAKUBO FOR COMME DES GARÇONS, HAIRSTYLES PRI"
         }
       ],
       "spec": {
@@ -2662,6 +2879,18 @@
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Genji%20emaki%2001003%20001.jpg?width=900",
           "cap": "12TH-C. SCROLL"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Genji%20emaki%2001003%20002.jpg?width=900",
+          "cap": "GENJI EMAKI 01003 002"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Tale%20of%20Genji%20-%201951%20film.jpg?width=900",
+          "cap": "THE TALE OF GENJI 1951 FILM"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paulownia%20Court%20(Kiritsubo)%20from%20Tale%20of%20Genji%20(Genji%20monogatari)%20AR%20J1038%2001-054%2056-f-26v.jpg?width=900",
+          "cap": "PAULOWNIA COURT (KIRITSUBO) FROM TALE OF GENJI (GENJI MONOGATARI"
         }
       ],
       "spec": {
@@ -2806,6 +3035,24 @@
           "comments": 1,
           "url": "https://literature.stackexchange.com/questions/19033/what-did-adam-sedgwick-mean-by-tra-road"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/On%20the%20origin%20of%20species%20by%20means%20of%20natural%20selection%2C%20or%2C%20The%20preservation%20of%20favoured%20races%20in%20the%20struggle%20for%20life%20(microform)%20(1907)%20(20657943591).jpg?width=900",
+          "cap": "ON THE ORIGIN OF SPECIES BY MEANS OF NATURAL SELECTION, OR, THE "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Darwin%20by%20Julia%20Margaret%20Cameron%2C%20c.%201868.jpg?width=900",
+          "cap": "CHARLES DARWIN BY JULIA MARGARET CAMERON, C. 1868"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Robert%20Darwin%20by%20John%20Collier.jpg?width=900",
+          "cap": "CHARLES ROBERT DARWIN BY JOHN COLLIER"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Darwin%2001.jpg?width=900",
+          "cap": "CHARLES DARWIN 01"
+        }
       ]
     },
     "orwell-1984": {
@@ -2876,6 +3123,24 @@
           "score": 13,
           "comments": 1,
           "url": "https://literature.stackexchange.com/questions/1928/what-is-the-greater-meaning-of-the-thrush"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nineteen%20Eighty-Four%20cover%20Soviet%201984.jpg?width=900",
+          "cap": "NINETEEN EIGHTY FOUR COVER SOVIET 1984"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nineteen%20Eighty-Four%20cover%20by%20Penguin.jpg?width=900",
+          "cap": "NINETEEN EIGHTY FOUR COVER BY PENGUIN"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nineteen%20Eighty-Four%20World%20Map.png?width=900",
+          "cap": "NINETEEN EIGHTY FOUR WORLD MAP"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1984%20Orwell%20arrows.PNG?width=900",
+          "cap": "1984 ORWELL ARROWS"
         }
       ]
     },
@@ -3028,6 +3293,17 @@
           "score": 10,
           "comments": 2,
           "url": "https://history.stackexchange.com/questions/28082/who-are-the-20th-century-painters-on-this-t-shirt"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Salvador%20Dali%20NYWTS.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Salvador%20Dal%C3%AD%201939.jpg?width=900",
+          "cap": "SALVADOR DALÍ 1939"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Salvador%20Dali%20A%20(Dali%20Atomicus)%2009633u.jpg?width=900",
+          "cap": "SALVADOR DALI A (DALI ATOMICUS) 09633U"
         }
       ]
     },
@@ -3641,6 +3917,20 @@
           "comments": 1,
           "url": "https://bsky.app/profile/erinhansonartist.bsky.social/post/3mitu4izkss2b"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg",
+          "cap": "WATER LILIES · 1906 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/0f1cc0e0-e42e-be16-3f71-2022da38cb93/full/843,/0/default.jpg",
+          "cap": "ARRIVAL OF THE NORMANDY TRAIN, GARE SAINT-LAZARE · 1877 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+          "cap": "STACKS OF WHEAT (END OF SUMMER) · 1890–91 · AIC"
+        }
       ]
     },
     "mondrian": {
@@ -3690,6 +3980,24 @@
           "score": 22506,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DXr7DCaMNn9/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/25f660ee-f1db-d13b-42a5-56df97c98ba7/full/843,/0/default.jpg",
+          "cap": "LOZENGE COMPOSITION WITH YELLOW, BLACK, BLUE, RE · 1921 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/b8ca5039-1d0c-648d-ad46-838ecea3e14c/full/843,/0/default.jpg",
+          "cap": "FARM NEAR DUIVENDRECHT · c. 1916 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/254c654f-354a-0f4f-28b5-8eb01a02e95c/full/843,/0/default.jpg",
+          "cap": "COMPOSITION (NO. 1) GRAY-RED · 1935 · AIC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piet%20Mondriaan.jpg?width=900",
+          "cap": "PIET MONDRIAAN"
         }
       ]
     },
@@ -3762,6 +4070,24 @@
           "comments": 1,
           "url": "https://bsky.app/profile/jean-no.bsky.social/post/3leu4i7psnk2n"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Debussy%20La%20mer%20couverture.PNG?width=900",
+          "cap": "CLAUDE DEBUSSY LA MER COUVERTURE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20mer%20-%20trois%20esquisses%20symphoniques%20-%20Claude%20Debussy%20-%20bpt6k880421v%20(037%20of%20144).jpg?width=900",
+          "cap": "LA MER TROIS ESQUISSES SYMPHONIQUES CLAUDE DEBUSSY BPT6K880421V "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20mer%20-%20trois%20esquisses%20symphoniques%20-%20Claude%20Debussy%20-%20bpt6k880421v%20(140%20of%20144).jpg?width=900",
+          "cap": "LA MER TROIS ESQUISSES SYMPHONIQUES CLAUDE DEBUSSY BPT6K880421V "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20mer%20-%20trois%20esquisses%20symphoniques%20-%20Claude%20Debussy%20-%20bpt6k880421v%20(082%20of%20144).jpg?width=900",
+          "cap": "LA MER TROIS ESQUISSES SYMPHONIQUES CLAUDE DEBUSSY BPT6K880421V "
+        }
       ]
     },
     "caligari": {
@@ -3827,6 +4153,24 @@
           "comments": 15,
           "url": "https://bsky.app/profile/moviessilently.bsky.social/post/3lpsdmzrj322s"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Das%20Cabinet%20des%20Dr.%20Caligari.JPG?width=900",
+          "cap": "DAS CABINET DES DR. CALIGARI"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1920%20Erich%20Ludwig%20Stahl%20und%20Otto%20Arpke%20Plakat-Variante%20zum%20Horrorfilm%20%22Das%20Cabinet%20des%20Dr.%20Caligari%22%2C%20DECLA.jpg?width=900",
+          "cap": "1920 ERICH LUDWIG STAHL UND OTTO ARPKE PLAKAT VARIANTE ZUM HORRO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Cabinet%20of%20Dr.%20Caligari%20Distributed%20by%20Goldwyn%2003.jpg?width=900",
+          "cap": "THE CABINET OF DR. CALIGARI DISTRIBUTED BY GOLDWYN 03"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Das%20Cabinet%20des%20Dr.%20Caligari%20-%20Conrad%20Veidt%20-%20photo%20Franz%20Xaver%20Setzer.jpg?width=900",
+          "cap": "DAS CABINET DES DR. CALIGARI CONRAD VEIDT PHOTO FRANZ XAVER SETZ"
+        }
       ]
     },
     "photography": {
@@ -3885,6 +4229,16 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DVdxNoHCZ7J/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Birth%20of%20Art%20Photography%20-%20Budapest%2C%202012%20(2).JPG?width=900",
+          "cap": "THE BIRTH OF ART PHOTOGRAPHY BUDAPEST, 2012 (2)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Birth%20of%20Art%20Photography%20-%20Budapest%2C%202012%20(1).JPG?width=900",
+          "cap": "THE BIRTH OF ART PHOTOGRAPHY BUDAPEST, 2012 (1)"
+        }
       ]
     },
     "emoji": {
@@ -3934,6 +4288,21 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DQwrrn5k7Zi/"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Emoji%20with%20the%20emo!.png?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emoji%20in%20Sutton%20SignWriting%203of4.png?width=900",
+          "cap": "EMOJI IN SUTTON SIGNWRITING 3OF4"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emoji%20in%20Sutton%20SignWriting%204of4.png?width=900",
+          "cap": "EMOJI IN SUTTON SIGNWRITING 4OF4"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emoji%20in%20Sutton%20SignWriting%201of4.png?width=900",
+          "cap": "EMOJI IN SUTTON SIGNWRITING 1OF4"
+        }
       ]
     },
     "manga": {
@@ -3945,7 +4314,7 @@
         "sub": "1814 → industry"
       },
       "cat": "POP / THE WORD HOKUSAI COINED",
-      "capRight": "1814 →",
+      "capRight": "MANGA UP! FAN ART",
       "spec": {
         "THE_WORD": "Hokusai Manga, 1814 — ‘whimsical pictures’",
         "FORM": "15 volumes of sketchbooks",
@@ -3990,6 +4359,17 @@
           "score": 118,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DZYhg23pjGh/"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Manga%20UP!%20Fan%20art.png?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Figure%20in%20Manga%20style.png?width=900",
+          "cap": "FIGURE IN MANGA STYLE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20lock%20online%20manga.png?width=900",
+          "cap": "BLUE LOCK ONLINE MANGA"
         }
       ]
     },
@@ -4134,6 +4514,21 @@
           "score": 88,
           "comments": 2,
           "url": "https://bsky.app/profile/sardonicus.eu/post/3leclhasfrk2h"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Tschichold%20(1963)%20by%20Erling%20Mandelmann.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Tschichold%2C%20um%201930.%20Foto%20von%20Eduard%20Wasow.jpg?width=900",
+          "cap": "JAN TSCHICHOLD, UM 1930. FOTO VON EDUARD WASOW"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kurt%20schwitters%20fur%20jan%20tschichold043815).jpg?width=900",
+          "cap": "KURT SCHWITTERS FUR JAN TSCHICHOLD043815)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20und%20Edith%20Tschichold.%20Aurograph.jpg?width=900",
+          "cap": "JAN UND EDITH TSCHICHOLD. AUROGRAPH"
         }
       ]
     },
@@ -5390,6 +5785,21 @@
           "comments": 6,
           "url": "https://news.ycombinator.com/item?id=3661807"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20language%20journal%20conceptual%20art%20contemporary%20art.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20language%20opera%201984%20conceptual%20art.jpg?width=900",
+          "cap": "ART LANGUAGE OPERA 1984 CONCEPTUAL ART"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Conceptual%20Artist%20-%20Amy%20Jackson%20-%20Cleaning%20Squares.jpg?width=900",
+          "cap": "CONCEPTUAL ARTIST AMY JACKSON CLEANING SQUARES"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20language%20journal%20mel%20ramsden%201982%20conceptual%20art.jpg?width=900",
+          "cap": "ART LANGUAGE JOURNAL MEL RAMSDEN 1982 CONCEPTUAL ART"
+        }
       ]
     },
     "brutalism": {
@@ -5454,6 +5864,24 @@
           "score": 354,
           "comments": 177,
           "url": "https://news.ycombinator.com/item?id=14986869"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20171123%20MariahilfPark%20Innsbruck%20brutalism%20DSC07404%20PtrQs.jpg?width=900",
+          "cap": "20171123 MARIAHILFPARK INNSBRUCK BRUTALISM DSC07404 PTRQS"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20190609%20Hauptbahnhof%20Braunschweig%20brutalism%20DSC08416%20PtrQs.jpg?width=900",
+          "cap": "20190609 HAUPTBAHNHOF BRAUNSCHWEIG BRUTALISM DSC08416 PTRQS"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Brutalist%20Architecture%20example%20001.jpeg?width=900",
+          "cap": "BRUTALIST ARCHITECTURE EXAMPLE 001"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Brutalist%20architecture%20of%20UMass%20Dartmouth.jpg?width=900",
+          "cap": "BRUTALIST ARCHITECTURE OF UMASS DARTMOUTH"
         }
       ]
     },
@@ -5527,6 +5955,24 @@
           "score": 111,
           "comments": 69,
           "url": "https://news.ycombinator.com/item?id=23464888"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Spiral%20stairs%20(Art%20Deco%2C%20Neboti%C4%8Dnik%2C%20Ljubljana).jpg?width=900",
+          "cap": "SPIRAL STAIRS (ART DECO, NEBOTIČNIK, LJUBLJANA)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Strada%20Monet%C4%83riei%2012%2C%20Bucure%C8%99ti%20(Bucharest)%20-%20an%20Art%20Deco%20Building.jpg?width=900",
+          "cap": "STRADA MONETĂRIEI 12, BUCUREȘTI (BUCHAREST) AN ART DECO BUILDING"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Deco%20Building%20on%201%20Fifth%20Avenue%20behind%20Washington%20Square%20Arch%202019-09-29%2023-34.jpg?width=900",
+          "cap": "ART DECO BUILDING ON 1 FIFTH AVENUE BEHIND WASHINGTON SQUARE ARC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20hotel%20art%20deco%20cote.jpg?width=900",
+          "cap": "LA MADELEINE HOTEL ART DECO COTE"
         }
       ]
     },
@@ -5605,6 +6051,24 @@
           "score": 89,
           "comments": 83,
           "url": "https://news.ycombinator.com/item?id=9637871"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stijl%20vol%2007%20nr%2079-84%20front%20cover.jpg?width=900",
+          "cap": "STIJL VOL 07 NR 79 84 FRONT COVER"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/De%20Stijl%20-%20vierde%20jaargang%201921%20001.jpg?width=900",
+          "cap": "DE STIJL VIERDE JAARGANG 1921 001"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alkmaar%20-%20Wilhelminalaan%20-%20Villa%20De%20Lange%201917%20by%20Jan%20Wils%20(member%20of%20'De%20Stijl')%201891-1972.jpg?width=900",
+          "cap": "ALKMAAR WILHELMINALAAN VILLA DE LANGE 1917 BY JAN WILS (MEMBER O"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/De%20Stijl%20%26%20Bauhaus%20%40%20MAKK%20K%C3%B6ln.jpg?width=900",
+          "cap": "DE STIJL & BAUHAUS @ MAKK KÖLN"
         }
       ]
     },
@@ -5694,6 +6158,12 @@
           "score": 102,
           "comments": 30,
           "url": "https://news.ycombinator.com/item?id=22213839"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Milwaukee%20Art%20Museum%20February%202023%2028%20(The%20American%20Collection--The%20Arts%20and%20Crafts%20Movement%20and%20the%20Prairie%20School).jpg?width=900",
+          "cap": "MILWAUKEE ART MUSEUM FEBRUARY 2023 28 (THE AMERICAN COLLECTION T"
         }
       ]
     },
@@ -5849,7 +6319,8 @@
           "comments": 74,
           "url": "https://news.ycombinator.com/item?id=34919659"
         }
-      ]
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/1959%20-%20Gewerbemuseum%20Basel%20-%20Alte%20und%20neue%20Formen%20in%20Japan.jpg?width=900"
     },
     "y2k-aesthetic": {
       "id": "y2k-aesthetic",
@@ -6010,6 +6481,12 @@
           "comments": 68,
           "url": "https://news.ycombinator.com/item?id=13187316"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://images.metmuseum.org/CRDImages/rl/web-large/DP324213.jpg",
+          "cap": "A BEAR WALKING · ca. 1482–85 · MET"
+        }
       ]
     },
     "michelangelo": {
@@ -6095,6 +6572,16 @@
           "comments": 172,
           "url": "https://news.ycombinator.com/item?id=46646263"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/f92d9ff9-324d-abcc-186d-0bb4bccc696c/full/843,/0/default.jpg",
+          "cap": "ARCHERS SHOOTING AT A HERM, TRIUMPH OF BACCHUS,  · n.d. · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/dp/web-large/DP826907.jpg",
+          "cap": "STUDIES FOR THE LIBYAN SIBYL (RECTO); STUDIES FO · ca. 1510–11 · MET"
+        }
       ]
     },
     "caravaggio": {
@@ -6175,6 +6662,12 @@
           "comments": 47,
           "url": "https://news.ycombinator.com/item?id=39839257"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-12413-001.jpg",
+          "cap": "THE DENIAL OF SAINT PETER · 1610 · MET"
+        }
       ]
     },
     "rembrandt": {
@@ -6254,6 +6747,24 @@
           "score": 565,
           "comments": 134,
           "url": "https://news.ycombinator.com/item?id=30066078"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/5a1ce126-9ffd-36d2-21f1-21c667c4241c/full/843,/0/default.jpg",
+          "cap": "THREE ORIENTAL FIGURES (JACOB AND LABAN?) · 1641 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/3eaab3a3-2b47-9fdd-121c-050f6b8d9ccb/full/843,/0/default.jpg",
+          "cap": "OLD MAN WITH A GOLD CHAIN · 1631 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/905bea59-a6d2-52ef-90ee-cec035ecdf85/full/843,/0/default.jpg",
+          "cap": "ADAM AND EVE · 1638 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-30758-001.jpg",
+          "cap": "ARISTOTLE WITH A BUST OF HOMER · 1653 · MET"
         }
       ]
     },
@@ -6340,6 +6851,16 @@
           "comments": 138,
           "url": "https://news.ycombinator.com/item?id=43852266"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP355525.jpg",
+          "cap": "A MAID ASLEEP · ca. 1656–57 · MET"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP353256.jpg",
+          "cap": "STUDY OF A YOUNG WOMAN · ca. 1665–67 · MET"
+        }
       ]
     },
     "goya": {
@@ -6412,6 +6933,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DZSwCiBxiU1/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/e54a695c-16df-cf45-9dd4-b517e8c32cc3/full/843,/0/default.jpg",
+          "cap": "BOY ON A RAM · 1786–87 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/622998f1-73f9-4c96-08cf-60bda7c9ce4b/full/843,/0/default.jpg",
+          "cap": "FRIAR PEDRO SHOOTS EL MARAGATO AS HIS HORSE RUNS · c. 1806 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/3adea549-8221-9e65-9802-55b7135a7d3a/full/843,/0/default.jpg",
+          "cap": "FRANCISCO DE GOYA Y LUCIENTES, PAINTER, PLATE ON · 1797/99 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP287624.jpg",
+          "cap": "MANUEL OSORIO MANRIQUE DE ZUÑIGA (1784–1792) · 1787–88 · MET"
+        }
       ]
     },
     "turner": {
@@ -6467,6 +7006,24 @@
           "score": 252,
           "comments": 0,
           "url": "https://www.instagram.com/reel/C6GgEyLNzBp/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/8641479e-c93e-f1a8-9925-19be061706da/full/843,/0/default.jpg",
+          "cap": "FISHING BOATS WITH HUCKSTERS BARGAINING FOR FISH · 1837–38 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/564e2e3f-eb93-88a7-d265-8fea006facff/full/843,/0/default.jpg",
+          "cap": "VALLEY OF AOSTA: SNOWSTORM, AVALANCHE, AND THUND · 1836–37 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/a8e48137-9223-54d4-358c-c0c932e4829b/full/843,/0/default.jpg",
+          "cap": "VIEW OF LUCERNE · 1840/41 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP169568.jpg",
+          "cap": "VENICE, FROM THE PORCH OF MADONNA DELLA SALUTE · ca. 1835 · MET"
         }
       ]
     },
@@ -6553,6 +7110,24 @@
           "comments": 71,
           "url": "https://news.ycombinator.com/item?id=16877457"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/8840b41b-2425-c8aa-23fd-db834df457e0/full/843,/0/default.jpg",
+          "cap": "THE TRAGIC ACTOR (ROUVIÈRE IN THE ROLE OF HAMLET · 1865–66 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/e9ce5aca-4c34-c8dd-b8a1-91b3e3197211/full/843,/0/default.jpg",
+          "cap": "THE RACES AT LONGCHAMP · 1866 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/4d03ba14-a01a-d003-404a-cf3f9fb40ede/full/843,/0/default.jpg",
+          "cap": "JESUS MOCKED BY THE SOLDIERS · 1865 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-25466-001.jpg",
+          "cap": "BOATING · 1874 · MET"
+        }
       ]
     },
     "degas": {
@@ -6622,6 +7197,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DXtyqL_DGOX/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/cb34b0a8-bc51-d063-aab1-47c7debf3a7b/full/843,/0/default.jpg",
+          "cap": "BALLET AT THE PARIS OPÉRA · 1877 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/6f513908-03cc-b974-633b-adfce56b7936/full/843,/0/default.jpg",
+          "cap": "THE MILLINERY SHOP · 1879-86 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/ad17b244-a719-40fc-69c9-06fd54362ea8/full/843,/0/default.jpg",
+          "cap": "JOCKEY · 1866–68 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-43276-001.jpg",
+          "cap": "DANCER WITH A FAN · ca. 1880 · MET"
+        }
       ]
     },
     "cezanne": {
@@ -6685,6 +7278,16 @@
           "score": 641,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DVtjgjriFIx/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP231550.jpg",
+          "cap": "THE CARD PLAYERS · 1890–92 · MET"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DT47.jpg",
+          "cap": "STILL LIFE WITH APPLES AND A POT OF PRIMROSES · ca. 1890 · MET"
         }
       ]
     },
@@ -6758,6 +7361,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DFdab9vIVfe/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/ae6ac285-6887-dd76-4570-d379c786dfae/full/843,/0/default.jpg",
+          "cap": "ARLÉSIENNES (MISTRAL) · 1888 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/48268fc7-2eb4-ded6-1293-e91f27b66478/full/843,/0/default.jpg",
+          "cap": "MERAHI METUA NO TEHAMANA (TEHAMANA HAS MANY PARE · 1893 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1025.jpg",
+          "cap": "IA ORANA MARIA (HAIL MARY) · 1891 · MET"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1952.jpg",
+          "cap": "THE SIESTA · ca. 1892–94 · MET"
+        }
       ]
     },
     "seurat": {
@@ -6830,6 +7451,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DU8n678kmsf/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+          "cap": "A SUNDAY ON LA GRANDE JATTE — 1884 · 1884–86, border added 1888–89 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/081be15c-8812-c174-eeb2-cf318a2e67cf/full/843,/0/default.jpg",
+          "cap": "OIL SKETCH FOR \"A SUNDAY ON LA GRANDE JATTE — 18 · 1884 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/1db67905-d421-95bf-1e91-4b60dd776886/full/843,/0/default.jpg",
+          "cap": "FINAL STUDY FOR \"BATHERS AT ASNIÈRES\" · 1883 · AIC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Sunday%20on%20La%20Grande%20Jatte%2C%20Georges%20Seurat%2C%201884.jpg?width=900",
+          "cap": "A SUNDAY ON LA GRANDE JATTE, GEORGES SEURAT, 1884"
+        }
       ]
     },
     "rodin": {
@@ -6896,6 +7535,24 @@
           "score": 3116,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DXhoDb5As15/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/d0a72b06-f1ee-4464-d58c-5e39bc0534b3/full/843,/0/default.jpg",
+          "cap": "A BURGHER OF CALAIS (JEAN D'AIRE) · Modeled 1889 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/c5dbb973-a2fd-755a-c1be-cd2660ccf5af/full/843,/0/default.jpg",
+          "cap": "ADAM · Modeled 1881, cast c. 1924 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/b8bf5458-1f17-f4ec-8778-f4389ff786ff/full/843,/0/default.jpg",
+          "cap": "EVE AFTER THE FALL · Modeled 1883, carved c. 1886 · AIC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eternal%20Spring%201884%20bronze%20by%20August%20Rodin%20(IMGP2712a).jpg?width=900",
+          "cap": "ETERNAL SPRING 1884 BRONZE BY AUGUST RODIN (IMGP2712A)"
         }
       ]
     },
@@ -6965,6 +7622,24 @@
           "score": 6251,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DX2VAtiPov3/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/9694ca0c-c4c4-e48d-566f-4d248990cff4/full/843,/0/default.jpg",
+          "cap": "LANDSCAPE WITH TWO POPLARS · 1912 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/c68f33ec-feb1-5277-334b-b71ac15ae394/full/843,/0/default.jpg",
+          "cap": "PAINTING WITH GREEN CENTER · 1913 · AIC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Composition%20VII%20-%20Wassily%20Kandinsky%2C%20GAC.jpg?width=900",
+          "cap": "COMPOSITION VII WASSILY KANDINSKY, GAC"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wassily%20Kandinsky%20-%20Impression%20III%20(Concert)%20-%20Google%20Art%20Project.jpg?width=900",
+          "cap": "WASSILY KANDINSKY IMPRESSION III (CONCERT) GOOGLE ART PROJECT"
         }
       ]
     },
@@ -7045,6 +7720,20 @@
           "score": 163,
           "comments": 7,
           "url": "https://news.ycombinator.com/item?id=11223979"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Klee%20-%20Gespenst%20eines%20Genies%20(Ghost%20of%20a%20Genius)%20-%20Google%20Art%20Project.jpg?width=900",
+          "cap": "PAUL KLEE GESPENST EINES GENIES (GHOST OF A GENIUS) GOOGLE ART P"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruehende%20Schiffe%20by%20Paul%20Klee%2C%201927.jpg?width=900",
+          "cap": "RUEHENDE SCHIFFE BY PAUL KLEE, 1927"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Klee%20~%20Angelus%20Novus%20~%201920.jpg?width=900",
+          "cap": "PAUL KLEE ~ ANGELUS NOVUS ~ 1920"
         }
       ]
     },
@@ -7129,6 +7818,20 @@
           "comments": 36,
           "url": "https://news.ycombinator.com/item?id=33229895"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilma-af-Klint-uncropped.jpg?width=900",
+          "cap": "HILMA AF KLINT UNCROPPED"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hilma%20af%20Klint%2C%20portrait%20photograph%20published%20in%201901.jpg?width=900",
+          "cap": "HILMA AF KLINT, PORTRAIT PHOTOGRAPH PUBLISHED IN 1901"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/4%20hilma%20af%20klint%2C%20the%20ten%20largest%2C%20no%209.jpg?width=900",
+          "cap": "4 HILMA AF KLINT, THE TEN LARGEST, NO 9"
+        }
       ]
     },
     "okeeffe": {
@@ -7212,6 +7915,20 @@
           "comments": 19,
           "url": "https://news.ycombinator.com/item?id=24657201"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20O'Keeffe%20MET%20DP230868.jpg?width=900",
+          "cap": "GEORGIA O'KEEFFE MET DP230868"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20O'Keeffe%20Museum%2C%20Santa%20Fe%20NM.jpg?width=900",
+          "cap": "GEORGIA O'KEEFFE MUSEUM, SANTA FE NM"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maurice%20Grosser%20and%20Georgia%20O'Keeffe%20on%20a%20motorcycle.jpg?width=900",
+          "cap": "MAURICE GROSSER AND GEORGIA O'KEEFFE ON A MOTORCYCLE"
+        }
       ]
     },
     "hopper": {
@@ -7285,6 +8002,17 @@
           "score": 71,
           "comments": 30,
           "url": "https://news.ycombinator.com/item?id=33475435"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Nighthawks%20by%20Edward%20Hopper%201942.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Hopper%2C%20New%20York%20artist%20LCCN2016871478%20(cropped).jpg?width=900",
+          "cap": "EDWARD HOPPER, NEW YORK ARTIST LCCN2016871478 (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Vase%22%20Earliest%20Signed%20Drawing%20by%20Edward%20Hopper.jpg?width=900",
+          "cap": "\"VASE\" EARLIEST SIGNED DRAWING BY EDWARD HOPPER"
         }
       ]
     },
@@ -7374,6 +8102,20 @@
           "comments": 46,
           "url": "https://news.ycombinator.com/item?id=17317653"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Calavera%20of%20Frida%20Kahlo.jpg?width=900",
+          "cap": "CALAVERA OF FRIDA KAHLO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Frida%20Kahlo%2C%20by%20Guillermo%20Kahlo.jpg?width=900",
+          "cap": "FRIDA KAHLO, BY GUILLERMO KAHLO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Toni%20Frissell%20-%20Frida%20Kahlo%2C%20seated%20next%20to%20an%20agave.jpg?width=900",
+          "cap": "TONI FRISSELL FRIDA KAHLO, SEATED NEXT TO AN AGAVE"
+        }
       ]
     },
     "rivera": {
@@ -7453,6 +8195,20 @@
           "score": 49,
           "comments": 18,
           "url": "https://news.ycombinator.com/item?id=10127466"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diego%20Rivera%2C%201910.jpg?width=900",
+          "cap": "DIEGO RIVERA, 1910"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diego%20Rivera%20-%20Google%20Art%20Project%20(cropped).jpg?width=900",
+          "cap": "DIEGO RIVERA GOOGLE ART PROJECT (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diego%20Rivera%20en%20las%20escalinatas%20del%20Acceso%20al%20Anahuacalli.jpg?width=900",
+          "cap": "DIEGO RIVERA EN LAS ESCALINATAS DEL ACCESO AL ANAHUACALLI"
         }
       ]
     },
@@ -7627,6 +8383,20 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DYXQvNNlerc/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/d0e36029-27fc-bf4e-357a-55cfbaf7bdfd/full/843,/0/default.jpg",
+          "cap": "WOMAN BEFORE AN AQUARIUM · 1921–23 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/b2bc0fc2-8d17-1fcd-8cae-8626421c11ef/full/843,/0/default.jpg",
+          "cap": "APPLES · 1916 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/d0049e0b-bd55-020e-aa8c-b137d06ae7df/full/843,/0/default.jpg",
+          "cap": "STILL LIFE WITH GERANIUM · 1906 · AIC"
+        }
       ]
     },
     "magritte": {
@@ -7715,6 +8485,20 @@
           "comments": 3,
           "url": "https://news.ycombinator.com/item?id=29397293"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ren%C3%A9%20Magritte%20in%201961.jpg?width=900",
+          "cap": "RENÉ MAGRITTE IN 1961"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20en%20buste%20du%20peintre%20surr%C3%A9aliste%20Ren%C3%A9%20Magritte%20(cropped).jpg?width=900",
+          "cap": "PORTRAIT EN BUSTE DU PEINTRE SURRÉALISTE RENÉ MAGRITTE (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Th%C3%A9rapeute%20(1976)%20Ren%C3%A9%20Magritte%20-%20TMoCA%2C%20Tehran.jpg?width=900",
+          "cap": "LE THÉRAPEUTE (1976) RENÉ MAGRITTE TMOCA, TEHRAN"
+        }
       ]
     },
     "bourgeois": {
@@ -7770,6 +8554,16 @@
           "score": 850,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DYC5ugUh9eV/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Bourgeois%2C%20c.%202000.jpg?width=900",
+          "cap": "LOUISE BOURGEOIS, C. 2000"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Bourgeois%20and%20Tetsuo%20Harada.jpg?width=900",
+          "cap": "LOUISE BOURGEOIS AND TETSUO HARADA"
         }
       ]
     },
@@ -7856,6 +8650,16 @@
           "comments": 145,
           "url": "https://news.ycombinator.com/item?id=42986320"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackson%20Pollock%20(cropped).jpg?width=900",
+          "cap": "JACKSON POLLOCK (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackson%20Pollock's%20passport%20(cropped).jpg?width=900",
+          "cap": "JACKSON POLLOCK'S PASSPORT (CROPPED)"
+        }
       ]
     },
     "rothko": {
@@ -7935,6 +8739,16 @@
           "score": 50885,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DMxW1Hitbso/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Consuelo%20Kanaga%2C%20Mark%20Rothko%2C%20Yorktown%20Heights%2C%20ca.%201949.jpg?width=900",
+          "cap": "CONSUELO KANAGA, MARK ROTHKO, YORKTOWN HEIGHTS, CA. 1949"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark%20Rothko.%20Painter%20Denisova%20Olesya%20Alexandrovna.jpg?width=900",
+          "cap": "MARK ROTHKO. PAINTER DENISOVA OLESYA ALEXANDROVNA"
         }
       ]
     },
@@ -8024,6 +8838,20 @@
           "comments": 117,
           "url": "https://news.ycombinator.com/item?id=35501868"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roy%20Lichtenstein.jpg?width=900",
+          "cap": "ROY LICHTENSTEIN"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roy%20Lichtenstein%2C%20painter%201969%20(cropped).jpg?width=900",
+          "cap": "ROY LICHTENSTEIN, PAINTER 1969 (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roy%20Lichtenstein%20Drowning%20Girl%20narrative.jpg?width=900",
+          "cap": "ROY LICHTENSTEIN DROWNING GIRL NARRATIVE"
+        }
       ]
     },
     "haring": {
@@ -8095,6 +8923,20 @@
           "score": 10582,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DSa4RZCCd56/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Smart%20Hashtag%203%20Keith%20Haring%20Edition%20IAA%202025%20DSC%201849.jpg?width=900",
+          "cap": "SMART HASHTAG 3 KEITH HARING EDITION IAA 2025 DSC 1849"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Keith%20Haring%20(1986).jpg?width=900",
+          "cap": "KEITH HARING (1986)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Keith-haring-yearbook-photo-1976.jpg?width=900",
+          "cap": "KEITH HARING YEARBOOK PHOTO 1976"
         }
       ]
     },
@@ -8175,6 +9017,16 @@
           "score": 34,
           "comments": 7,
           "url": "https://news.ycombinator.com/item?id=18338528"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yayoi%20Kusama%20wax%20model%20at%20Louis%20Vitton.jpg?width=900",
+          "cap": "YAYOI KUSAMA WAX MODEL AT LOUIS VITTON"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Enjambre%20de%20Luci%C3%A9rnagas%20creaci%C3%B3n%20de%20Yayoi%20Kusama%2005.jpg?width=900",
+          "cap": "ENJAMBRE DE LUCIÉRNAGAS CREACIÓN DE YAYOI KUSAMA 05"
         }
       ]
     },
@@ -8264,6 +9116,12 @@
           "comments": 36,
           "url": "https://news.ycombinator.com/item?id=48502730"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DAVID%20HOCKNEY%20RESIDENCE.jpg?width=900",
+          "cap": "DAVID HOCKNEY RESIDENCE"
+        }
       ]
     },
     "ai-weiwei": {
@@ -8344,6 +9202,20 @@
           "comments": 170,
           "url": "https://news.ycombinator.com/item?id=8824691"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ai%20Weiwei%204851.png?width=900",
+          "cap": "AI WEIWEI 4851"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/F%20Grass%20by%20Ai%20Weiwei.jpg?width=900",
+          "cap": "F GRASS BY AI WEIWEI"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ai%20WeiWei%20Divina%20Proportione.jpg?width=900",
+          "cap": "AI WEIWEI DIVINA PROPORTIONE"
+        }
       ]
     },
     "sistine-chapel": {
@@ -8420,6 +9292,20 @@
           "score": 1273,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DXG6OONTtJr/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/d0980cd5-bac5-d46b-231b-e8b6b0f0fbc5/full/843,/0/default.jpg",
+          "cap": "STUDY OF IGNUDO IN SISTINE CHAPEL, ROME (RECTO); · c. 1800 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/81635bb3-bc6f-6dac-70d3-fcf8ed36a622/full/843,/0/default.jpg",
+          "cap": "FIGURES FROM THE CEILING OF THE SISTINE CHAPEL · 1550/65 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/e7b65799-e500-e654-569f-bdf5deea8110/full/843,/0/default.jpg",
+          "cap": "FIGURES FROM THE CEILING OF THE SISTINE CHAPEL · 1550/65 · AIC"
         }
       ]
     },
@@ -8653,6 +9539,12 @@
           "comments": 125,
           "url": "https://news.ycombinator.com/item?id=23151934"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=900",
+          "cap": "LA RONDA DE NOCHE, POR REMBRANDT VAN RIJN"
+        }
       ]
     },
     "olympia": {
@@ -8738,6 +9630,16 @@
           "comments": 525,
           "url": "https://news.ycombinator.com/item?id=41069829"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/24466075-1b15-ec3f-7e77-177118de17b7/full/843,/0/default.jpg",
+          "cap": "OLYMPIA (PUBLISHED PLATE) · 1867 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/a12353c8-32a3-4572-dc15-9996ca9b4853/full/843,/0/default.jpg",
+          "cap": "OLYMPIA (PUBLISHED PLATE) · 1867 · AIC"
+        }
       ]
     },
     "grande-jatte": {
@@ -8801,6 +9703,24 @@
           "score": 600,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DaQBocZkza1/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://www.artic.edu/iiif/2/081be15c-8812-c174-eeb2-cf318a2e67cf/full/843,/0/default.jpg",
+          "cap": "OIL SKETCH FOR \"A SUNDAY ON LA GRANDE JATTE — 18 · 1884 · AIC"
+        },
+        {
+          "src": "https://www.artic.edu/iiif/2/d5ebfc97-c87c-b3ae-816f-5c8b519a082c/full/843,/0/default.jpg",
+          "cap": "TREES (STUDY FOR LA GRANDE JATTE) · 1884 · AIC"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/ep/web-large/DP259921.jpg",
+          "cap": "STUDY FOR \"A SUNDAY ON LA GRANDE JATTE\" · 1884 · MET"
+        },
+        {
+          "src": "https://images.metmuseum.org/CRDImages/rl/web-large/DP-34422-001.jpg",
+          "cap": "STUDY FOR \"A SUNDAY ON LA GRANDE JATTE\" · 1884 · MET"
         }
       ]
     },
@@ -9340,6 +10260,16 @@
           "comments": 69,
           "url": "https://news.ycombinator.com/item?id=27958605"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorothea%20Lange%E2%80%99s%201936%20photograph%20%E2%80%9CMigrant%20Mother%E2%80%9D.jpg?width=900",
+          "cap": "DOROTHEA LANGE’S 1936 PHOTOGRAPH “MIGRANT MOTHER”"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Destitute%20pea%20pickers%20in%20California.%20Mother%20of%20seven%20children.%20Age%20thirty-two.%20Nipomo%2C%20California%20(LOC)%20-%20Flickr%20-%20The%20Library%20of%20Congress.jpg?width=900",
+          "cap": "DESTITUTE PEA PICKERS IN CALIFORNIA. MOTHER OF SEVEN CHILDREN. A"
+        }
       ]
     },
     "earthrise": {
@@ -9866,6 +10796,16 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DXhLNcxjTct/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre-Dame%20cathedral%20statue%20Pieta%20by%20Nicolas%20Coustou%20zz.jpg?width=900",
+          "cap": "PARIS NOTRE DAME CATHEDRAL STATUE PIETA BY NICOLAS COUSTOU ZZ"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre-Dame%20Vaults%2001.JPG?width=900",
+          "cap": "PARIS NOTRE DAME VAULTS 01"
+        }
       ]
     },
     "sagrada-familia": {
@@ -9954,6 +10894,24 @@
           "score": 501,
           "comments": 329,
           "url": "https://news.ycombinator.com/item?id=39815805"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20-%20Exterior%20of%20the%20Apse%20of%20the%20Sagrada%20Fam%C3%ADlia%20-%20Western%20exposure.jpg?width=900",
+          "cap": "BARCELONA EXTERIOR OF THE APSE OF THE SAGRADA FAMÍLIA WESTERN EX"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada%20Fam%C3%ADlia%202010.JPG?width=900",
+          "cap": "SAGRADA FAMÍLIA 2010"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/(Barcelona)%20Sagrada%20Fam%C3%ADlia%20Orgel%20-%20Posterior%20part%20in%20the%20ambulatory.jpg?width=900",
+          "cap": "(BARCELONA) SAGRADA FAMÍLIA ORGEL POSTERIOR PART IN THE AMBULATO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada%20Familia%2003.jpg?width=900",
+          "cap": "SAGRADA FAMILIA 03"
         }
       ]
     },
@@ -10044,6 +11002,24 @@
           "comments": 13,
           "url": "https://news.ycombinator.com/item?id=9886226"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/(Barcelona)%20Tenebrae%20Candelabra%20-%20Antoni%20Gaud%C3%AD%20-%20Museums%20of%20the%20Sagrada%20Fam%C3%ADlia.jpg?width=900",
+          "cap": "(BARCELONA) TENEBRAE CANDELABRA ANTONI GAUDÍ MUSEUMS OF THE SAGR"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/(Barcelona)%20Bastidors%20d'espelmes%20votives%20-%20dissenyat%20per%20Antoni%20Gaud%C3%AD%20-%20Sagrada%20Familia.jpg?width=900",
+          "cap": "(BARCELONA) BASTIDORS D'ESPELMES VOTIVES DISSENYAT PER ANTONI GA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/(Barcelona)%20Armchair%20dissenyat%20per%20Antoni%20Gaud%C3%AD%20-%20Sagrada%20Familia.jpg?width=900",
+          "cap": "(BARCELONA) ARMCHAIR DISSENYAT PER ANTONI GAUDÍ SAGRADA FAMILIA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/(Barcelona)%20Confessionari%20dissenyat%20per%20Antoni%20Gaud%C3%AD%20-%20Sagrada%20Familia.jpg?width=900",
+          "cap": "(BARCELONA) CONFESSIONARI DISSENYAT PER ANTONI GAUDÍ SAGRADA FAM"
+        }
       ]
     },
     "corbusier": {
@@ -10133,6 +11109,24 @@
           "comments": 125,
           "url": "https://news.ycombinator.com/item?id=31000602"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Corbusier%20Centre%2C%20Sector%2019.jpg?width=900",
+          "cap": "LE CORBUSIER CENTRE, SECTOR 19"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Centre%20Le%20Corbusier%20Z%C3%BCrich%20-%2020220403-IMG%206402.jpg?width=900",
+          "cap": "CENTRE LE CORBUSIER ZÜRICH 20220403 IMG 6402"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Centre%20Le%20Corbusier%20Z%C3%BCrich%20-%2020220403-IMG%206401.jpg?width=900",
+          "cap": "CENTRE LE CORBUSIER ZÜRICH 20220403 IMG 6401"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Corbusier%20(1964).jpg?width=900",
+          "cap": "LE CORBUSIER (1964)"
+        }
       ]
     },
     "villa-savoye": {
@@ -10206,6 +11200,20 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DZykix0ssGz/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Savoye%20(8237925975).jpg?width=900",
+          "cap": "VILLA SAVOYE (8237925975)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Savoye%203.JPG?width=900",
+          "cap": "SAVOYE 3"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Savoye%2C%20Poissy%20%C3%A9l%C3%A9ments%20de%20d%C3%A9coration%20circulaires.jpg?width=900",
+          "cap": "VILLA SAVOYE, POISSY ÉLÉMENTS DE DÉCORATION CIRCULAIRES"
+        }
       ]
     },
     "mies": {
@@ -10262,6 +11270,24 @@
           "score": 460,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DWY_u22CnGV/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20mies%20v%20d%20rohe%20pavillon%20weltausstellung1999%2003.jpg?width=900",
+          "cap": "BARCELONA MIES V D ROHE PAVILLON WELTAUSSTELLUNG1999 03"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugo%20Erfurth%20-%20Portrait%20Ludwig%20Mies%20van%20der%20Rohe%2C%201934.jpg?width=900",
+          "cap": "HUGO ERFURTH PORTRAIT LUDWIG MIES VAN DER ROHE, 1934"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Aachen%2C%20Mies%20van%20der%20Rohe%20Museum.jpg?width=900",
+          "cap": "2022 AACHEN, MIES VAN DER ROHE MUSEUM"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mies%20van%20der%20Rohe%20(1558321986).jpg?width=900",
+          "cap": "MIES VAN DER ROHE (1558321986)"
         }
       ]
     },
@@ -10335,6 +11361,24 @@
           "score": 14011,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DaRI2kvsjNr/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20mies%20v%20d%20rohe%20pavillon%20weltausstellung1999%2003.jpg?width=900",
+          "cap": "BARCELONA MIES V D ROHE PAVILLON WELTAUSSTELLUNG1999 03"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20Pavilion%20contrast.JPG?width=900",
+          "cap": "BARCELONA PAVILION CONTRAST"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20Pavilion%20pool.JPG?width=900",
+          "cap": "BARCELONA PAVILION POOL"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20Pavilion%20interior.jpg?width=900",
+          "cap": "BARCELONA PAVILION INTERIOR"
         }
       ]
     },
@@ -11195,7 +12239,6 @@
         "sub": "1902–1974 · Underground draughtsman"
       },
       "cat": "DESIGN / THE MAP THAT THREW AWAY GEOGRAPHY",
-      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20Underground%20roundel%2C%20Maida%20Vale.jpg?width=900",
       "capRight": "1931–1933",
       "spec": {
         "DESIGNED": "1931, unpaid spare time",
@@ -11502,6 +12545,20 @@
           "comments": 121,
           "url": "https://news.ycombinator.com/item?id=15345483"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piaggio%20Vespa%20Special%2050cc%20in%20Arezzo.jpg?width=900",
+          "cap": "PIAGGIO VESPA SPECIAL 50CC IN AREZZO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piaggio%20Vespa%20in%20M%C3%BCnchen.jpg?width=900",
+          "cap": "PIAGGIO VESPA IN MÜNCHEN"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Red%20Vespa%20scooter%20in%20front%20of%20Rocca%20Maggiore%2C%20Assisi.jpg?width=900",
+          "cap": "RED VESPA SCOOTER IN FRONT OF ROCCA MAGGIORE, ASSISI"
+        }
       ]
     },
     "concorde": {
@@ -11578,6 +12635,16 @@
           "comments": 179,
           "url": "https://news.ycombinator.com/item?id=12785320"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/British%20Airways%20Concorde%20G-BOAC%2003.jpg?width=900",
+          "cap": "BRITISH AIRWAYS CONCORDE G BOAC 03"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerospatiale-BAC%20Concorde%20101%2C%20Air%20France%20AN0702255.jpg?width=900",
+          "cap": "AEROSPATIALE BAC CONCORDE 101, AIR FRANCE AN0702255"
+        }
       ]
     },
     "moka-pot": {
@@ -11638,6 +12705,16 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DU8lkrsibak/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Moka%20pot%20components%20assembled.png?width=900",
+          "cap": "MOKA POT COMPONENTS ASSEMBLED"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Moka%20pot%20components%20floating.png?width=900",
+          "cap": "MOKA POT COMPONENTS FLOATING"
+        }
       ]
     },
     "monobloc-chair": {
@@ -11697,6 +12774,20 @@
           "score": 525,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DRFo4N6kbh8/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monobloc%20Chairs%201.jpg?width=900",
+          "cap": "MONOBLOC CHAIRS 1"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monobloc%20Chairs%202.jpg?width=900",
+          "cap": "MONOBLOC CHAIRS 2"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monobloc%20chairs%20on%20a%20deck%20by%20the%20sea%20-%20panoramio%20(2316).jpg?width=900",
+          "cap": "MONOBLOC CHAIRS ON A DECK BY THE SEA PANORAMIO (2316)"
         }
       ]
     },
@@ -11774,6 +12865,24 @@
           "comments": 237,
           "url": "https://news.ycombinator.com/item?id=13741635"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/IKEA%20Billy%20bookshelf%20(80x106%20cm%20birch%20veneer).jpg?width=900",
+          "cap": "IKEA BILLY BOOKSHELF (80X106 CM BIRCH VENEER)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Bookcase%20(cropped).jpg?width=900",
+          "cap": "BILLY BOOKCASE (CROPPED)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ikea%20Billy%20bookcase.jpg?width=900",
+          "cap": "IKEA BILLY BOOKCASE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Bookcase.jpg?width=900",
+          "cap": "BILLY BOOKCASE"
+        }
       ]
     },
     "worth": {
@@ -11837,6 +12946,24 @@
           "score": 1974,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DQMnPF2iWof/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Fr%C3%A9d%C3%A9ric%20Worth.jpg?width=900",
+          "cap": "CHARLES FRÉDÉRIC WORTH"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Friant%20-%20Portrait%20de%20Charles%20Frederick%20Worth%201893.jpg?width=900",
+          "cap": "EMILE FRIANT PORTRAIT DE CHARLES FREDERICK WORTH 1893"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Frederick%20Worth%20aged%2014.jpg?width=900",
+          "cap": "CHARLES FREDERICK WORTH AGED 14"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Frederick%20Worth%20(Mars%201895).jpg?width=900",
+          "cap": "CHARLES FREDERICK WORTH (MARS 1895)"
         }
       ]
     },
@@ -11902,6 +13029,24 @@
           "comments": 0,
           "url": "https://www.instagram.com/reel/DQZKFZxES1p/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paulpoiret.jpg?width=900",
+          "cap": "PAULPOIRET"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Autoportrait%20de%20paul%20poiret%20d%C3%A9dicac%C3%A9%20%C3%A0%20Robert%20Piguet.png?width=900",
+          "cap": "AUTOPORTRAIT DE PAUL POIRET DÉDICACÉ À ROBERT PIGUET"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Mallet-Stevens-MEZY%20sur%20SEINE-Villa%20Paul%20Poiret-1925.jpg?width=900",
+          "cap": "ROBERT MALLET STEVENS MEZY SUR SEINE VILLA PAUL POIRET 1925"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20couturier%20Paul%20Poiret%20posant%20devant%20les%20canons%20du%20ch%C3%A2teau%20de%20Fredriksbord%20album%20souvenir%20du%20voyage%20de%20Paul%20Poiret%20%C3%A0%2C%201987.1.447.jpg?width=900",
+          "cap": "LE COUTURIER PAUL POIRET POSANT DEVANT LES CANONS DU CHÂTEAU DE "
+        }
       ]
     },
     "vionnet": {
@@ -11965,6 +13110,20 @@
           "score": 62283,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DWoZrnaOeld/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madeleine%20Vionnet%20-%20photo%20Henri%20Manuel.jpg?width=900",
+          "cap": "MADELEINE VIONNET PHOTO HENRI MANUEL"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DUNAND%20Jules%20John%20-%20MADELEINE%20VIONNET.jpg?width=900",
+          "cap": "DUNAND JULES JOHN MADELEINE VIONNET"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaque%20Madeleine%20Vionnet%2C%2034%20avenue%20Montaigne%2C%20Paris%208e.jpg?width=900",
+          "cap": "PLAQUE MADELEINE VIONNET, 34 AVENUE MONTAIGNE, PARIS 8E"
         }
       ]
     },
@@ -12037,6 +13196,24 @@
           "score": 1631,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DTIvw-8ifwY/"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubert%20de%20Givenchy%20with%20models%20in%20Beverly%20Hills%2C%201978.jpg?width=900",
+          "cap": "HUBERT DE GIVENCHY WITH MODELS IN BEVERLY HILLS, 1978"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubert%20de%20Givenchy%20met%20mannequins%20op%20de%20Internationale%20Bloemententoonstelling%20Flora%201953%20in%20Heemstede%2002.jpg?width=900",
+          "cap": "HUBERT DE GIVENCHY MET MANNEQUINS OP DE INTERNATIONALE BLOEMENTE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubert%20de%20Givenchy%20met%20mannequins%20op%20de%20Internationale%20Bloemententoonstelling%20Flora%201953%20in%20Heemstede%2004.jpg?width=900",
+          "cap": "HUBERT DE GIVENCHY MET MANNEQUINS OP DE INTERNATIONALE BLOEMENTE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubert%20de%20Givenchy%20met%20mannequins%20op%20de%20Internationale%20Bloemententoonstelling%20Flora%201953%20in%20Heemstede%2001.jpg?width=900",
+          "cap": "HUBERT DE GIVENCHY MET MANNEQUINS OP DE INTERNATIONALE BLOEMENTE"
         }
       ]
     },
@@ -12117,6 +13294,12 @@
           "score": 303,
           "comments": 44,
           "url": "https://news.ycombinator.com/item?id=13254029"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/HALSTON%20logo.png?width=900",
+          "cap": "HALSTON LOGO"
         }
       ]
     },
@@ -13399,6 +14582,24 @@
           "comments": 227,
           "url": "https://news.ycombinator.com/item?id=29494189"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bela%20Lugosi%20as%20Dracula%2C%20anonymous%20photograph%20from%201931%2C%20Universal%20Studios.jpg?width=900",
+          "cap": "BELA LUGOSI AS DRACULA, ANONYMOUS PHOTOGRAPH FROM 1931, UNIVERSA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dracula%201958%20c.jpg?width=900",
+          "cap": "DRACULA 1958 C"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dracula%201st%20ed%20cover%20reproduction.jpg?width=900",
+          "cap": "DRACULA 1ST ED COVER REPRODUCTION"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dracula-First-Edition-1897.jpg?width=900",
+          "cap": "DRACULA FIRST EDITION 1897"
+        }
       ]
     },
     "ulysses": {
@@ -13562,6 +14763,20 @@
           "comments": 71,
           "url": "https://news.ycombinator.com/item?id=25603683"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Gatsby%20cover%201925%20wikisource.jpg?width=900",
+          "cap": "THE GREAT GATSBY COVER 1925 WIKISOURCE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Gatsby%201926.jpg?width=900",
+          "cap": "THE GREAT GATSBY 1926"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Gatsby%20lobby%20card.jpg?width=900",
+          "cap": "GREAT GATSBY LOBBY CARD"
+        }
       ]
     },
     "one-hundred-years": {
@@ -13629,6 +14844,24 @@
           "comments": 4,
           "url": "https://news.ycombinator.com/item?id=10723955"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Hundred%20Years%20Of%20Solitude.png?width=900",
+          "cap": "ONE HUNDRED YEARS OF SOLITUDE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Hundred%20Years%20of%20Solitude%20-%20Cover%2C%201970.jpg?width=900",
+          "cap": "ONE HUNDRED YEARS OF SOLITUDE COVER, 1970"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gabriel%20Garcia%20Marquez.jpg?width=900",
+          "cap": "GABRIEL GARCIA MARQUEZ"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gabriel%20Garc%C3%ADa%20M%C3%A1rquez%2001.jpg?width=900",
+          "cap": "GABRIEL GARCÍA MÁRQUEZ 01"
+        }
       ]
     },
     "action-comics-1": {
@@ -13683,6 +14916,17 @@
           "score": 970,
           "comments": 0,
           "url": "https://www.instagram.com/reel/DTV8HzqDq0a/"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Action%20comics%20logo.png?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Action%20comics%201%20cgc%209-point-0%20vincent%20zurzolo.jpg?width=900",
+          "cap": "ACTION COMICS 1 CGC 9 POINT 0 VINCENT ZURZOLO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/12.5.19JimLeeActionComics1000ByLuigiNovi.jpg?width=900",
+          "cap": "12.5.19JIMLEEACTIONCOMICS1000BYLUIGINOVI"
         }
       ]
     },
@@ -13763,6 +15007,20 @@
           "score": 27,
           "comments": 3,
           "url": "https://news.ycombinator.com/item?id=12333000"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Oxford%20English%20Dictionary%202nd.jpg?width=900",
+          "cap": "OXFORD ENGLISH DICTIONARY 2ND"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Compact%20Oxford%20English%20Dictionary%202.jpg?width=900",
+          "cap": "COMPACT OXFORD ENGLISH DICTIONARY 2"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Compact%20Oxford%20English%20Dictionary.jpg?width=900",
+          "cap": "COMPACT OXFORD ENGLISH DICTIONARY"
         }
       ]
     },
@@ -13852,6 +15110,20 @@
           "comments": 66,
           "url": "https://news.ycombinator.com/item?id=11746297"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Charles%20Beresford%20-%20Virginia%20Woolf%20in%201902.jpg?width=900",
+          "cap": "GEORGE CHARLES BERESFORD VIRGINIA WOOLF IN 1902"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Woolf%201927.jpg?width=900",
+          "cap": "VIRGINIA WOOLF 1927"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Woolf%201882-1941%20Novelist%20and%20Critic%20lived%20here%201907-1911%20Blue%20Plaque.jpg?width=900",
+          "cap": "VIRGINIA WOOLF 1882 1941 NOVELIST AND CRITIC LIVED HERE 1907 191"
+        }
       ]
     },
     "rite-of-spring": {
@@ -13916,6 +15188,24 @@
           "score": 33,
           "comments": 3,
           "url": "https://news.ycombinator.com/item?id=13748807"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The-rite-of-spring-1913.jpg!PinterestLarge.jpg?width=900",
+          "cap": "THE RITE OF SPRING 1913.JPG!PINTERESTLARGE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Igor%20Stravinsky%20LOC%2032392u.jpg?width=900",
+          "cap": "IGOR STRAVINSKY LOC 32392U"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arrival%20of%20Igor%20Fyodorovich%20Stravinsky%20in%20Zurich-Kloten%20-%20ETH-BIB%20-%20Com%20M10-0313-0001.jpg?width=900",
+          "cap": "ARRIVAL OF IGOR FYODOROVICH STRAVINSKY IN ZURICH KLOTEN ETH BIB "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arrival%20of%20Igor%20Fyodorovich%20Stravinsky%20in%20Zurich-Kloten%20-%20ETH-BIB%20-%20Com%20M10-0313-0004.jpg?width=900",
+          "cap": "ARRIVAL OF IGOR FYODOROVICH STRAVINSKY IN ZURICH KLOTEN ETH BIB "
         }
       ]
     },
@@ -15093,6 +16383,17 @@
           "comments": 338,
           "url": "https://news.ycombinator.com/item?id=45883788"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Room%20of%20Toy%20Story%20Hotel%20Shanghai.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dino%20from%20Toy%20Story%20(432831834).jpg?width=900",
+          "cap": "DINO FROM TOY STORY (432831834)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Toy%20Story%20VHS%20tape.jpg?width=900",
+          "cap": "TOY STORY VHS TAPE"
+        }
       ]
     },
     "kodak-brownie": {
@@ -15169,6 +16470,24 @@
           "comments": 47,
           "url": "https://news.ycombinator.com/item?id=25903771"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kodak%20Brownie%20127.jpg?width=900",
+          "cap": "KODAK BROWNIE 127"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2014-365-233%20The%20Basic%20Brownie%20Camera%20(14809795240).jpg?width=900",
+          "cap": "2014 365 233 THE BASIC BROWNIE CAMERA (14809795240)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20140902%20Eastman%20Kodak%20Brownie%20Automatic%200007.jpg?width=900",
+          "cap": "20140902 EASTMAN KODAK BROWNIE AUTOMATIC 0007"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20140902%20Eastman%20Kodak%20Brownie%20Automatic%200006.jpg?width=900",
+          "cap": "20140902 EASTMAN KODAK BROWNIE AUTOMATIC 0006"
+        }
       ]
     },
     "instagram": {
@@ -15234,6 +16553,13 @@
           "score": 2326,
           "comments": 340,
           "url": "https://news.ycombinator.com/item?id=24488224"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Instagram%20screenshot.png?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Instagram%20verifed.png?width=900",
+          "cap": "INSTAGRAM VERIFED"
         }
       ]
     },
@@ -15322,6 +16648,21 @@
           "comments": 288,
           "url": "https://news.ycombinator.com/item?id=42200699"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter%20mood-MEME%2020200213.png?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/WikiMeme%20Dank.jpg?width=900",
+          "cap": "WIKIMEME DANK"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Deepfried%20meme%20%22W%22.jpg?width=900",
+          "cap": "DEEPFRIED MEME \"W\""
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wikipedia%20Meme-pl.png?width=900",
+          "cap": "WIKIPEDIA MEME PL"
+        }
       ]
     },
     "world-wide-web": {
@@ -15394,6 +16735,24 @@
           "score": 532,
           "comments": 208,
           "url": "https://news.ycombinator.com/item?id=17941941"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/World%20Wide%20Web%20Foundation%20Logo.png?width=900",
+          "cap": "WORLD WIDE WEB FOUNDATION LOGO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/WorldWideWeb%20Icon.png?width=900",
+          "cap": "WORLDWIDEWEB ICON"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Visualization%20of%20the%20world%20wide%20web%20common%20crawl%202012.png?width=900",
+          "cap": "VISUALIZATION OF THE WORLD WIDE WEB COMMON CRAWL 2012"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Berners-Lee%E2%80%99s%20proposal%20for%20a%20World%20Wide%20Web%20hypertext%20proposal%2C%20notice%20board%2C%20CERN.jpg?width=900",
+          "cap": "TIM BERNERS LEE’S PROPOSAL FOR A WORLD WIDE WEB HYPERTEXT PROPOS"
         }
       ]
     },
@@ -15482,6 +16841,21 @@
           "comments": 277,
           "url": "https://news.ycombinator.com/item?id=22122507"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantone%20Color%20of%20the%20Year%202023.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantone%20f36300.png?width=900",
+          "cap": "PANTONE F36300"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantone%20448%20C.png?width=900",
+          "cap": "PANTONE 448 C"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantone%20Universe%20products.jpg?width=900",
+          "cap": "PANTONE UNIVERSE PRODUCTS"
+        }
       ]
     },
     "tulip-mania": {
@@ -15565,6 +16939,24 @@
           "score": 184,
           "comments": 63,
           "url": "https://news.ycombinator.com/item?id=16399756"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tooneel%20van%20Flora%20Handel%20der%20Floristen%20in%20Amsterdam%201637%20(Tulip%20mania).png?width=900",
+          "cap": "TOONEEL VAN FLORA HANDEL DER FLORISTEN IN AMSTERDAM 1637 (TULIP "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carta%20indeks%20harga%20bunga%20tulip.png?width=900",
+          "cap": "CARTA INDEKS HARGA BUNGA TULIP"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Brueghel%20the%20Younger%2C%20Satire%20on%20Tulip%20Mania%2C%20c.%201640.jpg?width=900",
+          "cap": "JAN BRUEGHEL THE YOUNGER, SATIRE ON TULIP MANIA, C. 1640"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Flora's%20Wagon%20of%20Fools%20(Flora's%20Mallewagen)%20tulipomania%2C%20Hendrik%20Gerritsz%20Pot%20c1637.jpg?width=900",
+          "cap": "FLORA'S WAGON OF FOOLS (FLORA'S MALLEWAGEN) TULIPOMANIA, HENDRIK"
         }
       ]
     },
@@ -15714,6 +17106,20 @@
           "score": 40,
           "comments": 14,
           "url": "https://news.ycombinator.com/item?id=45803302"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cour%20Napol%C3%A9on%20at%20night%20-%20Louvre.jpg?width=900",
+          "cap": "COUR NAPOLÉON AT NIGHT LOUVRE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Louvre%20-%20Aile%20Richelieu.jpg?width=900",
+          "cap": "LE LOUVRE AILE RICHELIEU"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Louvre%20Museum%20Wikimedia%20Commons.jpg?width=900",
+          "cap": "LOUVRE MUSEUM WIKIMEDIA COMMONS"
         }
       ]
     },
@@ -16913,6 +18319,24 @@
           "comments": 9,
           "url": "https://bsky.app/profile/b0tster.yeag.gay/post/3l7qqofjkll23"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/12in-Vinyl-LP-Record-Angle.jpg?width=900",
+          "cap": "12IN VINYL LP RECORD ANGLE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Telescopes'%20Third%20Wave%20vinyl%20on%20Weisskalt%20Records.jpg?width=900",
+          "cap": "THE TELESCOPES' THIRD WAVE VINYL ON WEISSKALT RECORDS"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/02024%201054%20Vinyl%20records%20in%20Bielsko-Bia%C5%82a.jpg?width=900",
+          "cap": "02024 1054 VINYL RECORDS IN BIELSKO BIAŁA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinyl%20Store.jpg?width=900",
+          "cap": "VINYL STORE"
+        }
       ]
     },
     "auto-tune": {
@@ -16925,7 +18349,7 @@
         "sub": "Antares Audio Technologies"
       },
       "cat": "CONCEPT / OIL MATH IN EVERY VOCAL",
-      "capRight": "1997",
+      "capRight": "AUTOTUNE",
       "spec": {
         "ORIGIN": "Seismic autocorrelation — Exxon oilfield work",
         "LAUNCH": "Antares Auto-Tune, 1997",
@@ -16992,7 +18416,8 @@
           "comments": 73,
           "url": "https://news.ycombinator.com/item?id=42163597"
         }
-      ]
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Autotune.png?width=900"
     },
     "snow-white-1937": {
       "id": "snow-white-1937",
@@ -17004,7 +18429,7 @@
         "sub": "Walt Disney Productions, 1937"
       },
       "cat": "FILM / DISNEY'S FOLLY",
-      "capRight": "DEC 21 1937",
+      "capRight": "SNOW WHITE AND THE SEVEN DWARFS 1",
       "spec": {
         "BUDGET": "$250K planned → ~$1.5M spent",
         "THE_BET": "Disney mortgaged his house",
@@ -17071,6 +18496,17 @@
           "comments": 9,
           "url": "https://bsky.app/profile/lartist.bsky.social/post/3mpmtfhbrqc2w"
         }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow%20White%20and%20the%20Seven%20Dwarfs%201.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/DSC09954%20-%20Snow%20White%20and%20the%20Seven%20Dwarfs%20(36409150653).jpg?width=900",
+          "cap": "DSC09954 SNOW WHITE AND THE SEVEN DWARFS (36409150653)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow%20White%20and%20the%20Seven%20Dwarfs%2C%20play%20(illustration%20facing%20page%20214%20crop).png?width=900",
+          "cap": "SNOW WHITE AND THE SEVEN DWARFS, PLAY (ILLUSTRATION FACING PAGE "
+        }
       ]
     },
     "godfather": {
@@ -17083,7 +18519,7 @@
         "sub": "Paramount Pictures, 1972"
       },
       "cat": "FILM / THE MOB GAVE NOTES",
-      "capRight": "MAR 1972",
+      "capRight": "FRANCIS FORD COPPOLA'S HANDWRITTEN CASTING NOTES FOR THE GODFATH",
       "spec": {
         "THE_LEAGUE": "Joe Colombo's pressure campaign",
         "THE_DEAL": "'Mafia' cut from the script",
@@ -17145,7 +18581,8 @@
           "comments": 176,
           "url": "https://news.ycombinator.com/item?id=22199552"
         }
-      ]
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Francis%20Ford%20Coppola's%20handwritten%20casting%20notes%20for%20The%20Godfather%2C%20at%20Francis%20Ford%20Coppola%20Winery%2C%20near%20Geyserville%2C%202011.jpg?width=900"
     },
     "jaws": {
       "id": "jaws",
@@ -17218,6 +18655,17 @@
           "score": 17375,
           "comments": 1043,
           "url": "https://bsky.app/profile/adamkinzinger.substack.com/post/3m5bsjzggvk2j"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaws%20movie%20poster.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaws%20(1974)%20front%20cover%2C%20first%20edition.jpg?width=900",
+          "cap": "JAWS (1974) FRONT COVER, FIRST EDITION"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaws%20movie%20poster.png?width=900",
+          "cap": "JAWS MOVIE POSTER"
         }
       ]
     },
@@ -17294,6 +18742,24 @@
           "score": 40,
           "comments": 22,
           "url": "https://news.ycombinator.com/item?id=1054244"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrem%20Beach%2C%20Goa%2C%20India%2C%20Filming%20the%20Bollywood%20movie.jpg?width=900",
+          "cap": "MANDREM BEACH, GOA, INDIA, FILMING THE BOLLYWOOD MOVIE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrem%20Beach%2C%20Goa%2C%20India%2C%20Bollywood%20movie.jpg?width=900",
+          "cap": "MANDREM BEACH, GOA, INDIA, BOLLYWOOD MOVIE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrem%20Beach%2C%20Goa%2C%20India%2C%20Filming%20the%20Bollywood%20movie%20on%20the%20beach.jpg?width=900",
+          "cap": "MANDREM BEACH, GOA, INDIA, FILMING THE BOLLYWOOD MOVIE ON THE BE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrem%20Beach%2C%20Goa%2C%20India%2C%20Bollywood%20stars.jpg?width=900",
+          "cap": "MANDREM BEACH, GOA, INDIA, BOLLYWOOD STARS"
         }
       ]
     },
@@ -17376,6 +18842,12 @@
           "comments": 148,
           "url": "https://news.ycombinator.com/item?id=3160134"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Parasite%20(film)%20director%20and%20cast%20in%202019.jpg?width=900",
+          "cap": "PARASITE (FILM) DIRECTOR AND CAST IN 2019"
+        }
       ]
     },
     "hays-code": {
@@ -17453,6 +18925,16 @@
           "score": 60,
           "comments": 5,
           "url": "https://news.ycombinator.com/item?id=40605824"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Motion%20Picture%20Production%20Code.png?width=900",
+          "cap": "MOTION PICTURE PRODUCTION CODE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hays%20code%20cover%20(artistic%20version).png?width=900",
+          "cap": "HAYS CODE COVER (ARTISTIC VERSION)"
         }
       ]
     },
@@ -17534,6 +19016,24 @@
           "comments": 6,
           "url": "https://bsky.app/profile/mcs212.bsky.social/post/3loyhmfnvn22y"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/I%20Love%20Lucy%20Cast.JPG?width=900",
+          "cap": "I LOVE LUCY CAST"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/I%20Love%20Lucy%20(TV%20Guide%2C%20February%2012%2C%201955).jpg?width=900",
+          "cap": "I LOVE LUCY (TV GUIDE, FEBRUARY 12, 1955)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%22a%20one-derful%20record%22%20I%20Love%20Lucy%20Nielsen%20Top%2010.jpg?width=900",
+          "cap": "\"A ONE DERFUL RECORD\" I LOVE LUCY NIELSEN TOP 10"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/I%20love%20lucy%201956.JPG?width=900",
+          "cap": "I LOVE LUCY 1956"
+        }
       ]
     },
     "twilight-zone": {
@@ -17613,6 +19113,16 @@
           "score": 54,
           "comments": 10,
           "url": "https://news.ycombinator.com/item?id=12892450"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Orson%20Bean%20Mr.%20Bevis%20episode%20The%20Twilight%20Zone%20Los%20Angeles%20CA%20May%201960.jpg?width=900",
+          "cap": "ORSON BEAN MR. BEVIS EPISODE THE TWILIGHT ZONE LOS ANGELES CA MA"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Vollmer%20(The%20Twilight%20Zone).jpg?width=900",
+          "cap": "PETER VOLLMER (THE TWILIGHT ZONE)"
         }
       ]
     },
@@ -18574,6 +20084,20 @@
           "comments": 134,
           "url": "https://news.ycombinator.com/item?id=30094295"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Spiegelman%20(2007).jpg?width=900",
+          "cap": "ART SPIEGELMAN (2007)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Salon%20du%20livre%202012%20-%20Art%20Spiegelman%20-%20001.jpg?width=900",
+          "cap": "PARIS SALON DU LIVRE 2012 ART SPIEGELMAN 001"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Spiegelman%20-%20Sollies%20Ville%202010%20-%20P1480307.JPG?width=900",
+          "cap": "ART SPIEGELMAN SOLLIES VILLE 2010 P1480307"
+        }
       ]
     },
     "calvin-hobbes": {
@@ -18647,6 +20171,21 @@
           "score": 477,
           "comments": 163,
           "url": "https://news.ycombinator.com/item?id=26119380"
+        }
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Calvin%20wikiworld.jpg?width=900",
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Calvin%20and%20Hobbes%20title.png?width=900",
+          "cap": "CALVIN AND HOBBES TITLE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/'Calvin%20and%20Hobbes'-style%20snowmen%201b.JPG?width=900",
+          "cap": "'CALVIN AND HOBBES' STYLE SNOWMEN 1B"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/'Calvin%20and%20Hobbes'-style%20snowman%202a.JPG?width=900",
+          "cap": "'CALVIN AND HOBBES' STYLE SNOWMAN 2A"
         }
       ]
     },
@@ -18792,6 +20331,24 @@
           "comments": 3644,
           "url": "https://www.reddit.com/r/Showerthoughts/comments/a2jbbi/in_the_harry_potter_universe_couples_could_take/"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Making%20of%20Harry%20Potter%2029-05-2012%20(Philosopher's%20stone)%20cropped.jpg?width=900",
+          "cap": "THE MAKING OF HARRY POTTER 29 05 2012 (PHILOSOPHER'S STONE) CROP"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hogwarts%20as%20depicted%20in%20the%20film%20Harry%20Potter%20and%20the%20Philosopher's%20Stone.png?width=900",
+          "cap": "HOGWARTS AS DEPICTED IN THE FILM HARRY POTTER AND THE PHILOSOPHE"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Making%20of%20Harry%20Potter%2029-05-2012%20(Philosopher's%20stone).jpg?width=900",
+          "cap": "THE MAKING OF HARRY POTTER 29 05 2012 (PHILOSOPHER'S STONE)"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Harry%20Potter%20Lettre.JPG?width=900",
+          "cap": "HARRY POTTER LETTRE"
+        }
       ]
     },
     "vogue": {
@@ -18876,6 +20433,16 @@
           "score": 152,
           "comments": 89,
           "url": "https://news.ycombinator.com/item?id=21994173"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vogue%20Ukraine%20logo.png?width=900",
+          "cap": "VOGUE UKRAINE LOGO"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cover%20of%20Vogue%2C%20Oct.%201913.jpg?width=900",
+          "cap": "COVER OF VOGUE, OCT. 1913"
         }
       ]
     },
@@ -19042,6 +20609,20 @@
           "comments": 142,
           "url": "https://news.ycombinator.com/item?id=10506296"
         }
+      ],
+      "gallery": [
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20National%20Geographic%20Magazine%20Volume%201%20Number%201%20October%201888.jpg?width=900",
+          "cap": "THE NATIONAL GEOGRAPHIC MAGAZINE VOLUME 1 NUMBER 1 OCTOBER 1888"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20National%20Geographic%20Magazine%20-%20February%201910%20Volume%2021%20Number%202.jpg?width=900",
+          "cap": "THE NATIONAL GEOGRAPHIC MAGAZINE FEBRUARY 1910 VOLUME 21 NUMBER "
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/April%201889%20-%20First%20image%20in%20National%20Geographic.jpg?width=900",
+          "cap": "APRIL 1889 FIRST IMAGE IN NATIONAL GEOGRAPHIC"
+        }
       ]
     },
     "rolling-stone": {
@@ -19054,7 +20635,7 @@
         "sub": "b. 1946 — Berkeley dropout"
       },
       "cat": "MAGAZINE / ROCK GETS A PAPER OF RECORD",
-      "capRight": "SAN FRANCISCO, 1967",
+      "capRight": "ROLLING STONE AFRICA 1ST ISSUE AUGUST 2024",
       "spec": {
         "SEED_MONEY": "$7,500, borrowed from family",
         "FIRST_COVER": "John Lennon, Nov 9, 1967",
@@ -19121,7 +20702,8 @@
           "comments": 50,
           "url": "https://news.ycombinator.com/item?id=6763859"
         }
-      ]
+      ],
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Rolling%20Stone%20Africa%201st%20Issue%20August%202024.png?width=900"
     },
     "mad-magazine": {
       "id": "mad-magazine",
