@@ -159,18 +159,40 @@
   #homeDaily b{color:var(--acid);font-weight:500}
   #homeDaily:hover{color:var(--ink-dim)}
   #todayCulture{
-    margin-top:16px;font-size:10.5px;letter-spacing:.12em;line-height:1.8;
-    color:var(--ink-faint);text-transform:uppercase;max-width:60ch;
+    margin-top:24px;border:1px solid var(--ice);
+    padding:18px 20px;max-width:520px;
+    font-size:12.5px;line-height:1.85;color:var(--ink);
+  }
+  #todayCulture .k{
+    font-size:10px;letter-spacing:.2em;color:var(--ice);
+    text-transform:uppercase;margin-bottom:9px;
   }
   #todayCulture b{color:var(--pink);font-weight:500}
-  #todayCulture a{color:var(--ice);text-decoration:none;border-bottom:1px solid color-mix(in srgb, var(--ice) 50%, transparent)}
-  .globe-pane{display:flex;align-items:center;justify-content:center;position:relative;min-height:280px}
-  #globe{display:block;cursor:pointer;transition:filter .2s}
+  #todayCulture a{
+    display:inline-block;margin-top:8px;
+    font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ice);text-decoration:none;border-bottom:1px solid var(--ice);
+  }
+  .globe-pane{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:16px;position:relative;min-height:280px;
+  }
+  .globe-wrap{position:relative}
+  .globe-glow{
+    position:absolute;inset:6%;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle, rgba(212,255,63,.16) 0%, rgba(212,255,63,.05) 55%, transparent 72%);
+    animation:globePulse 4.5s ease-in-out infinite;
+  }
+  @keyframes globePulse{
+    0%,100%{opacity:.45;transform:scale(.96)}
+    50%{opacity:1;transform:scale(1.05)}
+  }
+  @media (prefers-reduced-motion: reduce){ .globe-glow{animation:none} }
+  #globe{display:block;position:relative;cursor:pointer;transition:filter .2s}
   #globe:hover{filter:brightness(1.25)}
   .globe-cta{
-    position:absolute;bottom:6%;left:50%;transform:translateX(-50%);
     font-size:10px;letter-spacing:.2em;color:var(--acid);text-transform:uppercase;
-    pointer-events:none;opacity:.8;
+    pointer-events:none;opacity:.85;white-space:nowrap;
   }
   .feat-row{
     display:grid;grid-template-columns:repeat(3,1fr);
@@ -513,13 +535,6 @@
 
   /* ---------- NEW DROPS / RESUME ---------- */
   .new-tag{color:var(--pink)}
-  #newDrop{
-    margin-top:26px;font-size:10.5px;letter-spacing:.12em;line-height:2;
-    color:var(--ink-faint);text-transform:uppercase;
-  }
-  #newDrop b{color:var(--ink);font-weight:500}
-  #newDrop .nd-item{color:var(--ink-dim);cursor:pointer;border-bottom:1px solid transparent}
-  #newDrop .nd-item:hover{color:var(--acid)}
   #resumeDig{
     margin-top:18px;font-size:10.5px;letter-spacing:.14em;
     color:var(--ink-faint);text-transform:uppercase;cursor:pointer;width:fit-content;
@@ -666,9 +681,8 @@
           </div>
           <div id="homeDaily"></div>
           <div class="daily-box" id="dailyBox" style="display:none"></div>
-          <div id="newDrop" style="display:none"></div>
         </div>
-        <div class="globe-pane"><canvas id="globe"></canvas><div class="globe-cta">◉ TAP THE GLOBE TO PULL</div></div>
+        <div class="globe-pane"><div class="globe-wrap"><div class="globe-glow"></div><canvas id="globe"></canvas></div><div class="globe-cta">◉ TAP THE GLOBE TO PULL</div></div>
       </div>
       <div class="feat-row">
         <div class="feat">
@@ -1743,7 +1757,7 @@ Promise.all([
         const link = page ? `https://en.wikipedia.org/wiki/${encodeURIComponent(page.titles.canonical)}` : null;
         const el = document.createElement('div');
         el.id = 'todayCulture';
-        el.innerHTML = `TODAY IN CULTURE // <b>${ev.year}</b> — ${ev.text}${link?` <a href="${link}" target="_blank" rel="noopener">WIKI ↗</a>`:''}`;
+        el.innerHTML = `<div class="k">◐ Today in culture</div><div><b>${ev.year}</b> — ${ev.text}</div>${link?`<a href="${link}" target="_blank" rel="noopener">Read the story ↗</a>`:''}`;
         $('homeDaily').after(el);
       }).catch(()=>{});
 
@@ -1777,17 +1791,6 @@ Promise.all([
         document.getElementById('csHome').onclick = ()=>{ cs.remove(); showView('home'); syncHash('#/'); };
         document.getElementById('csX').onclick = ()=> cs.remove();
       }
-    }
-
-    // weekly drop — new acquisitions block
-    const latest = DROPS[DROPS.length-1];
-    if(latest && isNew(latest.ids[0])){
-      const nd = $('newDrop');
-      nd.style.display = '';
-      nd.innerHTML = `NEW ACQUISITIONS // <b>${latest.date}</b> — ` +
-        latest.ids.filter(i=>RECORDS[i]).map(i=>`<span class="nd-item" data-id="${i}">${RECORDS[i].title.toUpperCase()}</span>`).join(' · ');
-      nd.querySelectorAll('.nd-item').forEach(el=>
-        el.addEventListener('click', ()=> openRecord(el.dataset.id, {resetTrail:true})));
     }
 
     // resume last descent
