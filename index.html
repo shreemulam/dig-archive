@@ -475,7 +475,8 @@
     display:flex;gap:16px;align-items:center;
     background:var(--bg-2);border:1px solid var(--pink);
     padding:10px 18px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--ink-dim);white-space:nowrap;
+    color:var(--ink-dim);max-width:94vw;text-align:center;line-height:1.9;
+    flex-wrap:wrap;justify-content:center;row-gap:2px;
   }
   #dailyHud b{color:var(--pink);font-weight:500}
   #dailyHud .abandon{cursor:pointer;color:var(--ink-faint)}
@@ -596,6 +597,20 @@
   .node.stub.reveal{animation-name:pop-stub}
   @keyframes pop-stub{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:.72;transform:translate(-50%,-50%) scale(1)}}
 
+  @media (max-width:700px){
+    .rec-count{display:none}
+    #dailyBtn,#atlasBtn{padding:0 12px}
+    #pullBtn{padding:0 18px}
+    .map-help{display:none}
+    .legend{font-size:9px;padding:8px 10px;gap:4px}
+    #dailyHud{font-size:9.5px;bottom:42px}
+  }
+  @media (max-width:560px){
+    .blabel{display:none}
+    .brand{padding:0 14px;font-size:14px}
+    #dailyBtn,#atlasBtn{padding:0 14px;font-size:13px}
+    #pullBtn{padding:0 20px;font-size:15px}
+  }
   @media (max-width:860px){
     #cardView{grid-template-columns:1fr;overflow-y:auto;display:block}
     .art-pane{border-right:none;border-bottom:1px solid var(--line);min-height:44vh}
@@ -612,10 +627,10 @@
 <header>
   <div class="brand"><div class="dot"></div>DIG<span>.ARCHIVE</span></div>
   <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE — PULL A RECORD, OPEN ITS CONSTELLATION, FALL IN</div></div>
-  <button id="dailyBtn">◆ Daily</button>
-  <button id="atlasBtn">⊞ Atlas</button>
+  <button id="dailyBtn">◆<span class="blabel"> Daily</span></button>
+  <button id="atlasBtn">⊞<span class="blabel"> Atlas</span></button>
   <div class="rec-count" id="recCount">REC <b>—/—</b></div>
-  <button id="pullBtn">⟳ Pull</button>
+  <button id="pullBtn">⟳<span class="blabel"> Pull</span></button>
 </header>
 
 <div id="trail"></div>
@@ -954,9 +969,10 @@ function renderMap(id){
   mapMode = 'record';
   const h = RECORDS[id];
   $('mapTitle').textContent = h.title.toUpperCase();
+  zoom = window.innerWidth < 700 ? 0.62 : 1;
   const nodes = $('nodes'), edges = $('edges');
   nodes.innerHTML = ''; edges.innerHTML = '';
-  pan = {x:0,y:0}; zoom = 1; applyTransform();
+  pan = {x:0,y:0}; applyTransform();
 
   // center node
   const centerVisual = h.img
