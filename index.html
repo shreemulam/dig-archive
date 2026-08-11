@@ -165,13 +165,20 @@
   #todayCulture b{color:var(--pink);font-weight:500}
   #todayCulture a{color:var(--ice);text-decoration:none;border-bottom:1px solid color-mix(in srgb, var(--ice) 50%, transparent)}
   .globe-pane{display:flex;align-items:center;justify-content:center;position:relative;min-height:280px}
-  #globe{display:block}
+  #globe{display:block;cursor:pointer;transition:filter .2s}
+  #globe:hover{filter:brightness(1.25)}
+  .globe-cta{
+    position:absolute;bottom:6%;left:50%;transform:translateX(-50%);
+    font-size:10px;letter-spacing:.2em;color:var(--acid);text-transform:uppercase;
+    pointer-events:none;opacity:.8;
+  }
   .feat-row{
     display:grid;grid-template-columns:repeat(3,1fr);
     gap:clamp(14px,2vw,24px);
     margin-top:clamp(36px,6vh,72px);
   }
-  .feat{background:var(--bg-2);border:1px solid var(--line);padding:30px 28px}
+  .feat{background:var(--bg-2);border:1px solid var(--line);padding:30px 28px;cursor:pointer;transition:border-color .15s}
+  .feat:hover{border-color:var(--acid)}
   .feat .n{font-family:var(--disp);font-weight:700;color:var(--acid);font-size:12px;letter-spacing:.14em;margin-bottom:12px}
   .feat h3{font-family:var(--disp);font-weight:600;font-size:15px;text-transform:uppercase;margin-bottom:9px}
   .feat p{font-size:12px;line-height:1.75;color:var(--ink-dim)}
@@ -634,7 +641,7 @@
           <div class="daily-box" id="dailyBox" style="display:none"></div>
           <div id="newDrop" style="display:none"></div>
         </div>
-        <div class="globe-pane"><canvas id="globe"></canvas></div>
+        <div class="globe-pane"><canvas id="globe"></canvas><div class="globe-cta">◉ TAP THE GLOBE TO PULL</div></div>
       </div>
       <div class="feat-row">
         <div class="feat">
@@ -1616,6 +1623,14 @@ $('pullBtn').addEventListener('click', pull);
 $('atlasBtn').addEventListener('click', ()=> openAtlas());
 $('homePull').addEventListener('click', pull);
 $('homeAtlas').addEventListener('click', ()=> openAtlas());
+$('globe').addEventListener('click', ()=>{ track('globe_pull'); pull(); });
+document.querySelectorAll('.feat').forEach((el,i)=>{
+  el.addEventListener('click', ()=>{
+    if(i===0) pull();
+    else if(i===1) openAtlas();
+    else { if(trail.length>=3) openReceipt(); else pull(); }
+  });
+});
 document.querySelector('.brand').style.cursor = 'pointer';
 document.querySelector('.brand').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); });
 $('closeReceipt').addEventListener('click', ()=> $('receiptOverlay').classList.add('hidden'));
