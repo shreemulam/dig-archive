@@ -505,6 +505,33 @@
   #dailyHud .abandon:hover{color:var(--ink)}
   #dailyHud.hidden{display:none}
 
+  /* ---------- DIG HERE ---------- */
+  #homeHere{
+    font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.1em;
+    background:transparent;color:var(--amber);border:1px solid var(--amber);
+    padding:16px 26px;cursor:pointer;text-transform:uppercase;
+  }
+  #homeHere:hover{background:var(--amber);color:var(--bg)}
+  #hereBox{
+    margin-top:24px;border:1px solid var(--amber);
+    padding:18px 20px;max-width:520px;
+  }
+  #hereBox .k{
+    font-size:10px;letter-spacing:.2em;color:var(--amber);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .here-item{padding:12px 0;border-bottom:1px dashed var(--line)}
+  .here-item:last-child{border-bottom:none;padding-bottom:2px}
+  .here-item .hi-head{font-family:var(--disp);font-weight:600;font-size:13.5px;text-transform:uppercase}
+  .here-item .hi-head b{color:var(--amber);font-weight:600;margin-right:8px}
+  .here-item .hi-desc{margin-top:2px;font-size:10px;letter-spacing:.12em;color:var(--ink-faint);text-transform:uppercase}
+  .here-item p{margin-top:6px;font-size:12px;line-height:1.65;color:var(--ink-dim)}
+  .here-item a{
+    display:inline-block;margin-top:6px;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ice);text-decoration:none;border-bottom:1px solid color-mix(in srgb, var(--ice) 50%, transparent);
+  }
+  .here-status{font-size:11px;letter-spacing:.12em;color:var(--ink-dim);text-transform:uppercase}
+
   /* ---------- ONBOARDING ---------- */
   #firstTimer{
     margin-top:18px;font-size:11.5px;letter-spacing:.1em;line-height:1.9;
@@ -619,7 +646,7 @@
     footer{display:none}
     #stage{inset:90px 0 62px}
     #mobileNav{
-      display:grid;grid-template-columns:repeat(4,1fr);
+      display:grid;grid-template-columns:repeat(5,1fr);
       position:fixed;bottom:0;left:0;right:0;height:62px;z-index:65;
       background:var(--bg);border-top:1px solid var(--line);
       padding-bottom:env(safe-area-inset-bottom);
@@ -678,9 +705,11 @@
           <div class="hero-ctas">
             <button id="homePull">⟳ Pull your first record</button>
             <button id="homeAtlas">⊞ See the whole map</button>
+            <button id="homeHere">⌖ What happened here?</button>
           </div>
           <div id="homeDaily"></div>
           <div class="daily-box" id="dailyBox" style="display:none"></div>
+          <div id="hereBox" style="display:none"></div>
         </div>
         <div class="globe-pane"><div class="globe-wrap"><div class="globe-glow"></div><canvas id="globe"></canvas></div><div class="globe-cta">◉ TAP THE GLOBE TO PULL</div></div>
       </div>
@@ -747,6 +776,7 @@
   <button class="mn-item" id="mnHome"><div class="mn-ico">◉</div><div class="mn-label">Home</div></button>
   <button class="mn-item primary" id="mnPull"><div class="mn-ico">⟳</div><div class="mn-label">Pull</div></button>
   <button class="mn-item" id="mnDaily"><div class="mn-ico">◆</div><div class="mn-label">Daily</div></button>
+  <button class="mn-item" id="mnHere"><div class="mn-ico">⌖</div><div class="mn-label">Here</div></button>
   <button class="mn-item" id="mnAtlas"><div class="mn-ico">⊞</div><div class="mn-label">Atlas</div></button>
 </nav>
 
@@ -1178,6 +1208,56 @@ function openReceipt(){
   $('receiptOverlay').classList.remove('hidden');
   shareState = {text: receiptText(), filename: 'dig-archive-descent.png'};
   track('receipt_export', {depth: trail.length-1});
+}
+
+/* ================= DIG HERE — what happened where you stand ================= */
+const CULT_RE = /museum|art|paint|sculpt|writ|novel|poet|author|music|jazz|punk|opera|theat|film|cinema|studio|gallery|histor|landmark|architect|hotel|church|cathedral|synagogue|mosque|temple|monument|memorial|birthplace|composer|designer|fashion|record|premiere|bohemian|speakeasy|mural|graffiti/i;
+async function digHere(){
+  const box = $('hereBox');
+  box.style.display = '';
+  box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">◉ Triangulating…</div>';
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+  if(!navigator.geolocation){
+    box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">No location support in this browser.</div>';
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(async pos=>{
+    track('dig_here');
+    const {latitude:lat, longitude:lon} = pos.coords;
+    try{
+      const gs = await (await fetch(`https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord=${lat}%7C${lon}&gsradius=1500&gslimit=25&format=json&origin=*`)).json();
+      const pages = (gs.query?.geosearch||[]).slice(0,14);
+      if(!pages.length){
+        box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Nothing on record within 1.5km — you found a blind spot.</div>';
+        return;
+      }
+      const sums = await Promise.all(pages.map(p=>
+        fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(p.title)}`)
+          .then(r=>r.ok?r.json():null).then(s=>s?{...s, dist:p.dist}:null).catch(()=>null)
+      ));
+      const items = sums.filter(Boolean)
+        .filter(s=>s.extract && s.extract.length>60)
+        .map(s=>({...s, cult: CULT_RE.test((s.description||'')+' '+s.extract)}))
+        .sort((a,b)=> (b.cult-a.cult) || (a.dist-b.dist))
+        .slice(0,6);
+      if(!items.length){
+        box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Nothing cultural on record nearby. Walk a block and try again.</div>';
+        return;
+      }
+      box.innerHTML = '<div class="k">⌖ Dig where you stand — within 1.5km</div>' +
+        items.map(s=>`
+          <div class="here-item">
+            <div class="hi-head"><b>${Math.round(s.dist)}M</b>${s.title.toUpperCase()}</div>
+            ${s.description?`<div class="hi-desc">${s.description}</div>`:''}
+            <p>${s.extract.slice(0,240)}${s.extract.length>240?'…':''}</p>
+            <a href="${s.content_urls?.desktop?.page||'#'}" target="_blank" rel="noopener">Full story ↗</a>
+          </div>`).join('');
+    }catch(e){
+      box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Lookup failed — try again in a moment.</div>';
+    }
+  }, err=>{
+    box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Location denied. Your position never leaves this device except to query Wikipedia — enable location and retry.</div>';
+  }, {timeout:12000, maximumAge:120000});
 }
 
 /* ================= SHARE STATE (receipt / story / daily share one overlay) ================= */
@@ -1676,6 +1756,8 @@ $('globe').addEventListener('click', ()=>{ track('globe_pull'); pull(); });
 $('mnHome').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); });
 $('mnPull').addEventListener('click', pull);
 $('mnDaily').addEventListener('click', ()=> $('dailyBtn').click());
+$('mnHere').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); digHere(); });
+$('homeHere').addEventListener('click', digHere);
 $('mnAtlas').addEventListener('click', ()=> openAtlas());
 document.querySelectorAll('.feat').forEach((el,i)=>{
   el.addEventListener('click', ()=>{
