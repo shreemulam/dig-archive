@@ -22574,6 +22574,21 @@
           "type": "INFLUENCE",
           "ref": "romanticism",
           "note": "Greensward is English Romantic landscape imported wholesale — the 'untouched' meadow as a designed picture."
+        },
+        {
+          "type": "HISTORY",
+          "ref": "statue-of-liberty",
+          "note": "Two monuments to a self-image New York was still inventing — one welcomes, one was cleared of the Black village of Seneca Village to be built."
+        },
+        {
+          "type": "INFLUENCE",
+          "ref": "graffiti",
+          "note": "The park invented the idea of public space as everyone’s canvas; a century later the trains took the argument further uptown."
+        },
+        {
+          "type": "ECHO",
+          "ref": "empire-state",
+          "note": "Manhattan’s two forms of ambition: build the tallest thing on Earth, or protect 843 acres from ever being built on at all."
         }
       ]
     },
