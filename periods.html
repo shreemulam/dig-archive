@@ -6,309 +6,363 @@
 <title>Period Rooms</title>
 <style>
   :root{
-    --ground:#F2EFE9;
-    --panel:#FBFAF7;
-    --ink:#1D1A16;
-    --graphite:#5C554B;
-    --hair:#D5CFC4;
-    --accent:#8A3324;          /* sinopia red — the pigment under every fresco */
+    --ground:#F2EFE9;--ink:#1D1A16;--graphite:#5C554B;--hair:#D5CFC4;--accent:#8A3324;
     --mono:ui-monospace,"SF Mono",Menlo,monospace;
     --disp:"Hoefler Text",Baskerville,Georgia,serif;
     --body:"Optima","Avenir Next",system-ui,sans-serif;
     --gesso:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.04' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)'/%3E%3C/svg%3E");
-    --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='150' height='150' filter='url(%23n)'/%3E%3C/svg%3E");
   }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --ground:#14120F;--panel:#1C1916;--ink:#EFEAE1;--graphite:#A79E90;--hair:#332E27;--accent:#D2694F;
-    }
-  }
-  :root[data-theme="dark"]{
-    --ground:#14120F;--panel:#1C1916;--ink:#EFEAE1;--graphite:#A79E90;--hair:#332E27;--accent:#D2694F;
-  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#14120F;--ink:#EFEAE1;--graphite:#A79E90;--hair:#332E27;--accent:#D2694F}}
+  :root[data-theme="dark"]{--ground:#14120F;--ink:#EFEAE1;--graphite:#A79E90;--hair:#332E27;--accent:#D2694F}
 
   *{box-sizing:border-box}
   body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1440px;margin:0 auto;padding:clamp(28px,5vw,76px) clamp(18px,4vw,56px) 100px}
-
-  header{max-width:64ch;margin-bottom:clamp(40px,7vh,84px)}
-  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
-  h1{font-family:var(--disp);font-weight:400;font-size:clamp(40px,7vw,92px);line-height:.95;letter-spacing:-.015em;margin:0 0 26px;text-wrap:balance}
+  .wrap{max-width:1460px;margin:0 auto;padding:clamp(28px,5vw,76px) clamp(18px,4vw,56px) 100px}
+  header{max-width:64ch;margin-bottom:clamp(38px,6vh,72px)}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+  h1{font-family:var(--disp);font-weight:400;font-size:clamp(40px,7vw,92px);line-height:.95;letter-spacing:-.015em;margin:0 0 24px}
   h1 em{font-style:italic}
-  .lede{font-size:clamp(15px,1.5vw,18.5px);line-height:1.72;color:var(--graphite);margin:0 0 18px;max-width:60ch}
+  .lede{font-size:clamp(15px,1.5vw,18.5px);line-height:1.72;color:var(--graphite);margin:0 0 16px;max-width:60ch}
   .lede b{color:var(--ink);font-weight:500}
-  .howto{font-family:var(--mono);font-size:11.5px;line-height:1.95;letter-spacing:.04em;color:var(--ink);border-left:2px solid var(--accent);padding-left:16px}
+  .howto{font-family:var(--mono);font-size:11.5px;line-height:1.95;letter-spacing:.04em;border-left:2px solid var(--accent);padding-left:16px}
 
-  /* chronological rail */
-  .era{display:flex;align-items:baseline;gap:14px;margin:clamp(36px,5vh,54px) 0 20px}
-  .era-name{font-family:var(--disp);font-size:clamp(20px,2.2vw,27px);letter-spacing:.01em;white-space:nowrap}
+  .era{display:flex;align-items:baseline;gap:14px;margin:clamp(38px,5vh,56px) 0 20px}
+  .era-name{font-family:var(--disp);font-size:clamp(20px,2.2vw,27px);white-space:nowrap}
   .era-rule{flex:1;height:1px;background:var(--hair)}
   .era-span{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--graphite);white-space:nowrap}
 
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:clamp(20px,2.4vw,32px)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(316px,1fr));gap:clamp(20px,2.4vw,32px)}
   .spec{display:flex;flex-direction:column;gap:11px}
   .spec-head{display:flex;align-items:baseline;gap:9px}
-  .num{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent);flex:none}
+  .num{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent)}
   .spec-name{font-family:var(--disp);font-size:18.5px}
-  .spec-date{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--graphite);margin-left:auto;flex:none}
-  .swatches{display:flex;gap:4px;margin-top:2px}
-  .sw{width:22px;height:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.16)}
+  .spec-date{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--graphite);margin-left:auto}
   .spec-note{font-size:12.5px;line-height:1.66;color:var(--graphite)}
-  .spec-meta{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--graphite);opacity:.8;display:flex;flex-wrap:wrap;gap:4px 12px}
+  .spec-meta{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--graphite);opacity:.85;display:flex;flex-wrap:wrap;gap:3px 12px}
   .spec-meta b{color:var(--accent);font-weight:400}
 
-  /* ---------- shared mock skeleton ---------- */
-  .mock{
-    position:relative;aspect-ratio:4/5;overflow:hidden;isolation:isolate;
-    background:var(--m-ground);color:var(--m-ink);
-    display:flex;flex-direction:column;padding:var(--m-pad,22px);
-    border:var(--m-border,none);border-radius:var(--m-radius,0);
-    box-shadow:var(--m-shadow,0 2px 6px rgba(0,0,0,.12));
-  }
-  .mock > *{position:relative;z-index:3}
-  .m-tex{position:absolute;inset:0;z-index:1;pointer-events:none}
-  .m-orn{position:absolute;inset:0;z-index:2;pointer-events:none}
-  .m-label{
-    font-family:var(--m-mono,var(--mono));font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;
-    color:var(--m-dim);margin-bottom:auto;display:flex;justify-content:space-between;gap:8px;
-  }
-  .m-art{aspect-ratio:3/2;margin-bottom:13px;position:relative;overflow:hidden;
-    background:var(--m-art);border:var(--m-art-border,none);border-radius:var(--m-art-radius,0)}
-  .m-title{font-family:var(--m-disp);font-weight:var(--m-weight,400);font-size:var(--m-size,30px);
-    line-height:var(--m-lh,1.02);letter-spacing:var(--m-ls,0);text-transform:var(--m-case,none);margin:0 0 6px}
-  .m-by{font-family:var(--m-body);font-size:10.5px;color:var(--m-dim);margin-bottom:11px;letter-spacing:.02em}
-  .m-fact{font-family:var(--m-body);font-size:11.5px;line-height:1.58;margin:0 0 13px;opacity:.94}
-  .m-links{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
-  .m-chip{font-family:var(--m-mono,var(--mono));font-size:8px;letter-spacing:.12em;text-transform:uppercase;
-    padding:4px 8px;color:var(--m-chip-ink,var(--m-ink));background:var(--m-chip-bg,transparent);
-    border:var(--m-chip-border,1px solid currentColor);border-radius:var(--m-chip-radius,0)}
+  /* the frame each period fills however it likes */
+  .mock{position:relative;aspect-ratio:4/5;overflow:hidden;isolation:isolate;
+    background:var(--bg);color:var(--fg);box-shadow:0 3px 12px rgba(0,0,0,.16)}
+  .mock *{box-sizing:border-box}
+  .tex{position:absolute;inset:0;pointer-events:none}
 
-  /* ═══ 01 GREEK BLACK-FIGURE · c. 530 BC ═══ */
-  .p1{--m-ground:#C4693B;--m-ink:#17110D;--m-dim:#5C3320;--m-disp:"Optima","Avenir Next",sans-serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:23px;--m-case:uppercase;--m-ls:.13em;
-    --m-art:radial-gradient(ellipse at 50% 62%,#17110D 30%,#C4693B 31%);--m-pad:24px;
-    --m-chip-border:1px solid #17110D;--m-chip-ink:#17110D}
-  .p1 .m-orn{border:14px solid transparent;
-    border-image:repeating-linear-gradient(90deg,#17110D 0 6px,transparent 6px 10px,#17110D 10px 12px,transparent 12px 20px) 14}
-  .p1 .m-art::after{content:"";position:absolute;inset:0;
-    background:repeating-linear-gradient(90deg,#17110D 0 3px,transparent 3px 9px);
-    mask-image:linear-gradient(#000 0 12%,transparent 12%)}
+  /* ════════ 01 GREEK BLACK-FIGURE — horizontal frieze, vertical inscription ════════ */
+  .p1{--bg:#C4693B;--fg:#17110D;font-family:"Optima",sans-serif;
+    display:grid;grid-template-columns:1fr 34px;padding:13px}
+  .p1 .frieze{grid-column:1/-1;height:38%;background:#17110D;
+    clip-path:polygon(0 0,100% 0,100% 74%,88% 100%,72% 76%,54% 100%,36% 74%,18% 100%,0 78%);
+    margin-bottom:10px}
+  .p1 .col{padding:0 4px}
+  .p1 .t{font-size:19px;letter-spacing:.2em;text-transform:uppercase;line-height:1.5;margin-bottom:10px}
+  .p1 .f{font-size:10.5px;line-height:1.62;letter-spacing:.02em}
+  .p1 .insc{writing-mode:vertical-rl;font-size:8px;letter-spacing:.36em;text-transform:uppercase;
+    border-left:2px solid #17110D;padding-left:6px;align-self:stretch}
+  .p1 .meander{position:absolute;inset:auto 0 0 0;height:13px;
+    background:repeating-linear-gradient(90deg,#17110D 0 7px,transparent 7px 11px,#17110D 11px 13px,transparent 13px 22px)}
 
-  /* ═══ 02 ROMAN MOSAIC · c. 100 AD ═══ */
-  .p2{--m-ground:#E6DFCE;--m-ink:#25201A;--m-dim:#726552;--m-disp:"Copperplate","Optima",serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:20px;--m-case:uppercase;--m-ls:.16em;
-    --m-art:conic-gradient(from 20deg,#8A3324,#B5713C 25%,#2E4A5C 50%,#5F6B47 75%,#8A3324);--m-pad:20px;
-    --m-chip-border:1px solid #A79880;--m-shadow:0 3px 10px rgba(40,32,22,.2)}
-  .p2 .m-art::after,.p2 .m-tex{content:"";
-    background-image:linear-gradient(#E6DFCE 1.5px,transparent 1.5px),linear-gradient(90deg,#E6DFCE 1.5px,transparent 1.5px);
-    background-size:11px 11px}
-  .p2 .m-art::after{position:absolute;inset:0}
-  .p2 .m-tex{opacity:.5}
+  /* ════════ 02 ROMAN MOSAIC — tabula ansata panel inside a tessera field ════════ */
+  .p2{--bg:#E6DFCE;--fg:#25201A;font-family:"Copperplate",serif;
+    display:grid;place-items:center;padding:16px}
+  .p2 .tex{background-image:
+    conic-gradient(from 0deg,#8A3324 0 25%,#B5713C 25% 50%,#2E4A5C 50% 75%,#5F6B47 75%),
+    linear-gradient(#E6DFCE 2px,transparent 2px),linear-gradient(90deg,#E6DFCE 2px,transparent 2px);
+    background-size:44px 44px,11px 11px,11px 11px;opacity:.95}
+  .p2 .tabula{position:relative;background:#E6DFCE;border:3px solid #25201A;
+    padding:16px 14px;text-align:center;width:100%;
+    box-shadow:0 0 0 3px #E6DFCE,0 0 0 5px #25201A}
+  .p2 .tabula::before,.p2 .tabula::after{content:"";position:absolute;top:50%;width:14px;height:26px;
+    transform:translateY(-50%);background:#E6DFCE;border:3px solid #25201A}
+  .p2 .tabula::before{left:-20px}.p2 .tabula::after{right:-20px}
+  .p2 .t{font-size:17px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+  .p2 .f{font-family:"Optima",sans-serif;font-size:10px;line-height:1.6}
+  .p2 .d{font-family:"Optima",sans-serif;font-size:8px;letter-spacing:.24em;text-transform:uppercase;margin-top:10px;opacity:.7}
 
-  /* ═══ 03 BYZANTINE GOLD · c. 547 ═══ */
-  .p3{--m-ground:#C9A227;--m-ink:#1B1206;--m-dim:#6B4E12;--m-disp:"Copperplate","Didot",serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:19px;--m-case:uppercase;--m-ls:.18em;--m-lh:1.5;
-    --m-art:radial-gradient(ellipse at 50% 42%,#2E5C7A,#173A52 46%,#8A2C22 47%,#6B1F18);
-    --m-art-border:5px solid #1B1206;--m-pad:20px;
-    --m-chip-border:1px solid #8A6E18;--m-chip-ink:#2A1D08;--m-chip-bg:rgba(255,240,190,.5);
-    --m-shadow:0 6px 20px rgba(90,66,10,.36)}
-  .p3 .m-tex{background:
-    radial-gradient(circle at 26% 18%,rgba(255,248,214,.85),transparent 26%),
-    radial-gradient(circle at 76% 72%,rgba(255,246,206,.6),transparent 30%),
-    repeating-linear-gradient(45deg,rgba(255,255,255,.14) 0 2px,transparent 2px 7px)}
-  .p3 .m-art::after{content:"";position:absolute;inset:0;
-    background:repeating-linear-gradient(35deg,rgba(201,162,39,.35) 0 1px,transparent 1px 6px)}
+  /* ════════ 03 BYZANTINE — arched icon, symmetrical, haloed medallion ════════ */
+  .p3{--bg:#C9A227;--fg:#1B1206;font-family:"Copperplate",serif;
+    display:flex;flex-direction:column;align-items:center;padding:0;border:6px solid #1B1206}
+  .p3 .tex{background:
+    radial-gradient(circle at 24% 16%,rgba(255,248,214,.9),transparent 24%),
+    radial-gradient(circle at 78% 74%,rgba(255,246,206,.55),transparent 28%),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.13) 0 2px,transparent 2px 7px)}
+  .p3 .arch{position:relative;width:100%;height:56%;background:#173A52;
+    border-radius:50% 50% 0 0/38% 38% 0 0;border-bottom:4px solid #1B1206;
+    display:grid;place-items:center;margin-bottom:12px}
+  .p3 .halo{width:44%;aspect-ratio:1;border-radius:50%;background:#C9A227;
+    box-shadow:0 0 0 4px #1B1206,inset 0 0 26px rgba(138,44,34,.55)}
+  .p3 .t{position:relative;font-size:16px;letter-spacing:.24em;text-transform:uppercase;text-align:center;line-height:1.7}
+  .p3 .f{position:relative;font-family:"Optima",sans-serif;font-size:9.5px;line-height:1.6;
+    text-align:center;padding:8px 18px 0}
+  .p3 .rule{position:relative;width:52%;height:2px;background:#1B1206;margin:10px 0 12px}
 
-  /* ═══ 04 ILLUMINATED MANUSCRIPT · c. 1300 ═══ */
-  .p4{--m-ground:#EDE3CA;--m-ink:#2B2116;--m-dim:#7A6647;--m-disp:"Hoefler Text",Baskerville,serif;
-    --m-body:"Hoefler Text",Georgia,serif;--m-size:27px;--m-mono:"Hoefler Text",serif;
-    --m-art:linear-gradient(#D9CBA6,#C4B48C);--m-art-border:2px solid #8A3324;--m-pad:22px;
-    --m-chip-border:1px solid #A8905F;--m-shadow:0 4px 16px rgba(70,54,30,.2)}
-  .p4 .m-tex{background-image:var(--gesso);background-size:190px;opacity:.13;mix-blend-mode:multiply}
-  .p4 .m-orn{border-left:5px double #8A3324;margin-left:8px}
-  .p4 .m-title::first-letter{
-    float:left;font-size:2.4em;line-height:.82;padding:2px 8px 0 0;color:#8A3324;font-weight:600}
-  .p4 .m-art::after{content:"";position:absolute;inset:16%;border:1px solid rgba(138,51,36,.5);
-    background:radial-gradient(circle at 50% 50%,rgba(201,162,39,.4),transparent 60%)}
+  /* ════════ 04 MANUSCRIPT — two columns, historiated initial, marginal gloss ════════ */
+  .p4{--bg:#EDE3CA;--fg:#2B2116;font-family:"Hoefler Text",serif;
+    display:grid;grid-template-columns:1fr 46px;gap:8px;padding:18px 12px 18px 16px}
+  .p4 .tex{background-image:var(--gesso);background-size:190px;opacity:.14;mix-blend-mode:multiply}
+  .p4 .body{position:relative;column-count:2;column-gap:11px;column-rule:1px solid rgba(138,51,36,.3);
+    font-size:9px;line-height:1.55;text-align:justify;hyphens:auto}
+  .p4 .init{float:left;width:44px;height:44px;margin:2px 6px 0 0;background:#8A3324;color:#EDE3CA;
+    font-size:32px;line-height:44px;text-align:center;box-shadow:0 0 0 1px #C9A227}
+  .p4 .rub{color:#8A3324;font-variant:small-caps;letter-spacing:.04em}
+  .p4 .gloss{position:relative;writing-mode:vertical-rl;font-size:7px;line-height:1.5;
+    color:#8A3324;font-variant:small-caps;letter-spacing:.06em;border-left:1px solid rgba(138,51,36,.4);padding-left:5px}
 
-  /* ═══ 05 ISLAMIC GEOMETRY · c. 1354 ═══ */
-  .p5{--m-ground:#0E3A46;--m-ink:#F0E9D2;--m-dim:#84A9AE;--m-disp:"Optima","Avenir Next",sans-serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:22px;--m-case:uppercase;--m-ls:.2em;--m-lh:1.5;
-    --m-art:linear-gradient(135deg,#1B6E7A,#0E3A46);--m-art-border:1px solid #C9A227;--m-pad:22px;
-    --m-chip-border:1px solid #C9A227;--m-chip-ink:#EBDCA8}
-  .p5 .m-tex{opacity:.3;background-image:
-    repeating-linear-gradient(60deg,rgba(201,162,39,.5) 0 1px,transparent 1px 22px),
-    repeating-linear-gradient(-60deg,rgba(201,162,39,.5) 0 1px,transparent 1px 22px),
-    repeating-linear-gradient(0deg,rgba(201,162,39,.5) 0 1px,transparent 1px 22px)}
-  .p5 .m-art::after{content:"";position:absolute;inset:0;background:
-    repeating-conic-gradient(from 0deg at 50% 50%,rgba(240,233,210,.22) 0 8deg,transparent 8deg 22deg)}
+  /* ════════ 05 ISLAMIC — central medallion, metadata as a border ribbon ════════ */
+  .p5{--bg:#0E3A46;--fg:#F0E9D2;font-family:"Optima",sans-serif;
+    display:grid;place-items:center;padding:30px}
+  .p5 .tex{background-image:
+    repeating-linear-gradient(60deg,rgba(201,162,39,.42) 0 1px,transparent 1px 20px),
+    repeating-linear-gradient(-60deg,rgba(201,162,39,.42) 0 1px,transparent 1px 20px),
+    repeating-linear-gradient(0deg,rgba(201,162,39,.42) 0 1px,transparent 1px 20px)}
+  .p5 .ribbon{position:absolute;inset:9px;border:1px solid #C9A227;
+    box-shadow:inset 0 0 0 4px #0E3A46,inset 0 0 0 5px rgba(201,162,39,.55)}
+  .p5 .ribbon span{position:absolute;font-size:7px;letter-spacing:.3em;text-transform:uppercase;
+    color:#C9A227;background:#0E3A46;padding:0 6px}
+  .p5 .rb-t{top:-4px;left:16px}.p5 .rb-b{bottom:-4px;right:16px}
+  .p5 .star{position:relative;width:74%;aspect-ratio:1;background:
+    conic-gradient(from 0deg,#1B6E7A 0 12deg,#0E3A46 12deg 24deg);
+    clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+    display:grid;place-items:center;box-shadow:0 0 30px rgba(201,162,39,.22)}
+  .p5 .t{position:relative;font-size:13px;letter-spacing:.2em;text-transform:uppercase;text-align:center;
+    line-height:1.6;max-width:60%}
 
-  /* ═══ 06 RENAISSANCE FRESCO · c. 1500 ═══ */
-  .p6{--m-ground:#D8C9B0;--m-ink:#2C2318;--m-dim:#7E6E56;--m-disp:"Baskerville","Hoefler Text",serif;
-    --m-body:"Baskerville",Georgia,serif;--m-size:31px;--m-lh:1.06;--m-mono:"Baskerville",serif;
-    --m-art:linear-gradient(#A8BCC4 0 46%,#C9A882 46%);--m-pad:24px;
-    --m-chip-border:1px solid #A08C6E;--m-shadow:0 5px 18px rgba(60,48,32,.18)}
-  .p6 .m-tex{background-image:var(--gesso);background-size:210px;opacity:.16;mix-blend-mode:multiply}
-  .p6 .m-orn{background:
-    linear-gradient(90deg,transparent 49.7%,rgba(138,51,36,.22) 49.7% 50.3%,transparent 50.3%),
-    repeating-linear-gradient(84deg,transparent 0 46px,rgba(138,51,36,.14) 46px 47px)}
-  .p6 .m-art::after{content:"";position:absolute;inset:0;
-    background:radial-gradient(ellipse at 50% 78%,rgba(44,35,24,.4),transparent 55%)}
+  /* ════════ 06 FRESCO — arch-topped lunette, text on the plaster below ════════ */
+  .p6{--bg:#D8C9B0;--fg:#2C2318;font-family:"Baskerville",serif;padding:0;
+    display:flex;flex-direction:column}
+  .p6 .tex{background-image:var(--gesso);background-size:210px;opacity:.17;mix-blend-mode:multiply}
+  .p6 .lunette{position:relative;height:48%;background:linear-gradient(#A8BCC4 0 52%,#C9A882 52%);
+    border-radius:50% 50% 0 0/70% 70% 0 0;margin:14px 14px 0;
+    box-shadow:inset 0 -30px 40px -28px rgba(44,35,24,.5)}
+  .p6 .lines{position:absolute;inset:0;border-radius:inherit;
+    background:linear-gradient(90deg,transparent 49.6%,rgba(138,51,36,.3) 49.6% 50.4%,transparent 50.4%),
+      conic-gradient(from 250deg at 50% 100%,transparent 0 18deg,rgba(138,51,36,.18) 18deg 19deg,
+      transparent 19deg 36deg,rgba(138,51,36,.18) 36deg 37deg,transparent 37deg)}
+  .p6 .txt{position:relative;padding:16px 20px 18px;flex:1;display:flex;flex-direction:column}
+  .p6 .t{font-size:27px;line-height:1.05;margin-bottom:6px}
+  .p6 .by{font-size:10px;font-style:italic;color:#7E6E56;margin-bottom:9px}
+  .p6 .f{font-size:10.5px;line-height:1.62}
+  .p6 .sig{margin-top:auto;font-size:7.5px;letter-spacing:.24em;text-transform:uppercase;color:#8A3324}
 
-  /* ═══ 07 MUGHAL MINIATURE · c. 1600 ═══ */
-  .p7{--m-ground:#7B1E3A;--m-ink:#FDF4DC;--m-dim:#D9A28C;--m-disp:"Iowan Old Style",Palatino,serif;
-    --m-body:"Iowan Old Style",Georgia,serif;--m-size:26px;--m-lh:1.1;
-    --m-art:linear-gradient(#4A7F5C 0 58%,#C9A227 58% 64%,#2E5F7A 64%);
-    --m-art-border:3px solid #C9A227;--m-pad:16px;
-    --m-border:8px solid #7B1E3A;--m-chip-border:1px solid #C9A227;--m-chip-ink:#F6DFA8;
-    --m-shadow:0 8px 26px rgba(50,10,24,.4)}
-  .p7 .m-orn{border:1px solid rgba(201,162,39,.75);margin:6px;
-    box-shadow:inset 0 0 0 3px rgba(253,244,220,.14)}
-  .p7 .m-art::after{content:"";position:absolute;inset:0;
-    background:radial-gradient(circle at 30% 30%,rgba(253,244,220,.4),transparent 22%)}
+  /* ════════ 07 MUGHAL — central image ringed by a metadata border ════════ */
+  .p7{--bg:#7B1E3A;--fg:#FDF4DC;font-family:"Iowan Old Style",serif;padding:11px;
+    display:grid;grid-template-rows:auto 1fr auto;gap:7px}
+  .p7 .band{border:1px solid #C9A227;padding:5px 7px;font-size:7px;letter-spacing:.24em;
+    text-transform:uppercase;text-align:center;color:#F6DFA8}
+  .p7 .core{position:relative;border:3px solid #C9A227;padding:12px;
+    background:linear-gradient(#4A7F5C 0 54%,#C9A227 54% 60%,#2E5F7A 60%);
+    display:flex;flex-direction:column;justify-content:flex-end}
+  .p7 .core::before{content:"";position:absolute;inset:5px;border:1px solid rgba(253,244,220,.4)}
+  .p7 .t{position:relative;font-size:23px;line-height:1.05;color:#FDF4DC;text-shadow:0 1px 3px rgba(20,8,14,.6)}
+  .p7 .by{position:relative;font-size:9px;color:#F6DFA8;margin-top:3px}
+  .p7 .f{position:relative;font-size:9.5px;line-height:1.55;color:#FDF4DC;margin-top:8px;
+    background:rgba(30,10,18,.42);padding:7px 8px}
 
-  /* ═══ 08 DUTCH GOLDEN AGE · c. 1660 ═══ */
-  .p8{--m-ground:#191510;--m-ink:#F2E7CF;--m-dim:#96835F;--m-disp:"Hoefler Text",Baskerville,serif;
-    --m-body:"Hoefler Text",Georgia,serif;--m-size:31px;--m-lh:1.04;--m-mono:"Hoefler Text",serif;
-    --m-art:radial-gradient(ellipse at 34% 34%,#E8D3A8,#8A6B3E 34%,#2A2116 72%,#120F0A);--m-pad:26px;
-    --m-chip-border:1px solid #4A3C26;--m-chip-ink:#C9B58C;--m-shadow:0 10px 30px rgba(0,0,0,.5)}
-  .p8 .m-tex{background:radial-gradient(ellipse at 28% 22%,rgba(255,236,190,.16),transparent 56%)}
+  /* ════════ 08 DUTCH — mostly darkness, one small bright window ════════ */
+  .p8{--bg:#191510;--fg:#F2E7CF;font-family:"Hoefler Text",serif;padding:24px;
+    display:flex;flex-direction:column;justify-content:flex-end}
+  .p8 .tex{background:radial-gradient(ellipse at 30% 24%,rgba(255,236,190,.2),transparent 54%)}
+  .p8 .window{position:absolute;top:16%;left:14%;width:38%;aspect-ratio:3/4;
+    background:radial-gradient(ellipse at 40% 32%,#F4E0B4,#9A7A46 46%,#3A2E1E 88%);
+    box-shadow:0 0 60px 20px rgba(255,224,160,.16)}
+  .p8 .t{position:relative;font-size:29px;line-height:1.02;margin-bottom:5px}
+  .p8 .by{position:relative;font-size:9.5px;font-style:italic;color:#96835F;margin-bottom:10px}
+  .p8 .f{position:relative;font-size:10.5px;line-height:1.6;color:#D9C9A6;max-width:92%}
+  .p8 .lbl{position:absolute;top:22px;right:24px;font-size:7px;letter-spacing:.26em;
+    text-transform:uppercase;color:#6B5A38;writing-mode:vertical-rl}
 
-  /* ═══ 09 ROCOCO · c. 1750 ═══ */
-  .p9{--m-ground:#EFDCE4;--m-ink:#4A3348;--m-dim:#A07F94;--m-disp:"Snell Roundhand","Didot",cursive;
-    --m-body:"Didot","Hoefler Text",serif;--m-size:38px;--m-lh:.94;
-    --m-art:linear-gradient(150deg,#F6E6D8,#C7DCD0 45%,#E8CBD8);--m-art-radius:50% 50% 46% 54%/60% 40% 60% 40%;
-    --m-pad:24px;--m-chip-border:1px solid #C9A6B8;--m-chip-ink:#6B4A62;
-    --m-shadow:0 8px 24px rgba(120,80,105,.2)}
-  .p9 .m-orn{background:
-    radial-gradient(circle at 96% 4%,rgba(201,162,39,.32),transparent 16%),
-    radial-gradient(circle at 4% 96%,rgba(201,162,39,.32),transparent 16%)}
-  .p9 .m-art::after{content:"";position:absolute;inset:0;
-    background:conic-gradient(from 200deg at 30% 70%,rgba(255,255,255,.6),transparent 40%)}
+  /* ════════ 09 ROCOCO — oval cartouche, asymmetric, gilt sprays ════════ */
+  .p9{--bg:#EFDCE4;--fg:#4A3348;font-family:"Didot",serif;padding:20px;
+    display:flex;flex-direction:column}
+  .p9 .tex{background:
+    radial-gradient(circle at 97% 3%,rgba(201,162,39,.4),transparent 15%),
+    radial-gradient(circle at 3% 97%,rgba(201,162,39,.4),transparent 15%)}
+  .p9 .oval{position:relative;width:82%;aspect-ratio:1/.82;margin:4px auto 12px;
+    background:linear-gradient(150deg,#F6E6D8,#C7DCD0 46%,#E8CBD8);
+    border-radius:50%;box-shadow:0 0 0 3px #EFDCE4,0 0 0 5px rgba(201,162,39,.65),0 8px 20px rgba(120,80,105,.24);
+    transform:rotate(-3deg)}
+  .p9 .oval::after{content:"";position:absolute;inset:0;border-radius:50%;
+    background:conic-gradient(from 200deg at 32% 68%,rgba(255,255,255,.65),transparent 38%)}
+  .p9 .t{font-family:"Snell Roundhand",cursive;font-size:36px;line-height:.92;text-align:center;margin-bottom:2px}
+  .p9 .by{font-size:9.5px;font-style:italic;text-align:center;color:#A07F94;margin-bottom:9px}
+  .p9 .f{font-size:10px;line-height:1.6;padding-left:22%;border-left:1px solid rgba(201,162,39,.6)}
 
-  /* ═══ 10 UKIYO-E · c. 1831 ═══ */
-  .p10{--m-ground:#EDE6D4;--m-ink:#1B2A3A;--m-dim:#5D7286;--m-disp:"Optima","Avenir Next",sans-serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:27px;--m-ls:.06em;
-    --m-art:linear-gradient(#DCE6E4 0 38%,#1B4A6B 38% 66%,#3E7A96 66%);--m-art-border:1.5px solid #1B2A3A;
-    --m-pad:22px;--m-chip-border:1.5px solid #1B2A3A;--m-shadow:0 4px 14px rgba(30,44,58,.16)}
-  .p10 .m-art::after{content:"";position:absolute;inset:38% 0 34%;
-    background:repeating-linear-gradient(92deg,rgba(237,230,212,.9) 0 2px,transparent 2px 16px)}
-  .p10 .m-tex{background-image:var(--gesso);background-size:170px;opacity:.1;mix-blend-mode:multiply}
-  .p10 .m-orn{border-top:none;
-    background:linear-gradient(90deg,transparent 92%,#8A3324 92% 93.4%,transparent 93.4%)}
+  /* ════════ 10 UKIYO-E — full bleed, vertical cartouche, corner seal ════════ */
+  .p10{--bg:#EDE6D4;--fg:#1B2A3A;font-family:"Optima",sans-serif;padding:0}
+  .p10 .plate{position:absolute;inset:10px;background:linear-gradient(#DCE6E4 0 34%,#1B4A6B 34% 64%,#3E7A96 64%);
+    border:1.5px solid #1B2A3A}
+  .p10 .plate::after{content:"";position:absolute;inset:34% 0 32%;
+    background:repeating-linear-gradient(93deg,rgba(237,230,212,.92) 0 2px,transparent 2px 15px)}
+  .p10 .cart{position:absolute;top:24px;right:24px;background:#EDE6D4;border:1.5px solid #1B2A3A;
+    padding:10px 7px;writing-mode:vertical-rl;font-size:15px;letter-spacing:.18em;line-height:1.3;max-height:56%}
+  .p10 .seal{position:absolute;bottom:26px;left:26px;width:34px;height:34px;background:#8A3324;
+    color:#EDE6D4;font-size:7px;line-height:1.15;display:grid;place-items:center;text-align:center;
+    letter-spacing:.04em;padding:3px}
+  .p10 .strip{position:absolute;bottom:26px;left:70px;right:26px;font-size:8.5px;line-height:1.5;
+    color:#EDE6D4;text-shadow:0 1px 2px rgba(10,20,30,.7)}
 
-  /* ═══ 11 ART NOUVEAU · c. 1896 ═══ */
-  .p11{--m-ground:#E4DCC2;--m-ink:#2F3A2A;--m-dim:#7B7A56;--m-disp:"Didot","Hoefler Text",serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:31px;--m-lh:1;--m-ls:.02em;
-    --m-art:radial-gradient(ellipse at 62% 40%,#C4A468,#8A8B52 44%,#4A5C42);
-    --m-art-radius:48% 48% 6% 6%/32% 32% 6% 6%;--m-pad:24px;
-    --m-chip-border:1px solid #9A9668;--m-shadow:0 6px 20px rgba(60,66,40,.2)}
-  .p11 .m-orn{background:
-    radial-gradient(ellipse 60% 30% at -8% 24%,transparent 68%,rgba(47,58,42,.4) 69% 70%,transparent 71%),
-    radial-gradient(ellipse 60% 30% at 108% 74%,transparent 68%,rgba(47,58,42,.4) 69% 70%,transparent 71%),
-    radial-gradient(ellipse 44% 60% at 50% 112%,transparent 74%,rgba(138,51,36,.3) 75% 76%,transparent 77%)}
+  /* ════════ 11 ART NOUVEAU — arched poster, title in the arch ════════ */
+  .p11{--bg:#E4DCC2;--fg:#2F3A2A;font-family:"Didot",serif;padding:12px;
+    display:flex;flex-direction:column}
+  .p11 .poster{position:relative;flex:1;border:2px solid #2F3A2A;
+    border-radius:46% 46% 4px 4px/26% 26% 4px 4px;overflow:hidden;
+    background:radial-gradient(ellipse at 60% 62%,#C4A468,#8A8B52 46%,#4A5C42);
+    display:flex;flex-direction:column;align-items:center;padding:16px 14px 12px}
+  .p11 .poster::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse 62% 26% at -6% 30%,transparent 68%,rgba(228,220,194,.5) 69% 71%,transparent 72%),
+      radial-gradient(ellipse 62% 26% at 106% 66%,transparent 68%,rgba(228,220,194,.5) 69% 71%,transparent 72%)}
+  .p11 .t{position:relative;font-size:23px;letter-spacing:.06em;color:#E4DCC2;text-align:center;
+    line-height:1.06;text-shadow:0 1px 4px rgba(30,40,26,.6);margin-bottom:auto;max-width:80%}
+  .p11 .f{position:relative;font-family:"Optima",sans-serif;font-size:9.5px;line-height:1.55;
+    color:#EDE7D2;background:rgba(47,58,42,.5);padding:8px 9px;text-align:center}
+  .p11 .foot{display:flex;justify-content:space-between;font-family:"Optima",sans-serif;
+    font-size:7.5px;letter-spacing:.22em;text-transform:uppercase;padding:9px 4px 2px;color:#5E6B4E}
 
-  /* ═══ 12 VIENNA SECESSION · c. 1902 ═══ */
-  .p12{--m-ground:#F4F1E6;--m-ink:#141414;--m-dim:#7A7568;--m-disp:"Futura","Avenir Next",sans-serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:23px;--m-case:uppercase;--m-ls:.3em;--m-lh:1.4;
-    --m-art:linear-gradient(135deg,#C9A227 0 50%,#141414 50%);--m-pad:24px;
-    --m-chip-border:1.5px solid #141414;--m-shadow:0 4px 14px rgba(20,20,20,.14)}
-  .p12 .m-orn{background-image:
-    linear-gradient(#141414 1.5px,transparent 1.5px),linear-gradient(90deg,#141414 1.5px,transparent 1.5px);
-    background-size:15px 15px;opacity:.1}
-  .p12 .m-art::after{content:"";position:absolute;inset:0;
-    background:repeating-linear-gradient(90deg,transparent 0 15px,rgba(20,20,20,.9) 15px 16.5px),
-      repeating-linear-gradient(0deg,transparent 0 15px,rgba(20,20,20,.9) 15px 16.5px);
-    mask-image:linear-gradient(135deg,transparent 46%,#000 46%)}
+  /* ════════ 12 SECESSION — strict square modules, gold block, tracked caps ════════ */
+  .p12{--bg:#F4F1E6;--fg:#141414;font-family:"Futura",sans-serif;padding:15px;
+    display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto 1fr auto auto;gap:9px}
+  .p12 .tex{background-image:linear-gradient(#141414 1px,transparent 1px),linear-gradient(90deg,#141414 1px,transparent 1px);
+    background-size:15px 15px;opacity:.09}
+  .p12 .bar{grid-column:1/-1;border-top:2px solid #141414;border-bottom:2px solid #141414;
+    padding:5px 0;font-size:7.5px;letter-spacing:.32em;text-transform:uppercase;display:flex;justify-content:space-between}
+  .p12 .gold{grid-column:1/3;grid-row:2;background:#C9A227;box-shadow:inset 0 0 0 6px #F4F1E6,inset 0 0 0 8px #141414}
+  .p12 .blk{grid-column:3/-1;grid-row:2;background:#141414;
+    background-image:linear-gradient(rgba(244,241,230,.9) 1.5px,transparent 1.5px),
+      linear-gradient(90deg,rgba(244,241,230,.9) 1.5px,transparent 1.5px);background-size:13px 13px}
+  .p12 .t{grid-column:1/-1;font-size:19px;letter-spacing:.3em;text-transform:uppercase;line-height:1.45}
+  .p12 .f{grid-column:1/-1;font-family:"Optima",sans-serif;font-size:9.5px;line-height:1.62}
 
-  /* ═══ 13 CONSTRUCTIVISM · c. 1920 ═══ */
-  .p13{--m-ground:#EDE7DA;--m-ink:#141414;--m-dim:#6E6558;--m-disp:Impact,"Futura",sans-serif;
-    --m-body:"Futura","Avenir Next",sans-serif;--m-size:33px;--m-case:uppercase;--m-ls:-.02em;--m-lh:.92;
-    --m-art:linear-gradient(28deg,#C41E1E 0 46%,#141414 46% 72%,#EDE7DA 72%);--m-pad:20px;
-    --m-chip-bg:#C41E1E;--m-chip-ink:#EDE7DA;--m-chip-border:none;--m-shadow:0 4px 12px rgba(20,20,20,.2)}
-  .p13 .m-orn{background:linear-gradient(28deg,transparent 78%,#C41E1E 78% 81%,transparent 81%)}
-  .p13 .m-title{transform:skewY(-2deg)}
+  /* ════════ 13 CONSTRUCTIVISM — diagonal split, rotated slab title ════════ */
+  .p13{--bg:#EDE7DA;--fg:#141414;font-family:"Futura",sans-serif;padding:0;overflow:hidden}
+  .p13 .wedge{position:absolute;inset:-20%;background:#C41E1E;
+    clip-path:polygon(0 42%,100% 4%,100% 60%,0 96%)}
+  .p13 .wedge2{position:absolute;inset:-20%;background:#141414;
+    clip-path:polygon(0 62%,100% 24%,100% 40%,0 78%)}
+  .p13 .t{position:absolute;top:9%;left:7%;font-family:Impact,"Futura",sans-serif;font-size:37px;
+    line-height:.88;text-transform:uppercase;letter-spacing:-.02em;transform:rotate(-8deg);
+    color:#141414;max-width:74%}
+  .p13 .f{position:absolute;bottom:15%;left:7%;right:9%;font-size:9.5px;line-height:1.5;
+    color:#EDE7DA;background:#141414;padding:8px 9px;transform:rotate(-2deg)}
+  .p13 .stamp{position:absolute;bottom:5%;right:7%;font-size:7.5px;letter-spacing:.24em;
+    text-transform:uppercase;color:#C41E1E;font-weight:600}
+  .p13 .bars{position:absolute;top:0;right:8%;width:10px;height:34%;background:#141414}
 
-  /* ═══ 14 DE STIJL · c. 1921 ═══ */
-  .p14{--m-ground:#F7F5EF;--m-ink:#111;--m-dim:#6A6A6A;--m-disp:"Futura","Avenir Next",sans-serif;
-    --m-body:"Futura",system-ui,sans-serif;--m-size:26px;--m-case:uppercase;--m-weight:500;--m-ls:.04em;
-    --m-art:linear-gradient(90deg,#D8232A 0 38%,#F7F5EF 38% 62%,#1B4CA8 62% 78%,#F7C81E 78%);
-    --m-pad:0;--m-border:4px solid #111;--m-chip-border:2px solid #111;--m-shadow:none}
-  .p14 .m-label,.p14 .m-title,.p14 .m-by,.p14 .m-fact,.p14 .m-links{padding:0 18px}
-  .p14 .m-label{padding-top:16px}
-  .p14 .m-links{padding-bottom:18px}
-  .p14 .m-art{margin:14px 0 13px;border-top:4px solid #111;border-bottom:4px solid #111}
+  /* ════════ 14 DE STIJL — the layout IS the artwork; text in one white cell ════════ */
+  .p14{--bg:#F7F5EF;--fg:#111;font-family:"Futura",sans-serif;padding:0;border:5px solid #111;
+    display:grid;grid-template-columns:1.3fr 1fr .7fr;grid-template-rows:1fr .55fr 1.1fr;gap:5px;background:#111}
+  .p14 > div{background:#F7F5EF}
+  .p14 .red{background:#D8232A}
+  .p14 .blue{background:#1B4CA8}
+  .p14 .yel{background:#F7C81E}
+  .p14 .cellA{grid-column:1/3}
+  .p14 .cellT{grid-column:1/-1;grid-row:3;padding:11px 12px;display:flex;flex-direction:column}
+  .p14 .t{font-size:22px;text-transform:uppercase;letter-spacing:.03em;font-weight:500;line-height:1.04;margin-bottom:5px}
+  .p14 .by{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#6A6A6A;margin-bottom:7px}
+  .p14 .f{font-size:9.5px;line-height:1.55}
 
-  /* ═══ 15 BAUHAUS · c. 1925 ═══ */
-  .p15{--m-ground:#E8E4DC;--m-ink:#1A1A1A;--m-dim:#6E6A62;--m-disp:"Futura","Avenir Next",sans-serif;
-    --m-body:"Futura",system-ui,sans-serif;--m-size:30px;--m-case:lowercase;--m-weight:500;--m-ls:-.01em;
-    --m-art:#E8E4DC;--m-pad:24px;--m-chip-bg:#1A1A1A;--m-chip-ink:#E8E4DC;--m-chip-border:none;
-    --m-shadow:0 3px 12px rgba(26,26,26,.16)}
-  .p15 .m-art::after{content:"";position:absolute;inset:0;
-    background:
-      radial-gradient(circle at 26% 52%,#D8232A 0 21%,transparent 21%),
-      conic-gradient(from 180deg at 62% 74%,#1B4CA8 0 90deg,transparent 90deg),
-      linear-gradient(#F7C81E 0 0) 74% 18%/22% 34% no-repeat}
+  /* ════════ 15 BAUHAUS — three primitives; title rotated up the left edge ════════ */
+  .p15{--bg:#E8E4DC;--fg:#1A1A1A;font-family:"Futura",sans-serif;padding:0;
+    display:grid;grid-template-columns:40px 1fr}
+  .p15 .spine{background:#1A1A1A;color:#E8E4DC;display:grid;place-items:center}
+  .p15 .spine span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:20px;
+    text-transform:lowercase;letter-spacing:.06em}
+  .p15 .field{position:relative;padding:16px}
+  .p15 .circ{position:absolute;top:14%;left:12%;width:44%;aspect-ratio:1;border-radius:50%;background:#D8232A}
+  .p15 .tri{position:absolute;top:20%;right:9%;width:0;height:0;
+    border-left:34px solid transparent;border-right:34px solid transparent;border-bottom:58px solid #1B4CA8}
+  .p15 .sq{position:absolute;top:46%;left:44%;width:26%;aspect-ratio:1;background:#F7C81E}
+  .p15 .f{position:absolute;bottom:16px;left:16px;right:16px;font-size:9.5px;line-height:1.55;
+    text-transform:lowercase}
+  .p15 .by{position:absolute;bottom:64px;left:16px;font-size:8px;letter-spacing:.16em;text-transform:lowercase;color:#6E6A62}
 
-  /* ═══ 16 ART DECO · c. 1930 ═══ */
-  .p16{--m-ground:#12181A;--m-ink:#F1E4C3;--m-dim:#8E9A8E;--m-disp:"Copperplate","Optima",serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:20px;--m-case:uppercase;--m-ls:.22em;--m-lh:1.5;
-    --m-art:linear-gradient(#0B1012,#12181A);--m-pad:24px;
-    --m-chip-border:1px solid #A8873C;--m-chip-ink:#E8D49A;--m-shadow:0 8px 26px rgba(0,0,0,.45)}
-  .p16 .m-orn{border-top:2px solid #C9A227;border-bottom:2px solid #C9A227;margin:9px 0;
-    box-shadow:inset 0 3px 0 #12181A,inset 0 4px 0 #C9A227,inset 0 -3px 0 #12181A,inset 0 -4px 0 #C9A227}
-  .p16 .m-art::after{content:"";position:absolute;inset:0;background:
-    conic-gradient(from 200deg at 50% 100%,transparent 0 14deg,#C9A227 14deg 15deg,transparent 15deg 28deg,
-      #C9A227 28deg 29deg,transparent 29deg 42deg,#C9A227 42deg 43deg,transparent 43deg);
-    opacity:.55}
+  /* ════════ 16 ART DECO — symmetrical vertical, stepped fan, centred cartouche ════════ */
+  .p16{--bg:#12181A;--fg:#F1E4C3;font-family:"Copperplate",serif;padding:16px;
+    display:flex;flex-direction:column;align-items:center;text-align:center}
+  .p16 .fan{position:relative;width:100%;height:38%;
+    background:conic-gradient(from 202deg at 50% 100%,transparent 0 12deg,#C9A227 12deg 13.4deg,
+      transparent 13.4deg 25deg,#C9A227 25deg 26.4deg,transparent 26.4deg 38deg,#C9A227 38deg 39.4deg,
+      transparent 39.4deg 51deg,#C9A227 51deg 52.4deg,transparent 52.4deg);
+    border-bottom:2px solid #C9A227}
+  .p16 .steps{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:56%;height:44%;
+    background:linear-gradient(#C9A227 0 0) 50% 100%/100% 30% no-repeat,
+      linear-gradient(#C9A227 0 0) 50% 100%/70% 62% no-repeat,
+      linear-gradient(#C9A227 0 0) 50% 100%/40% 100% no-repeat;opacity:.85}
+  .p16 .rules{width:70%;border-top:2px solid #C9A227;border-bottom:1px solid #C9A227;
+    height:5px;margin:14px 0 11px}
+  .p16 .t{font-size:17px;letter-spacing:.28em;text-transform:uppercase;line-height:1.6}
+  .p16 .by{font-family:"Optima",sans-serif;font-size:8px;letter-spacing:.3em;text-transform:uppercase;
+    color:#8E9A8E;margin:6px 0 11px}
+  .p16 .f{font-family:"Optima",sans-serif;font-size:9.5px;line-height:1.62;padding:0 6px}
+  .p16 .foot{margin-top:auto;font-size:7px;letter-spacing:.34em;text-transform:uppercase;color:#A8873C}
 
-  /* ═══ 17 SURREALISM · c. 1935 ═══ */
-  .p17{--m-ground:#BFD4E0;--m-ink:#1A2530;--m-dim:#5A7386;--m-disp:"Baskerville","Hoefler Text",serif;
-    --m-body:"Baskerville",Georgia,serif;--m-size:30px;--m-lh:1.05;
-    --m-art:linear-gradient(#7FA8C9 0 62%,#B08A5C 62%);--m-pad:24px;
-    --m-chip-border:1px solid #7E96A6;--m-shadow:0 14px 32px rgba(40,60,80,.26)}
-  .p17 .m-art::after{content:"";position:absolute;inset:0;background:
-    radial-gradient(ellipse 26% 12% at 30% 22%,#F2F6F8,transparent 70%),
-    radial-gradient(ellipse 18% 9% at 68% 34%,#F2F6F8,transparent 70%),
-    linear-gradient(#1A2530 0 0) 44% 62%/9% 30% no-repeat;}
-  .p17 .m-art{box-shadow:inset -30px 0 40px -30px rgba(26,37,48,.5)}
-  .p17 .m-title{text-shadow:14px 10px 0 rgba(26,37,48,.14)}
+  /* ════════ 17 SURREALISM — frame inside the image, detached floating title ════════ */
+  .p17{--bg:#BFD4E0;--fg:#1A2530;font-family:"Baskerville",serif;padding:0}
+  .p17 .sky{position:absolute;inset:0;background:linear-gradient(#7FA8C9 0 64%,#B08A5C 64%)}
+  .p17 .clouds{position:absolute;inset:0;background:
+    radial-gradient(ellipse 24% 10% at 26% 20%,#F2F6F8,transparent 70%),
+    radial-gradient(ellipse 17% 8% at 70% 32%,#F2F6F8,transparent 70%),
+    radial-gradient(ellipse 13% 6% at 44% 12%,#F2F6F8,transparent 72%)}
+  .p17 .easel{position:absolute;left:16%;top:26%;width:44%;aspect-ratio:3/4;
+    background:linear-gradient(#7FA8C9 0 58%,#B08A5C 58%);border:7px solid #EDE6D6;
+    box-shadow:0 12px 26px rgba(26,37,48,.35);transform:rotate(2deg)}
+  .p17 .easel::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse 30% 12% at 60% 24%,#F2F6F8,transparent 70%)}
+  .p17 .t{position:absolute;top:9%;right:8%;font-size:25px;line-height:1.02;text-align:right;
+    text-shadow:15px 11px 0 rgba(26,37,48,.16)}
+  .p17 .plaque{position:absolute;bottom:8%;left:8%;right:8%;background:#EDE6D6;
+    border:1px solid #8FA4B2;padding:9px 10px;font-size:9.5px;line-height:1.55;
+    box-shadow:0 8px 18px rgba(26,37,48,.25)}
+  .p17 .plaque b{display:block;font-size:7.5px;letter-spacing:.22em;text-transform:uppercase;
+    color:#5A7386;font-weight:400;margin-bottom:4px}
 
-  /* ═══ 18 ABSTRACT EXPRESSIONISM · c. 1950 ═══ */
-  .p18{--m-ground:#CFC4AE;--m-ink:#17150F;--m-dim:#6B6252;--m-disp:"Futura","Avenir Next",sans-serif;
-    --m-body:"Futura",system-ui,sans-serif;--m-size:29px;--m-case:uppercase;--m-ls:.02em;--m-weight:500;
-    --m-art:#C7BBA2;--m-pad:22px;--m-chip-border:1px solid #8E8471;--m-shadow:0 4px 14px rgba(40,34,22,.2)}
-  .p18 .m-tex{background-image:var(--gesso);background-size:160px;opacity:.2;mix-blend-mode:multiply}
-  .p18 .m-art::after{content:"";position:absolute;inset:0;background:
-    radial-gradient(ellipse 62% 4% at 40% 28%,#17150F,transparent 62%),
-    radial-gradient(ellipse 48% 3% at 60% 52%,#8A3324,transparent 64%),
-    radial-gradient(ellipse 70% 2.5% at 46% 70%,#17150F,transparent 66%),
-    radial-gradient(ellipse 30% 3% at 72% 40%,#1B4CA8,transparent 66%);
-    transform:rotate(-6deg) scale(1.2)}
+  /* ════════ 18 ABSTRACT EXPRESSIONISM — full-bleed gesture, tiny gallery label ════════ */
+  .p18{--bg:#CFC4AE;--fg:#17150F;font-family:"Futura",sans-serif;padding:0}
+  .p18 .tex{background-image:var(--gesso);background-size:150px;opacity:.24;mix-blend-mode:multiply}
+  .p18 .canvas{position:absolute;inset:0;background:
+    radial-gradient(ellipse 66% 3.4% at 38% 26%,#17150F,transparent 62%),
+    radial-gradient(ellipse 52% 2.6% at 62% 44%,#8A3324,transparent 64%),
+    radial-gradient(ellipse 74% 2.2% at 44% 58%,#17150F,transparent 66%),
+    radial-gradient(ellipse 34% 2.6% at 70% 34%,#1B4CA8,transparent 66%),
+    radial-gradient(ellipse 44% 2% at 30% 70%,#17150F,transparent 68%);
+    transform:rotate(-7deg) scale(1.25)}
+  .p18 .label{position:absolute;bottom:18px;left:18px;background:#EDE7DA;padding:9px 11px;max-width:64%;
+    box-shadow:0 3px 10px rgba(20,16,10,.28)}
+  .p18 .t{font-size:14px;text-transform:uppercase;letter-spacing:.05em;font-weight:500;margin-bottom:3px}
+  .p18 .by{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#6B6252;margin-bottom:6px}
+  .p18 .f{font-size:8.5px;line-height:1.5}
 
-  /* ═══ 19 SWISS INTERNATIONAL · c. 1958 ═══ */
-  .p19{--m-ground:#FBFBFA;--m-ink:#0E0E0E;--m-dim:#8A8A8A;
-    --m-disp:"Helvetica Neue",Helvetica,Arial,sans-serif;--m-body:"Helvetica Neue",Helvetica,sans-serif;
-    --m-mono:"Helvetica Neue",Helvetica,sans-serif;
-    --m-size:27px;--m-weight:500;--m-ls:-.03em;--m-lh:1.04;
-    --m-art:#D8232A;--m-pad:22px;--m-chip-border:1px solid #0E0E0E;--m-shadow:none;--m-border:1px solid #E4E4E2}
-  .p19 .m-orn{background:linear-gradient(90deg,transparent 0 21px,rgba(14,14,14,.05) 21px 22px);
-    background-size:33.3% 100%}
+  /* ════════ 19 SWISS — 3-col grid, huge flush-left title, red field bleeding right ════════ */
+  .p19{--bg:#FBFBFA;--fg:#0E0E0E;font-family:"Helvetica Neue",Helvetica,sans-serif;
+    padding:20px 0 20px 20px;display:grid;grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:auto 1fr auto;column-gap:11px;border:1px solid #E4E4E2}
+  .p19 .kick{grid-column:1/3;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:#8A8A8A;
+    border-top:2px solid #0E0E0E;padding-top:5px}
+  .p19 .field{grid-column:3;grid-row:1/3;background:#D8232A;margin-right:-20px}
+  .p19 .t{grid-column:1/3;grid-row:2;align-self:start;font-size:30px;font-weight:500;letter-spacing:-.035em;
+    line-height:.98;margin-top:14px}
+  .p19 .f{grid-column:1/2;grid-row:3;font-size:9px;line-height:1.5}
+  .p19 .meta{grid-column:2/3;grid-row:3;font-size:8px;line-height:1.6;color:#8A8A8A}
+  .p19 .no{grid-column:3;grid-row:3;font-size:8px;text-align:right;padding-right:20px;color:#8A8A8A}
 
-  /* ═══ 20 PSYCHEDELIC · c. 1967 ═══ */
-  .p20{--m-ground:#2A0A4A;--m-ink:#FFE24A;--m-dim:#E86BC4;--m-disp:"Cooper Black","Snell Roundhand",Georgia,serif;
-    --m-body:"Optima",system-ui,sans-serif;--m-size:31px;--m-lh:.94;--m-case:uppercase;--m-ls:-.02em;
-    --m-art:conic-gradient(from 0deg,#FF4FA3,#FFE24A 20%,#3EE8C8 42%,#5B4BFF 62%,#FF4FA3 88%);
-    --m-art-radius:44% 56% 52% 48%/48% 44% 56% 52%;--m-pad:22px;
-    --m-chip-border:1.5px solid #FFE24A;--m-chip-ink:#FFE24A;--m-shadow:0 10px 34px rgba(90,20,140,.5)}
-  .p20 .m-tex{background:radial-gradient(circle at 50% 55%,rgba(255,79,163,.32),transparent 62%)}
-  .p20 .m-title{text-shadow:2.5px 0 0 #FF4FA3,-2.5px 0 0 #3EE8C8}
+  /* ════════ 20 PSYCHEDELIC — type swells to fill the frame, image behind it ════════ */
+  .p20{--bg:#2A0A4A;--fg:#FFE24A;font-family:"Cooper Black","Snell Roundhand",Georgia,serif;padding:0}
+  .p20 .blob{position:absolute;inset:8%;
+    background:conic-gradient(from 0deg,#FF4FA3,#FFE24A 20%,#3EE8C8 42%,#5B4BFF 62%,#FF4FA3 88%);
+    border-radius:44% 56% 52% 48%/48% 44% 56% 52%;filter:blur(2px)}
+  .p20 .tex{background:radial-gradient(circle at 50% 50%,rgba(255,79,163,.35),transparent 62%)}
+  .p20 .t{position:absolute;inset:12% 8% auto;font-size:44px;line-height:.82;text-transform:uppercase;
+    letter-spacing:-.04em;text-align:center;color:#2A0A4A;
+    text-shadow:2.5px 0 0 #FFE24A,-2.5px 0 0 #3EE8C8,0 0 22px rgba(255,226,74,.6)}
+  .p20 .f{position:absolute;bottom:11%;left:9%;right:9%;font-family:"Optima",sans-serif;font-size:9.5px;
+    line-height:1.5;color:#FFE24A;background:rgba(42,10,74,.72);padding:8px 9px;
+    border:1.5px solid #FFE24A;border-radius:14px 14px 22px 22px/10px}
+  .p20 .curl{position:absolute;top:5%;left:7%;right:7%;text-align:center;font-family:"Optima",sans-serif;
+    font-size:7.5px;letter-spacing:.3em;text-transform:uppercase;color:#3EE8C8}
 
   @media (prefers-reduced-motion:no-preference){
-    .p3 .m-tex,.p8 .m-tex,.p20 .m-tex{animation:breathe 16s ease-in-out infinite alternate}
+    .p3 .tex,.p8 .tex,.p20 .tex{animation:breathe 16s ease-in-out infinite alternate}
     @keyframes breathe{to{transform:translate3d(1.5%,-1.5%,0) scale(1.05)}}
   }
-
   footer{margin-top:clamp(52px,8vh,100px);padding-top:28px;border-top:1px solid var(--hair);
     font-family:var(--mono);font-size:11px;letter-spacing:.05em;line-height:2;color:var(--graphite)}
   footer b{color:var(--ink);font-weight:500}
@@ -319,129 +373,118 @@
   <header>
     <div class="eyebrow">Visual language proposals · twenty periods</div>
     <h1>Period <em>rooms</em></h1>
-    <p class="lede">A museum builds period rooms so you can stand inside a century instead of reading about it. These twenty do the same thing for the interface: each one borrows the palette, typography, and compositional logic of a movement the archive already documents.</p>
-    <p class="lede">They run in chronological order — <b>530 BC to 1967</b> — so scrolling the page is itself a walk through art history. Every specimen shows the same record, and each names the record it descends from, because <b>the design and the content are the same subject</b>.</p>
-    <div class="howto">Pick by number. Mixing is legitimate — “03 for the record card, 19 for the map”.<br>I’ll build the chosen direction as the live site.</div>
+    <p class="lede">A museum builds period rooms so you can stand inside a century instead of reading about it. These twenty do that for the interface — each borrowing the palette, typography, <b>and composition</b> of a movement the archive already documents.</p>
+    <p class="lede">Composition is the point. A Byzantine icon is symmetrical and arch-topped; a manuscript runs two justified columns with a gloss in the margin; De Stijl has no image block at all because the layout <b>is</b> the artwork. Same record in all twenty — different architecture each time.</p>
+    <div class="howto">They run chronologically: 530 BC → 1967. Pick by number; mixing is fine.<br>I’ll build the chosen direction as the live site.</div>
   </header>
 
   <div id="rail"></div>
 
   <footer>
-    All twenty are pure CSS — procedural gradients, blend modes, SVG turbulence. No images, no libraries, no font downloads.<br>
-    Type is drawn from faces already on the machine: <b>Optima</b> (cut from Roman inscriptions), <b>Hoefler Text</b>, <b>Baskerville</b>, <b>Iowan Old Style</b>, <b>Futura</b> (the Bauhaus face), <b>Helvetica</b> (the Swiss one), <b>Copperplate</b>, <b>Snell Roundhand</b>, <b>Impact</b>.<br>
+    Pure CSS — procedural gradients, clip-paths, blend modes, SVG turbulence. No images, no libraries, no font downloads.<br>
+    Faces already on the machine: <b>Optima</b> (cut from Roman inscriptions), <b>Hoefler Text</b>, <b>Baskerville</b>, <b>Iowan Old Style</b>, <b>Didot</b>, <b>Snell Roundhand</b>, <b>Copperplate</b>, <b>Futura</b> (the Bauhaus face), <b>Helvetica</b> (the Swiss one), <b>Impact</b>.<br>
     Live archive: <b>dig-archive.vercel.app</b> — 500 records across these same movements.
   </footer>
 </div>
 
 <script>
-  const ERAS = [
-    {era:'Antiquity', span:'530 BC — 547 AD', from:0, to:3},
-    {era:'Medieval & early modern', span:'1300 — 1750', from:3, to:9},
-    {era:'The long nineteenth century', span:'1831 — 1902', from:9, to:12},
-    {era:'The avant-gardes', span:'1920 — 1935', from:12, to:17},
-    {era:'Post-war', span:'1950 — 1967', from:17, to:20},
+  const T = 'The Kiss', BY = 'Gustav Klimt · 1862–1918';
+  const F = 'Klimt’s father was a gold engraver — the gold leaf isn’t decoration, it’s an inherited trade.';
+  const FS = 'Klimt’s father was a gold engraver. The gold is an inherited trade.';
+
+  // each period composes the same record its own way
+  const TPL = [
+    ()=>`<div class="frieze"></div><div class="col"><div class="t">${T}</div><div class="f">${FS}</div></div>
+         <div class="insc">Klimt · Vienna · MCMVIII</div><div class="meander"></div>`,
+    ()=>`<div class="tex"></div><div class="tabula"><div class="t">${T}</div><div class="f">${FS}</div>
+         <div class="d">Klimt · Fecit</div></div>`,
+    ()=>`<div class="tex"></div><div class="arch"><div class="halo"></div></div>
+         <div class="t">${T}</div><div class="rule"></div><div class="f">${FS}</div>`,
+    ()=>`<div class="tex"></div><div class="body"><span class="init">T</span><span class="rub">${T}. </span>${F}
+         Gold leaf laid as a medieval illuminator would lay it, on a ground that refuses depth.</div>
+         <div class="gloss">Klimt · Vienna · 1908 · gold leaf on canvas</div>`,
+    ()=>`<div class="tex"></div><div class="ribbon"><span class="rb-t">Rec 001</span><span class="rb-b">Vienna 1908</span></div>
+         <div class="star"><div class="t">${T}</div></div>`,
+    ()=>`<div class="tex"></div><div class="lunette"><div class="lines"></div></div>
+         <div class="txt"><div class="t">${T}</div><div class="by">${BY}</div><div class="f">${FS}</div>
+         <div class="sig">Belvedere · Vienna</div></div>`,
+    ()=>`<div class="band">Rec 001 · Artwork · Vienna</div>
+         <div class="core"><div class="t">${T}</div><div class="by">${BY}</div><div class="f">${FS}</div></div>
+         <div class="band">Byzantine mosaics · Japonisme · Nazi looting</div>`,
+    ()=>`<div class="tex"></div><div class="window"></div><div class="lbl">Rec 001</div>
+         <div class="t">${T}</div><div class="by">${BY}</div><div class="f">${F}</div>`,
+    ()=>`<div class="tex"></div><div class="oval"></div><div class="t">${T}</div>
+         <div class="by">${BY}</div><div class="f">${FS}</div>`,
+    ()=>`<div class="plate"></div><div class="cart">${T}</div><div class="seal">REC<br>001</div>
+         <div class="strip">${FS}</div>`,
+    ()=>`<div class="poster"><div class="t">${T}</div><div class="f">${FS}</div></div>
+         <div class="foot"><span>Klimt</span><span>Vienna 1908</span></div>`,
+    ()=>`<div class="tex"></div><div class="bar"><span>Rec 001</span><span>Vienna 1908</span></div>
+         <div class="gold"></div><div class="blk"></div><div class="t">${T}</div><div class="f">${FS}</div>`,
+    ()=>`<div class="wedge"></div><div class="wedge2"></div><div class="bars"></div>
+         <div class="t">${T}</div><div class="f">${FS}</div><div class="stamp">Rec 001 / 1908</div>`,
+    ()=>`<div class="red cellA"></div><div></div><div class="blue"></div><div></div><div class="yel"></div>
+         <div class="cellT"><div class="t">${T}</div><div class="by">${BY}</div><div class="f">${FS}</div></div>`,
+    ()=>`<div class="spine"><span>the kiss</span></div>
+         <div class="field"><div class="circ"></div><div class="tri"></div><div class="sq"></div>
+         <div class="by">klimt · 1908</div><div class="f">${FS.toLowerCase()}</div></div>`,
+    ()=>`<div class="fan"><div class="steps"></div></div><div class="rules"></div>
+         <div class="t">${T}</div><div class="by">Klimt · MCMVIII</div><div class="f">${FS}</div>
+         <div class="foot">Record One</div>`,
+    ()=>`<div class="sky"></div><div class="clouds"></div><div class="easel"></div>
+         <div class="t">${T}</div><div class="plaque"><b>Rec 001 · Vienna 1908</b>${FS}</div>`,
+    ()=>`<div class="tex"></div><div class="canvas"></div>
+         <div class="label"><div class="t">${T}</div><div class="by">${BY}</div><div class="f">${FS}</div></div>`,
+    ()=>`<div class="kick">Rec 001 — Artwork</div><div class="field"></div><div class="t">${T}</div>
+         <div class="f">${FS}</div><div class="meta">Klimt<br>1862–1918<br>Belvedere</div><div class="no">001</div>`,
+    ()=>`<div class="blob"></div><div class="tex"></div><div class="curl">Vienna · Nineteen O Eight</div>
+         <div class="t">${T}</div><div class="f">${FS}</div>`,
   ];
 
-  const P = [
-    {n:'Greek Black-Figure', d:'c. 530 BC', sw:['#C4693B','#17110D','#5C3320'],
-     note:'Terracotta ground, black slip, silhouette instead of shading, and the meander running the border. Hierarchy by outline — no depth anywhere, which is exactly how a record card works.',
-     type:'Optima', rec:'Parthenon · Greek myth'},
-    {n:'Roman Mosaic', d:'c. 100 AD', sw:['#E6DFCE','#8A3324','#2E4A5C'],
-     note:'Everything built from tesserae on a grout grid. The image is literally pixels, sixteen centuries early — the most honest ancestor an interface could claim.',
-     type:'Copperplate · Optima', rec:'Colosseum · Hagia Sophia'},
-    {n:'Byzantine Gold', d:'c. 547', sw:['#C9A227','#173A52','#8A2C22'],
-     note:'A gold ground that refuses perspective, so figures float in sacred flatness. This is the mosaic wall Klimt stood in front of in Ravenna in 1903 and never got over.',
-     type:'Copperplate · Optima', rec:'The Kiss · Ravenna'},
-    {n:'Illuminated Manuscript', d:'c. 1300', sw:['#EDE3CA','#8A3324','#C9A227'],
-     note:'Vellum, red rubrication, gold leaf and a drop capital opening the text. Marginalia is the original annotation layer — the archive is a manuscript that happens to be electric.',
-     type:'Hoefler Text', rec:'Gutenberg Bible · Genji'},
-    {n:'Islamic Geometry', d:'c. 1354', sw:['#0E3A46','#1B6E7A','#C9A227'],
-     note:'Infinite tessellation and calligraphic rhythm instead of images — pattern carrying meaning. A structural language built for a graph that never ends.',
-     type:'Optima', rec:'Alhambra · Islamic calligraphy'},
-    {n:'Renaissance Fresco', d:'c. 1500', sw:['#D8C9B0','#A8BCC4','#8A3324'],
-     note:'Wet plaster, sinopia underdrawing, and vanishing-point construction lines left faintly visible. The grid is here — but it is perspective, not a terminal.',
-     type:'Baskerville', rec:'Sistine Chapel · Medici'},
-    {n:'Mughal Miniature', d:'c. 1600', sw:['#7B1E3A','#4A7F5C','#C9A227'],
-     note:'Jewel ground, gold rules, and border within border within border. Every element framed like a treasure because in this tradition the frame is part of the painting.',
-     type:'Iowan Old Style', rec:'Taj Mahal · Mughal miniature'},
-    {n:'Dutch Golden Age', d:'c. 1660', sw:['#191510','#E8D3A8','#8A6B3E'],
-     note:'One light source, everything else swallowed by warm dark. Chiaroscuro is a rendering strategy: it tells you exactly where to look and hides everything you do not need.',
-     type:'Hoefler Text', rec:'Girl with a Pearl Earring · Night Watch'},
-    {n:'Rococo', d:'c. 1750', sw:['#EFDCE4','#C7DCD0','#C9A227'],
-     note:'Powder pink and celadon, gilt corners, asymmetric cartouche shapes, a script display face. Frivolous on purpose — the only direction here that flirts.',
-     type:'Snell Roundhand · Didot', rec:'The Swing · Versailles'},
-    {n:'Ukiyo-e', d:'c. 1831', sw:['#EDE6D4','#1B4A6B','#8A3324'],
-     note:'Flat colour planes locked inside a black key-block outline, Prussian blue doing the heavy lifting, and a red seal in the corner. Built for reproduction from the start.',
-     type:'Optima', rec:'The Great Wave · Ukiyo-e'},
-    {n:'Art Nouveau', d:'c. 1896', sw:['#E4DCC2','#C4A468','#4A5C42'],
-     note:'Whiplash curves, muted botanical palette, arched top edge — Mucha’s poster logic. Structure that grows rather than aligns.',
-     type:'Didot · Optima', rec:'Art Nouveau · Gaudí'},
-    {n:'Vienna Secession', d:'c. 1902', sw:['#F4F1E6','#C9A227','#141414'],
-     note:'Hoffmann’s square grid, extreme letter-spacing, gold against black on bone paper. Geometric rigour and gilt decadence in the same frame — closest to the archive’s own thesis.',
-     type:'Futura · Optima', rec:'The Kiss · Vienna Secession'},
-    {n:'Constructivism', d:'c. 1920', sw:['#EDE7DA','#C41E1E','#141414'],
-     note:'Red, black, newsprint. Everything on the diagonal, type as a structural beam. Designed to be legible across a square from a moving truck.',
-     type:'Impact · Futura', rec:'May ’68 posters · WPA posters'},
-    {n:'De Stijl', d:'c. 1921', sw:['#F7F5EF','#D8232A','#1B4CA8'],
-     note:'Primaries, black rules, asymmetric balance, nothing diagonal ever. The most disciplined option — and the only one where the layout itself is the artwork.',
-     type:'Futura', rec:'Mondrian · De Stijl'},
-    {n:'Bauhaus', d:'c. 1925', sw:['#E8E4DC','#D8232A','#F7C81E'],
-     note:'Circle, square, triangle; primaries; lowercase geometric type as doctrine. Function first, and the ornament is the geometry doing its job.',
-     type:'Futura', rec:'Bauhaus · Tschichold'},
-    {n:'Art Deco', d:'c. 1930', sw:['#12181A','#C9A227','#8E9A8E'],
-     note:'Black lacquer, gold rules doubled, stepped sunburst fans, tracked capitals. Machine-age luxury — the Chrysler spire as a card layout.',
-     type:'Copperplate · Optima', rec:'Chrysler Building · Art Deco'},
-    {n:'Surrealism', d:'c. 1935', sw:['#BFD4E0','#7FA8C9','#B08A5C'],
-     note:'Magritte’s daylight sky, a horizon, and shadows falling the wrong way. Nothing distorted — everything rendered plainly and placed impossibly.',
-     type:'Baskerville', rec:'Dalí · Surrealism'},
-    {n:'Abstract Expressionism', d:'c. 1950', sw:['#CFC4AE','#17150F','#8A3324'],
-     note:'Raw unprimed canvas with gesture across it. Scale and material do the talking; the type steps back to gallery-label neutrality.',
-     type:'Futura', rec:'Pollock · Abstract Expressionism'},
-    {n:'Swiss International', d:'c. 1958', sw:['#FBFBFA','#D8232A','#0E0E0E'],
-     note:'Helvetica, a real typographic grid, flush left and ragged right, one red field. Ruthless clarity — the anti-decoration argument, made beautifully.',
-     type:'Helvetica Neue', rec:'Helvetica · Swiss style'},
-    {n:'Psychedelic', d:'c. 1967', sw:['#2A0A4A','#FF4FA3','#FFE24A'],
-     note:'Fillmore poster logic: vibrating complementary colours, letterforms swollen to fill every gap, legibility as an initiation test. Maximum trip.',
-     type:'Cooper Black · Optima', rec:'Summer of Love · Woodstock'},
+  const ERAS=[
+    {era:'Antiquity',span:'530 BC — 547 AD',from:0,to:3},
+    {era:'Medieval & early modern',span:'1300 — 1750',from:3,to:9},
+    {era:'The long nineteenth century',span:'1831 — 1902',from:9,to:12},
+    {era:'The avant-gardes',span:'1920 — 1935',from:12,to:17},
+    {era:'Post-war',span:'1950 — 1967',from:17,to:20},
   ];
 
-  const RECORD = {
-    label:['REC 001 · ARTWORK','VIENNA 1908'],
-    title:'The Kiss',
-    by:'Gustav Klimt · 1862–1918',
-    fact:'Klimt’s father was a gold engraver — the gold leaf isn’t decoration, it’s an inherited trade.',
-    chips:['Byzantine mosaics','Japonisme','Nazi looting'],
-  };
+  const P=[
+    {n:'Greek Black-Figure',d:'c. 530 BC',note:'A horizontal frieze band across the top, silhouette instead of shading, the record’s metadata running vertically as an inscription, meander along the foot. No card, no chips — a vase surface.',type:'Optima',rec:'Parthenon · Greek myth'},
+    {n:'Roman Mosaic',d:'c. 100 AD',note:'Tesserae everywhere, and the text sits in a tabula ansata — the handled plaque Romans used for labels. Centred, symmetrical, interruption of the pattern.',type:'Copperplate · Optima',rec:'Colosseum · Hagia Sophia'},
+    {n:'Byzantine Gold',d:'c. 547',note:'Arch-topped and rigidly symmetrical, a haloed medallion where perspective should be, title beneath in tracked capitals. Sacred flatness — this is the Ravenna wall Klimt never got over.',type:'Copperplate · Optima',rec:'The Kiss · Ravenna'},
+    {n:'Illuminated Manuscript',d:'c. 1300',note:'Two justified columns with a rule between, a red-and-gold historiated initial, rubricated opening, and the metadata as a marginal gloss running up the outer edge. No image block at all.',type:'Hoefler Text',rec:'Gutenberg Bible · Genji'},
+    {n:'Islamic Geometry',d:'c. 1354',note:'A ten-point star medallion holds the title; the metadata becomes a ribbon inscribed around the border. Pattern carries the meaning — no figures anywhere.',type:'Optima',rec:'Alhambra · Islamic calligraphy'},
+    {n:'Renaissance Fresco',d:'c. 1500',note:'The image is a lunette — the arched wall-field frescoes actually occupy — with vanishing-point construction lines still faintly visible. Text sits on plaster beneath it.',type:'Baskerville',rec:'Sistine Chapel · Medici'},
+    {n:'Mughal Miniature',d:'c. 1600',note:'Central painted panel ringed by inscribed border bands, gold rules doubled inside gold rules. The frame carries the information; the border is part of the painting.',type:'Iowan Old Style',rec:'Taj Mahal · Mughal miniature'},
+    {n:'Dutch Golden Age',d:'c. 1660',note:'Ninety per cent darkness, one small bright window high on the left, text living in the shadow. Chiaroscuro as information design: it tells you where to look by hiding everything else.',type:'Hoefler Text',rec:'Girl with a Pearl Earring · Night Watch'},
+    {n:'Rococo',d:'c. 1750',note:'An oval cartouche tilted off-axis, gilt sprays in opposite corners, script title, and the body text indented behind a gold rule. Deliberately asymmetric and unserious.',type:'Snell Roundhand · Didot',rec:'The Swing · Versailles'},
+    {n:'Ukiyo-e',d:'c. 1831',note:'Full-bleed print to the edges, title in a vertical cartouche top-right, a red seal in the corner, caption over the image. Japanese sheet composition, not a Western card.',type:'Optima',rec:'The Great Wave · Ukiyo-e'},
+    {n:'Art Nouveau',d:'c. 1896',note:'The whole panel is an arched poster with the title inside the arch and whiplash curves cutting the field. Mucha’s shape logic — the frame grows rather than aligns.',type:'Didot · Optima',rec:'Art Nouveau · Gaudí'},
+    {n:'Vienna Secession',d:'c. 1902',note:'A four-module square grid: rule-bounded header band, one gold block, one gridded black block, extreme letter-spacing. Geometric rigour holding gilt decadence — the archive’s own thesis.',type:'Futura · Optima',rec:'The Kiss · Vienna Secession'},
+    {n:'Constructivism',d:'c. 1920',note:'Diagonal red and black wedges, slab title rotated against them, caption on a black bar tilted the other way. Built to read from a moving truck.',type:'Impact · Futura',rec:'May ’68 posters · WPA posters'},
+    {n:'De Stijl',d:'c. 1921',note:'No image block whatsoever — primary rectangles in an asymmetric grid, and the text confined to one white cell. The composition is the artwork.',type:'Futura',rec:'Mondrian · De Stijl'},
+    {n:'Bauhaus',d:'c. 1925',note:'Circle, square and triangle do the depicting; the title runs up a black spine in lowercase. Function-first, and the geometry is the ornament.',type:'Futura',rec:'Bauhaus · Tschichold'},
+    {n:'Art Deco',d:'c. 1930',note:'Strict vertical symmetry: stepped sunburst fan, doubled gold rules, centred cartouche title, everything mirrored about the axis. The Chrysler spire as a layout.',type:'Copperplate · Optima',rec:'Chrysler Building · Art Deco'},
+    {n:'Surrealism',d:'c. 1935',note:'A framed canvas standing inside the landscape it depicts, the title floating free with its shadow falling wrong, and a museum plaque doing the caption. Nothing distorted, everything impossible.',type:'Baskerville',rec:'Dalí · Surrealism'},
+    {n:'Abstract Expressionism',d:'c. 1950',note:'Gesture bleeding past all four edges on raw canvas, and the record reduced to a small gallery label pinned in the corner. Scale does the talking.',type:'Futura',rec:'Pollock · Abstract Expressionism'},
+    {n:'Swiss International',d:'c. 1958',note:'A real three-column typographic grid, flush-left ragged-right, huge tight-tracked Helvetica, one red field bleeding off the right edge. Ruthless clarity, no ornament, nothing centred.',type:'Helvetica Neue',rec:'Helvetica · Swiss style'},
+    {n:'Psychedelic',d:'c. 1967',note:'Letterforms swollen to fill the frame with the image visible only around them, vibrating complementary outlines, caption in a melted lozenge. Legibility as an initiation test.',type:'Cooper Black · Optima',rec:'Summer of Love · Woodstock'},
+  ];
 
-  const card = (p,i)=>`
+  const card=(p,i)=>`
     <article class="spec">
-      <div class="spec-head">
-        <span class="num">${String(i+1).padStart(2,'0')}</span>
-        <span class="spec-name">${p.n}</span>
-        <span class="spec-date">${p.d}</span>
-      </div>
-      <div class="mock p${i+1}">
-        <div class="m-tex"></div><div class="m-orn"></div>
-        <div class="m-label"><span>${RECORD.label[0]}</span><span>${RECORD.label[1]}</span></div>
-        <div class="m-art"></div>
-        <h3 class="m-title">${RECORD.title}</h3>
-        <div class="m-by">${RECORD.by}</div>
-        <p class="m-fact">${RECORD.fact}</p>
-        <div class="m-links">${RECORD.chips.map(c=>`<span class="m-chip">${c}</span>`).join('')}</div>
-      </div>
-      <div class="swatches">${p.sw.map(c=>`<span class="sw" style="background:${c}"></span>`).join('')}</div>
+      <div class="spec-head"><span class="num">${String(i+1).padStart(2,'0')}</span>
+        <span class="spec-name">${p.n}</span><span class="spec-date">${p.d}</span></div>
+      <div class="mock p${i+1}">${TPL[i]()}</div>
       <p class="spec-note">${p.note}</p>
       <div class="spec-meta"><span>${p.type}</span><span>From <b>${p.rec}</b></span></div>
     </article>`;
 
   document.getElementById('rail').innerHTML = ERAS.map(e=>`
-    <div class="era">
-      <span class="era-name">${e.era}</span>
-      <span class="era-rule"></span>
-      <span class="era-span">${e.span}</span>
-    </div>
-    <div class="grid">${P.slice(e.from,e.to).map((p,j)=>card(p, e.from+j)).join('')}</div>
-  `).join('');
+    <div class="era"><span class="era-name">${e.era}</span><span class="era-rule"></span>
+      <span class="era-span">${e.span}</span></div>
+    <div class="grid">${P.slice(e.from,e.to).map((p,j)=>card(p,e.from+j)).join('')}</div>`).join('');
 </script>
 </body>
 </html>
