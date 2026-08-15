@@ -8,6 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="DIG.ARCHIVE — new acquisitions" href="/rss.xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0d0e0a">
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DIG">
+<meta name="mobile-web-app-capable" content="yes">
 <script>window.va = window.va || function(){(window.vaq = window.vaq || []).push(arguments);};</script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script type="text/javascript">
@@ -533,6 +541,28 @@
   }
   .here-status{font-size:11px;letter-spacing:.12em;color:var(--ink-dim);text-transform:uppercase}
 
+  /* ---------- INSTALL ---------- */
+  #installBar{
+    position:fixed;left:0;right:0;bottom:0;z-index:70;
+    display:none;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;
+    background:var(--bg-2);border-top:1px solid var(--acid);
+    padding:13px 18px;font-size:11px;letter-spacing:.1em;
+    color:var(--ink);text-transform:uppercase;text-align:center;
+  }
+  #installBar.show{display:flex}
+  #installBar b{color:var(--acid);font-weight:500}
+  #installBar .ib-btn{
+    cursor:pointer;background:var(--acid);color:#101204;border:none;
+    font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.12em;
+    padding:9px 18px;text-transform:uppercase;white-space:nowrap;
+  }
+  #installBar .ib-x{cursor:pointer;color:var(--ink-faint);padding:6px}
+  #installBar .ib-x:hover{color:var(--ink)}
+  body.standalone #installBar{display:none!important}
+  /* installed app: reclaim the space the browser chrome used to take */
+  body.standalone header{padding-top:env(safe-area-inset-top)}
+  body.standalone #mobileNav{padding-bottom:max(env(safe-area-inset-bottom),8px)}
+
   /* ---------- ONBOARDING ---------- */
   #firstTimer{
     margin-top:18px;font-size:11.5px;letter-spacing:.1em;line-height:1.9;
@@ -780,6 +810,12 @@
   <button class="mn-item" id="mnHere"><div class="mn-ico">⌖</div><div class="mn-label">Here</div></button>
   <button class="mn-item" id="mnAtlas"><div class="mn-ico">⊞</div><div class="mn-label">Atlas</div></button>
 </nav>
+
+<div id="installBar">
+  <span>Put <b>DIG.ARCHIVE</b> on your home screen — works offline, opens like an app</span>
+  <button class="ib-btn" id="ibGo">⇩ Install</button>
+  <span class="ib-x" id="ibX">✕</span>
+</div>
 
 <div id="dailyHud" class="hidden"></div>
 
@@ -1209,6 +1245,31 @@ function openReceipt(){
   $('receiptOverlay').classList.remove('hidden');
   shareState = {text: receiptText(), filename: 'dig-archive-descent.png'};
   track('receipt_export', {depth: trail.length-1});
+}
+
+/* ================= INSTALL / OFFLINE ================= */
+if('serviceWorker' in navigator){
+  addEventListener('load', ()=> navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+}
+const isStandalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+if(isStandalone) document.body.classList.add('standalone');
+
+let deferredPrompt = null;
+addEventListener('beforeinstallprompt', e=>{
+  e.preventDefault(); deferredPrompt = e;
+  if(!isStandalone && !localStorage.getItem('dig.installDismissed')) $('installBar').classList.add('show');
+});
+addEventListener('appinstalled', ()=>{ track('installed'); $('installBar').classList.remove('show'); });
+
+// iOS gives no prompt event — tell them the two taps instead, after they've engaged
+function maybeIosInstallHint(){
+  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if(!iOS || isStandalone || localStorage.getItem('dig.installDismissed')) return;
+  if(visited.size < 3) return;                       // only after they've actually dug
+  const bar = $('installBar');
+  bar.querySelector('span').innerHTML = 'Add <b>DIG.ARCHIVE</b> to your home screen: tap <b>Share ↑</b> then <b>Add to Home Screen</b>';
+  $('ibGo').style.display = 'none';
+  bar.classList.add('show');
 }
 
 /* ================= DIG HERE — what happened where you stand ================= */
@@ -1760,6 +1821,17 @@ $('mnPull').addEventListener('click', pull);
 $('mnDaily').addEventListener('click', ()=> $('dailyBtn').click());
 $('mnHere').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); digHere(); });
 $('homeHere').addEventListener('click', digHere);
+$('ibGo').addEventListener('click', async ()=>{
+  if(!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const {outcome} = await deferredPrompt.userChoice;
+  track('install_prompt', {outcome});
+  deferredPrompt = null; $('installBar').classList.remove('show');
+});
+$('ibX').addEventListener('click', ()=>{
+  localStorage.setItem('dig.installDismissed','1');
+  $('installBar').classList.remove('show');
+});
 $('mnAtlas').addEventListener('click', ()=> openAtlas());
 document.querySelectorAll('.feat').forEach((el,i)=>{
   el.addEventListener('click', ()=>{
@@ -1899,6 +1971,11 @@ Promise.all([
       `<span><b>${IDS.length}</b> RECORDS</span><span><b>5</b> LINK TYPES</span>`+
       `<span><b>0</b> ADS</span><span><b>0</b> ALGORITHMS</span><span><b>∞</b> DEPTH</span>`+
       `<span>EXPLORED <b>${visited.size}/${IDS.length}</b></span>`;
+
+    const go = new URLSearchParams(location.search).get('go');
+    if(go==='pull'){ pull(); }
+    else if(go==='daily'){ $('dailyBtn').click(); }
+    maybeIosInstallHint();
 
     if(h==='atlas') openAtlas(true);
     else if(RECORDS[hid] && sub==='map'){ renderMap(currentId); showView('map'); }

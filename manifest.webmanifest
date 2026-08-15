@@ -1,0 +1,25 @@
+{
+  "name": "DIG.ARCHIVE",
+  "short_name": "DIG",
+  "description": "A culture rabbit-hole engine. Pull a record, open its constellation, keep falling.",
+  "start_url": "/?src=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0d0e0a",
+  "theme_color": "#0d0e0a",
+  "categories": ["education", "entertainment", "books"],
+  "icons": [
+    {"src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Pull a record", "short_name": "Pull", "url": "/?src=pwa&go=pull",
+     "icons": [{"src": "/icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Daily Dig", "short_name": "Daily", "url": "/?src=pwa&go=daily",
+     "icons": [{"src": "/icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Atlas", "short_name": "Atlas", "url": "/#/atlas",
+     "icons": [{"src": "/icons/icon-192.png", "sizes": "192x192"}]}
+  ]
+}
