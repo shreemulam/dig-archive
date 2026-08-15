@@ -711,7 +711,7 @@
 
 <header>
   <div class="brand"><div class="dot"></div>DIG<span>.ARCHIVE</span></div>
-  <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE — PULL A RECORD, OPEN ITS CONSTELLATION, FALL IN</div></div>
+  <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE · PULL A RECORD AND FOLLOW WHERE IT GOES</div></div>
   <button id="dailyBtn">◆<span class="blabel"> Daily</span></button>
   <button id="atlasBtn">⊞<span class="blabel"> Atlas</span></button>
   <div class="rec-count" id="recCount">REC <b>—/—</b></div>
@@ -727,12 +727,12 @@
     <div class="home-wrap">
       <div class="hero">
         <div class="hero-copy">
-          <div class="eyebrow">// A culture engine — not a feed</div>
-          <h1>Scroll less.<br><em>Fall deeper.</em></h1>
-          <p class="sub">DIG.ARCHIVE is a rabbit-hole engine for art, design, fashion &amp; culture.
-          Pull one random record — a painting, a sneaker, a scandal — and open the web of
-          <b>real connections</b> behind it: who stole what, who copied whom, which volcano
-          wrote which book. No feed. No algorithm. Just the good kind of falling.</p>
+          <div class="eyebrow">// 500 records from culture history</div>
+          <h1>Pull a record.<br><em>Follow the thread.</em></h1>
+          <p class="sub">You get one record at random: a painting, a sneaker, a lawsuit. Open its
+          constellation to see what it's wired to: who stole what, who copied whom, which
+          volcano wrote which book. Every connection opens another record, and there are
+          <b>500 of them</b> to fall through.</p>
           <div class="hero-ctas">
             <button id="homePull">⟳ Pull your first record</button>
             <button id="homeAtlas">⊞ See the whole map</button>
@@ -748,17 +748,17 @@
         <div class="feat">
           <div class="n">01 / PULL</div>
           <h3>Get one true story</h3>
-          <p>Hit the green button and get one record from art, fashion, music, or design history — with the facts nobody told you in school. No feed, no account, no ads.</p>
+          <p>Press pull. You get one record from art, design, fashion, or music history, including the part your teacher left out. Nothing to sign up for.</p>
         </div>
         <div class="feat">
           <div class="n">02 / FOLLOW THE THREADS</div>
           <h3>See how it all connects</h3>
-          <p>Every record opens a map of its real connections — who stole what, who copied whom, which volcano wrote which book. Every node on the map opens another one. That’s the rabbit hole.</p>
+          <p>Each record opens a map of what it touches: the Ravenna mosaics Klimt took his gold from, the volcano that wrote Frankenstein. Tap any node and you land in a new record with a new map.</p>
         </div>
         <div class="feat">
           <div class="n">03 / SHOW OFF</div>
           <h3>Share where you ended up</h3>
-          <p>Your path gets logged like a receipt. Export it or make a story card — proof you got from a sneaker to a 1455 lawsuit in six taps.</p>
+          <p>You leave a trail. Export it as a receipt or a story card, and people can see how you got from an Air Jordan to a 1455 printing lawsuit in six taps.</p>
         </div>
       </div>
       <div class="stat-strip" id="statStrip"></div>
@@ -798,7 +798,7 @@
       <div id="nodes"></div>
     </div>
     <div class="legend" id="legend"></div>
-    <div class="map-help"><em>Every node opens — keep falling</em><br>Drag to pan · Scroll to zoom · [R] random · [A] atlas</div>
+    <div class="map-help"><em>Every node opens another record</em><br>Drag to pan · Scroll to zoom · [R] random · [A] atlas</div>
   </div>
 
 </div>
@@ -812,7 +812,7 @@
 </nav>
 
 <div id="installBar">
-  <span>Put <b>DIG.ARCHIVE</b> on your home screen — works offline, opens like an app</span>
+  <span>Add <b>DIG.ARCHIVE</b> to your home screen. It opens like an app and works offline.</span>
   <button class="ib-btn" id="ibGo">⇩ Install</button>
   <span class="ib-x" id="ibX">✕</span>
 </div>
@@ -954,7 +954,7 @@ function renderCard(id){
   if(h.discourse && h.discourse.length){
     const SRC = {HN:'HACKER NEWS', BSKY:'BLUESKY', SE:'STACK EXCHANGE', REDDIT:'REDDIT', THREADS:'THREADS', IG:'INSTAGRAM'};
     const QUOTED = {BSKY:1, THREADS:1, IG:1};
-    disc.innerHTML = '<div class="k">// The discourse — live from the internet</div>' +
+    disc.innerHTML = '<div class="k">// What the internet says about this</div>' +
       h.discourse.map(d=>`
         <div class="d-item">
           <div class="d-text">${QUOTED[d.src]?'“':''}${esc(d.text)}${QUOTED[d.src]?'”':''}</div>
@@ -1098,7 +1098,7 @@ function renderMap(id){
 
     const cue = isLink
       ? `<div class="open-cue">▸ Open record ${recNum(c.ref)}</div>`
-      : `<div class="stub-cue">// Archive stub — not yet digitized</div>`;
+      : `<div class="stub-cue">// Archive stub, not yet digitized</div>`;
 
     nodes.insertAdjacentHTML('beforeend', `
       <div class="node reveal ${isLink?'linked':'stub'}${isLink && visited.has(c.ref)?' visited':''}" ${isLink?`data-ref="${c.ref}"`:''}
@@ -1290,7 +1290,7 @@ async function digHere(){
       const gs = await (await fetch(`https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord=${lat}%7C${lon}&gsradius=1500&gslimit=25&format=json&origin=*`)).json();
       const pages = (gs.query?.geosearch||[]).slice(0,14);
       if(!pages.length){
-        box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Nothing on record within 1.5km — you found a blind spot.</div>';
+        box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Nothing on record within 1.5km. You found a blind spot.</div>';
         return;
       }
       const sums = await Promise.all(pages.map(p=>
@@ -1306,7 +1306,7 @@ async function digHere(){
         box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Nothing cultural on record nearby. Walk a block and try again.</div>';
         return;
       }
-      box.innerHTML = '<div class="k">⌖ Dig where you stand — within 1.5km</div>' +
+      box.innerHTML = '<div class="k">⌖ Within 1.5km of you</div>' +
         items.map(s=>`
           <div class="here-item">
             <div class="hi-head"><b>${Math.round(s.dist)}M</b>${s.title.toUpperCase()}</div>
@@ -1315,10 +1315,10 @@ async function digHere(){
             <a href="${s.content_urls?.desktop?.page||'#'}" target="_blank" rel="noopener">Full story ↗</a>
           </div>`).join('');
     }catch(e){
-      box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Lookup failed — try again in a moment.</div>';
+      box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">The lookup failed. Try again in a moment.</div>';
     }
   }, err=>{
-    box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">Location denied. Your position never leaves this device except to query Wikipedia — enable location and retry.</div>';
+    box.innerHTML = '<div class="k">⌖ Dig where you stand</div><div class="here-status">You blocked location. Turn it on and retry. Your coordinates go to Wikipedia’s search and nowhere else.</div>';
   }, {timeout:12000, maximumAge:120000});
 }
 
@@ -1544,7 +1544,7 @@ function openStoryCard(){
       x.fillText(h.kind, 120, iy+180);
       x.fillText('FILE', 120, iy+300);
       x.fillStyle='#ffb02e'; x.font='26px "IBM Plex Mono", monospace';
-      x.fillText('NO VISUAL RECORD ON FILE — TEXT DOSSIER', 120, iy+400);
+      x.fillText('NO VISUAL RECORD ON FILE · TEXT DOSSIER', 120, iy+400);
     }
     // registration corners
     x.strokeStyle='#d4ff3f'; x.lineWidth=3;
@@ -1571,7 +1571,7 @@ function openStoryCard(){
     try{ x.getImageData(0,0,1,1); }
     catch(e){ if(im){ draw(null); return; } }
 
-    shareState = {text:`${h.title} — one record on DIG.ARCHIVE, the culture rabbit-hole engine.\nhttps://dig-archive.vercel.app/#/${currentId}`, filename:`dig-${currentId}-story.png`};
+    shareState = {text:`${h.title}, one record on DIG.ARCHIVE. 500 true stories from culture history, wired together.\nhttps://dig-archive.vercel.app/#/${currentId}`, filename:`dig-${currentId}-story.png`};
     $('receiptOverlay').classList.remove('hidden');
   };
 
@@ -1935,14 +1935,14 @@ Promise.all([
     if(isFirstTimer()){
       const ft = document.createElement('div');
       ft.id = 'firstTimer';
-      ft.innerHTML = 'First time? → Hit the green button. You’ll get one true story from culture history — then tap the <b>glowing threads</b> to see what it’s connected to.';
+      ft.innerHTML = 'New here? Press pull. You get one record, then you tap the <b>glowing threads</b> to see what it connects to.';
       document.querySelector('.hero-ctas').after(ft);
 
       const deepLink = /^#\/?[a-z0-9-]+/.test(location.hash) && location.hash.replace(/^#\/?/,'') !== '';
       if(deepLink){
         const cs = document.createElement('div');
         cs.id = 'coldStrip';
-        cs.innerHTML = 'You’re in <b>DIG.ARCHIVE</b> — a web of true stories from art &amp; culture. Every bright-bordered card opens another. <span class="cs-btn" id="csHome">◆ What is this?</span> <span class="cs-x" id="csX">✕</span>';
+        cs.innerHTML = 'You landed in <b>DIG.ARCHIVE</b>, 500 true stories from art and culture wired together. Every bright-bordered card opens another one. <span class="cs-btn" id="csHome">◆ What is this?</span> <span class="cs-x" id="csX">✕</span>';
         document.body.appendChild(cs);
         document.getElementById('csHome').onclick = ()=>{ cs.remove(); showView('home'); syncHash('#/'); };
         document.getElementById('csX').onclick = ()=> cs.remove();
@@ -1968,8 +1968,8 @@ Promise.all([
     $('homeDaily').innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
     $('homeDaily').onclick = ()=> openRecord(daily, {resetTrail:true});
     $('statStrip').innerHTML =
-      `<span><b>${IDS.length}</b> RECORDS</span><span><b>5</b> LINK TYPES</span>`+
-      `<span><b>0</b> ADS</span><span><b>0</b> ALGORITHMS</span><span><b>∞</b> DEPTH</span>`+
+      `<span><b>${IDS.length}</b> RECORDS</span><span><b>${IDS.reduce((n,i)=>n+RECORDS[i].connections.length,0)}</b> CONNECTIONS</span>`+
+      `<span><b>${new Set(IDS.map(i=>RECORDS[i].kind)).size}</b> CONSTELLATIONS</span><span><b>5</b> LINK TYPES</span>`+
       `<span>EXPLORED <b>${visited.size}/${IDS.length}</b></span>`;
 
     const go = new URLSearchParams(location.search).get('go');
