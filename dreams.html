@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twenty Dreams for DIG.ARCHIVE</title>
+<style>
+  /* ============ CONTAINER TOKENS ============ */
+  :root{
+    --ground:#E8EAEF;
+    --ground-2:#F3F4F7;
+    --ink:#191C26;
+    --graphite:#4A4F5E;
+    --hair:#C9CCD6;
+    --dusk:#5B4B8A;
+    --mist:rgba(25,28,38,.06);
+    --disp:"Didot","Hoefler Text",Georgia,serif;
+    --body:"Optima","Avenir Next",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+    --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+    --paper:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23p)'/%3E%3C/svg%3E");
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E1017;
+      --ground-2:#161923;
+      --ink:#E6E8F0;
+      --graphite:#9AA0B2;
+      --hair:#2A2F3D;
+      --dusk:#9E8CD8;
+      --mist:rgba(230,232,240,.07);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0E1017;
+    --ground-2:#161923;
+    --ink:#E6E8F0;
+    --graphite:#9AA0B2;
+    --hair:#2A2F3D;
+    --dusk:#9E8CD8;
+    --mist:rgba(230,232,240,.07);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font-family:var(--body);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1400px;margin:0 auto;padding:clamp(28px,5vw,72px) clamp(18px,4vw,56px) 96px}
+
+  /* ============ HEADER ============ */
+  header{margin-bottom:clamp(36px,6vh,72px);max-width:70ch}
+  .eyebrow{
+    font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--dusk);margin-bottom:22px;
+  }
+  h1{
+    font-family:var(--disp);font-weight:400;
+    font-size:clamp(38px,6.4vw,84px);line-height:.98;letter-spacing:-.01em;
+    margin:0 0 24px;text-wrap:balance;
+  }
+  h1 em{font-style:italic;color:var(--dusk)}
+  .lede{font-size:clamp(15px,1.5vw,18px);line-height:1.7;color:var(--graphite);margin:0 0 18px;max-width:62ch}
+  .howto{
+    font-family:var(--mono);font-size:11.5px;line-height:1.9;letter-spacing:.04em;
+    color:var(--ink);border-left:2px solid var(--dusk);padding-left:16px;
+  }
+
+  /* ============ SPECIMEN GRID ============ */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:clamp(20px,2.4vw,34px)}
+  .spec{display:flex;flex-direction:column;gap:12px}
+  .spec-head{display:flex;align-items:baseline;gap:10px}
+  .num{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+    color:var(--dusk);flex:none;
+  }
+  .spec-name{font-family:var(--disp);font-size:19px;letter-spacing:.01em}
+  .swatches{display:flex;gap:4px;margin-left:auto;flex:none}
+  .sw{width:11px;height:11px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+  .spec-note{font-size:12.5px;line-height:1.65;color:var(--graphite)}
+  .spec-type{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--graphite);opacity:.75}
+
+  /* ============ THE MOCKUP (shared skeleton, per-direction skin) ============ */
+  .mock{
+    position:relative;aspect-ratio:4/5;overflow:hidden;
+    background:var(--m-ground);color:var(--m-ink);
+    display:flex;flex-direction:column;
+    padding:var(--m-pad,22px);
+    border-radius:var(--m-radius,0);
+    border:var(--m-border,none);
+    box-shadow:var(--m-shadow,0 1px 2px rgba(0,0,0,.1));
+    isolation:isolate;
+  }
+  .mock > *{position:relative;z-index:2}
+  .m-tex{position:absolute;inset:0;z-index:1;pointer-events:none}
+  .m-label{
+    font-family:var(--m-mono,var(--mono));font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--m-dim);margin-bottom:auto;display:flex;justify-content:space-between;gap:8px;
+  }
+  .m-art{
+    aspect-ratio:3/2;margin-bottom:14px;position:relative;overflow:hidden;
+    background:var(--m-art,linear-gradient(160deg,var(--m-accent),transparent));
+    border-radius:var(--m-art-radius,0);
+    border:var(--m-art-border,none);
+  }
+  .m-title{
+    font-family:var(--m-disp);font-weight:var(--m-weight,400);
+    font-size:var(--m-size,30px);line-height:var(--m-lh,1);letter-spacing:var(--m-ls,0);
+    text-transform:var(--m-case,none);margin-bottom:6px;
+  }
+  .m-by{font-family:var(--m-body);font-size:11px;color:var(--m-dim);margin-bottom:12px;letter-spacing:.02em}
+  .m-fact{font-family:var(--m-body);font-size:11.5px;line-height:1.6;color:var(--m-ink);opacity:.92;margin-bottom:14px}
+  .m-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+  .m-chip{
+    font-family:var(--m-mono,var(--mono));font-size:8px;letter-spacing:.12em;text-transform:uppercase;
+    padding:4px 8px;color:var(--m-chip-ink,var(--m-ink));
+    background:var(--m-chip-bg,transparent);
+    border:var(--m-chip-border,1px solid currentColor);
+    border-radius:var(--m-chip-radius,0);
+  }
+
+  /* ---- 01 NOCTURNE BLOOM ---- */
+  .d1{--m-ground:#0B0A1B;--m-ink:#EDE7FF;--m-dim:#8A7FC0;--m-accent:#6E4BFF;
+    --m-disp:"Didot","Hoefler Text",serif;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:34px;--m-art:radial-gradient(circle at 34% 42%,#B49BFF,#4A2FBF 42%,#0B0A1B 78%);
+    --m-chip-border:1px solid #4A3F80;--m-chip-ink:#C9BEFF;--m-shadow:0 14px 40px rgba(60,40,150,.3)}
+  .d1 .m-tex{background:radial-gradient(circle at 70% 20%,rgba(160,130,255,.22),transparent 55%),
+    radial-gradient(circle at 20% 80%,rgba(90,60,220,.18),transparent 60%)}
+
+  /* ---- 02 RISO FEVER ---- */
+  .d2{--m-ground:#F5F0E4;--m-ink:#1B1B3A;--m-dim:#7A6BA8;--m-accent:#FF4D8D;
+    --m-disp:"Futura","Avenir Next",sans-serif;--m-body:"Futura",system-ui,sans-serif;
+    --m-size:31px;--m-case:uppercase;--m-weight:500;--m-ls:-.01em;
+    --m-art:linear-gradient(120deg,#FF4D8D 0 45%,#3D5AFE 45% 100%);
+    --m-chip-bg:#FF4D8D;--m-chip-ink:#FFF;--m-chip-border:none}
+  .d2 .m-art::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 60% 55%,#FFE566,transparent 45%);mix-blend-mode:multiply;transform:translate(4px,-4px)}
+  .d2 .m-tex{background-image:var(--noise);background-size:130px;opacity:.16;mix-blend-mode:multiply}
+
+  /* ---- 03 SFUMATO ---- */
+  .d3{--m-ground:#DED6C6;--m-ink:#2E2418;--m-dim:#7A6B54;--m-accent:#8C6A3F;
+    --m-disp:"Baskerville","Hoefler Text",serif;--m-body:"Baskerville",Georgia,serif;
+    --m-size:33px;--m-lh:1.05;--m-mono:"Baskerville",serif;
+    --m-art:radial-gradient(ellipse at 45% 40%,#C9A778,#7A5A34 45%,#3B2C1B 90%);
+    --m-chip-border:1px solid #A8916E;--m-shadow:0 10px 30px rgba(60,45,25,.22)}
+  .d3 .m-art{filter:blur(1.5px) saturate(.9)}
+  .d3 .m-tex{background-image:var(--paper);background-size:220px;opacity:.09;mix-blend-mode:multiply}
+
+  /* ---- 04 BIOLUMINESCENCE ---- */
+  .d4{--m-ground:#03131A;--m-ink:#D8FBF4;--m-dim:#5A9E9A;--m-accent:#25F5C8;
+    --m-disp:"Optima","Avenir Next",sans-serif;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:30px;--m-ls:.03em;--m-case:uppercase;
+    --m-art:radial-gradient(circle at 62% 60%,#25F5C8,#046B72 38%,#03131A 76%);
+    --m-chip-border:1px solid rgba(37,245,200,.5);--m-chip-ink:#8FF7E2}
+  .d4 .m-art::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 30% 30%,rgba(120,255,230,.5),transparent 22%),
+      radial-gradient(circle at 78% 24%,rgba(90,255,220,.4),transparent 16%);filter:blur(3px)}
+  .d4 .m-title{text-shadow:0 0 22px rgba(37,245,200,.45)}
+
+  /* ---- 05 HERBARIUM ---- */
+  .d5{--m-ground:#EFE7D3;--m-ink:#33301F;--m-dim:#87805F;--m-accent:#6E7A44;
+    --m-disp:"Iowan Old Style","Palatino",serif;--m-body:"Iowan Old Style",Georgia,serif;
+    --m-size:29px;--m-mono:"American Typewriter",monospace;
+    --m-art:linear-gradient(170deg,#DCD6BC,#C4C2A0);--m-art-border:1px solid #A9A483;
+    --m-chip-border:1px dashed #9C9673;--m-pad:24px;
+    --m-shadow:0 6px 18px rgba(80,72,40,.18)}
+  .d5 .m-art::after{content:"";position:absolute;inset:14%;
+    background:radial-gradient(ellipse at 50% 60%,#6E7A44,transparent 62%);opacity:.6;
+    clip-path:polygon(50% 0,62% 30%,88% 42%,64% 58%,54% 100%,44% 58%,14% 44%,40% 30%)}
+  .d5 .m-tex{background-image:var(--paper);background-size:180px;opacity:.14;mix-blend-mode:multiply}
+
+  /* ---- 06 AURORA MESH ---- */
+  .d6{--m-ground:#0A1424;--m-ink:#EAF2FF;--m-dim:#7E97C4;--m-accent:#7CE8D0;
+    --m-disp:"Avenir Next","Futura",sans-serif;--m-body:"Avenir Next",system-ui,sans-serif;
+    --m-size:32px;--m-weight:600;--m-ls:-.02em;
+    --m-art:linear-gradient(140deg,#7CE8D0,#5B8CFF 45%,#B77CFF);--m-art-radius:14px;
+    --m-radius:18px;--m-chip-bg:rgba(255,255,255,.1);--m-chip-border:1px solid rgba(255,255,255,.18);--m-chip-radius:99px;
+    --m-shadow:0 18px 44px rgba(20,60,120,.35)}
+  .d6 .m-tex{background:
+    radial-gradient(circle at 12% 88%,rgba(124,232,208,.28),transparent 45%),
+    radial-gradient(circle at 88% 12%,rgba(183,124,255,.26),transparent 48%);filter:blur(6px)}
+
+  /* ---- 07 EXPIRED POLAROID ---- */
+  .d7{--m-ground:#E4DCCF;--m-ink:#3A3227;--m-dim:#8D7F6B;--m-accent:#D98A4E;
+    --m-disp:"American Typewriter",monospace;--m-body:"American Typewriter",monospace;
+    --m-size:25px;--m-mono:"American Typewriter",monospace;--m-lh:1.15;
+    --m-art:linear-gradient(20deg,#C9B08C,#8E9A8C 60%,#5F6B66);--m-pad:16px 16px 34px;
+    --m-chip-border:1px solid #A99B85;--m-shadow:0 8px 22px rgba(60,50,35,.2)}
+  .d7 .m-art::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 88% 8%,rgba(255,210,120,.65),transparent 38%);mix-blend-mode:screen}
+  .d7 .m-tex{background-image:var(--noise);background-size:140px;opacity:.2;mix-blend-mode:overlay}
+
+  /* ---- 08 MARBLE & MIST ---- */
+  .d8{--m-ground:#E7E8E4;--m-ink:#23262B;--m-dim:#7C8188;--m-accent:#9BA5A0;
+    --m-disp:"Copperplate","Optima",sans-serif;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:22px;--m-ls:.1em;--m-case:uppercase;
+    --m-art:linear-gradient(115deg,#F2F1EE,#CFD3D0 40%,#9BA5A0 70%,#E8E9E6);
+    --m-chip-border:1px solid #B6BBB7;--m-pad:26px;
+    --m-shadow:0 10px 30px rgba(40,45,50,.14)}
+  .d8 .m-art::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(75deg,transparent 40%,rgba(255,255,255,.85) 46%,transparent 52%),
+      linear-gradient(100deg,transparent 62%,rgba(90,100,95,.35) 66%,transparent 70%);filter:blur(1px)}
+
+  /* ---- 09 INK IN WATER ---- */
+  .d9{--m-ground:#F4F3F0;--m-ink:#14161A;--m-dim:#6E7278;--m-accent:#2A2E36;
+    --m-disp:"Hoefler Text",Georgia,serif;--m-body:"Hoefler Text",Georgia,serif;
+    --m-size:34px;--m-lh:1.02;
+    --m-art:radial-gradient(ellipse at 40% 45%,#14161A 8%,rgba(20,22,26,.55) 30%,transparent 62%);
+    --m-chip-border:1px solid #C4C6C9;--m-shadow:none;--m-border:1px solid #DCDDDA}
+  .d9 .m-art{filter:blur(.6px)}
+  .d9 .m-art::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 72% 66%,rgba(20,22,26,.5),transparent 34%),
+      radial-gradient(circle at 24% 74%,rgba(20,22,26,.35),transparent 26%);filter:blur(4px)}
+
+  /* ---- 10 STAINED LIGHT ---- */
+  .d10{--m-ground:#120E1C;--m-ink:#F6EFD8;--m-dim:#A08C6A;--m-accent:#E0B54A;
+    --m-disp:"Copperplate","Optima",serif;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:22px;--m-ls:.08em;--m-case:uppercase;
+    --m-art:conic-gradient(from 40deg at 50% 55%,#C4302B,#E0B54A 25%,#2F6FB5 50%,#3C8C5A 72%,#7A2E86);
+    --m-art-border:2px solid #0B0813;
+    --m-chip-border:1px solid #6B5A35;--m-chip-ink:#E7D9AE}
+  .d10 .m-art::after{content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(66deg,#0B0813 0 2px,transparent 2px 26px),
+      repeating-linear-gradient(-24deg,#0B0813 0 2px,transparent 2px 32px)}
+  .d10 .m-title{text-shadow:0 0 18px rgba(224,181,74,.35)}
+
+  /* ---- 11 SILK DRAPE ---- */
+  .d11{--m-ground:#2A1520;--m-ink:#FBEDE4;--m-dim:#C09A8E;--m-accent:#E8A08C;
+    --m-disp:"Snell Roundhand","Didot",cursive;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:40px;--m-lh:.95;
+    --m-art:linear-gradient(105deg,#5E2A3C,#E8A08C 30%,#8F3F52 52%,#F3C9B6 72%,#4A1F2E);
+    --m-radius:2px;--m-chip-border:1px solid #7A4353;--m-chip-ink:#EFC9BC;
+    --m-shadow:0 14px 40px rgba(40,10,20,.45)}
+  .d11 .m-art::after{content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(100deg,rgba(255,255,255,.18) 0 6px,transparent 6px 22px);filter:blur(2px)}
+
+  /* ---- 12 MUSEUM AT MIDNIGHT ---- */
+  .d12{--m-ground:#0D0D10;--m-ink:#F0EDE6;--m-dim:#8B8880;--m-accent:#F5E6B8;
+    --m-disp:"Didot","Hoefler Text",serif;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:33px;--m-lh:1.02;--m-pad:26px;
+    --m-art:radial-gradient(ellipse at 50% 30%,#8A7A5C,#2A2620 55%,#0D0D10 85%);
+    --m-chip-border:1px solid #35332C;--m-chip-ink:#C8C2B2}
+  .d12 .m-tex{background:radial-gradient(ellipse at 50% -10%,rgba(245,230,184,.16),transparent 55%)}
+
+  /* ---- 13 DESERT MIRAGE ---- */
+  .d13{--m-ground:#F0E3D2;--m-ink:#4A3428;--m-dim:#A18468;--m-accent:#E38B5D;
+    --m-disp:"Futura","Avenir Next",sans-serif;--m-body:"Avenir Next",system-ui,sans-serif;
+    --m-size:30px;--m-ls:.14em;--m-case:uppercase;--m-weight:400;
+    --m-art:linear-gradient(#BFD9E8 0 42%,#F3D9B4 42% 62%,#E0A878 62%);
+    --m-chip-border:1px solid #C9A78A;--m-pad:24px;--m-shadow:0 8px 26px rgba(120,80,50,.16)}
+  .d13 .m-art::after{content:"";position:absolute;inset:42% 0 0;
+    background:repeating-linear-gradient(rgba(255,255,255,.5) 0 1px,transparent 1px 7px);filter:blur(1px)}
+
+  /* ---- 14 CLOUD CHAMBER ---- */
+  .d14{--m-ground:#15171B;--m-ink:#DDE2E8;--m-dim:#7C8794;--m-accent:#9FD8FF;
+    --m-disp:ui-monospace,"SF Mono",monospace;--m-body:ui-monospace,"SF Mono",monospace;
+    --m-size:23px;--m-case:uppercase;--m-ls:.04em;
+    --m-art:linear-gradient(#1B1F26,#0E1014);--m-art-border:1px solid #2A3038;
+    --m-chip-border:1px solid #333A44;--m-chip-ink:#9FD8FF}
+  .d14 .m-art::after{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 60% 2px at 30% 40%,rgba(159,216,255,.8),transparent),
+      radial-gradient(ellipse 40% 1.5px at 62% 62%,rgba(159,216,255,.6),transparent),
+      radial-gradient(ellipse 30% 1px at 48% 26%,rgba(255,255,255,.5),transparent);
+    filter:blur(.6px)}
+
+  /* ---- 15 HOLOGRAPHIC FOIL ---- */
+  .d15{--m-ground:#0E0E12;--m-ink:#F4F2FF;--m-dim:#9C97BC;--m-accent:#B9F2FF;
+    --m-disp:"Avenir Next","Futura",sans-serif;--m-body:"Avenir Next",system-ui,sans-serif;
+    --m-size:29px;--m-weight:600;--m-ls:-.01em;
+    --m-art:linear-gradient(115deg,#FFB3E6,#B9F2FF 22%,#C9FFD8 42%,#FFF6B0 62%,#D3B3FF 82%,#FFB3E6);
+    --m-art-radius:10px;--m-radius:14px;
+    --m-chip-bg:linear-gradient(90deg,rgba(185,242,255,.22),rgba(255,179,230,.22));
+    --m-chip-border:1px solid rgba(255,255,255,.22);--m-chip-radius:99px;
+    --m-shadow:0 16px 44px rgba(120,90,200,.3)}
+  .d15 .m-art::after{content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(70deg,rgba(255,255,255,.4) 0 1px,transparent 1px 9px);mix-blend-mode:overlay}
+
+  /* ---- 16 TAROT NOCTURNE ---- */
+  .d16{--m-ground:#1E1030;--m-ink:#F2E4C4;--m-dim:#A98CC4;--m-accent:#D4AF5A;
+    --m-disp:"Copperplate","Didot",serif;--m-body:"Iowan Old Style",Georgia,serif;
+    --m-size:21px;--m-ls:.14em;--m-case:uppercase;
+    --m-art:radial-gradient(circle at 50% 45%,#4A2B6B,#25133A 60%,#1E1030);
+    --m-art-border:1px solid #6B5220;--m-border:1px solid #6B5220;--m-pad:22px;
+    --m-chip-border:1px solid #6B5220;--m-chip-ink:#E3CE95;
+    --m-shadow:0 14px 36px rgba(20,8,40,.5)}
+  .d16 .m-art::after{content:"";position:absolute;inset:8%;
+    border:1px solid rgba(212,175,90,.5);
+    background:conic-gradient(from 0deg,transparent 0 22deg,rgba(212,175,90,.16) 22deg 24deg,transparent 24deg 46deg,rgba(212,175,90,.16) 46deg 48deg,transparent 48deg)}
+
+  /* ---- 17 CYANOTYPE ---- */
+  .d17{--m-ground:#0C2C4E;--m-ink:#E8F2FA;--m-dim:#7FA8C9;--m-accent:#BEDDF2;
+    --m-disp:ui-monospace,"SF Mono",monospace;--m-body:"Optima",system-ui,sans-serif;
+    --m-size:24px;--m-case:uppercase;--m-ls:.08em;
+    --m-art:radial-gradient(ellipse at 45% 50%,#E8F2FA 6%,#3B79A8 34%,#0C2C4E 80%);
+    --m-chip-border:1px solid #3E7CA8;--m-chip-ink:#CFE6F5}
+  .d17 .m-art{filter:contrast(1.15)}
+  .d17 .m-tex{background-image:var(--paper);background-size:200px;opacity:.12;mix-blend-mode:screen}
+
+  /* ---- 18 MEMORY PALACE ---- */
+  .d18{--m-ground:#DCD4C8;--m-ink:#332C24;--m-dim:#867C6C;--m-accent:#B08A5C;
+    --m-disp:"Didot","Hoefler Text",serif;--m-body:"Iowan Old Style",Georgia,serif;
+    --m-size:32px;--m-lh:1.05;
+    --m-art:linear-gradient(150deg,#C7BCAA,#9C907C);
+    --m-chip-border:1px solid #A89880;--m-pad:24px;--m-shadow:0 6px 20px rgba(70,60,45,.16)}
+  .d18 .m-art::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(120deg,rgba(255,240,200,.6),transparent 42%),
+      radial-gradient(circle at 20% 88%,rgba(255,235,190,.5),transparent 36%);mix-blend-mode:screen}
+  .d18 .m-tex{background:repeating-linear-gradient(0deg,rgba(51,44,36,.05) 0 1px,transparent 1px 4px)}
+
+  /* ---- 19 FROSTED VITRINE ---- */
+  .d19{--m-ground:#C8D2D8;--m-ink:#1E2A31;--m-dim:#5E7280;--m-accent:#6FA0B8;
+    --m-disp:"Optima","Avenir Next",sans-serif;--m-body:"Avenir Next",system-ui,sans-serif;
+    --m-size:28px;--m-ls:.02em;
+    --m-art:linear-gradient(140deg,#8FB6C9,#5E7F92 55%,#3E5A69);--m-art-radius:6px;
+    --m-radius:8px;--m-chip-bg:rgba(255,255,255,.42);--m-chip-border:1px solid rgba(255,255,255,.6);
+    --m-shadow:0 12px 32px rgba(40,60,72,.2)}
+  .d19 .m-art::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.05) 45%);backdrop-filter:blur(2px)}
+  .d19 .m-tex{background:linear-gradient(180deg,rgba(255,255,255,.4),transparent 30%)}
+
+  /* ---- 20 LUCID GRID ---- */
+  .d20{--m-ground:#12130E;--m-ink:#E9EDDC;--m-dim:#8A9070;--m-accent:#C9F25A;
+    --m-disp:"Futura","Avenir Next",sans-serif;--m-body:ui-monospace,"SF Mono",monospace;
+    --m-size:29px;--m-case:uppercase;--m-weight:500;--m-ls:.01em;
+    --m-art:radial-gradient(circle at 50% 55%,rgba(201,242,90,.55),rgba(60,90,30,.3) 40%,transparent 72%);
+    --m-chip-border:1px solid #3E4630;--m-chip-ink:#C9F25A}
+  .d20 .m-tex{background-image:
+    linear-gradient(rgba(201,242,90,.09) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,242,90,.09) 1px,transparent 1px);
+    background-size:26px 26px;
+    mask-image:radial-gradient(ellipse at 50% 45%,#000 20%,transparent 78%)}
+  .d20 .m-title{text-shadow:0 0 24px rgba(201,242,90,.3)}
+
+  /* ambient drift on the atmospheric ones */
+  @media (prefers-reduced-motion:no-preference){
+    .d1 .m-tex,.d6 .m-tex,.d12 .m-tex{animation:drift 18s ease-in-out infinite alternate}
+    @keyframes drift{to{transform:translate3d(2%,-2%,0) scale(1.06)}}
+  }
+
+  footer{
+    margin-top:clamp(48px,8vh,96px);padding-top:28px;border-top:1px solid var(--hair);
+    font-family:var(--mono);font-size:11px;letter-spacing:.06em;line-height:2;color:var(--graphite);
+  }
+  footer b{color:var(--ink);font-weight:500}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Visual language proposals · 20 directions</div>
+    <h1>Twenty ways to <em>dream</em> the archive</h1>
+    <p class="lede">The archive currently speaks in one voice: terminal grids, acid green, industrial registration marks. Useful, cold, legible. These twenty propose the opposite instinct — that a place built for falling into should <em>feel</em> like falling.</p>
+    <p class="lede">Every specimen renders the same record so the palettes, typography, and texture can be judged against each other rather than against different content. Each is a complete world: its own type pairing, its own material, its own relationship to light.</p>
+    <div class="howto">Pick by number. Say one, or mix — “12 for the card, 6 for the map”.<br>I’ll build the chosen direction as the live site.</div>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    All twenty are buildable with CSS alone — no image assets, no libraries.<br>
+    Textures are procedural: <b>gradients, blend modes, SVG turbulence</b>. Type is drawn from faces already on the machine, so nothing waits on a font CDN.<br>
+    Current site for reference: <b>dig-archive.vercel.app</b> — 500 records, direction 20 is its dreamed version.
+  </footer>
+</div>
+
+<script>
+  const DIRECTIONS = [
+    {n:'Nocturne Bloom', sw:['#0B0A1B','#6E4BFF','#B49BFF','#EDE7FF'],
+     note:'Ink-violet night with light blooming through from behind. The record feels lit from inside rather than printed.',
+     type:'Didot · Optima'},
+    {n:'Riso Fever', sw:['#F5F0E4','#FF4D8D','#3D5AFE','#FFE566'],
+     note:'Two-colour risograph with deliberate misregistration. Cheap-print energy, zine heritage, no gloss anywhere.',
+     type:'Futura · Futura'},
+    {n:'Sfumato', sw:['#DED6C6','#8C6A3F','#C9A778','#2E2418'],
+     note:'Everything slightly out of focus, the way oil paint holds an edge. Renaissance haze applied to an interface.',
+     type:'Baskerville'},
+    {n:'Bioluminescence', sw:['#03131A','#046B72','#25F5C8','#D8FBF4'],
+     note:'Deep-water black where the only light is alive. Glow marks what matters instead of borders doing it.',
+     type:'Optima'},
+    {n:'Herbarium', sw:['#EFE7D3','#6E7A44','#A9A483','#33301F'],
+     note:'Pressed-specimen logic: aged rag paper, dashed mounting lines, things labelled as though collected by hand.',
+     type:'Iowan Old Style · Typewriter'},
+    {n:'Aurora Mesh', sw:['#0A1424','#7CE8D0','#5B8CFF','#B77CFF'],
+     note:'Cold soft light bleeding across a night ground. The only direction here with real roundness and glass.',
+     type:'Avenir Next'},
+    {n:'Expired Polaroid', sw:['#E4DCCF','#D98A4E','#8E9A8C','#3A3227'],
+     note:'Chemical decay as a design system — light leaks, colour shift, the thick bottom border of an instant print.',
+     type:'American Typewriter'},
+    {n:'Marble & Mist', sw:['#E7E8E4','#9BA5A0','#CFD3D0','#23262B'],
+     note:'Cool stone, engraved capitals, veils of white. A museum that hasn’t opened yet and the light is still grey.',
+     type:'Copperplate · Optima'},
+    {n:'Ink in Water', sw:['#F4F3F0','#14161A','#6E7278','#2A2E36'],
+     note:'Sumi bleed on wet paper. Almost no colour, all gesture — the quietest and most confident option here.',
+     type:'Hoefler Text'},
+    {n:'Stained Light', sw:['#120E1C','#E0B54A','#C4302B','#2F6FB5'],
+     note:'Cathedral glass with lead lines: jewel colour trapped in black armature. Sacred treatment for cultural relics.',
+     type:'Copperplate · Optima'},
+    {n:'Silk Drape', sw:['#2A1520','#E8A08C','#8F3F52','#FBEDE4'],
+     note:'Fabric folds and shot-silk sheen, with a script display face. Sensual rather than technical.',
+     type:'Snell Roundhand · Optima'},
+    {n:'Museum at Midnight', sw:['#0D0D10','#F5E6B8','#8A7A5C','#F0EDE6'],
+     note:'A single warm spotlight in a closed gallery. Nearly black, and the artwork is the only thing that glows.',
+     type:'Didot · Optima'},
+    {n:'Desert Mirage', sw:['#F0E3D2','#E38B5D','#BFD9E8','#4A3428'],
+     note:'Heat haze over sand: banded horizon, bleached sky, wide-tracked capitals. Sun-struck and dry.',
+     type:'Futura · Avenir'},
+    {n:'Cloud Chamber', sw:['#15171B','#9FD8FF','#2A3038','#DDE2E8'],
+     note:'Particle traces in vapour — a physics instrument, not a terminal. Keeps the current site’s rigour, drops its aggression.',
+     type:'SF Mono'},
+    {n:'Holographic Foil', sw:['#0E0E12','#B9F2FF','#FFB3E6','#FFF6B0'],
+     note:'Prismatic sheen on black, trading-card energy. The most collectible-feeling of the twenty.',
+     type:'Avenir Next'},
+    {n:'Tarot Nocturne', sw:['#1E1030','#D4AF5A','#4A2B6B','#F2E4C4'],
+     note:'Plum and gold, ruled borders, radiating lines. Each record becomes a card drawn rather than a page loaded.',
+     type:'Copperplate · Iowan'},
+    {n:'Cyanotype', sw:['#0C2C4E','#3B79A8','#BEDDF2','#E8F2FA'],
+     note:'Sun-print blue with white silhouettes. Archival by construction — the oldest photographic idea, still the coolest.',
+     type:'SF Mono · Optima'},
+    {n:'Memory Palace', sw:['#DCD4C8','#B08A5C','#9C907C','#332C24'],
+     note:'Faded institutional paper with light leaking across it. Feels recovered from storage rather than designed.',
+     type:'Didot · Iowan'},
+    {n:'Frosted Vitrine', sw:['#C8D2D8','#6FA0B8','#5E7F92','#1E2A31'],
+     note:'Looking at objects through museum glass — frosted, slightly cold, everything one layer away from touch.',
+     type:'Optima · Avenir'},
+    {n:'Lucid Grid', sw:['#12130E','#C9F25A','#8A9070','#E9EDDC'],
+     note:'The current site, dreaming: same acid and grid, but the structure dissolves toward the edges and light pools in the centre.',
+     type:'Futura · SF Mono'},
+  ];
+
+  const RECORD = {
+    label:['REC 001 · ARTWORK','VIENNA 1908'],
+    title:'The Kiss',
+    by:'Gustav Klimt · 1862–1918',
+    fact:'Klimt’s father was a gold engraver — the gold leaf isn’t decoration, it’s an inherited trade.',
+    chips:['Byzantine mosaics','Japonisme','Nazi looting'],
+  };
+
+  document.getElementById('grid').innerHTML = DIRECTIONS.map((d,i)=>`
+    <article class="spec">
+      <div class="spec-head">
+        <span class="num">${String(i+1).padStart(2,'0')}</span>
+        <span class="spec-name">${d.n}</span>
+        <span class="swatches">${d.sw.map(c=>`<span class="sw" style="background:${c}"></span>`).join('')}</span>
+      </div>
+      <div class="mock d${i+1}">
+        <div class="m-tex"></div>
+        <div class="m-label"><span>${RECORD.label[0]}</span><span>${RECORD.label[1]}</span></div>
+        <div class="m-art"></div>
+        <h3 class="m-title">${RECORD.title}</h3>
+        <div class="m-by">${RECORD.by}</div>
+        <p class="m-fact">${RECORD.fact}</p>
+        <div class="m-links">${RECORD.chips.map(c=>`<span class="m-chip">${c}</span>`).join('')}</div>
+      </div>
+      <p class="spec-note">${d.note}</p>
+      <div class="spec-type">${d.type}</div>
+    </article>`).join('');
+</script>
+</body>
+</html>
