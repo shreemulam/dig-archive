@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /periods.html
+Disallow: /dreams.html
+
+Sitemap: https://dig-archive.vercel.app/sitemap.xml
