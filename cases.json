@@ -320,5 +320,473 @@
     "url": "https://www.history.com/articles/barbie-inspiration-bild-lilli"
    }
   ]
+ },
+ "rothko": {
+  "case": "Matter of Rothko",
+  "year": "1975, affirmed 1977",
+  "court": "New York County Surrogate's Court, affirmed by the Court of Appeals",
+  "parties": "Kate Rothko and the estate · against · its own executors and the Marlborough Gallery",
+  "body": [
+   "Rothko died in February 1970. Within three months his three executors sold 100 paintings to the Marlborough Gallery for $1.8 million payable over twelve years without interest, and consigned another 698 for sale at commissions up to fifty per cent.",
+   "Two of the executors had their own relationships with Marlborough. Bernard Reis was the gallery's accountant and an officer of it. Theodoros Stamos was a painter it represented, and shortly after the sale the gallery took him on. Rothko's daughter Kate, then in her twenties, sued to undo the whole arrangement.",
+   "The trial ran for years and turned on fiduciary duty rather than on art. On 18 December 1975 Surrogate Millard Midonick removed all three executors, voided the contracts, and held Reis, Stamos, the gallery and its owner Frank Lloyd jointly liable for $9,252,000, a figure driven by the market value of works already sold.",
+   "Marlborough was ordered to return 658 paintings that had not reached innocent buyers. Frank Lloyd was later convicted of tampering with evidence in the case."
+  ],
+  "holding": "The executors breached their fiduciary duties through conflicts of interest. Contracts rescinded, executors removed, $9,252,000 in damages and fines assessed.",
+  "legacy": "The case that rewrote how American courts police dealers, executors and artists' estates, and the reason conflict-of-interest rules in the art trade exist at all.",
+  "sources": [
+   {
+    "pub": "New York State Courts",
+    "title": "Matter of Rothko, opinion archive",
+    "url": "https://www.nycourts.gov/reporter/archives/rothko.htm"
+   },
+   {
+    "pub": "TIME",
+    "title": "Art: Crushing Verdict (1975)",
+    "url": "https://time.com/archive/6878540/art-crushing-verdict/"
+   }
+  ]
+ },
+ "graffiti": {
+  "case": "Castillo v. G&M Realty (the 5Pointz case)",
+  "year": "2018, affirmed 2020",
+  "court": "U.S. District Court, Eastern District of New York, affirmed by the Second Circuit",
+  "parties": "21 aerosol artists · against · developer Jerry Wolkoff and G&M Realty",
+  "body": [
+   "5Pointz was a Long Island City warehouse complex whose owner had let aerosol artists paint it for years, turning it into a destination that tour buses stopped at. When he moved to demolish it for luxury towers, the artists sued to save the work.",
+   "Their tool was the Visual Artists Rights Act of 1990, which gives artists limited moral rights in works of 'recognized stature', including the right not to have them destroyed. Nobody had seriously tested whether spray paint on someone else's wall qualified.",
+   "After the court declined an injunction but before demolition, Wolkoff had the building whitewashed overnight. Judge Frederic Block called it 'an act of pure pique and revenge for the nerve of the plaintiffs to sue', and noted he could have simply waited for his permits.",
+   "The court awarded the statutory maximum, $150,000 for each of 45 works, totalling $6.75 million. The Second Circuit affirmed in February 2020 and the Supreme Court declined to hear it that October."
+  ],
+  "holding": "Temporary graffiti can reach 'recognized stature' under VARA. The whitewashing was wilful, and the maximum statutory damages were upheld.",
+  "legacy": "Street art acquired enforceable legal standing, and property owners learned that permission to paint can become an obligation not to destroy.",
+  "sources": [
+   {
+    "pub": "The Art Newspaper",
+    "title": "Developer who whitewashed 5Pointz owes artists $6.75m",
+    "url": "https://www.theartnewspaper.com/2020/07/22/new-york-developer-who-whitewashed-5pointz-graffitiand-owes-artists-dollar675m-in-damagesappeals-to-supreme-court"
+   },
+   {
+    "pub": "Center for Art Law",
+    "title": "Case review: Castillo et al. v. G&M Realty",
+    "url": "https://itsartlaw.org/case-review/case-review-of-the-5pointz-appeal-castillo-et-al-v-gm-realty-l-p-2020/"
+   }
+  ]
+ },
+ "statue-of-liberty": {
+  "case": "Davidson v. United States",
+  "year": "2018",
+  "court": "U.S. Court of Federal Claims",
+  "parties": "Robert Davidson, sculptor · against · the United States Postal Service",
+  "body": [
+   "In 2010 the Postal Service issued a Forever stamp showing the Statue of Liberty's face. It picked the image from a stock photo library and did not notice that the face was the wrong one.",
+   "The statue photographed stands outside the New York-New York casino in Las Vegas, sculpted by Robert Davidson in 1996. He had deliberately not copied Bartholdi exactly, giving her softer, more modern features, and had registered a copyright in his version.",
+   "The Postal Service printed about 4.9 billion of the stamps, earning roughly $2.1 billion in revenue and more than $70 million in profit, and kept selling them for months after the error came to light.",
+   "The court found Davidson's statue an original work rather than a slavish copy of a public-domain monument, and that the government's use was not covered by any statute. It awarded him $3,554,946.95 plus interest, a share of the profit the stamp had made."
+  ],
+  "holding": "Davidson's replica was independently copyrightable, and the Postal Service infringed it. Damages of about $3.55 million plus interest.",
+  "legacy": "A reminder that a copy can carry its own copyright if the copyist changed something, and the most expensive stock-photo mistake in postal history.",
+  "sources": [
+   {
+    "pub": "U.S. Copyright Office",
+    "title": "Davidson v. United States, No. 13-942C (PDF)",
+    "url": "https://www.copyright.gov/fair-use/summaries/davidson-united-states-no.13-942c.pdf"
+   },
+   {
+    "pub": "Manatt",
+    "title": "Court orders USPS to put $3.5M check in the mail",
+    "url": "https://www.manatt.com/insights/newsletters/advertising-law/court-orders-usps-to-put-3-5m-check-in-the-mail"
+   }
+  ]
+ },
+ "polaroid": {
+  "case": "Polaroid Corp. v. Eastman Kodak Co.",
+  "year": "1985 liability, 1990 damages",
+  "court": "U.S. District Court, District of Massachusetts",
+  "parties": "Polaroid · against · Kodak",
+  "body": [
+   "Kodak had helped supply Polaroid with negative materials for years before deciding to enter instant photography itself in 1976. Polaroid sued within days.",
+   "In 1985 the court found Kodak had infringed seven of Polaroid's patents. An injunction in January 1986 forced it to stop making and selling instant cameras and film immediately.",
+   "About 16.5 million Kodak instant cameras had already been sold, and they became useless overnight once the film was withdrawn. Kodak ran an exchange programme offering owners a share, a disc camera or a bond, which cost it roughly half a billion dollars on its own.",
+   "Damages came in 1990. Polaroid had asked for around $12 billion. The court awarded about $909 million, made up of roughly $454 million in damages and $455 million in interest, at the time the largest patent judgment ever paid in the United States."
+  ],
+  "holding": "Kodak infringed seven Polaroid patents, was enjoined from the market in 1986, and paid about $909 million in 1990.",
+  "legacy": "The case that removed a giant from an entire product category, and the reason instant film remained Polaroid's alone until the patents aged out.",
+  "sources": [
+   {
+    "pub": "The Washington Post",
+    "title": "Judge orders Kodak to pay $909 million",
+    "url": "https://www.washingtonpost.com/archive/business/1990/10/13/judge-orders-kodak-to-pay-909-million/ecdcd4b2-55b6-4a23-8b5f-7efd070d7306/"
+   },
+   {
+    "pub": "IPWatchdog",
+    "title": "Polaroid v. Kodak, still the champ",
+    "url": "https://ipwatchdog.com/2015/04/12/polaroid-v-kodak-still-the-champ/"
+   }
+  ]
+ },
+ "birkin-bag": {
+  "case": "Hermès International v. Rothschild (MetaBirkins)",
+  "year": "2023",
+  "court": "U.S. District Court, Southern District of New York",
+  "parties": "Hermès · against · Mason Rothschild, artist",
+  "body": [
+   "In December 2021 Mason Rothschild released 100 NFTs called MetaBirkins, each a digital image of a Birkin bag rendered in coloured fur. They sold briskly while NFT prices were peaking.",
+   "His defence was that they were artworks commenting on fashion, fur and value, and therefore protected speech, in the tradition of Warhol painting soup cans. Hermès argued this was a trademark being used to sell a product, and pointed to press coverage that described the project as a business.",
+   "The jury sided with Hermès on 8 February 2023, finding trademark infringement, dilution and cybersquatting, and awarding $110,000 plus $23,000, about $133,000 in total. The judge later ordered the domain and any future revenue handed over.",
+   "The damages were small; the precedent was not. It was the first trial to test whether First Amendment protection for artistic work extends to trademarks used inside digital goods."
+  ],
+  "holding": "The jury found the MetaBirkins likely to confuse consumers and not shielded by the First Amendment. Total damages about $133,000.",
+  "legacy": "The first American verdict on trademarks in NFTs, and the case every digital artist borrowing a logo now has to argue around.",
+  "sources": [
+   {
+    "pub": "Bloomberg Law",
+    "title": "Hermès gets win over MetaBirkins in first NFT trademark trial",
+    "url": "https://news.bloomberglaw.com/ip-law/hermes-gets-win-over-metabirkins-in-first-nft-trademark-trial"
+   },
+   {
+    "pub": "Center for Art Law",
+    "title": "Case review: Hermès International v. Rothschild",
+    "url": "https://itsartlaw.org/case-review/case-review-hermes-v-rothschild/"
+   }
+  ]
+ },
+ "ipod": {
+  "case": "Creative Technology v. Apple",
+  "year": "2006",
+  "court": "Settled before trial, U.S. District Court and the ITC",
+  "parties": "Creative Technology, maker of the Zen player · against · Apple",
+  "body": [
+   "Creative had shipped hard-drive music players before the iPod and held a patent, granted in 2005, on a specific idea: navigating a music library through a hierarchy of screens, artist to album to track.",
+   "That is exactly how the iPod's click wheel worked. Creative sued in May 2006 and filed with the International Trade Commission, which could have blocked iPod imports into the United States entirely. Apple counter-sued.",
+   "Apple settled in August 2006, paying Creative $100 million for a paid-up licence covering all its products, with a clause letting it recoup part of the money if Creative licensed the patent to others.",
+   "Creative won the money and lost the market. It joined Apple's accessory programme and made iPod peripherals, having established that it invented the interface and that this was worth roughly one per cent of what the iPod earned."
+  ],
+  "holding": "Settled. Apple paid $100 million for a licence to Creative's navigation patent, ending all suits between them.",
+  "legacy": "A clean illustration that being first to an idea and winning the market are different contests, decided in different rooms.",
+  "sources": [
+   {
+    "pub": "Apple Newsroom",
+    "title": "Apple and Creative announce broad settlement",
+    "url": "https://www.apple.com/newsroom/2006/08/23Apple-Creative-Announce-Broad-Settlement-Ending-Legal-Disputes-Between-the-Companies/"
+   },
+   {
+    "pub": "Macworld",
+    "title": "Apple settles Creative lawsuits for $100M",
+    "url": "https://www.macworld.com/article/181311/creative-38.html"
+   }
+  ]
+ },
+ "sagrada-familia": {
+  "case": "Barcelona City Council and the Sagrada Família",
+  "year": "2018 settlement, permit issued 2019",
+  "court": "Negotiated with the city, no trial",
+  "parties": "Barcelona City Council · and · the Sagrada Família building board",
+  "body": [
+   "Construction began in 1882. In 1885 the board applied to the town of Sant Martí de Provençals for a building licence. No answer ever came, Sant Martí was absorbed into Barcelona in 1897, and the paperwork was forgotten while the most visited monument in the city went up around it.",
+   "That made the basilica, for 137 years, an unlicensed building site. The point only became pressing as construction accelerated toward the 2026 completion target and the surrounding streets filled with tourists.",
+   "Rather than litigate, the two sides negotiated. In October 2018 the board agreed to pay the city €36 million over ten years toward public transport and street improvements around the site, covering the burden of decades of building.",
+   "The permit was finally issued in June 2019, valid to 2026, with a further fee of about €4.6 million. Barcelona's deputy mayor called the absence of a licence 'a historical anomaly'."
+  ],
+  "holding": "No court ruling. A negotiated settlement of €36 million plus fees, and a building permit granted in June 2019.",
+  "legacy": "Proof that planning law is enforced by attention rather than by time, and the rare case where a century of non-compliance ended in a cheque instead of a demolition order.",
+  "sources": [
+   {
+    "pub": "Dezeen",
+    "title": "Sagrada Família finally gets building permit after 137 years",
+    "url": "https://www.dezeen.com/2019/06/10/sagrada-familia-antoni-gaudi-building-permit-barcelona/"
+   },
+   {
+    "pub": "Euronews",
+    "title": "Basilica to pay city €36 million in late permit fees",
+    "url": "https://www.euronews.com/2018/10/19/barcelona-s-sagrada-familia-basilica-to-pay-city-36-million-in-late-permit-fees"
+   }
+  ]
+ },
+ "banksy": {
+  "case": "Full Colour Black v. Pest Control Office (the Flower Thrower mark)",
+  "year": "2020",
+  "court": "EU Intellectual Property Office, Cancellation Division",
+  "parties": "Full Colour Black, a greetings card company · against · Pest Control, Banksy's authentication body",
+  "body": [
+   "Banksy's position on copyright was a published joke: 'Copyright is for losers.' Anonymity made enforcing it awkward anyway, since claiming a work means identifying yourself as its author.",
+   "Pest Control tried a workaround, registering the Flower Thrower image as an EU trade mark in 2014. Trade marks do not require you to reveal who you are, only that you use the mark in trade.",
+   "A greetings card company that had been selling Banksy images applied to cancel it. In response Banksy opened a shop in Croydon called Gross Domestic Product, displaying goods behind glass that customers could not buy, and said aloud that the point was to satisfy trade-mark law. That statement became evidence.",
+   "On 14 September 2020 the EUIPO cancelled the mark for bad faith, finding the shop was not genuine commercial use but an attempt to circumvent the law. The examiners noted the irony that the same image appears on the cover of a book in which Banksy praises disobeying copyright."
+  ],
+  "holding": "The trade mark was declared invalid for bad faith, because the use shown was staged to satisfy the registration rather than to trade.",
+  "legacy": "The clearest ruling yet that anonymity has a price in intellectual property, and that saying why you are doing something can be the thing that defeats you.",
+  "sources": [
+   {
+    "pub": "The Art Newspaper",
+    "title": "Banksy loses trademark battle over Flower Thrower",
+    "url": "https://www.theartnewspaper.com/2020/09/17/banksy-loses-trademark-battle-over-his-famous-flower-thrower-image"
+   },
+   {
+    "pub": "Mewburn Ellis",
+    "title": "Flower Thrower trade mark cancelled for bad faith",
+    "url": "https://www.mewburn.com/news-insights/banksys-flower-thrower-trade-mark-cancelled-for-bad-faith"
+   }
+  ]
+ },
+ "super-mario": {
+  "case": "Universal City Studios v. Nintendo",
+  "year": "1984",
+  "court": "U.S. Court of Appeals, Second Circuit",
+  "parties": "Universal City Studios · against · Nintendo",
+  "body": [
+   "Donkey Kong was a hit in 1981, and it featured a large ape, a captured woman and a man climbing girders. Universal, which had made King Kong films, told Nintendo's licensees they were infringing and collected settlements from several of them.",
+   "Nintendo refused. Universal sued, and the case was handled for Nintendo by Howard Lincoln and an outside lawyer, John Kirby, whose name a later Nintendo character is often said to honour.",
+   "Nintendo's defence went at the root of the claim: Universal had itself argued in earlier litigation that the King Kong story was in the public domain, and had won on that basis. The court agreed there was no likelihood of confusion, and found Universal's chain of trademark rights defective.",
+   "The Second Circuit affirmed in 1984. Universal had sued over property it had previously told a court it did not exclusively own, and the district court found the claim brought in bad faith to take a share of Donkey Kong's profits."
+  ],
+  "holding": "Universal lost entirely. No likelihood of confusion, no valid trademark rights, and a finding that the claim was brought in bad faith.",
+  "legacy": "The case that kept Nintendo independent early enough to matter, funded by a company that tried to tax it.",
+  "sources": [
+   {
+    "pub": "Justia",
+    "title": "Universal City Studios v. Nintendo, 746 F.2d 112 (2d Cir. 1984)",
+    "url": "https://law.justia.com/cases/federal/appellate-courts/F2/746/112/30961/"
+   },
+   {
+    "pub": "Justia",
+    "title": "Universal City Studios v. Nintendo, 615 F. Supp. 838 (S.D.N.Y. 1985)",
+    "url": "https://law.justia.com/cases/federal/district-courts/FSupp/615/838/1515073/"
+   }
+  ]
+ },
+ "monopoly": {
+  "case": "Anti-Monopoly, Inc. v. General Mills Fun Group",
+  "year": "1982–1983, then overturned by Congress",
+  "court": "U.S. Court of Appeals, Ninth Circuit",
+  "parties": "Ralph Anspach, economics professor · against · the owners of Monopoly",
+  "body": [
+   "Ralph Anspach designed a game called Anti-Monopoly, in which players broke up trusts. Parker Brothers' owners threatened him, and rather than fold he sued to have the Monopoly trademark cancelled as generic.",
+   "Researching his defence, he uncovered the history the company had buried: the game descended from The Landlord's Game, patented in 1904 by Elizabeth Magie, a Georgist who designed it to demonstrate how land monopoly impoverishes tenants. It had circulated for decades in homemade versions before Charles Darrow sold his version to Parker Brothers in 1935.",
+   "The Ninth Circuit held that Parker Brothers had promoted 'Monopoly' so successfully as the name of the game itself that consumers used it generically, and a generic term cannot be a trademark. Anspach won.",
+   "Then Congress amended the Lanham Act to overrule the reasoning, changing how genericness is tested. Monopoly's trademark survived by statute after losing in court."
+  ],
+  "holding": "The Ninth Circuit found the mark generic. Congress then amended trademark law to reverse the test the court had used.",
+  "legacy": "The lawsuit that recovered Elizabeth Magie from obscurity, and a rare case of a company losing in court and winning in the legislature.",
+  "sources": [
+   {
+    "pub": "Justia",
+    "title": "Anti-Monopoly, Inc. v. General Mills Fun Group, 684 F.2d 1316 (9th Cir. 1982)",
+    "url": "https://law.justia.com/cases/federal/appellate-courts/F2/684/1316/40646/"
+   },
+   {
+    "pub": "Quimbee",
+    "title": "Anti-Monopoly, Inc. v. General Mills Fun Group, case brief",
+    "url": "https://www.quimbee.com/cases/anti-monopoly-inc-v-general-mills-fun-group-inc"
+   }
+  ]
+ },
+ "dracula": {
+  "case": "Florence Stoker v. Prana Film (Nosferatu)",
+  "year": "1925",
+  "court": "German courts, Berlin",
+  "parties": "Florence Stoker, Bram Stoker's widow · against · Prana Film",
+  "body": [
+   "Prana Film made Nosferatu in 1922 without buying the rights to Dracula. It changed the names, moved the setting and turned the count into Orlok, then advertised the film as freely adapted from Stoker's novel, which rather undercut the disguise.",
+   "Florence Stoker was living on her husband's royalties. She joined the British Incorporated Society of Authors and pursued Prana through the German courts for three years. Prana went bankrupt almost immediately, leaving her fighting a company with nothing to pay her.",
+   "In July 1925 the court ordered every copy of the film destroyed. She spent years afterwards chasing prints that surfaced in other countries and demanding they be burned, which very nearly worked.",
+   "Enough copies survived abroad for the film to be reconstructed. Dracula entered the public domain in the United States decades later, and Nosferatu is now considered among the most influential films ever made, which is to say it survived a court order sentencing it to death."
+  ],
+  "holding": "The film infringed the novel's copyright. The court ordered all copies and negatives destroyed.",
+  "legacy": "The most nearly successful attempt to erase a film from history, and the reason every vampire since owes something to a copy that escaped.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "Nosferatu: copyright and destruction order",
+    "url": "https://en.wikipedia.org/wiki/Nosferatu"
+   },
+   {
+    "pub": "Library of Congress",
+    "title": "Nosferatu and the Stoker litigation",
+    "url": "https://www.loc.gov/item/2019601302/"
+   }
+  ]
+ },
+ "ulysses": {
+  "case": "United States v. One Book Called Ulysses",
+  "year": "1933",
+  "court": "U.S. District Court, Southern District of New York",
+  "parties": "The United States government · against · a book",
+  "body": [
+   "American customs seized Ulysses as obscene, and under forfeiture procedure the case was brought against the object itself rather than against a person, which is why the defendant in the caption is a book.",
+   "Random House engineered the prosecution deliberately. It imported a copy, made sure customs noticed, and glued reviews and criticism into the volume so the court would have to consider the book's reputation as part of the evidence.",
+   "Judge John Woolsey read the whole novel. His December 1933 opinion held that the test was the effect of the book taken as a whole on a person of average sensibility, not the effect of isolated passages on the most susceptible reader. He found Ulysses difficult but not pornographic, describing its effect as 'somewhat emetic, nowhere does it tend to be an aphrodisiac'.",
+   "The Second Circuit affirmed in 1934. Random House published it in America the following month, and printed Woolsey's opinion in the front of the book, where many editions still carry it."
+  ],
+  "holding": "The novel was not obscene. Obscenity must be judged by the work as a whole and its effect on an average reader.",
+  "legacy": "The end of judging books by their dirtiest sentence, and the foundation of modern American obscenity law.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "United States v. One Book Called Ulysses",
+    "url": "https://en.wikipedia.org/wiki/United_States_v._One_Book_Called_Ulysses"
+   },
+   {
+    "pub": "Library of Congress",
+    "title": "Banned books and the Ulysses decision",
+    "url": "https://guides.loc.gov/banned-books"
+   }
+  ]
+ },
+ "banned-books": {
+  "case": "Board of Education, Island Trees School District v. Pico",
+  "year": "1982",
+  "court": "Supreme Court of the United States",
+  "parties": "Steven Pico, a high-school student · against · his school board",
+  "body": [
+   "A New York school board removed nine books from its libraries after board members attended a conservative conference and returned with a list. Among them were Slaughterhouse-Five, Black Boy and Soul on Ice. The board called them 'anti-American, anti-Christian, anti-Semitic, and just plain filthy'.",
+   "Steven Pico, then a student, sued with four classmates. The case ran for years and reached the Supreme Court while he was in college.",
+   "The Court splintered badly. No opinion commanded a majority, but a plurality held in 1982 that while boards have wide discretion over curriculum, they may not remove books from a library simply because they dislike the ideas in them.",
+   "Because it was a plurality, the precedent is weaker than its fame suggests, and it applies to removing books rather than to choosing which to buy. It remains the case both sides cite in every American library fight."
+  ],
+  "holding": "A plurality held that removing library books to suppress ideas violates the First Amendment, though school boards retain broad curricular discretion.",
+  "legacy": "The constitutional floor under every school-library dispute since, and the reason removals now get framed as selection decisions.",
+  "sources": [
+   {
+    "pub": "Oyez",
+    "title": "Board of Education v. Pico (1982)",
+    "url": "https://www.oyez.org/cases/1981/80-2043"
+   },
+   {
+    "pub": "American Library Association",
+    "title": "Notable First Amendment court cases",
+    "url": "https://www.ala.org/advocacy/intfreedom/censorshipfirstamendmentissues/courtcases"
+   }
+  ]
+ },
+ "orwell-1984": {
+  "case": "Gawronski v. Amazon.com",
+  "year": "2009",
+  "court": "U.S. District Court, Western District of Washington, settled",
+  "parties": "Justin Gawronski, a high-school student · against · Amazon",
+  "body": [
+   "In July 2009 Amazon discovered that a publisher had uploaded editions of Nineteen Eighty-Four and Animal Farm to the Kindle store without holding US rights. It removed them, and also deleted the copies people had already bought, refunding the purchase price.",
+   "Customers woke to find the books gone from devices they owned. The title being retroactively unpublished from private libraries by a central authority was Nineteen Eighty-Four, which is the sort of coincidence no novelist would risk.",
+   "Justin Gawronski had been annotating the book for a school assignment and lost his notes along with the text. He sued, arguing Amazon's own terms promised customers a permanent copy.",
+   "Amazon settled, offering to restore the books or pay $30, and Jeff Bezos publicly called the deletion 'stupid, thoughtless, and painfully out of line with our principles'. Amazon changed its policy to stop deleting purchased books except under court order."
+  ],
+  "holding": "Settled, with Amazon restoring the books or paying $30 and changing its deletion policy.",
+  "legacy": "The clearest demonstration that a digital purchase is a licence someone else can revoke, taught using the one book guaranteed to make the point.",
+  "sources": [
+   {
+    "pub": "The New York Times",
+    "title": "Amazon erases Orwell books from Kindle",
+    "url": "https://www.nytimes.com/2009/07/18/technology/companies/18amazon.html"
+   },
+   {
+    "pub": "Wired",
+    "title": "Amazon settles Kindle 1984 deletion lawsuit",
+    "url": "https://www.wired.com/2009/09/amazon-settlement/"
+   }
+  ]
+ },
+ "napster": {
+  "case": "A&M Records v. Napster",
+  "year": "2001",
+  "court": "U.S. Court of Appeals, Ninth Circuit",
+  "parties": "The major record labels and Metallica · against · Napster",
+  "body": [
+   "Napster let users share MP3s directly with each other, but kept a central index of who had what. At its peak it had tens of millions of users and the industry had no legal way to sell them a single track.",
+   "Napster's defence leaned on the 1984 Betamax ruling, which protected the video recorder because it had substantial non-infringing uses. The Ninth Circuit distinguished it: Napster's central index meant the company knew what was being traded and could have stopped it.",
+   "That knowledge and control was fatal. The court affirmed an injunction in February 2001 requiring Napster to police its own network, which it could not do at scale, and the service shut down that July.",
+   "The ruling pushed file sharing toward genuinely decentralised networks with no index to seize, which proved harder to sue. The labels won the case and spent the next decade losing the format."
+  ],
+  "holding": "Napster was liable for contributory and vicarious infringement because it knew of and could control the infringing traffic.",
+  "legacy": "The end of the first file-sharing era and the direct cause of both decentralised piracy and, eventually, licensed streaming.",
+  "sources": [
+   {
+    "pub": "Justia",
+    "title": "A&M Records, Inc. v. Napster, Inc., 239 F.3d 1004 (9th Cir. 2001)",
+    "url": "https://law.justia.com/cases/federal/appellate-courts/F3/239/1004/638904/"
+   },
+   {
+    "pub": "Electronic Frontier Foundation",
+    "title": "A&M Records v. Napster case archive",
+    "url": "https://www.eff.org/cases/m-records-v-napster"
+   }
+  ]
+ },
+ "google": {
+  "case": "Google LLC v. Oracle America",
+  "year": "2021",
+  "court": "Supreme Court of the United States",
+  "parties": "Oracle · against · Google",
+  "body": [
+   "Google built Android using roughly 11,500 lines of Java API declaring code, the names and structures programmers use to call functions, so that Java developers could write for Android without learning a new vocabulary. It wrote its own implementations underneath.",
+   "Oracle bought Sun, which had made Java, and sued for about $9 billion. The case ran for a decade through two jury trials and multiple appeals, with the Federal Circuit twice reversing findings in Google's favour.",
+   "In April 2021 the Supreme Court ruled 6–2 for Google. It assumed without deciding that the declaring code could be copyrighted, then held that copying it to let programmers use their existing skills on a new platform was fair use.",
+   "Justice Breyer compared the API to the layout of a typewriter keyboard or a filing system: valuable largely because people have learned it, so locking it up would let one company charge rent on other people's training."
+  ],
+  "holding": "Decided 6–2. Copying the Java API declaring code to build a new platform was fair use. The Court left the copyrightability question open.",
+  "legacy": "The ruling that kept software interfaces broadly reusable, and the reason competitors can still build compatible systems without a licence.",
+  "sources": [
+   {
+    "pub": "Supreme Court of the United States",
+    "title": "Google LLC v. Oracle America, Inc. (PDF)",
+    "url": "https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf"
+   },
+   {
+    "pub": "SCOTUSblog",
+    "title": "Google v. Oracle case file",
+    "url": "https://www.scotusblog.com/cases/case-files/google-llc-v-oracle-america-inc/"
+   }
+  ]
+ },
+ "tetris": {
+  "case": "Tetris Holding v. Xio Interactive",
+  "year": "2012",
+  "court": "U.S. District Court, District of New Jersey",
+  "parties": "Tetris Holding · against · Xio Interactive, maker of Mino",
+  "body": [
+   "Xio did its homework before building its game. It read the case law, understood that game rules and mechanics cannot be copyrighted, and set out to copy only the unprotectable parts of Tetris.",
+   "It copied more than that. Mino used the same playfield dimensions, the same seven piece shapes in the same colours, the same shadow showing where a piece would land, the same display of the next piece. Xio admitted the copying and argued every element was dictated by the rules.",
+   "The court disagreed. Rules can be expressed in countless ways, and Xio had reproduced the specific expressive choices rather than the underlying system. Its own care became evidence, since its research showed the copying was deliberate and precise.",
+   "The ruling drew the line where video game cloning lives: you may build a falling-block puzzle, but not one that looks like someone else's falling-block puzzle."
+  ],
+  "holding": "Copying Tetris's visual expression infringed, even though the game's rules and mechanics were free to use.",
+  "legacy": "The most cited authority on game clones, and the reason imitators change the palette and proportions rather than the mechanics.",
+  "sources": [
+   {
+    "pub": "Justia",
+    "title": "Tetris Holding, LLC v. Xio Interactive, Inc., 863 F. Supp. 2d 394 (D.N.J. 2012)",
+    "url": "https://law.justia.com/cases/federal/district-courts/new-jersey/njdce/3:2009cv06115/234049/57/"
+   },
+   {
+    "pub": "Patent Arcade",
+    "title": "Case summary: Tetris Holding v. Xio Interactive",
+    "url": "https://patentarcade.com/2012/06/case-tetris-holding-llc-v-xio.html"
+   }
+  ]
+ },
+ "mona-lisa": {
+  "case": "The trial of Vincenzo Peruggia",
+  "year": "1914",
+  "court": "Criminal court, Florence",
+  "parties": "The Italian state · against · Vincenzo Peruggia, glazier",
+  "body": [
+   "Peruggia had worked at the Louvre fitting protective glass. In August 1911 he hid overnight, walked out with the Mona Lisa under his smock, and kept her in a trunk in his Paris room for two years while France searched and the press made her famous.",
+   "He was caught in 1913 trying to sell her to a Florence dealer, who alerted the authorities. Peruggia's defence was patriotic: he said he was returning a stolen Italian treasure to Italy, believing Napoleon had looted it.",
+   "That was wrong. Leonardo took the painting to France himself and it was bought by François I. But the story landed in an Italy receptive to it, and he was treated in much of the press as something close to a hero.",
+   "The court convicted him and gave him a sentence of about a year, reduced on appeal to roughly seven months, and he served little of it. Italy exhibited the painting around the country before returning it to the Louvre."
+  ],
+  "holding": "Convicted of theft. The sentence was reduced on appeal to a matter of months.",
+  "legacy": "The theft that made the Mona Lisa the most famous painting in the world, punished as though it had been a minor act of patriotism.",
+  "sources": [
+   {
+    "pub": "Smithsonian Magazine",
+    "title": "The theft that made the Mona Lisa a masterpiece",
+    "url": "https://www.smithsonianmag.com/history/the-theft-that-made-the-mona-lisa-a-masterpiece-16406234/"
+   },
+   {
+    "pub": "Wikipedia",
+    "title": "Vincenzo Peruggia",
+    "url": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia"
+   }
+  ]
  }
 }
