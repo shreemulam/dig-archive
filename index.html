@@ -570,6 +570,66 @@
   }
   .here-status{font-size:11px;letter-spacing:.12em;color:var(--ink-dim);text-transform:uppercase}
 
+  /* ---------- CASE FILE ---------- */
+  #caseStrip{
+    border:1px solid var(--line);border-left:3px solid var(--amber);
+    background:var(--bg-2);padding:14px 18px;margin-bottom:26px;cursor:pointer;
+    display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+    transition:border-color .15s;
+  }
+  #caseStrip:hover{border-color:var(--amber)}
+  #caseStrip:empty{display:none}
+  #caseStrip .cs-k{font-size:10px;letter-spacing:.18em;color:var(--amber);text-transform:uppercase;flex:none}
+  #caseStrip .cs-name{font-family:var(--disp);font-weight:600;font-size:14px;color:var(--ink)}
+  #caseStrip .cs-go{margin-left:auto;font-size:10px;letter-spacing:.14em;color:var(--amber);text-transform:uppercase;flex:none}
+
+  #caseOverlay{
+    position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;
+    padding:clamp(12px,4vw,48px);
+    background:color-mix(in srgb, var(--bg) 82%, transparent);backdrop-filter:blur(8px);
+  }
+  #caseOverlay.hidden{display:none}
+  .case-doc{
+    background:var(--bg-2);border:1px solid var(--amber);
+    max-width:660px;width:100%;max-height:100%;overflow-y:auto;overscroll-behavior:contain;
+    padding:clamp(22px,3vw,34px);
+  }
+  .case-doc .cd-top{
+    display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+    border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:20px;
+  }
+  .case-doc .cd-k{font-size:10px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase}
+  .case-doc .cd-x{cursor:pointer;color:var(--ink-faint);font-size:13px;padding:2px 6px}
+  .case-doc .cd-x:hover{color:var(--ink)}
+  .case-doc h2{
+    font-family:var(--disp);font-weight:700;font-size:clamp(21px,2.6vw,27px);
+    line-height:1.12;text-transform:uppercase;margin:0 0 10px;
+  }
+  .case-doc .cd-cite{
+    font-size:10.5px;letter-spacing:.1em;line-height:1.9;color:var(--ink-dim);
+    text-transform:uppercase;margin-bottom:22px;
+  }
+  .case-doc .cd-cite b{color:var(--ink);font-weight:500}
+  .case-doc p{font-size:13.5px;line-height:1.72;color:var(--ink);margin:0 0 14px}
+  .case-doc .cd-hold{
+    border:1px solid var(--line);border-left:3px solid var(--acid);
+    background:var(--bg);padding:14px 16px;margin:20px 0 14px;
+  }
+  .case-doc .cd-hold .k{font-size:9.5px;letter-spacing:.18em;color:var(--acid);text-transform:uppercase;margin-bottom:6px}
+  .case-doc .cd-hold p{font-size:12.5px;margin:0}
+  .case-doc .cd-leg{font-size:12.5px;line-height:1.7;color:var(--ink-dim);margin-bottom:22px}
+  .case-doc .cd-leg b{color:var(--amber);font-weight:500;letter-spacing:.14em;font-size:9.5px;text-transform:uppercase;display:block;margin-bottom:5px}
+  .case-doc .cd-src{border-top:1px solid var(--line);padding-top:16px}
+  .case-doc .cd-src .k{font-size:9.5px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:10px}
+  .case-doc .cd-src a{
+    display:block;font-size:11.5px;line-height:1.5;color:var(--ice);text-decoration:none;
+    padding:6px 0;border-bottom:1px dashed var(--line);
+  }
+  .case-doc .cd-src a:last-of-type{border-bottom:none}
+  .case-doc .cd-src a span{display:block;font-size:9.5px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+  .case-doc .cd-src a:hover{filter:brightness(1.25)}
+  .case-doc .cd-note{margin-top:16px;font-size:9.5px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase;line-height:1.7}
+
   /* ---------- INSTALL ---------- */
   #installBar{
     position:fixed;left:0;right:0;bottom:0;z-index:70;
@@ -818,6 +878,7 @@
         <button class="fact-next" id="factNext">Next fact ▸</button>
       </div>
       <div class="disc" id="disc"></div>
+      <div id="caseStrip"></div>
       <div class="card-actions">
         <button id="openMap">Open constellation ↗</button>
         <button id="storyBtn" style="background:transparent;color:var(--ink-dim);border:1px solid var(--line);font-family:var(--disp);font-weight:600;font-size:12px;letter-spacing:.1em;padding:13px 20px;cursor:pointer;text-transform:uppercase">⇩ Story card</button>
@@ -849,6 +910,10 @@
   <button class="mn-item" id="mnHere"><div class="mn-ico">⌖</div><div class="mn-label">Here</div></button>
   <button class="mn-item" id="mnAtlas"><div class="mn-ico">⊞</div><div class="mn-label">Atlas</div></button>
 </nav>
+
+<div id="caseOverlay" class="hidden">
+  <article class="case-doc" id="caseDoc"></article>
+</div>
 
 <div id="installBar">
   <span>Add <b>DIG.ARCHIVE</b> to your home screen. It opens like an app and works offline.</span>
@@ -989,7 +1054,6 @@ function renderCard(id){
   $('factNext').onclick = ()=>{ fi = (fi+1)%facts.length; showFact(); };
 
   const disc = $('disc');
-  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   if(h.discourse && h.discourse.length){
     const SRC = {HN:'HACKER NEWS', BSKY:'BLUESKY', SE:'STACK EXCHANGE', REDDIT:'REDDIT', THREADS:'THREADS', IG:'INSTAGRAM'};
     const QUOTED = {BSKY:1, THREADS:1, IG:1};
@@ -1018,6 +1082,7 @@ function renderCard(id){
       `<div class="spec-row"><span class="k">${k.replace(/_/g,' ')}</span><span class="leader"></span><span class="v">${v}</span></div>`);
   }
   $('dossier').classList.remove('reveal'); void $('dossier').offsetWidth; $('dossier').classList.add('reveal');
+  renderCaseStrip(id);
   markVisited(id);
   $('footStat').innerHTML = `SYS <b>ONLINE</b> · EXPLORED <b>${visited.size}/${IDS.length}</b> · RANK <b>${rankName()}</b> · IMG: MET/AIC/COMMONS · PD/CC`;
 }
@@ -1310,6 +1375,47 @@ function maybeIosInstallHint(){
   $('ibGo').style.display = 'none';
   bar.classList.add('show');
 }
+
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+/* ================= CASE FILES — the lawsuits behind the records ================= */
+let CASES = null, casesPromise = null;
+const loadCases = () => casesPromise || (casesPromise = fetch('cases.json')
+  .then(r=>r.ok?r.json():{}).then(d=>{CASES=d; return d;}).catch(()=>({})));
+
+function renderCaseStrip(id){
+  const strip = $('caseStrip');
+  strip.innerHTML = '';
+  loadCases().then(cs=>{
+    const c = cs[id];
+    if(!c || currentId !== id) return;
+    strip.innerHTML = `<span class="cs-k">§ Case file</span>
+      <span class="cs-name">${esc(c.case)}</span>
+      <span class="cs-go">Read the case ▸</span>`;
+    strip.onclick = ()=> openCase(id);
+  });
+}
+
+function openCase(id){
+  const c = CASES && CASES[id]; if(!c) return;
+  track('case_open', {id});
+  $('caseDoc').innerHTML = `
+    <div class="cd-top"><span class="cd-k">§ Case file · ${esc(c.year)}</span>
+      <span class="cd-x" id="cdX">✕ Close</span></div>
+    <h2>${esc(c.case)}</h2>
+    <div class="cd-cite"><b>${esc(c.court)}</b><br>${esc(c.parties)}</div>
+    ${c.body.map(p=>`<p>${esc(p)}</p>`).join('')}
+    <div class="cd-hold"><div class="k">What was actually decided</div><p>${esc(c.holding)}</p></div>
+    <div class="cd-leg"><b>Why it still matters</b>${esc(c.legacy)}</div>
+    <div class="cd-src"><div class="k">Sources</div>
+      ${c.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}<span>${esc(s.pub)}</span></a>`).join('')}
+    </div>
+    <div class="cd-note">Summarised in plain language from published reporting and public court records. Not legal advice.</div>`;
+  $('caseOverlay').classList.remove('hidden');
+  $('caseDoc').scrollTop = 0;
+  document.getElementById('cdX').onclick = closeCase;
+}
+const closeCase = ()=> $('caseOverlay').classList.add('hidden');
 
 /* ================= DIG HERE — what happened where you stand ================= */
 const CULT_RE = /museum|art|paint|sculpt|writ|novel|poet|author|music|jazz|punk|opera|theat|film|cinema|studio|gallery|histor|landmark|architect|hotel|church|cathedral|synagogue|mosque|temple|monument|memorial|birthplace|composer|designer|fashion|record|premiere|bohemian|speakeasy|mural|graffiti/i;
@@ -1860,6 +1966,7 @@ $('mnPull').addEventListener('click', pull);
 $('mnDaily').addEventListener('click', ()=> $('dailyBtn').click());
 $('mnHere').addEventListener('click', ()=>{ showView('home'); syncHash('#/'); digHere(); });
 $('homeHere').addEventListener('click', digHere);
+$('caseOverlay').addEventListener('click', e=>{ if(e.target.id==='caseOverlay') closeCase(); });
 $('ibGo').addEventListener('click', async ()=>{
   if(!deferredPrompt) return;
   deferredPrompt.prompt();
@@ -1906,6 +2013,10 @@ $('dailyBtn').addEventListener('click', ()=>{
   else startDaily();
 });
 document.addEventListener('keydown', e=>{
+  if(!$('caseOverlay').classList.contains('hidden')){
+    if(e.key==='Escape') closeCase();
+    return;
+  }
   if(!$('receiptOverlay').classList.contains('hidden')){
     if(e.key==='Escape') $('receiptOverlay').classList.add('hidden');
     return;

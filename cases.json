@@ -1,0 +1,324 @@
+{
+ "gutenberg": {
+  "case": "Fust v. Gutenberg",
+  "year": "1455",
+  "court": "Ecclesiastical court, Mainz",
+  "parties": "Johann Fust, financier · against · Johannes Gutenberg, printer",
+  "body": [
+   "Gutenberg did not lose his workshop to a rival or a fire. He lost it to his investor, in court, in the same year he finished the Bible.",
+   "Fust had lent him roughly 1,600 guilders across two loans to build the printing operation. When Fust called the debt in, Gutenberg could not pay, and the argument turned on what the money had been: a loan against the business, or a partnership investment that shared the risk. The surviving record of the judgment, the Helmasperger Notarial Instrument of November 1455, is the only near-contemporary document of the dispute, and it is written from Fust's side.",
+   "Fust won. He took the type, the presses, and the finished Bibles, and carried on printing with Peter Schöffer, who had been Gutenberg's own assistant and who later married Fust's daughter. The books that made the reputation went out under their names.",
+   "Gutenberg kept printing on a smaller scale and was eventually given a courtier's pension by the Archbishop of Mainz, which supplied clothing, grain and wine rather than money. He died in 1468 without ever being credited on a page he printed."
+  ],
+  "holding": "The court ordered Gutenberg to repay the loans with interest, which transferred the working equipment to Fust.",
+  "legacy": "The oldest founder-ousted-by-investor story in print, and the reason the first mass-produced European books carry Fust and Schöffer's imprint instead of Gutenberg's.",
+  "sources": [
+   {
+    "pub": "Britannica",
+    "title": "Johannes Gutenberg: the lawsuit with Fust",
+    "url": "https://www.britannica.com/biography/Johannes-Gutenberg"
+   },
+   {
+    "pub": "Wikipedia",
+    "title": "Helmasperger Notarial Instrument",
+    "url": "https://en.wikipedia.org/wiki/Helmasperger_instrument"
+   }
+  ]
+ },
+ "adele": {
+  "case": "Republic of Austria v. Altmann",
+  "year": "2004 (Supreme Court) · 2006 (arbitration)",
+  "court": "Supreme Court of the United States, then binding arbitration in Austria",
+  "parties": "Maria Altmann, heir · against · the Republic of Austria",
+  "body": [
+   "Adele Bloch-Bauer's portraits were taken from her family's Vienna apartment after the Anschluss in 1938. Austria hung the golden one in the Belvedere for the rest of the century and called it 'The Lady in Gold', which conveniently removed the Jewish family name from the most famous painting in the country.",
+   "Maria Altmann, Adele's niece, was in her eighties and living in Los Angeles when she tried to get them back. Austria's position was that a sovereign state cannot be sued in an American court, and that Adele's will had asked for the paintings to go to the national gallery. Altmann's lawyers pointed out that Adele never owned them: her husband Ferdinand did, and his will left everything to his nephews and nieces.",
+   "The Supreme Court question was narrow and procedural: does the Foreign Sovereign Immunities Act of 1976 apply to things a foreign state did before 1976? On 7 June 2004 the Court said yes, which meant the case could proceed at all.",
+   "Austria then agreed to binding arbitration at home rather than fight in California. In January 2006 the panel ordered five of the six disputed Klimts returned. Adele Bloch-Bauer I sold to Ronald Lauder for a reported $135 million and hangs in the Neue Galerie in New York."
+  ],
+  "holding": "The Supreme Court held 6–3 that sovereign immunity under the FSIA applies retroactively, opening the courthouse door. The paintings themselves were won later, in arbitration.",
+  "legacy": "The precedent that lets private citizens sue foreign governments over Nazi-looted art, and the reason restitution claims still move paintings across borders today.",
+  "sources": [
+   {
+    "pub": "U.S. Supreme Court",
+    "title": "Republic of Austria v. Altmann, 541 U.S. 677 (2004)",
+    "url": "https://supreme.justia.com/cases/federal/us/541/677/"
+   },
+   {
+    "pub": "Art-Law Centre, University of Geneva",
+    "title": "Six Klimt paintings: Maria Altmann and Austria",
+    "url": "https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria"
+   }
+  ]
+ },
+ "warhol-soup": {
+  "case": "Andy Warhol Foundation v. Goldsmith",
+  "year": "2023",
+  "court": "Supreme Court of the United States",
+  "parties": "The Andy Warhol Foundation · against · Lynn Goldsmith, photographer",
+  "body": [
+   "In 1981 Lynn Goldsmith photographed Prince for Newsweek. In 1984 Vanity Fair licensed one of her images as an 'artist reference' for a single illustration, paid her $400, and commissioned Warhol. Warhol made sixteen works from the photograph rather than one.",
+   "Nobody sued for decades. The fight started after Prince died in 2016, when the Warhol Foundation licensed 'Orange Prince' to Condé Nast for a commemorative magazine cover for $10,000 and Goldsmith received nothing and no credit. She raised her copyright; the Foundation sued first, seeking a declaration that the work was fair use.",
+   "The Court deliberately answered a small question. It did not rule on whether Warhol's silkscreens are art, whether he transformed the photograph, or whether making them was lawful. It looked only at the 2016 licensing, and asked what that specific use was for.",
+   "The answer was that both the photograph and the silkscreen were being used for the same thing, to illustrate a magazine story about Prince, and both were commercial. On that footing the first fair-use factor favoured Goldsmith. Justice Kagan's dissent, joined by the Chief Justice, argued the majority had flattened what artists actually do with source material."
+  ],
+  "holding": "Decided 7–2 on 18 May 2023. The first fair-use factor, purpose and character, favoured Goldsmith because the Foundation's commercial licensing shared the photograph's original purpose.",
+  "legacy": "The most consequential fair-use ruling in a generation for appropriation art, collage, sampling, and anyone training on or borrowing from copyrighted images.",
+  "sources": [
+   {
+    "pub": "U.S. Supreme Court",
+    "title": "Opinion, No. 21-869 (PDF)",
+    "url": "https://www.supremecourt.gov/opinions/22pdf/21-869_87ad.pdf"
+   },
+   {
+    "pub": "SCOTUSblog",
+    "title": "Case file and argument analysis",
+    "url": "https://www.scotusblog.com/cases/andy-warhol-foundation-for-the-visual-arts-inc-v-goldsmith/"
+   },
+   {
+    "pub": "NPR",
+    "title": "Supreme Court sides against the Warhol Foundation",
+    "url": "https://www.npr.org/2023/05/18/1176881182/supreme-court-sides-against-andy-warhol-foundation-in-copyright-infringement-cas"
+   }
+  ]
+ },
+ "hiphop": {
+  "case": "Grand Upright Music v. Warner Bros. Records",
+  "year": "1991",
+  "court": "U.S. District Court, Southern District of New York",
+  "parties": "Grand Upright Music, for Gilbert O'Sullivan · against · Biz Markie and Warner Bros.",
+  "body": [
+   "Biz Markie built 'Alone Again' on a loop from Gilbert O'Sullivan's 1972 hit 'Alone Again (Naturally)'. His label had asked O'Sullivan for permission, been refused, and released the record anyway.",
+   "Judge Kevin Duffy opened his decision by quoting the seventh commandment: 'Thou shalt not steal.' He granted an injunction, ordered the album pulled, and referred the matter to prosecutors for possible criminal charges, which is not how commercial copyright disputes usually end.",
+   "Before this, sampling had operated on a practical assumption that small borrowings were part of the form and got sorted out afterwards, if at all. Records like Public Enemy's were built from dozens of uncleared fragments because clearing them was neither expected nor affordable.",
+   "Afterwards every sample had to be licensed in advance, which meant lawyers, budgets and refusals. Dense collage records became commercially impossible to make, and producers moved toward fewer, bigger, more expensive samples or replayed the parts themselves. The sound of the genre changed because of a ruling, not a trend."
+  ],
+  "holding": "Unlicensed sampling infringed the copyright in the sound recording. The court issued an injunction and referred the case for criminal investigation.",
+  "legacy": "The end of uncleared sampling. Sample clearance became an industry, and the collage-heavy sound of late-1980s hip-hop became legally unrepeatable.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "Grand Upright Music, Ltd. v. Warner Bros. Records, Inc.",
+    "url": "https://en.wikipedia.org/wiki/Grand_Upright_Music,_Ltd._v._Warner_Bros._Records,_Inc."
+   },
+   {
+    "pub": "NPR",
+    "title": "How a 1991 ruling changed sampling",
+    "url": "https://www.npr.org/sections/therecord/2011/12/09/143498473/its-been-20-years-since-hip-hops-most-important-lawsuit"
+   }
+  ]
+ },
+ "mcdonalds": {
+  "case": "McDonald's v. Steel and Morris (the McLibel case)",
+  "year": "1994–1997, then Strasbourg in 2005",
+  "court": "High Court of Justice, England · then the European Court of Human Rights",
+  "parties": "McDonald's Corporation · against · Helen Steel and David Morris",
+  "body": [
+   "Two London activists handed out a six-page pamphlet accusing McDonald's of, among other things, damaging the environment, exploiting children through advertising and paying poorly. McDonald's sued for libel.",
+   "English libel law at the time put the burden on the defendants to prove every claim true, and offered no legal aid for libel. Steel and Morris, an unwaged single mother and a part-time postal worker, represented themselves against a corporate legal team for 313 court days, which made it the longest trial in English legal history.",
+   "The judgment in June 1997 went mostly to McDonald's, with £60,000 in damages, later cut to £40,000 on appeal. But the judge also found several of the pamphlet's charges proven, including that McDonald's advertising exploited children and that the company paid low wages. The company never collected.",
+   "In February 2005 the European Court of Human Rights ruled that the UK had breached the defendants' right to a fair trial and to free expression by denying them legal aid in a case of that complexity. It awarded them damages against the British government."
+  ],
+  "holding": "McDonald's won the libel case but lost on several factual claims, and Britain was later found in breach of Articles 6 and 10 of the European Convention.",
+  "legacy": "The case that made 'McLibel' shorthand for corporations suing critics, drove reform of English libel law, and cost McDonald's far more in reputation than it recovered in damages.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "McLibel case",
+    "url": "https://en.wikipedia.org/wiki/McLibel_case"
+   },
+   {
+    "pub": "Columbia Global Freedom of Expression",
+    "title": "Steel and Morris v. United Kingdom",
+    "url": "https://globalfreedomofexpression.columbia.edu/cases/steel-v-united-kingdom/"
+   }
+  ]
+ },
+ "hot-sauce": {
+  "case": "Huy Fong Foods v. Underwood Ranches",
+  "year": "2019, affirmed 2021",
+  "court": "Ventura County Superior Court, California · affirmed by the Court of Appeal",
+  "parties": "Huy Fong Foods, maker of the rooster-bottle sriracha · and · Underwood Ranches, its grower",
+  "body": [
+   "For 28 years one farm grew nearly all the red jalapeños in Huy Fong's sriracha. The arrangement ran on handshakes and annual agreements rather than a long-form contract, and Underwood Ranches restructured its entire operation around the one buyer.",
+   "The relationship collapsed in 2017 over money and acreage. Huy Fong sued first, claiming it had overpaid by about $1.5 million. Underwood counter-sued for breach and fraud, arguing it had planted and invested on assurances it would keep the business.",
+   "In July 2019 a jury sided with the farm: roughly $14.8 million in compensatory damages and $10 million in punitive damages, offset by the overpayment, for about $23.3 million net. The Court of Appeal affirmed the judgment in full in July 2021.",
+   "The hot sauce shortages that followed had other causes, chiefly drought and chili supply across Mexico and the American southwest, but the split removed the grower who had spent three decades breeding peppers specifically for that bottle."
+  ],
+  "holding": "The jury found Huy Fong liable for breach of contract and fraud, awarding Underwood Ranches about $23.3 million net. Affirmed on appeal in 2021.",
+  "legacy": "A reminder that an iconic consumer product can rest entirely on an undocumented handshake, and what it costs when that handshake fails.",
+  "sources": [
+   {
+    "pub": "CNBC",
+    "title": "Sriracha maker loses lawsuit to its former jalapeño grower",
+    "url": "https://www.cnbc.com/2019/07/05/sriracha-maker-loses-lawsuit-to-its-former-jalapeno-grower.html"
+   },
+   {
+    "pub": "NBC News",
+    "title": "Huy Fong ordered to pay millions to chili pepper supplier",
+    "url": "https://www.nbcnews.com/news/asian-america/sriracha-maker-huy-fong-ordered-pay-millions-damages-chili-pepper-n1027616"
+   }
+  ]
+ },
+ "origin": {
+  "case": "The State of Tennessee v. John Thomas Scopes",
+  "year": "1925",
+  "court": "Rhea County Circuit Court, Dayton, Tennessee",
+  "parties": "The State of Tennessee · against · John Scopes, substitute teacher",
+  "body": [
+   "Tennessee's Butler Act made it unlawful to teach in a state-funded school any theory denying the biblical account of creation. Business leaders in the small town of Dayton saw a publicity opportunity, and recruited a 24-year-old substitute teacher to admit he had taught evolution so a test case could be staged there.",
+   "It worked beyond anyone's expectation. William Jennings Bryan, three-time presidential candidate, prosecuted. Clarence Darrow defended. It became the first American trial broadcast live on national radio, and reporters filed from a town that had gone looking for exactly this.",
+   "The trial's famous moment was not about Scopes at all. Darrow called Bryan himself as a witness on the Bible and questioned him on whether its days were literal days. The exchange was later struck from the record.",
+   "Scopes was convicted and fined $100. The Tennessee Supreme Court overturned the conviction in 1927 on a technicality, that the judge rather than the jury had set the fine, and pointedly declined to let the case go further. The Butler Act stayed law in Tennessee until 1967."
+  ],
+  "holding": "Convicted and fined $100. The conviction was reversed on a technicality in 1927, which denied both sides the constitutional ruling they wanted.",
+  "legacy": "The template for every courtroom fight over what schools may teach, and the reason Darwin's book still turns up in American legislative sessions a century later.",
+  "sources": [
+   {
+    "pub": "Britannica",
+    "title": "Scopes Trial",
+    "url": "https://www.britannica.com/event/Scopes-Trial"
+   },
+   {
+    "pub": "Famous Trials, UMKC",
+    "title": "The Scopes 'Monkey Trial' archive",
+    "url": "https://famous-trials.com/scopesmonkey"
+   }
+  ]
+ },
+ "balloon-dog": {
+  "case": "Rogers v. Koons",
+  "year": "1992",
+  "court": "U.S. Court of Appeals, Second Circuit",
+  "parties": "Art Rogers, photographer · against · Jeff Koons",
+  "body": [
+   "Art Rogers made a black-and-white photograph called 'Puppies': a couple on a bench holding a row of German shepherd puppies. It was licensed onto notecards, and Koons bought one.",
+   "Koons tore the copyright notice off the card, handed it to Italian artisans, and instructed them to copy it faithfully in painted wood, adding flowers in the hair. The result, 'String of Puppies', was made in an edition of three plus an artist's proof, and sold for a reported $367,000.",
+   "Koons argued parody and fair use: the sculpture was a comment on mass-produced sentimentality, and the banality of the source was the point. The court was unconvinced, noting that a parody must target the original work rather than society in general, and that nobody needed to see Rogers's photograph to get the joke.",
+   "The instructions to the artisans hurt him. Notes asking for the puppies to be copied 'as per photo' made it difficult to claim the source was incidental."
+  ],
+  "holding": "The Second Circuit affirmed that the sculpture infringed Rogers's copyright and rejected the fair-use defence.",
+  "legacy": "The case appropriation artists have argued with ever since, and a direct ancestor of the Warhol Foundation ruling three decades later.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "Rogers v. Koons",
+    "url": "https://en.wikipedia.org/wiki/Rogers_v._Koons"
+   },
+   {
+    "pub": "Center for Art Law",
+    "title": "Case review: Rogers v. Koons",
+    "url": "https://itsartlaw.org/2015/07/23/case-review-rogers-v-koons/"
+   }
+  ]
+ },
+ "sherlock-holmes": {
+  "case": "Conan Doyle Estate v. Netflix (Enola Holmes)",
+  "year": "2020",
+  "court": "U.S. District Court, District of New Mexico · settled",
+  "parties": "The Conan Doyle Estate · against · Netflix, Legendary Pictures and author Nancy Springer",
+  "body": [
+   "Almost every Sherlock Holmes story had already fallen into the American public domain. Ten late ones had not, so the estate's claim had to rest on something those ten stories uniquely contained.",
+   "Its argument was that in the final stories Conan Doyle gave Holmes warmth: he became capable of friendship, respect and feeling, partly written after the author lost his son in the First World War. Since the Enola Holmes film showed a Holmes with emotions, the estate argued, it was using protected material.",
+   "Courts had already been narrowing the estate's reach. In Klinger v. Conan Doyle Estate in 2014, the Seventh Circuit rejected the idea that a character stays under copyright until the last story does, with Judge Posner later calling the estate's licensing approach close to a shakedown.",
+   "The Enola Holmes case never produced a ruling. It was settled and dismissed in December 2020 on undisclosed terms, and the film had already been released. On 1 January 2023 the remaining stories entered the public domain and the question stopped mattering."
+  ],
+  "holding": "No decision. The case settled and was dismissed in 2020, and the underlying copyrights expired at the start of 2023.",
+  "legacy": "The high-water mark of arguing that a personality trait can be copyrighted, and a case study in using litigation as a licensing fee.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "Conan Doyle Estate Ltd. copyright disputes",
+    "url": "https://en.wikipedia.org/wiki/Conan_Doyle_Estate_Ltd"
+   },
+   {
+    "pub": "The Hollywood Reporter",
+    "title": "Netflix sued over Sherlock Holmes' emotions",
+    "url": "https://www.hollywoodreporter.com/business/business-news/netflix-sued-sherlock-holmes-emotions-enola-holmes-1300222/"
+   }
+  ]
+ },
+ "ysl": {
+  "case": "Comité Interprofessionnel du Vin de Champagne v. Yves Saint Laurent",
+  "year": "1993",
+  "court": "Tribunal de grande instance de Paris, affirmed by the Paris Court of Appeal",
+  "parties": "The Champagne growers' association · against · Yves Saint Laurent",
+  "body": [
+   "In 1993 Yves Saint Laurent launched a perfume called Champagne, in a bottle shaped to echo a cork and a collar. The name was doing the obvious work: borrowing the associations of celebration and expense without selling any wine.",
+   "The Champagne region has spent more than a century building a legal wall around the word. Under French appellation law it is not a flavour or a style but a place, and producers outside the region cannot use it even on products that are unmistakably not wine.",
+   "The growers' association sued. On 28 October 1993 the Paris court invalidated the trademark and ordered the name off the product, and the Court of Appeal affirmed on 15 December. The reasoning ran on parasitism, a French doctrine covering the act of feeding off a reputation you did not build, rather than on any risk that shoppers would confuse a bottle of scent with a bottle of wine.",
+   "YSL kept the perfume and changed the name to Yvresse, a pun on ivresse, meaning intoxication. Bottles labelled Champagne became collectors' items precisely because they were withdrawn."
+  ],
+  "holding": "The trademark was invalidated and the name prohibited in France on the basis of parasitism, not consumer confusion.",
+  "legacy": "The clearest statement that an appellation is property, and the reason no European perfume, chocolate or candle is called Champagne today.",
+  "sources": [
+   {
+    "pub": "Premium Beauty News",
+    "title": "Legal conflict over the protection of the designation Champagne",
+    "url": "https://www.premiumbeautynews.com/new-legal-conflict-about-the,2331"
+   },
+   {
+    "pub": "Wikipedia",
+    "title": "Yvresse (formerly Champagne)",
+    "url": "https://en.wikipedia.org/wiki/Yvresse"
+   }
+  ]
+ },
+ "yoga": {
+  "case": "Bikram's Yoga College of India v. Evolation Yoga",
+  "year": "2015",
+  "court": "U.S. Court of Appeals, Ninth Circuit",
+  "parties": "Bikram Choudhury · against · Evolation Yoga, founded by two of his former students",
+  "body": [
+   "Bikram Choudhury's sequence is twenty-six postures and two breathing exercises, performed in a fixed order over ninety minutes in a room heated to about 105°F. He published it in a 1979 book, registered copyrights, and for years sent legal threats to studios teaching the same sequence under another name.",
+   "Evolation Yoga was founded by two people who had trained with him and who taught hot yoga using that sequence. Choudhury sued.",
+   "The Ninth Circuit ruled against him on 8 October 2015. Copyright protects expression, meaning the particular words and photographs in his book, but not the underlying idea, process or system those words describe. A sequence of poses intended to produce a health outcome is a system, and systems are for patents, which he did not have.",
+   "The court drew the comparison directly: a cookbook is copyrightable, the recipe it teaches is not; a surgical manual is protected, the operation is not. Choudhury's own framing of the sequence as a method that heals worked against him, because it argued the thing into the category copyright refuses."
+  ],
+  "holding": "The sequence is an idea, process or system, not copyrightable expression. Choudhury lost.",
+  "legacy": "The boundary line between a described method and the words describing it, applied to fitness, dance, cooking and every other physical practice sold as intellectual property.",
+  "sources": [
+   {
+    "pub": "U.S. Court of Appeals, Ninth Circuit",
+    "title": "Opinion, No. 13-55763 (PDF)",
+    "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2015/10/08/13-55763.pdf"
+   },
+   {
+    "pub": "Justia",
+    "title": "Bikram's Yoga College v. Evolation Yoga",
+    "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/13-55763/13-55763-2015-10-08.html"
+   }
+  ]
+ },
+ "barbie": {
+  "case": "Mattel and the Bild Lilli doll",
+  "year": "1961, 1964, and again in 2001",
+  "court": "U.S. District Court, then the Ninth Circuit",
+  "parties": "Mattel · against, and sued by · Greiner & Hausser, makers of Bild Lilli",
+  "body": [
+   "Barbie has a German predecessor. Lilli began as a comic-strip character drawn by Reinhard Beuthien for the tabloid Bild, and was made into a doll designed by Max Weissbrodt for the toy firm O&M Hausser, sold from 1955. She was an adult-figured novelty aimed at men, sold in bars and tobacconists rather than toy shops.",
+   "Ruth Handler encountered the doll on a European trip in 1956 and brought examples home. Barbie launched in 1959.",
+   "Litigation followed in March 1961, when Louis Marx and Company sued Mattel, alleging infringement of Greiner & Hausser's patent covering Lilli's hip joint and arguing Barbie was a direct copy. It did not succeed. In 1964 Mattel simply bought the problem: the Bild Lilli copyright plus German and US patent rights for three payments totalling 85,000 deutschmarks, roughly $21,600 at the time, with each side agreeing not to use the other's names. Lilli production stopped that year.",
+   "In 2001 Greiner & Hausser came back, arguing they had been pressured into that deal and seeking royalties on every Barbie sold since. The claim was dismissed, and the Ninth Circuit addressed the case in 2003."
+  ],
+  "holding": "The 1961 suit failed; the 1964 purchase settled the rights for about $21,600; the 2001 attempt to reopen it was dismissed.",
+  "legacy": "One of the best-documented cases of buying a predecessor rather than beating it, and the reason Barbie's origin story stayed quiet for forty years.",
+  "sources": [
+   {
+    "pub": "Wikipedia",
+    "title": "Bild Lilli doll",
+    "url": "https://en.wikipedia.org/wiki/Bild_Lilli_doll"
+   },
+   {
+    "pub": "FindLaw",
+    "title": "Mattel, Inc. v. Greiner and Hausser GmbH (9th Cir. 2003)",
+    "url": "https://caselaw.findlaw.com/court/us-9th-circuit/1061319.html"
+   },
+   {
+    "pub": "HISTORY",
+    "title": "Barbie's secret sister was a German novelty doll",
+    "url": "https://www.history.com/articles/barbie-inspiration-bild-lilli"
+   }
+  ]
+ }
+}
