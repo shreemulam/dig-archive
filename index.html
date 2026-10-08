@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="alternate" type="application/rss+xml" title="DIG.ARCHIVE — new acquisitions" href="/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="DIG.ARCHIVE: new acquisitions" href="/rss.xml">
 <meta name="description" content="Pull a random record from art, design, fashion or music history, then follow its real connections into the next one. 500 true stories, wired together.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DIG.ARCHIVE">
@@ -570,6 +570,35 @@
   }
   .here-status{font-size:11px;letter-spacing:.12em;color:var(--ink-dim);text-transform:uppercase}
 
+  /* ---------- KEYBOARD FOCUS (#3) ---------- */
+  .node.linked,.anode,.thumb,.crumb,#caseStrip,#homeDaily,#resumeDig,.ticker.live,.nd-item,.hint-btn,.abandon,#exportBtn{
+    cursor:pointer;
+  }
+  :is(.node.linked,.anode,.thumb,.crumb,#caseStrip,#homeDaily,#resumeDig,.ticker.live,.nd-item,.hint-btn,.abandon,#exportBtn,button,a,[tabindex]):focus-visible{
+    outline:2px solid var(--acid);outline-offset:3px;
+  }
+
+  /* ---------- BOOT STATE (#5) ---------- */
+  #bootState{
+    position:absolute;inset:0;z-index:30;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;
+    background:var(--bg);
+  }
+  #bootState.hidden{display:none}
+  #bootState .bs-mark{
+    width:12px;height:12px;background:var(--acid);
+    animation:bsPulse 1.1s ease-in-out infinite;
+  }
+  @keyframes bsPulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+  @media (prefers-reduced-motion:reduce){#bootState .bs-mark{animation:none;opacity:1}}
+  #bootState .bs-k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+  #bootState .bs-sub{font-size:11px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase;max-width:46ch;line-height:1.9}
+  #bootState.failed .bs-mark{animation:none;background:var(--pink)}
+  #bootState .bs-retry{
+    margin-top:6px;font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.12em;
+    background:var(--acid);color:#101204;border:none;cursor:pointer;padding:13px 24px;text-transform:uppercase;
+  }
+
   /* ---------- CASE FILE ---------- */
   #caseStrip{
     border:1px solid var(--line);border-left:3px solid var(--amber);
@@ -761,6 +790,19 @@
 
   #mobileNav{display:none}
   @media (max-width:700px){
+    /* #4: every control reaches the 44px tap minimum */
+    #trail .crumb{padding:15px 4px}
+    .fact-next{padding:16px 2px;display:inline-block}
+    .disc .d-meta a{display:inline-block;padding:16px 0}
+    #homeDaily,#resumeDig{padding:8px 0}
+    #todayCulture a{display:inline-block;padding:12px 0}
+    #dbPlay{padding:15px 22px}
+    #backBtn{padding:14px 16px}
+    .thumb{width:44px;height:44px}
+    #caseStrip .cs-go{display:inline-block;padding:10px 0}
+    .case-doc .cd-src a{display:inline-block;padding:16px 0}
+    .case-doc .cd-x{padding:12px 10px}
+    #dailyHud .abandon,#dailyHud .hint-btn{display:inline-block;padding:10px 6px}
     #dailyBtn,#atlasBtn,#pullBtn{display:none}
     .rec-count{margin-left:auto;border-left:none}
     footer{display:none}
@@ -813,13 +855,19 @@
   <div class="head-mid"><div class="ticker" id="ticker">ART · DESIGN · ARCHITECTURE · CULTURE · PULL A RECORD AND FOLLOW WHERE IT GOES</div></div>
   <button id="dailyBtn">◆<span class="blabel"> Daily</span></button>
   <button id="atlasBtn">⊞<span class="blabel"> Atlas</span></button>
-  <div class="rec-count" id="recCount">REC <b>—/—</b></div>
+  <div class="rec-count" id="recCount">REC <b>···</b></div>
   <button id="pullBtn">⟳<span class="blabel"> Pull</span></button>
 </header>
 
 <div id="trail"></div>
 
 <div id="stage">
+
+  <div id="bootState">
+    <div class="bs-mark"></div>
+    <div class="bs-k" id="bsK">Opening the archive</div>
+    <div class="bs-sub" id="bsSub">Loading 500 records and the connections between them</div>
+  </div>
 
   <!-- HOME -->
   <div id="homeView" class="hidden">
@@ -978,9 +1026,9 @@ function renderTrail(){
     if(i>0) t.insertAdjacentHTML('beforeend','<span class="sep">▸</span>');
     const here = i===trail.length-1;
     t.insertAdjacentHTML('beforeend',
-      `<span class="crumb ${here?'here':''}" data-i="${i}">${RECORDS[id].title}</span>`);
+      `<span class="crumb ${here?'here':''}" data-i="${i}"${here?'':' tabindex="0" role="button"'}>${RECORDS[id].title}</span>`);
   });
-  if(trail.length>=3) t.insertAdjacentHTML('beforeend','<span class="crumb export" id="exportBtn">⇩ Log</span>');
+  if(trail.length>=3) t.insertAdjacentHTML('beforeend','<span class="crumb export" id="exportBtn" tabindex="0" role="button">⇩ Log</span>');
   t.insertAdjacentHTML('beforeend', `<span class="depth">DEPTH <b>${String(trail.length-1).padStart(2,'0')}</b></span>`);
   t.querySelectorAll('.crumb:not(.here):not(.export)').forEach(el=>{
     el.addEventListener('click', ()=>{
@@ -1013,7 +1061,7 @@ function renderCard(id){
         <div class="art-caption"><span>${h.byline.name.toUpperCase()}</span><span id="capRight">${h.capRight||''}</span></div>
       </div>` +
       (imgs.length>1 ? `<div class="thumb-strip">${imgs.map((g,i)=>
-        `<img class="thumb${i===0?' active':''}" src="${g.src}" data-i="${i}" alt="">`).join('')}</div>` : '');
+        `<img class="thumb${i===0?' active':''}" src="${g.src}" data-i="${i}" tabindex="0" role="button" alt="Show image ${i+1} of ${imgs.length}">`).join('')}</div>` : '');
     if(imgs.length>1){
       pane.querySelectorAll('.thumb').forEach(t=>{
         t.addEventListener('click', ()=>{
@@ -1205,7 +1253,7 @@ function renderMap(id){
       : `<div class="stub-cue">// Archive stub, not yet digitized</div>`;
 
     nodes.insertAdjacentHTML('beforeend', `
-      <div class="node reveal ${isLink?'linked':'stub'}${isLink && visited.has(c.ref)?' visited':''}" ${isLink?`data-ref="${c.ref}"`:''}
+      <div class="node reveal ${isLink?'linked':'stub'}${isLink && visited.has(c.ref)?' visited':''}" ${isLink?`data-ref="${c.ref}" tabindex="0" role="button" aria-label="Open record: ${esc(displayTitle)}"`:''}
            style="left:${nx}px;top:${ny}px;animation-delay:${idx*60}ms">
         <span class="type-tag" style="background:${tt.hex}">${c.type}</span>
         <h3>${displayTitle}</h3>
@@ -1263,7 +1311,7 @@ function openAtlas(silent=false){
   IDS.forEach((id, i)=>{
     const r = RECORDS[id], [x,y] = pos[id];
     nodes.insertAdjacentHTML('beforeend', `
-      <div class="anode reveal ${visited.has(id)?'visited':'dim'}" data-ref="${id}"
+      <div class="anode reveal ${visited.has(id)?'visited':'dim'}" data-ref="${id}" tabindex="0" role="button" aria-label="Open record: ${esc(r.title)}"
            style="left:${x}px;top:${y}px;animation-delay:${Math.min(i*25,500)}ms">
         <div class="kchip">${r.kind}${visited.has(id)?' · SEEN':''}${isNew(id)?' <span class="new-tag">· NEW</span>':''}</div>
         <h4>${r.title}</h4>
@@ -1389,6 +1437,7 @@ function renderCaseStrip(id){
   loadCases().then(cs=>{
     const c = cs[id];
     if(!c || currentId !== id) return;
+    strip.tabIndex = 0; strip.setAttribute('role','button');
     strip.innerHTML = `<span class="cs-k">§ Case file</span>
       <span class="cs-name">${esc(c.case)}</span>
       <span class="cs-go">Read the case ▸</span>`;
@@ -1540,7 +1589,7 @@ function updateHud(){
   const dist = game.distMap[currentId];
   const dirHtml = game.lastDelta<0 ? '<span class="warm">▲ WARMER</span>'
                 : game.lastDelta>0 ? '<span class="cold">▼ COLDER</span>' : '· START';
-  hud.innerHTML = `◆ DIG #${dailyNum()} · TARGET: <b>${RECORDS[daily.target].title.toUpperCase()}</b> · <b>${dist}</b> AWAY ${dirHtml} · HOPS <b>${String(game.hops).padStart(2,'0')}</b>/PAR ${daily.par} · <span class="hint-btn">◈ HINT (${game.hints})</span> <span class="abandon">✕</span>`;
+  hud.innerHTML = `◆ DIG #${dailyNum()} · TARGET: <b>${RECORDS[daily.target].title.toUpperCase()}</b> · <b>${dist}</b> AWAY ${dirHtml} · HOPS <b>${String(game.hops).padStart(2,'0')}</b>/PAR ${daily.par} · <span class="hint-btn" tabindex="0" role="button">◈ HINT (${game.hints})</span> <span class="abandon" tabindex="0" role="button" aria-label="Abandon today\u2019s dig">✕</span>`;
   hud.querySelector('.abandon').onclick = ()=>{ game=null; updateHud(); };
   hud.querySelector('.hint-btn').onclick = useHint;
 }
@@ -1587,7 +1636,7 @@ function useHint(){
 
 function dailyShareText(hops, par){
   const emoji = hops<=par ? '🟩'.repeat(Math.max(1,hops)) : '🟩'.repeat(par)+'🟨'.repeat(hops-par);
-  return `DIG.ARCHIVE — DAILY DIG #${dailyNum()}\n${RECORDS[daily.start].title} → ${RECORDS[daily.target].title}\n${hops} HOPS (PAR ${par}) ${emoji}\nhttps://dig-archive.vercel.app`;
+  return `DIG.ARCHIVE · DAILY DIG #${dailyNum()}\n${RECORDS[daily.start].title} → ${RECORDS[daily.target].title}\n${hops} HOPS (PAR ${par}) ${emoji}\nhttps://dig-archive.vercel.app`;
 }
 function showDailyResult(hops, par){
   if(!getDaily()) return;
@@ -1821,6 +1870,33 @@ function buildLegend(){
     document.addEventListener(ev, e=>e.preventDefault(), {passive:false}));
 })();
 
+/* ================= KEYBOARD (#3) =================
+   The map resolves taps by hit-testing on pointerup (pointer capture retargets
+   the click), so nodes carry no click listener. Keyboard needs its own path. */
+const KEY_SELECTOR = '.node.linked,.anode,.thumb,.crumb,#caseStrip,#homeDaily,#resumeDig,.ticker.live,#exportBtn,.hint-btn,.abandon';
+document.addEventListener('keydown', e=>{
+  if(e.key!=='Enter' && e.key!==' ' && e.key!=='Spacebar') return;
+  const el = document.activeElement;
+  if(!el || !el.matches || !el.matches(KEY_SELECTOR)) return;
+  e.preventDefault();
+  if(el.dataset && el.dataset.ref && RECORDS[el.dataset.ref]) openRecord(el.dataset.ref);
+  else el.click();
+});
+// a focused node that sits off-screen is not really reachable
+function keepNodeInView(el){
+  const mv = $('mapView'); if(!mv || mv.classList.contains('hidden')) return;
+  const r = el.getBoundingClientRect(), m = mv.getBoundingClientRect(), pad = 28;
+  let dx=0, dy=0;
+  if(r.left < m.left+pad) dx = (m.left+pad) - r.left;
+  else if(r.right > m.right-pad) dx = (m.right-pad) - r.right;
+  if(r.top < m.top+pad) dy = (m.top+pad) - r.top;
+  else if(r.bottom > m.bottom-pad) dy = (m.bottom-pad) - r.bottom;
+  if(dx||dy){ pan.x+=dx; pan.y+=dy; applyTransform(); }
+}
+document.addEventListener('focusin', e=>{
+  if(e.target.matches && e.target.matches('.node.linked,.anode')) keepNodeInView(e.target);
+});
+
 /* ================= VIEW SWITCH ================= */
 function showView(v){
   $('homeView').classList.toggle('hidden', v!=='home');
@@ -1996,7 +2072,7 @@ $('dlReceipt').addEventListener('click', ()=>{
     a.href = $('receiptCanvas').toDataURL('image/png');
     a.download = shareState.filename || 'dig-share.png';
     a.click();
-  }catch(e){ alert('Image blocked the export — use Copy text instead.'); }
+  }catch(e){ alert('Image blocked the export. Use Copy text instead.'); }
 });
 $('copyReceipt').addEventListener('click', e=>{
   navigator.clipboard.writeText(shareState.text || receiptText()).then(()=>{
@@ -2046,8 +2122,8 @@ Promise.all([
     const pool = IDS.filter(i=>RECORDS[i].pullable);
     const daily = pool[Math.floor(Date.now()/86400000) % pool.length];
     const tk = $('ticker');
-    tk.innerHTML = `DIG OF THE DAY // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
-    tk.classList.add('live');
+    tk.innerHTML = `DIG OF THE DAY // <b>${RECORDS[daily].title.toUpperCase()}</b> · OPEN ▸`;
+    tk.classList.add('live'); tk.tabIndex=0; tk.setAttribute('role','button');
     tk.onclick = ()=> openRecord(daily, {resetTrail:true});
 
     // TODAY IN CULTURE — live from Wikipedia's on-this-day feed (CORS-open)
@@ -2063,7 +2139,7 @@ Promise.all([
         const link = page ? `https://en.wikipedia.org/wiki/${encodeURIComponent(page.titles.canonical)}` : null;
         const el = document.createElement('div');
         el.id = 'todayCulture';
-        el.innerHTML = `<div class="k">◐ Today in culture</div><div><b>${ev.year}</b> — ${ev.text}</div>${link?`<a href="${link}" target="_blank" rel="noopener">Read the story ↗</a>`:''}`;
+        el.innerHTML = `<div class="k">◐ Today in culture</div><div><b>${ev.year}</b>: ${ev.text}</div>${link?`<a href="${link}" target="_blank" rel="noopener">Read the story ↗</a>`:''}`;
         $('homeDaily').after(el);
       }).catch(()=>{});
 
@@ -2079,6 +2155,7 @@ Promise.all([
       trail = saved; currentId = saved[saved.length-1];
     }
 
+    $('bootState').classList.add('hidden');
     buildLegend(); renderCard(currentId); renderTrail(); initGlobe();
     renderDailyBox();
 
@@ -2104,9 +2181,9 @@ Promise.all([
       const last = JSON.parse(localStorage.getItem('dig.lastTrail')||'null');
       if(Array.isArray(last) && last.length>=2 && last.every(x=>RECORDS[x]) && !location.hash.replace(/^#\/?/,'')){
         const el = document.createElement('div');
-        el.id = 'resumeDig';
+        el.id = 'resumeDig'; el.tabIndex = 0; el.setAttribute('role','button');
         const crumbs = last.map(x=>RECORDS[x].title.toUpperCase()).join(' ▸ ');
-        el.innerHTML = `LAST DIG // <b>${crumbs.length>70 ? '…'+crumbs.slice(-70) : crumbs}</b> — RESUME ▸`;
+        el.innerHTML = `LAST DIG // <b>${crumbs.length>70 ? '…'+crumbs.slice(-70) : crumbs}</b> · RESUME ▸`;
         el.onclick = ()=>{
           trail = last; currentId = last[last.length-1];
           renderCard(currentId); renderTrail(); showView('card'); syncHash('#/'+currentId);
@@ -2115,7 +2192,8 @@ Promise.all([
       }
     }catch(e){}
 
-    $('homeDaily').innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> — OPEN ▸`;
+    $('homeDaily').innerHTML = `TODAY'S RECORD // <b>${RECORDS[daily].title.toUpperCase()}</b> · OPEN ▸`;
+    $('homeDaily').tabIndex=0; $('homeDaily').setAttribute('role','button');
     $('homeDaily').onclick = ()=> openRecord(daily, {resetTrail:true});
     $('statStrip').innerHTML =
       `<span><b>${IDS.length}</b> RECORDS</span><span><b>${IDS.reduce((n,i)=>n+RECORDS[i].connections.length,0)}</b> CONNECTIONS</span>`+
@@ -2132,7 +2210,19 @@ Promise.all([
     else if(RECORDS[hid]) showView('card');
     else showView('home');
   })
-  .catch(()=>{ document.getElementById('ticker').textContent = 'RECORDS.JSON FAILED TO LOAD — SERVE OVER HTTP (npx serve .) OR CHECK DEPLOY'; });
+  .catch(err=>{
+    const offline = typeof navigator!=='undefined' && navigator.onLine===false;
+    const bs = $('bootState'); bs.classList.remove('hidden'); bs.classList.add('failed');
+    $('bsK').textContent = 'The archive did not load';
+    $('bsSub').innerHTML = offline
+      ? 'You are offline and this device has no cached copy yet. Reconnect and try again.'
+      : 'records.json could not be read. If you opened this file directly from disk, serve it over HTTP instead (npx serve .).';
+    if(!document.getElementById('bsRetry')){
+      const b=document.createElement('button');
+      b.className='bs-retry'; b.id='bsRetry'; b.textContent='↻ Try again';
+      b.onclick=()=>location.reload(); bs.appendChild(b);
+    }
+  });
 </script>
 </body>
 </html>
